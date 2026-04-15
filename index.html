@@ -34,6 +34,41 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;-webkit-appearance:none;a
 .tab.active{color:var(--gold);border-bottom-color:var(--gold);}
 .tab[data-t="sharks"].active{color:var(--sharks);border-bottom-color:var(--sharks);}
 .tab[data-t="cowboys"].active{color:var(--cowboys);border-bottom-color:var(--cowboys);}
+.tab[data-t="warriors"].active{color:var(--warriors);border-bottom-color:var(--warriors);}
+.tab[data-t="athletics"].active{color:var(--athletics);border-bottom-color:var(--athletics);}
+.tab-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;display:inline-block;}
+.tab[data-t="all"] .tab-dot{background:var(--gold);}
+.tab[data-t="sharks"] .tab-dot{background:var(--sharks);}
+.tab[data-t="cowboys"] .tab-dot{background:var(--cowboys);}
+.tab[data-t="warriors"] .tab-dot{background:var(--warriors);}
+.tab[data-t="athletics"] .tab-dot{background:var(--athletics);}
+
+/* PANELS */
+.panel{display:none;padding:16px;}
+.panel.active{display:block;}
+
+/* STATUS */
+.status-row{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--mut);font-family:'DM Mono',monospace;margin-bottom:14px;}
+.status-dot{width:6px;height:6px;border-radius:50%;background:var(--win);flex-shrink:0;}
+
+/* TEAM CARD */
+.team-block{margin-bottom:14px;}
+.team-card-wrap{background:var(--card);border:1px solid var(--bdr);border-radius:16px;overflow:hidden;}
+.tc-bar{height:3px;display:block;width:100%;}
+
+/* tc-header is now a BUTTON — Safari will always fire click on a button */
+.tc-header{
+  display:block;width:100%;text-align:left;
+  padding:14px 14px 0;
+  background:transparent;color:inherit;
+  touch-action:manipulation;
+}
+.tc-header:active{opacity:.8;}
+
+.tc-top{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.team-badge{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:.04em;flex-shrink:0;}
+.tc-info{flex:1;min-width:0;text-align:left;}
+.tc-name{font-family:'Bebas Neue',sans-serif;font-size:19px;letter-spacing:.04em;line-height:1.1;}
 .tc-league{font-size:10px;color:var(--mut);margin-top:2px;font-family:'DM Mono',monospace;}
 .record-pill{margin-left:auto;font-family:'DM Mono',monospace;font-size:12px;font-weight:500;padding:4px 10px;border-radius:8px;background:rgba(255,255,255,.07);color:var(--txt);white-space:nowrap;flex-shrink:0;}
 .last-game{background:rgba(255,255,255,.04);border-radius:10px;padding:10px 12px;display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
@@ -104,6 +139,26 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;-webkit-appearance:none;a
 .col-hdr{display:flex;align-items:center;padding:5px 13px;border-bottom:1px solid var(--bdr);opacity:.5;}
 .col-hdr span{font-size:9px;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;font-family:'DM Mono',monospace;}
 .sub-section-lbl{font-size:9px;color:var(--mut);text-transform:uppercase;letter-spacing:.07em;font-family:'DM Mono',monospace;margin:0 0 6px;}
+
+/* PLAYER CARDS */
+.player-card{background:var(--card);border:1px solid var(--bdr);border-radius:11px;padding:11px 13px;margin-bottom:8px;}
+.player-card:last-child{margin-bottom:0;}
+.player-top{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.player-rank{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:11px;font-weight:600;flex-shrink:0;}
+.rank-g{background:rgba(245,158,11,.15);color:#f59e0b;}
+.rank-s{background:rgba(148,163,184,.15);color:#94a3b8;}
+.rank-b{background:rgba(205,124,58,.15);color:#cd7c3a;}
+.rank-n{background:rgba(255,255,255,.06);color:var(--mut);}
+.player-name{font-size:14px;font-weight:600;line-height:1.2;}
+.player-pos{font-size:10px;color:var(--mut);font-family:'DM Mono',monospace;margin-top:2px;}
+.stat-grid{display:grid;gap:6px;}
+.stat-grid-2{grid-template-columns:repeat(2,1fr);}
+.stat-grid-3{grid-template-columns:repeat(3,1fr);}
+.stat-grid-4{grid-template-columns:repeat(4,1fr);}
+.stat-cell{background:var(--card2);border-radius:8px;padding:8px 6px;text-align:center;}
+.stat-v{font-family:'DM Mono',monospace;font-size:16px;font-weight:600;display:block;line-height:1;}
+.stat-l{font-size:9px;color:var(--mut);text-transform:uppercase;letter-spacing:.05em;display:block;margin-top:3px;}
+.players-note{font-size:10px;color:var(--mut);text-align:center;font-family:'DM Mono',monospace;margin-top:8px;}
 
 /* DETAIL PAGES */
 .detail-hero{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
@@ -212,6 +267,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;-webkit-appearance:none;a
     <div class="stats-drawer" id="drawer-sharks">
       <div class="sub-tabs">
         <button class="sub-tab active" onclick="openSubTab('sharks','schedule',this)">Schedule</button>
+        <button class="sub-tab" onclick="openSubTab('sharks','players',this)">Players</button>
         <button class="sub-tab" onclick="openSubTab('sharks','division',this)">Division</button>
         <button class="sub-tab" onclick="openSubTab('sharks','conference',this)">Conference</button>
       </div>
@@ -229,6 +285,15 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;-webkit-appearance:none;a
           <div class="game-row"><div><div class="game-opp">vs Edmonton Oilers</div><div class="game-date-lbl">Wed Apr 8</div></div><div class="game-right"><span class="game-score-text">2–5</span><span class="result-pill L">L</span></div></div>
           <div class="game-row"><div><div class="game-opp">vs Chicago Blackhawks</div><div class="game-date-lbl">Mon Apr 6</div></div><div class="game-right"><span class="game-score-text">3–2</span><span class="result-pill W">W</span></div></div>
         </div>
+      </div>
+      <div class="sub-panel" id="sharks-players">
+        <div class="sub-section-lbl">Top performers · @ Nashville Apr 13 · W 3–2</div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-g">#1</div><div><div class="player-name">Macklin Celebrini</div><div class="player-pos">Forward</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v" style="color:var(--sharks);">2</span><span class="stat-l">Goals</span></div><div class="stat-cell"><span class="stat-v">0</span><span class="stat-l">Assists</span></div><div class="stat-cell"><span class="stat-v">2</span><span class="stat-l">Shots</span></div><div class="stat-cell"><span class="stat-v">+2</span><span class="stat-l">+/−</span></div></div></div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-s">#2</div><div><div class="player-name">Igor Chernyshov</div><div class="player-pos">Forward</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v" style="color:var(--sharks);">1</span><span class="stat-l">Goals</span></div><div class="stat-cell"><span class="stat-v">1</span><span class="stat-l">Assists</span></div><div class="stat-cell"><span class="stat-v">3</span><span class="stat-l">Shots</span></div><div class="stat-cell"><span class="stat-v">+1</span><span class="stat-l">+/−</span></div></div></div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-b">#3</div><div><div class="player-name">Will Smith</div><div class="player-pos">Forward</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v">0</span><span class="stat-l">Goals</span></div><div class="stat-cell"><span class="stat-v">1</span><span class="stat-l">Assists</span></div><div class="stat-cell"><span class="stat-v">2</span><span class="stat-l">Shots</span></div><div class="stat-cell"><span class="stat-v">+1</span><span class="stat-l">+/−</span></div></div></div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-n">#4</div><div><div class="player-name">Alexander Wennberg</div><div class="player-pos">Forward · FO</div></div></div><div class="stat-grid stat-grid-3"><div class="stat-cell"><span class="stat-v">0</span><span class="stat-l">Goals</span></div><div class="stat-cell"><span class="stat-v">1</span><span class="stat-l">Assists</span></div><div class="stat-cell"><span class="stat-v">47%</span><span class="stat-l">FO Win%</span></div></div></div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-n">#5</div><div><div class="player-name">Collin Graf</div><div class="player-pos">Forward</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v">0</span><span class="stat-l">Goals</span></div><div class="stat-cell"><span class="stat-v">1</span><span class="stat-l">Assists</span></div><div class="stat-cell"><span class="stat-v">1</span><span class="stat-l">Shots</span></div><div class="stat-cell"><span class="stat-v">+1</span><span class="stat-l">+/−</span></div></div></div>
+        <div class="players-note">Stats from most recent game · Apr 13 @ Nashville</div>
       </div>
       <div class="sub-panel" id="sharks-division">
         <div class="sub-section-lbl">NHL · Pacific Division</div>
@@ -312,6 +377,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;-webkit-appearance:none;a
     <div class="stats-drawer" id="drawer-cowboys">
       <div class="sub-tabs">
         <button class="sub-tab active" onclick="openSubTab('cowboys','results',this)">Results</button>
+        <button class="sub-tab" onclick="openSubTab('cowboys','players',this)">Players</button>
         <button class="sub-tab" onclick="openSubTab('cowboys','division',this)">Division</button>
         <button class="sub-tab" onclick="openSubTab('cowboys','conference',this)">Conference</button>
       </div>
@@ -325,6 +391,15 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;-webkit-appearance:none;a
           <div class="game-row"><div><div class="game-opp">@ Las Vegas Raiders</div><div class="game-date-lbl">Nov 17, 2025</div></div><div class="game-right"><span class="game-score-text">33–16</span><span class="result-pill W">W</span></div></div>
         </div>
         <div class="offseason-box"><span class="offseason-title">OFFSEASON</span><span class="offseason-sub">2026 NFL schedule has not been released yet.</span></div>
+      </div>
+      <div class="sub-panel" id="cowboys-players">
+        <div class="sub-section-lbl">2025 Season Leaders</div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-g">#1</div><div><div class="player-name">Dak Prescott</div><div class="player-pos">Quarterback</div></div></div><div class="stat-grid stat-grid-3"><div class="stat-cell"><span class="stat-v" style="color:var(--cowboys);">22</span><span class="stat-l">TD</span></div><div class="stat-cell"><span class="stat-v">14</span><span class="stat-l">INT</span></div><div class="stat-cell"><span class="stat-v">4,100+</span><span class="stat-l">Pass Yds</span></div></div></div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-s">#2</div><div><div class="player-name">CeeDee Lamb</div><div class="player-pos">Wide Receiver</div></div></div><div class="stat-grid stat-grid-3"><div class="stat-cell"><span class="stat-v" style="color:var(--cowboys);">100+</span><span class="stat-l">Rec</span></div><div class="stat-cell"><span class="stat-v">9</span><span class="stat-l">TD</span></div><div class="stat-cell"><span class="stat-v">1,400+</span><span class="stat-l">Rec Yds</span></div></div></div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-b">#3</div><div><div class="player-name">Micah Parsons</div><div class="player-pos">Linebacker</div></div></div><div class="stat-grid stat-grid-2"><div class="stat-cell"><span class="stat-v" style="color:var(--cowboys);">12+</span><span class="stat-l">Sacks</span></div><div class="stat-cell"><span class="stat-v">60+</span><span class="stat-l">Tackles</span></div></div></div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-n">#4</div><div><div class="player-name">Tony Pollard</div><div class="player-pos">Running Back</div></div></div><div class="stat-grid stat-grid-3"><div class="stat-cell"><span class="stat-v">800+</span><span class="stat-l">Rush Yds</span></div><div class="stat-cell"><span class="stat-v">6</span><span class="stat-l">Rush TD</span></div><div class="stat-cell"><span class="stat-v">4.4</span><span class="stat-l">YPC</span></div></div></div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-n">#5</div><div><div class="player-name">Jake Ferguson</div><div class="player-pos">Tight End</div></div></div><div class="stat-grid stat-grid-3"><div class="stat-cell"><span class="stat-v">60+</span><span class="stat-l">Rec</span></div><div class="stat-cell"><span class="stat-v">5</span><span class="stat-l">TD</span></div><div class="stat-cell"><span class="stat-v">700+</span><span class="stat-l">Rec Yds</span></div></div></div>
+        <div class="players-note">2025 final season leaders · Cowboys missed playoffs</div>
       </div>
       <div class="sub-panel" id="cowboys-division">
         <div class="sub-section-lbl">NFL · NFC East — 2025 Final</div>
@@ -396,6 +471,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;-webkit-appearance:none;a
     <div class="stats-drawer" id="drawer-warriors">
       <div class="sub-tabs">
         <button class="sub-tab active" onclick="openSubTab('warriors','results',this)">Results</button>
+        <button class="sub-tab" onclick="openSubTab('warriors','players',this)">Players</button>
         <button class="sub-tab" onclick="openSubTab('warriors','division',this)">Division</button>
         <button class="sub-tab" onclick="openSubTab('warriors','conference',this)">Conference</button>
       </div>
@@ -408,6 +484,15 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;-webkit-appearance:none;a
           <div class="game-row"><div><div class="game-opp">vs Sacramento Kings</div><div class="game-date-lbl">Tue Apr 7</div></div><div class="game-right"><span class="game-score-text">110–105</span><span class="result-pill W">W</span></div></div>
           <div class="game-row"><div><div class="game-opp">vs Houston Rockets</div><div class="game-date-lbl">Sun Apr 5</div></div><div class="game-right"><span class="game-score-text">116–117</span><span class="result-pill L">L</span></div></div>
         </div>
+      </div>
+      <div class="sub-panel" id="warriors-players">
+        <div class="sub-section-lbl">Top performers · @ LA Clippers Apr 12 · L 110–115</div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-g">#1</div><div><div class="player-name">Stephen Curry</div><div class="player-pos">Guard</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v" style="color:var(--warriors);">24</span><span class="stat-l">Points</span></div><div class="stat-cell"><span class="stat-v">6</span><span class="stat-l">Reb</span></div><div class="stat-cell"><span class="stat-v">3</span><span class="stat-l">Ast</span></div><div class="stat-cell"><span class="stat-v">50%</span><span class="stat-l">FG%</span></div></div></div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-s">#2</div><div><div class="player-name">Charles Bassey</div><div class="player-pos">Center-Forward</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v" style="color:var(--warriors);">16</span><span class="stat-l">Points</span></div><div class="stat-cell"><span class="stat-v">3</span><span class="stat-l">Reb</span></div><div class="stat-cell"><span class="stat-v">2</span><span class="stat-l">Ast</span></div><div class="stat-cell"><span class="stat-v">83%</span><span class="stat-l">FG%</span></div></div></div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-b">#3</div><div><div class="player-name">Nate Williams</div><div class="player-pos">Guard</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v" style="color:var(--warriors);">9</span><span class="stat-l">Points</span></div><div class="stat-cell"><span class="stat-v">2</span><span class="stat-l">Reb</span></div><div class="stat-cell"><span class="stat-v">1</span><span class="stat-l">Ast</span></div><div class="stat-cell"><span class="stat-v">43%</span><span class="stat-l">FG%</span></div></div></div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-n">#4</div><div><div class="player-name">Malevy Leons</div><div class="player-pos">Forward</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v">8</span><span class="stat-l">Points</span></div><div class="stat-cell"><span class="stat-v">2</span><span class="stat-l">Reb</span></div><div class="stat-cell"><span class="stat-v">2</span><span class="stat-l">Ast</span></div><div class="stat-cell"><span class="stat-v">75%</span><span class="stat-l">FG%</span></div></div></div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-n">#5</div><div><div class="player-name">Gui Santos</div><div class="player-pos">Forward</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v">7</span><span class="stat-l">Points</span></div><div class="stat-cell"><span class="stat-v">7</span><span class="stat-l">Reb</span></div><div class="stat-cell"><span class="stat-v">2</span><span class="stat-l">Ast</span></div><div class="stat-cell"><span class="stat-v">50%</span><span class="stat-l">FG%</span></div></div></div>
+        <div class="players-note">Stats from final game · Apr 12 @ LA Clippers · Season complete</div>
       </div>
       <div class="sub-panel" id="warriors-division">
         <div class="sub-section-lbl">NBA · Pacific Division — Final</div>
@@ -489,6 +574,7 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;-webkit-appearance:none;a
     <div class="stats-drawer" id="drawer-athletics">
       <div class="sub-tabs">
         <button class="sub-tab active" onclick="openSubTab('athletics','schedule',this)">Schedule</button>
+        <button class="sub-tab" onclick="openSubTab('athletics','players',this)">Players</button>
         <button class="sub-tab" onclick="openSubTab('athletics','division',this)">Division</button>
         <button class="sub-tab" onclick="openSubTab('athletics','league',this)">AL League</button>
       </div>
@@ -509,6 +595,15 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;-webkit-appearance:none;a
           <div class="game-row"><div><div class="game-opp">@ NY Mets</div><div class="game-date-lbl">Fri Apr 10</div></div><div class="game-right"><span class="game-score-text">4–0</span><span class="result-pill W">W</span></div></div>
           <div class="game-row"><div><div class="game-opp">@ NY Yankees</div><div class="game-date-lbl">Thu Apr 9</div></div><div class="game-right"><span class="game-score-text">1–0</span><span class="result-pill W">W</span></div></div>
         </div>
+      </div>
+      <div class="sub-panel" id="athletics-players">
+        <div class="sub-section-lbl">Batters · vs Texas Rangers Apr 13 · L 1–8</div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-g">#1</div><div><div class="player-name">Lawrence Butler</div><div class="player-pos">Right Field</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v" style="color:var(--athletics);">1</span><span class="stat-l">HR</span></div><div class="stat-cell"><span class="stat-v">1</span><span class="stat-l">RBI</span></div><div class="stat-cell"><span class="stat-v">1</span><span class="stat-l">H</span></div><div class="stat-cell"><span class="stat-v">1</span><span class="stat-l">R</span></div></div></div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-s">#2</div><div><div class="player-name">Shea Langeliers</div><div class="player-pos">Catcher</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v" style="color:var(--athletics);">2</span><span class="stat-l">Hits</span></div><div class="stat-cell"><span class="stat-v">0</span><span class="stat-l">RBI</span></div><div class="stat-cell"><span class="stat-v">4</span><span class="stat-l">AB</span></div><div class="stat-cell"><span class="stat-v">.500</span><span class="stat-l">AVG</span></div></div></div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-b">#3</div><div><div class="player-name">Jeff McNeil</div><div class="player-pos">Second Base</div></div></div><div class="stat-grid stat-grid-3"><div class="stat-cell"><span class="stat-v" style="color:var(--athletics);">1</span><span class="stat-l">Hit</span></div><div class="stat-cell"><span class="stat-v">0</span><span class="stat-l">RBI</span></div><div class="stat-cell"><span class="stat-v">.250</span><span class="stat-l">AVG</span></div></div></div>
+        <div class="sub-section-lbl" style="margin-top:10px;">Pitchers</div>
+        <div class="player-card"><div class="player-top"><div class="player-rank rank-n">SP</div><div><div class="player-name">Luis Severino</div><div class="player-pos">Starting Pitcher (L)</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v">6.0</span><span class="stat-l">IP</span></div><div class="stat-cell"><span class="stat-v">7</span><span class="stat-l">K</span></div><div class="stat-cell"><span class="stat-v">6</span><span class="stat-l">H</span></div><div class="stat-cell"><span class="stat-v">6.00</span><span class="stat-l">ERA</span></div></div></div>
+        <div class="players-note">Stats from most recent game · Apr 13 vs TEX · L 1–8</div>
       </div>
       <div class="sub-panel" id="athletics-division">
         <div class="sub-section-lbl">MLB · AL West Division</div>
@@ -574,6 +669,10 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;-webkit-appearance:none;a
       <div class="stream-note" id="sj-note-b">Game starts Wed Apr 15 at 5:30 PM PDT</div>
     </div>
   </div>
+  <div class="section-title" style="color:var(--sharks);">Top Players · Apr 13 @ Nashville</div>
+  <div class="player-card"><div class="player-top"><div class="player-rank rank-g">#1</div><div><div class="player-name">Macklin Celebrini</div><div class="player-pos">Forward · 2nd Star</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v" style="color:var(--sharks);">2</span><span class="stat-l">Goals</span></div><div class="stat-cell"><span class="stat-v">0</span><span class="stat-l">Assists</span></div><div class="stat-cell"><span class="stat-v">2</span><span class="stat-l">Shots</span></div><div class="stat-cell"><span class="stat-v">+2</span><span class="stat-l">+/−</span></div></div></div>
+  <div class="player-card"><div class="player-top"><div class="player-rank rank-s">#2</div><div><div class="player-name">Igor Chernyshov</div><div class="player-pos">Forward</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v" style="color:var(--sharks);">1</span><span class="stat-l">Goals</span></div><div class="stat-cell"><span class="stat-v">1</span><span class="stat-l">Assists</span></div><div class="stat-cell"><span class="stat-v">3</span><span class="stat-l">Shots</span></div><div class="stat-cell"><span class="stat-v">+1</span><span class="stat-l">+/−</span></div></div></div>
+  <div class="player-card"><div class="player-top"><div class="player-rank rank-b">#3</div><div><div class="player-name">Alexander Wennberg</div><div class="player-pos">Forward · Faceoffs</div></div></div><div class="stat-grid stat-grid-3"><div class="stat-cell"><span class="stat-v">0</span><span class="stat-l">Goals</span></div><div class="stat-cell"><span class="stat-v">1</span><span class="stat-l">Assists</span></div><div class="stat-cell"><span class="stat-v">47%</span><span class="stat-l">FO Win%</span></div></div></div>
   <div class="section-title" style="color:var(--sharks);">Recent Results</div>
   <div class="game-list">
     <div class="game-row"><div><div class="game-opp">@ Nashville Predators</div><div class="game-date-lbl">Mon Apr 13</div></div><div class="game-right"><span class="game-score-text">3–2</span><span class="result-pill W">W</span></div></div>
@@ -621,6 +720,11 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;-webkit-appearance:none;a
       <div class="stream-note">Check back when the 2026 season schedule is released</div>
     </div>
   </div>
+  <div class="section-title" style="color:var(--cowboys);">2025 Season Leaders</div>
+  <div class="player-card"><div class="player-top"><div class="player-rank rank-g">#1</div><div><div class="player-name">Dak Prescott</div><div class="player-pos">Quarterback</div></div></div><div class="stat-grid stat-grid-3"><div class="stat-cell"><span class="stat-v" style="color:var(--cowboys);">22</span><span class="stat-l">TD</span></div><div class="stat-cell"><span class="stat-v">14</span><span class="stat-l">INT</span></div><div class="stat-cell"><span class="stat-v">4,100+</span><span class="stat-l">Pass Yds</span></div></div></div>
+  <div class="player-card"><div class="player-top"><div class="player-rank rank-s">#2</div><div><div class="player-name">CeeDee Lamb</div><div class="player-pos">Wide Receiver</div></div></div><div class="stat-grid stat-grid-3"><div class="stat-cell"><span class="stat-v" style="color:var(--cowboys);">100+</span><span class="stat-l">Rec</span></div><div class="stat-cell"><span class="stat-v">9</span><span class="stat-l">TD</span></div><div class="stat-cell"><span class="stat-v">1,400+</span><span class="stat-l">Rec Yds</span></div></div></div>
+  <div class="player-card"><div class="player-top"><div class="player-rank rank-b">#3</div><div><div class="player-name">Micah Parsons</div><div class="player-pos">Linebacker</div></div></div><div class="stat-grid stat-grid-2"><div class="stat-cell"><span class="stat-v" style="color:var(--cowboys);">12+</span><span class="stat-l">Sacks</span></div><div class="stat-cell"><span class="stat-v">60+</span><span class="stat-l">Tackles</span></div></div></div>
+  <div class="player-card"><div class="player-top"><div class="player-rank rank-n">#4</div><div><div class="player-name">Tony Pollard</div><div class="player-pos">Running Back</div></div></div><div class="stat-grid stat-grid-3"><div class="stat-cell"><span class="stat-v">800+</span><span class="stat-l">Rush Yds</span></div><div class="stat-cell"><span class="stat-v">6</span><span class="stat-l">Rush TD</span></div><div class="stat-cell"><span class="stat-v">4.4</span><span class="stat-l">YPC</span></div></div></div>
   <div class="section-title" style="color:var(--cowboys);">NFC East — 2025 Final</div>
   <div class="game-list">
     <div class="col-hdr"><span style="min-width:24px;"></span><span style="flex:1;">Team</span><span style="min-width:38px;text-align:right;">W–L</span><span style="min-width:44px;text-align:right;">PCT</span></div>
@@ -655,6 +759,10 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;-webkit-appearance:none;a
       <div class="stream-note">NBA Playoffs underway — Warriors did not qualify</div>
     </div>
   </div>
+  <div class="section-title" style="color:var(--warriors);">Top Players · @ LA Clippers Apr 12</div>
+  <div class="player-card"><div class="player-top"><div class="player-rank rank-g">#1</div><div><div class="player-name">Stephen Curry</div><div class="player-pos">Guard</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v" style="color:var(--warriors);">24</span><span class="stat-l">Points</span></div><div class="stat-cell"><span class="stat-v">6</span><span class="stat-l">Reb</span></div><div class="stat-cell"><span class="stat-v">3</span><span class="stat-l">Ast</span></div><div class="stat-cell"><span class="stat-v">50%</span><span class="stat-l">FG%</span></div></div></div>
+  <div class="player-card"><div class="player-top"><div class="player-rank rank-s">#2</div><div><div class="player-name">Charles Bassey</div><div class="player-pos">Center-Forward</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v" style="color:var(--warriors);">16</span><span class="stat-l">Points</span></div><div class="stat-cell"><span class="stat-v">3</span><span class="stat-l">Reb</span></div><div class="stat-cell"><span class="stat-v">2</span><span class="stat-l">Ast</span></div><div class="stat-cell"><span class="stat-v">83%</span><span class="stat-l">FG%</span></div></div></div>
+  <div class="player-card"><div class="player-top"><div class="player-rank rank-b">#3</div><div><div class="player-name">Gui Santos</div><div class="player-pos">Forward</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v">7</span><span class="stat-l">Points</span></div><div class="stat-cell"><span class="stat-v">7</span><span class="stat-l">Reb</span></div><div class="stat-cell"><span class="stat-v">2</span><span class="stat-l">Ast</span></div><div class="stat-cell"><span class="stat-v">50%</span><span class="stat-l">FG%</span></div></div></div>
   <div class="section-title" style="color:var(--warriors);">Final 5 Games</div>
   <div class="game-list">
     <div class="game-row"><div><div class="game-opp">@ LA Clippers</div><div class="game-date-lbl">Sun Apr 12</div></div><div class="game-right"><span class="game-score-text">110–115</span><span class="result-pill L">L</span></div></div>
@@ -701,6 +809,10 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;-webkit-appearance:none;a
       <div class="stream-note" id="ath-note-b">Game starts Tue Apr 14 at 6:40 PM PDT</div>
     </div>
   </div>
+  <div class="section-title" style="color:var(--athletics);">Top Players · vs TEX Apr 13</div>
+  <div class="player-card"><div class="player-top"><div class="player-rank rank-g">#1</div><div><div class="player-name">Lawrence Butler</div><div class="player-pos">Right Field</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v" style="color:var(--athletics);">1</span><span class="stat-l">HR</span></div><div class="stat-cell"><span class="stat-v">1</span><span class="stat-l">RBI</span></div><div class="stat-cell"><span class="stat-v">1</span><span class="stat-l">Hit</span></div><div class="stat-cell"><span class="stat-v">1</span><span class="stat-l">Run</span></div></div></div>
+  <div class="player-card"><div class="player-top"><div class="player-rank rank-s">#2</div><div><div class="player-name">Shea Langeliers</div><div class="player-pos">Catcher</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v" style="color:var(--athletics);">2</span><span class="stat-l">Hits</span></div><div class="stat-cell"><span class="stat-v">4</span><span class="stat-l">AB</span></div><div class="stat-cell"><span class="stat-v">.500</span><span class="stat-l">AVG</span></div><div class="stat-cell"><span class="stat-v">0</span><span class="stat-l">RBI</span></div></div></div>
+  <div class="player-card"><div class="player-top"><div class="player-rank rank-b">SP</div><div><div class="player-name">Luis Severino</div><div class="player-pos">Starting Pitcher (L)</div></div></div><div class="stat-grid stat-grid-4"><div class="stat-cell"><span class="stat-v">6.0</span><span class="stat-l">IP</span></div><div class="stat-cell"><span class="stat-v">7</span><span class="stat-l">K</span></div><div class="stat-cell"><span class="stat-v">6</span><span class="stat-l">Hits</span></div><div class="stat-cell"><span class="stat-v">6.00</span><span class="stat-l">ERA</span></div></div></div>
   <div class="section-title" style="color:var(--athletics);">Recent Results</div>
   <div class="game-list">
     <div class="game-row"><div><div class="game-opp">vs Texas Rangers</div><div class="game-date-lbl">Mon Apr 13</div></div><div class="game-right"><span class="game-score-text">1–8</span><span class="result-pill L">L</span></div></div>
