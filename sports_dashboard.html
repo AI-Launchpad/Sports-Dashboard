@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Jeff's Sports Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a0f;--card:#1a1a26;--card2:#22222f;--bdr:rgba(255,255,255,0.08);
+  --txt:#f0f0f8;--mut:#8080a0;
+  --win:#22c55e;--loss:#ef4444;--gold:#DAA520;
+  --sharks:#00C2CE;--cowboys:#9aafb7;--warriors:#FFC72C;--athletics:#EFB21E;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--txt);min-height:100vh;overflow-x:hidden;padding-bottom:60px;}
+
+/* HEADER */
+.app-header{padding:20px 16px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.app-title{font-family:'Bebas Neue',sans-serif;font-size:34px;letter-spacing:.04em;line-height:1;color:var(--gold);}
+.app-date{font-size:11px;color:var(--mut);font-family:'DM Mono',monospace;margin-top:4px;}
+
+/* ALL BUTTONS — native button reset + pointer cursor */
+button{font-family:'DM Sans',sans-serif;cursor:pointer;-webkit-appearance:none;appearance:none;border:none;background:transparent;color:inherit;padding:0;margin:0;touch-action:manipulation;}
+
+.refresh-btn{background:var(--card);border:1px solid var(--bdr);color:var(--txt);font-size:13px;font-weight:500;padding:10px 14px;border-radius:10px;display:flex;align-items:center;gap:6px;flex-shrink:0;min-height:44px;}
+.spin{display:inline-block;}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+/* TABS */
+.tab-bar{display:flex;overflow-x:auto;padding:16px 16px 0;scrollbar-width:none;border-bottom:1px solid var(--bdr);margin-top:16px;}
+.tab-bar::-webkit-scrollbar{display:none;}
+.tab{padding:10px 14px;font-size:13px;font-weight:500;color:var(--mut);white-space:nowrap;border-bottom:2px solid transparent;margin-bottom:-1px;min-height:44px;display:flex;align-items:center;gap:6px;flex-shrink:0;touch-action:manipulation;}
+.tab.active{color:var(--gold);border-bottom-color:var(--gold);}
+.tab[data-t="sharks"].active{color:var(--sharks);border-bottom-color:var(--sharks);}
+.tab[data-t="cowboys"].active{color:var(--cowboys);border-bottom-color:var(--cowboys);}
+.tab[data-t="warriors"].active{color:var(--warriors);border-bottom-color:var(--warriors);}
+.tab[data-t="athletics"].active{color:var(--athletics);border-bottom-color:var(--athletics);}
+.tab-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;display:inline-block;}
+.tab[data-t="all"] .tab-dot{background:var(--gold);}
+.tab[data-t="sharks"] .tab-dot{background:var(--sharks);}
+.tab[data-t="cowboys"] .tab-dot{background:var(--cowboys);}
+.tab[data-t="warriors"] .tab-dot{background:var(--warriors);}
+.tab[data-t="athletics"] .tab-dot{background:var(--athletics);}
+
+/* PANELS */
+.panel{display:none;padding:16px;}
+.panel.active{display:block;}
+
+/* STATUS */
+.status-row{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--mut);font-family:'DM Mono',monospace;margin-bottom:14px;}
+.status-dot{width:6px;height:6px;border-radius:50%;background:var(--win);flex-shrink:0;}
+
+/* TEAM CARD */
+.team-block{margin-bottom:14px;}
+.team-card-wrap{background:var(--card);border:1px solid var(--bdr);border-radius:16px;overflow:hidden;}
+.tc-bar{height:3px;display:block;width:100%;}
+
+/* tc-header is now a BUTTON — Safari will always fire click on a button */
+.tc-header{
+  display:block;width:100%;text-align:left;
+  padding:14px 14px 0;
+  background:transparent;color:inherit;
+  touch-action:manipulation;
+}
+.tc-header:active{opacity:.8;}
+
+.tc-top{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.team-badge{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:.04em;flex-shrink:0;}
+.tc-info{flex:1;min-width:0;text-align:left;}
+.tc-name{font-family:'Bebas Neue',sans-serif;font-size:19px;letter-spacing:.04em;line-height:1.1;}
+.tc-league{font-size:10px;color:var(--mut);margin-top:2px;font-family:'DM Mono',monospace;}
+.record-pill{margin-left:auto;font-family:'DM Mono',monospace;font-size:12px;font-weight:500;padding:4px 10px;border-radius:8px;background:rgba(255,255,255,.07);color:var(--txt);white-space:nowrap;flex-shrink:0;}
+.last-game{background:rgba(255,255,255,.04);border-radius:10px;padding:10px 12px;display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
+.last-game .lbl{font-size:9px;color:var(--mut);text-transform:uppercase;letter-spacing:.07em;margin-bottom:2px;}
+.last-game .matchup{font-size:13px;font-weight:500;}
+.last-game-right{display:flex;align-items:center;gap:8px;flex-shrink:0;}
+.score-big{font-family:'DM Mono',monospace;font-size:20px;font-weight:600;}
+.result-pill{font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;}
+.result-pill.W{background:rgba(34,197,94,.15);color:var(--win);}
+.result-pill.L{background:rgba(239,68,68,.15);color:var(--loss);}
+.form-row{display:flex;gap:4px;margin-bottom:10px;align-items:center;}
+.form-dot{width:27px;height:27px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;}
+.form-dot.W{background:rgba(34,197,94,.13);color:var(--win);}
+.form-dot.L{background:rgba(239,68,68,.13);color:var(--loss);}
+.form-label{font-size:10px;color:var(--mut);margin-left:4px;font-family:'DM Mono',monospace;}
+.season-record-row{display:flex;background:rgba(255,255,255,.04);border-radius:9px;margin-bottom:10px;}
+.sr-item{flex:1;text-align:center;padding:9px 4px;}
+.sr-val{font-family:'DM Mono',monospace;font-size:16px;font-weight:600;display:block;color:var(--txt);}
+.sr-lbl{font-size:9px;color:var(--mut);text-transform:uppercase;letter-spacing:.05em;display:block;margin-top:3px;}
+.sr-divider{width:1px;background:var(--bdr);align-self:stretch;}
+.next-row{font-size:11px;color:var(--mut);margin-bottom:12px;text-align:left;}
+.next-row strong{color:var(--txt);}
+
+/* EXPAND BUTTON */
+.expand-btn{
+  display:flex;width:100%;padding:11px;
+  font-size:12px;font-weight:600;
+  border-top:1px solid var(--bdr);
+  background:rgba(255,255,255,.03);color:var(--mut);
+  align-items:center;justify-content:center;gap:7px;
+  min-height:44px;touch-action:manipulation;
+}
+.expand-btn:active{background:rgba(255,255,255,.08);}
+.expand-arrow{display:inline-block;transition:transform .22s;font-size:13px;}
+
+/* STATS DRAWER */
+.stats-drawer{display:none;border-top:1px solid var(--bdr);background:var(--card2);}
+.sub-tabs{display:flex;border-bottom:1px solid var(--bdr);overflow-x:auto;scrollbar-width:none;}
+.sub-tabs::-webkit-scrollbar{display:none;}
+.sub-tab{
+  flex:1;padding:10px 8px;font-size:11px;font-weight:500;
+  color:var(--mut);white-space:nowrap;
+  min-height:44px;border-bottom:2px solid transparent;margin-bottom:-1px;
+  touch-action:manipulation;
+}
+.sub-tab.active{color:var(--txt);border-bottom-color:var(--txt);}
+.sub-tab:active{background:rgba(255,255,255,.05);}
+.sub-panel{display:none;padding:12px;}
+.sub-panel.active{display:block;}
+
+/* GAME / STANDING ROWS */
+.game-list{background:var(--card);border:1px solid var(--bdr);border-radius:11px;overflow:hidden;margin-bottom:8px;}
+.game-list:last-child{margin-bottom:0;}
+.game-row{display:flex;align-items:center;justify-content:space-between;padding:10px 13px;border-bottom:1px solid var(--bdr);min-height:48px;}
+.game-row:last-child{border-bottom:none;}
+.game-opp{font-size:13px;font-weight:500;}
+.game-date-lbl{font-size:10px;color:var(--mut);font-family:'DM Mono',monospace;margin-top:1px;}
+.game-right{display:flex;align-items:center;gap:7px;flex-shrink:0;}
+.game-score-text{font-family:'DM Mono',monospace;font-size:13px;font-weight:600;}
+.game-next{font-size:10px;color:var(--mut);font-family:'DM Mono',monospace;}
+.standing-row{display:flex;align-items:center;padding:9px 13px;border-bottom:1px solid var(--bdr);min-height:42px;}
+.standing-row:last-child{border-bottom:none;}
+.standing-num{font-family:'DM Mono',monospace;font-size:11px;color:var(--mut);min-width:24px;}
+.standing-team{flex:1;font-size:13px;font-weight:500;}
+.standing-rec{font-family:'DM Mono',monospace;font-size:12px;color:var(--mut);min-width:38px;text-align:right;}
+.standing-pct{font-family:'DM Mono',monospace;font-size:11px;color:var(--mut);min-width:44px;text-align:right;}
+.standing-row.me{background:rgba(255,255,255,.04);}
+.col-hdr{display:flex;align-items:center;padding:5px 13px;border-bottom:1px solid var(--bdr);opacity:.5;}
+.col-hdr span{font-size:9px;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;font-family:'DM Mono',monospace;}
+.sub-section-lbl{font-size:9px;color:var(--mut);text-transform:uppercase;letter-spacing:.07em;font-family:'DM Mono',monospace;margin:0 0 6px;}
+
+/* DETAIL PAGES */
+.detail-hero{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
+.detail-badge{width:52px;height:52px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:.04em;flex-shrink:0;}
+.detail-name{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:.04em;line-height:1;}
+.detail-sub{font-size:11px;color:var(--mut);font-family:'DM Mono',monospace;margin-top:2px;}
+.detail-rec{font-size:13px;font-weight:600;margin-top:4px;font-family:'DM Mono',monospace;}
+.section-title{font-size:9px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-family:'DM Mono',monospace;margin:14px 0 8px;}
+.next-game-card{background:var(--card);border:1px solid var(--bdr);border-radius:13px;padding:14px;margin-bottom:4px;}
+.ng-lbl{font-size:9px;color:var(--mut);text-transform:uppercase;letter-spacing:.08em;font-family:'DM Mono',monospace;margin-bottom:4px;}
+.ng-match{font-size:16px;font-weight:600;}
+.ng-time{font-size:11px;color:var(--mut);font-family:'DM Mono',monospace;margin-top:3px;}
+.offseason-box{padding:24px 16px;text-align:center;}
+.offseason-title{font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:.06em;color:#30303f;display:block;margin-bottom:8px;}
+.offseason-sub{font-size:13px;color:var(--mut);line-height:1.5;}
+
+/* LIVE STREAM CARD */
+.stream-card{border-radius:12px;overflow:hidden;margin-bottom:12px;border:1px solid rgba(239,178,30,.35);}
+.stream-card.live-now{border-color:rgba(239,68,68,.6);box-shadow:0 0 12px rgba(239,68,68,.15);}
+.stream-header{padding:10px 14px;display:flex;align-items:center;justify-content:space-between;gap:8px;background:rgba(239,178,30,.08);}
+.stream-card.live-now .stream-header{background:rgba(239,68,68,.12);}
+.live-dot-pulse{width:8px;height:8px;border-radius:50%;background:#ef4444;flex-shrink:0;animation:livepulse 1.2s infinite;}
+.upcoming-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+@keyframes livepulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(239,68,68,.5);}50%{opacity:.7;box-shadow:0 0 0 5px rgba(239,68,68,0);}}
+.live-label{font-size:11px;font-weight:700;font-family:'DM Mono',monospace;letter-spacing:.06em;flex-shrink:0;}
+.live-matchup{font-size:12px;font-weight:600;flex:1;text-align:center;}
+.stream-time-lbl{font-size:10px;color:var(--mut);font-family:monospace;flex-shrink:0;}
+.stream-body{background:rgba(0,0,0,.25);padding:12px 14px;display:flex;flex-direction:column;gap:8px;}
+.stream-link{display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:9px;padding:10px 14px;text-decoration:none;color:var(--txt);min-height:44px;}
+.stream-link:active{background:rgba(255,255,255,.12);}
+.stream-link-name{font-size:13px;font-weight:500;}
+.stream-link-sub{font-size:10px;color:var(--mut);margin-top:2px;font-family:'DM Mono',monospace;}
+.stream-arrow{font-size:16px;color:var(--mut);flex-shrink:0;}
+.stream-note{font-size:10px;color:var(--mut);text-align:center;font-family:'DM Mono',monospace;padding-bottom:2px;}
+
+@media(min-width:600px){
+  .app-header,.tab-bar,.panel{padding-left:22px;padding-right:22px;}
+  .app-title{font-size:44px;}
+}
+</style>
+</head>
+<body>
+
+<div class="app-header">
+  <div>
+    <div class="app-title">Jeff's Sports Dashboard</div>
+    <div class="app-date" id="last-updated">Apr 14, 2026</div>
+  </div>
+  <button class="refresh-btn" onclick="window.location.reload()"><span class="spin">↻</span> Refresh</button>
+</div>
+
+<div class="tab-bar">
+  <button class="tab active" data-t="all"      onclick="goTab('all')">     <span class="tab-dot"></span>All Teams</button>
+  <button class="tab"        data-t="sharks"   onclick="goTab('sharks')">  <span class="tab-dot"></span>Sharks</button>
+  <button class="tab"        data-t="cowboys"  onclick="goTab('cowboys')"> <span class="tab-dot"></span>Cowboys</button>
+  <button class="tab"        data-t="warriors" onclick="goTab('warriors')"><span class="tab-dot"></span>Warriors</button>
+  <button class="tab"        data-t="athletics"onclick="goTab('athletics')"><span class="tab-dot"></span>Athletics</button>
+</div>
+
+<!-- ══ ALL TEAMS ══ -->
+<div class="panel active" id="panel-all">
+  <div class="status-row"><span class="status-dot"></span><span id="status-text">Live data · Apr 14, 2026</span></div>
+
+  <!-- ── SHARKS ── -->
+  <div class="team-block"><div class="team-card-wrap">
+    <span class="tc-bar" style="background:linear-gradient(90deg,#006D7588,var(--sharks));"></span>
+    <button class="tc-header" onclick="goTab('sharks')">
+      <div class="tc-top">
+        <div class="team-badge" style="background:rgba(0,194,206,.12);color:var(--sharks);">SJ</div>
+        <div class="tc-info"><div class="tc-name" style="color:var(--sharks);">San Jose Sharks</div><div class="tc-league">NHL · Pacific · 5th Place</div></div>
+        <div class="record-pill">38–35</div>
+      </div>
+      <div class="last-game">
+        <div><div class="lbl">Last · Apr 13</div><div class="matchup">@ Nashville Predators</div></div>
+        <div class="last-game-right"><span class="score-big">3–2</span><span class="result-pill W">W</span></div>
+      </div>
+      <div class="form-row">
+        <div class="form-dot W">W</div><div class="form-dot L">L</div><div class="form-dot L">L</div><div class="form-dot L">L</div><div class="form-dot W">W</div>
+        <span class="form-label">Last 5</span>
+      </div>
+      <div class="season-record-row">
+        <div class="sr-item"><span class="sr-val">38</span><span class="sr-lbl">Wins</span></div><div class="sr-divider"></div>
+        <div class="sr-item"><span class="sr-val">35</span><span class="sr-lbl">Losses</span></div><div class="sr-divider"></div>
+        <div class="sr-item"><span class="sr-val" style="color:var(--sharks);">.521</span><span class="sr-lbl">Win%</span></div><div class="sr-divider"></div>
+        <div class="sr-item"><span class="sr-val" style="color:var(--sharks);">5th</span><span class="sr-lbl">Pacific</span></div>
+      </div>
+      <div class="next-row">→ Next: <strong>@ Chicago Blackhawks</strong> · Wed Apr 15, 5:30 PM PDT</div>
+    </button>
+    <div class="stream-card" id="sj-card-a">
+      <div class="stream-header" id="sj-hdr-a">
+        <span class="upcoming-dot" id="sj-dot-a" style="background:var(--sharks);"></span>
+        <span class="live-label" id="sj-lbl-a" style="color:var(--sharks);">TOMORROW</span>
+        <span class="live-matchup">Sharks @ Chicago</span>
+        <span class="stream-time-lbl">5:30 PM PDT</span>
+      </div>
+      <div class="stream-body">
+        <a class="stream-link" href="https://www.nhl.com/tv" target="_blank" rel="noopener"><div><div class="stream-link-name">NHL.tv / ESPN+</div><div class="stream-link-sub">Official NHL streaming · subscription required</div></div><span class="stream-arrow">→</span></a>
+        <a class="stream-link" href="https://www.nbcsportscalifornia.com" target="_blank" rel="noopener"><div><div class="stream-link-name">NBC Sports California</div><div class="stream-link-sub">Local broadcast · in-market only</div></div><span class="stream-arrow">→</span></a>
+        <a class="stream-link" href="https://www.sportsnet.ca/live" target="_blank" rel="noopener"><div><div class="stream-link-name">Sportsnet Now</div><div class="stream-link-sub">Available in Canada</div></div><span class="stream-arrow">→</span></a>
+        <div class="stream-note" id="sj-note-a">Game starts Wed Apr 15 at 5:30 PM PDT</div>
+      </div>
+    </div>
+    <button class="expand-btn" onclick="toggleDrawer('sharks')">
+      <span class="expand-arrow" id="arrow-sharks">▼</span><span id="label-sharks">Stats &amp; Schedule</span>
+    </button>
+    <div class="stats-drawer" id="drawer-sharks">
+      <div class="sub-tabs">
+        <button class="sub-tab active" onclick="openSubTab('sharks','schedule',this)">Schedule</button>
+        <button class="sub-tab" onclick="openSubTab('sharks','division',this)">Division</button>
+        <button class="sub-tab" onclick="openSubTab('sharks','conference',this)">Conference</button>
+      </div>
+      <div class="sub-panel active" id="sharks-schedule">
+        <div class="sub-section-lbl">Upcoming</div>
+        <div class="game-list">
+          <div class="game-row"><div><div class="game-opp">@ Chicago Blackhawks</div><div class="game-date-lbl">Wed Apr 15 · 5:30 PM PDT</div></div><div class="game-right"><span class="game-next">NEXT</span></div></div>
+          <div class="game-row"><div><div class="game-opp">@ Winnipeg Jets</div><div class="game-date-lbl">Thu Apr 16 · 5:00 PM PDT</div></div></div>
+        </div>
+        <div class="sub-section-lbl" style="margin-top:10px;">Recent Results</div>
+        <div class="game-list">
+          <div class="game-row"><div><div class="game-opp">@ Nashville Predators</div><div class="game-date-lbl">Mon Apr 13</div></div><div class="game-right"><span class="game-score-text">3–2</span><span class="result-pill W">W</span></div></div>
+          <div class="game-row"><div><div class="game-opp">vs Vancouver Canucks</div><div class="game-date-lbl">Sat Apr 11</div></div><div class="game-right"><span class="game-score-text">3–4</span><span class="result-pill L">L</span></div></div>
+          <div class="game-row"><div><div class="game-opp">@ Anaheim Ducks</div><div class="game-date-lbl">Thu Apr 9</div></div><div class="game-right"><span class="game-score-text">1–6</span><span class="result-pill L">L</span></div></div>
+          <div class="game-row"><div><div class="game-opp">vs Edmonton Oilers</div><div class="game-date-lbl">Wed Apr 8</div></div><div class="game-right"><span class="game-score-text">2–5</span><span class="result-pill L">L</span></div></div>
+          <div class="game-row"><div><div class="game-opp">vs Chicago Blackhawks</div><div class="game-date-lbl">Mon Apr 6</div></div><div class="game-right"><span class="game-score-text">3–2</span><span class="result-pill W">W</span></div></div>
+        </div>
+      </div>
+      <div class="sub-panel" id="sharks-division">
+        <div class="sub-section-lbl">NHL · Pacific Division</div>
+        <div class="game-list">
+          <div class="col-hdr"><span style="min-width:24px;"></span><span style="flex:1;">Team</span><span style="min-width:38px;text-align:right;">W–L</span><span style="min-width:44px;text-align:right;">PCT</span></div>
+          <div class="standing-row"><span class="standing-num">1</span><span class="standing-team">VGK Golden Knights</span><span class="standing-rec">38–26</span><span class="standing-pct">.594</span></div>
+          <div class="standing-row"><span class="standing-num">2</span><span class="standing-team">ANA Ducks</span><span class="standing-rec">42–32</span><span class="standing-pct">.568</span></div>
+          <div class="standing-row"><span class="standing-num">3</span><span class="standing-team">EDM Oilers</span><span class="standing-rec">40–30</span><span class="standing-pct">.571</span></div>
+          <div class="standing-row"><span class="standing-num">4</span><span class="standing-team">LAK Kings</span><span class="standing-rec">35–26</span><span class="standing-pct">.574</span></div>
+          <div class="standing-row me" style="border-left:2px solid var(--sharks);"><span class="standing-num" style="color:var(--sharks);">5</span><span class="standing-team" style="color:var(--sharks);">◀ SJ Sharks</span><span class="standing-rec">38–35</span><span class="standing-pct" style="color:var(--sharks);">.521</span></div>
+          <div class="standing-row"><span class="standing-num">6</span><span class="standing-team">SEA Kraken</span><span class="standing-rec">34–35</span><span class="standing-pct">.493</span></div>
+          <div class="standing-row"><span class="standing-num">7</span><span class="standing-team">CGY Flames</span><span class="standing-rec">33–38</span><span class="standing-pct">.465</span></div>
+          <div class="standing-row"><span class="standing-num">8</span><span class="standing-team">VAN Canucks</span><span class="standing-rec">24–48</span><span class="standing-pct">.333</span></div>
+        </div>
+      </div>
+      <div class="sub-panel" id="sharks-conference">
+        <div class="sub-section-lbl">NHL · Western Conference</div>
+        <div class="game-list">
+          <div class="col-hdr"><span style="min-width:24px;"></span><span style="flex:1;">Team</span><span style="min-width:38px;text-align:right;">W–L</span><span style="min-width:44px;text-align:right;">PCT</span></div>
+          <div class="standing-row"><span class="standing-num">1</span><span class="standing-team">COL Avalanche 🏆</span><span class="standing-rec">53–16</span><span class="standing-pct">.768</span></div>
+          <div class="standing-row"><span class="standing-num">2</span><span class="standing-team">DAL Stars</span><span class="standing-rec">49–20</span><span class="standing-pct">.710</span></div>
+          <div class="standing-row"><span class="standing-num">3</span><span class="standing-team">MIN Wild</span><span class="standing-rec">45–24</span><span class="standing-pct">.652</span></div>
+          <div class="standing-row"><span class="standing-num">4</span><span class="standing-team">VGK Golden Knights</span><span class="standing-rec">38–26</span><span class="standing-pct">.594</span></div>
+          <div class="standing-row"><span class="standing-num">5</span><span class="standing-team">UTA Mammoth</span><span class="standing-rec">42–32</span><span class="standing-pct">.568</span></div>
+          <div class="standing-row"><span class="standing-num">6</span><span class="standing-team">EDM Oilers</span><span class="standing-rec">40–30</span><span class="standing-pct">.571</span></div>
+          <div class="standing-row"><span class="standing-num">7</span><span class="standing-team">ANA Ducks</span><span class="standing-rec">42–32</span><span class="standing-pct">.568</span></div>
+          <div class="standing-row"><span class="standing-num">8</span><span class="standing-team">LAK Kings</span><span class="standing-rec">35–26</span><span class="standing-pct">.574</span></div>
+          <div class="standing-row"><span class="standing-num">9</span><span class="standing-team">NSH Predators</span><span class="standing-rec">38–33</span><span class="standing-pct">.535</span></div>
+          <div class="standing-row"><span class="standing-num">10</span><span class="standing-team">STL Blues</span><span class="standing-rec">35–33</span><span class="standing-pct">.515</span></div>
+          <div class="standing-row"><span class="standing-num">11</span><span class="standing-team">WPG Jets</span><span class="standing-rec">35–33</span><span class="standing-pct">.515</span></div>
+          <div class="standing-row me" style="border-left:2px solid var(--sharks);"><span class="standing-num" style="color:var(--sharks);">12</span><span class="standing-team" style="color:var(--sharks);">◀ SJ Sharks</span><span class="standing-rec">38–35</span><span class="standing-pct" style="color:var(--sharks);">.521</span></div>
+          <div class="standing-row"><span class="standing-num">13</span><span class="standing-team">SEA Kraken</span><span class="standing-rec">34–35</span><span class="standing-pct">.493</span></div>
+          <div class="standing-row"><span class="standing-num">14</span><span class="standing-team">CGY Flames</span><span class="standing-rec">33–38</span><span class="standing-pct">.465</span></div>
+          <div class="standing-row"><span class="standing-num">15</span><span class="standing-team">CHI Blackhawks</span><span class="standing-rec">28–39</span><span class="standing-pct">.418</span></div>
+          <div class="standing-row"><span class="standing-num">16</span><span class="standing-team">VAN Canucks</span><span class="standing-rec">24–48</span><span class="standing-pct">.333</span></div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+  <!-- ── COWBOYS ── -->
+  <div class="team-block"><div class="team-card-wrap">
+    <span class="tc-bar" style="background:linear-gradient(90deg,#00359488,var(--cowboys));"></span>
+    <button class="tc-header" onclick="goTab('cowboys')">
+      <div class="tc-top">
+        <div class="team-badge" style="background:rgba(154,175,183,.12);color:var(--cowboys);">DAL</div>
+        <div class="tc-info"><div class="tc-name" style="color:var(--cowboys);">Dallas Cowboys</div><div class="tc-league">NFL · NFC East · Offseason 2026</div></div>
+        <div class="record-pill">9–8–1</div>
+      </div>
+      <div class="last-game">
+        <div><div class="lbl">Final · Jan 4, 2026</div><div class="matchup">@ NY Giants</div></div>
+        <div class="last-game-right"><span class="score-big">17–34</span><span class="result-pill L">L</span></div>
+      </div>
+      <div class="form-row">
+        <div class="form-dot L">L</div><div class="form-dot W">W</div><div class="form-dot W">W</div><div class="form-dot W">W</div><div class="form-dot W">W</div>
+        <span class="form-label">Last 5</span>
+      </div>
+      <div class="season-record-row">
+        <div class="sr-item"><span class="sr-val">9</span><span class="sr-lbl">Wins</span></div><div class="sr-divider"></div>
+        <div class="sr-item"><span class="sr-val">8</span><span class="sr-lbl">Losses</span></div><div class="sr-divider"></div>
+        <div class="sr-item"><span class="sr-val" style="color:var(--cowboys);">.529</span><span class="sr-lbl">Win%</span></div><div class="sr-divider"></div>
+        <div class="sr-item"><span class="sr-val" style="color:var(--cowboys);">3rd</span><span class="sr-lbl">NFC East</span></div>
+      </div>
+      <div class="next-row">→ NFL Offseason · 2026 schedule not yet released</div>
+    </button>
+    <div class="stream-card" style="border-color:rgba(154,175,183,.25);">
+      <div class="stream-header" style="background:rgba(154,175,183,.08);">
+        <span class="upcoming-dot" style="background:var(--cowboys);opacity:.5;"></span>
+        <span class="live-label" style="color:var(--cowboys);">OFFSEASON</span>
+        <span class="live-matchup" style="color:var(--mut);">No games scheduled</span>
+      </div>
+      <div class="stream-body">
+        <a class="stream-link" href="https://www.nfl.com/plus" target="_blank" rel="noopener"><div><div class="stream-link-name">NFL+ / NFL Network</div><div class="stream-link-sub">Official NFL streaming platform</div></div><span class="stream-arrow">→</span></a>
+        <a class="stream-link" href="https://www.espn.com/watch" target="_blank" rel="noopener"><div><div class="stream-link-name">ESPN / ESPN+</div><div class="stream-link-sub">NFL games &amp; analysis</div></div><span class="stream-arrow">→</span></a>
+        <div class="stream-note">Check back when the 2026 season schedule is released</div>
+      </div>
+    </div>
+    <button class="expand-btn" onclick="toggleDrawer('cowboys')">
+      <span class="expand-arrow" id="arrow-cowboys">▼</span><span id="label-cowboys">Stats &amp; Schedule</span>
+    </button>
+    <div class="stats-drawer" id="drawer-cowboys">
+      <div class="sub-tabs">
+        <button class="sub-tab active" onclick="openSubTab('cowboys','results',this)">Results</button>
+        <button class="sub-tab" onclick="openSubTab('cowboys','division',this)">Division</button>
+        <button class="sub-tab" onclick="openSubTab('cowboys','conference',this)">Conference</button>
+      </div>
+      <div class="sub-panel active" id="cowboys-results">
+        <div class="sub-section-lbl">2025 Season — Late Games</div>
+        <div class="game-list">
+          <div class="game-row"><div><div class="game-opp">@ NY Giants</div><div class="game-date-lbl">Jan 4, 2026</div></div><div class="game-right"><span class="game-score-text">17–34</span><span class="result-pill L">L</span></div></div>
+          <div class="game-row"><div><div class="game-opp">vs Washington (Xmas)</div><div class="game-date-lbl">Dec 25, 2025</div></div><div class="game-right"><span class="game-score-text">30–23</span><span class="result-pill W">W</span></div></div>
+          <div class="game-row"><div><div class="game-opp">vs KC Chiefs (Thanksgiving)</div><div class="game-date-lbl">Nov 27, 2025</div></div><div class="game-right"><span class="game-score-text">31–28</span><span class="result-pill W">W</span></div></div>
+          <div class="game-row"><div><div class="game-opp">vs Philadelphia Eagles</div><div class="game-date-lbl">Nov 23, 2025</div></div><div class="game-right"><span class="game-score-text">24–21</span><span class="result-pill W">W</span></div></div>
+          <div class="game-row"><div><div class="game-opp">@ Las Vegas Raiders</div><div class="game-date-lbl">Nov 17, 2025</div></div><div class="game-right"><span class="game-score-text">33–16</span><span class="result-pill W">W</span></div></div>
+        </div>
+        <div class="offseason-box"><span class="offseason-title">OFFSEASON</span><span class="offseason-sub">2026 NFL schedule has not been released yet.</span></div>
+      </div>
+      <div class="sub-panel" id="cowboys-division">
+        <div class="sub-section-lbl">NFL · NFC East — 2025 Final</div>
+        <div class="game-list">
+          <div class="col-hdr"><span style="min-width:24px;"></span><span style="flex:1;">Team</span><span style="min-width:38px;text-align:right;">W–L</span><span style="min-width:44px;text-align:right;">PCT</span></div>
+          <div class="standing-row"><span class="standing-num">1</span><span class="standing-team">PHI Eagles</span><span class="standing-rec">14–3</span><span class="standing-pct">.824</span></div>
+          <div class="standing-row"><span class="standing-num">2</span><span class="standing-team">WAS Commanders</span><span class="standing-rec">12–5</span><span class="standing-pct">.706</span></div>
+          <div class="standing-row me" style="border-left:2px solid var(--cowboys);"><span class="standing-num" style="color:var(--cowboys);">3</span><span class="standing-team" style="color:var(--cowboys);">◀ DAL Cowboys</span><span class="standing-rec">9–8</span><span class="standing-pct" style="color:var(--cowboys);">.529</span></div>
+          <div class="standing-row"><span class="standing-num">4</span><span class="standing-team">NYG Giants</span><span class="standing-rec">3–14</span><span class="standing-pct">.176</span></div>
+        </div>
+      </div>
+      <div class="sub-panel" id="cowboys-conference">
+        <div class="sub-section-lbl">NFL · NFC — 2025 Final</div>
+        <div class="game-list">
+          <div class="col-hdr"><span style="min-width:24px;"></span><span style="flex:1;">Team</span><span style="min-width:38px;text-align:right;">W–L</span><span style="min-width:44px;text-align:right;">PCT</span></div>
+          <div class="standing-row"><span class="standing-num">1</span><span class="standing-team">DET Lions</span><span class="standing-rec">15–2</span><span class="standing-pct">.882</span></div>
+          <div class="standing-row"><span class="standing-num">2</span><span class="standing-team">PHI Eagles</span><span class="standing-rec">14–3</span><span class="standing-pct">.824</span></div>
+          <div class="standing-row"><span class="standing-num">3</span><span class="standing-team">MIN Vikings</span><span class="standing-rec">14–3</span><span class="standing-pct">.824</span></div>
+          <div class="standing-row"><span class="standing-num">4</span><span class="standing-team">WAS Commanders</span><span class="standing-rec">12–5</span><span class="standing-pct">.706</span></div>
+          <div class="standing-row"><span class="standing-num">5</span><span class="standing-team">GB Packers</span><span class="standing-rec">11–6</span><span class="standing-pct">.647</span></div>
+          <div class="standing-row"><span class="standing-num">6</span><span class="standing-team">LAR Rams</span><span class="standing-rec">10–7</span><span class="standing-pct">.588</span></div>
+          <div class="standing-row"><span class="standing-num">7</span><span class="standing-team">ATL Falcons</span><span class="standing-rec">9–8</span><span class="standing-pct">.529</span></div>
+          <div class="standing-row me" style="border-left:2px solid var(--cowboys);"><span class="standing-num" style="color:var(--cowboys);">—</span><span class="standing-team" style="color:var(--cowboys);">◀ DAL Cowboys (missed playoffs)</span><span class="standing-rec">9–8</span><span class="standing-pct" style="color:var(--cowboys);">.529</span></div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+  <!-- ── WARRIORS ── -->
+  <div class="team-block"><div class="team-card-wrap">
+    <span class="tc-bar" style="background:linear-gradient(90deg,#1D428A88,var(--warriors));"></span>
+    <button class="tc-header" onclick="goTab('warriors')">
+      <div class="tc-top">
+        <div class="team-badge" style="background:rgba(255,199,44,.12);color:var(--warriors);">GS</div>
+        <div class="tc-info"><div class="tc-name" style="color:var(--warriors);">Golden State Warriors</div><div class="tc-league">NBA · Pacific · 4th · Season Complete</div></div>
+        <div class="record-pill">37–45</div>
+      </div>
+      <div class="last-game">
+        <div><div class="lbl">Final · Apr 12</div><div class="matchup">@ LA Clippers</div></div>
+        <div class="last-game-right"><span class="score-big">110–115</span><span class="result-pill L">L</span></div>
+      </div>
+      <div class="form-row">
+        <div class="form-dot L">L</div><div class="form-dot L">L</div><div class="form-dot L">L</div><div class="form-dot L">L</div><div class="form-dot L">L</div>
+        <span class="form-label">Last 5</span>
+      </div>
+      <div class="season-record-row">
+        <div class="sr-item"><span class="sr-val">37</span><span class="sr-lbl">Wins</span></div><div class="sr-divider"></div>
+        <div class="sr-item"><span class="sr-val">45</span><span class="sr-lbl">Losses</span></div><div class="sr-divider"></div>
+        <div class="sr-item"><span class="sr-val" style="color:var(--warriors);">.451</span><span class="sr-lbl">Win%</span></div><div class="sr-divider"></div>
+        <div class="sr-item"><span class="sr-val" style="color:var(--warriors);">4th</span><span class="sr-lbl">Pacific</span></div>
+      </div>
+      <div class="next-row">→ NBA season complete — Final record: 37–45</div>
+    </button>
+    <div class="stream-card" style="border-color:rgba(255,199,44,.25);">
+      <div class="stream-header" style="background:rgba(255,199,44,.08);">
+        <span class="upcoming-dot" style="background:var(--warriors);opacity:.5;"></span>
+        <span class="live-label" style="color:var(--warriors);">OFFSEASON</span>
+        <span class="live-matchup" style="color:var(--mut);">Season complete · 37–45</span>
+      </div>
+      <div class="stream-body">
+        <a class="stream-link" href="https://www.nba.com/warriors/league-pass" target="_blank" rel="noopener"><div><div class="stream-link-name">NBA League Pass</div><div class="stream-link-sub">Official NBA streaming · replays &amp; next season</div></div><span class="stream-arrow">→</span></a>
+        <a class="stream-link" href="https://www.espn.com/watch" target="_blank" rel="noopener"><div><div class="stream-link-name">ESPN / ESPN+</div><div class="stream-link-sub">NBA playoffs &amp; analysis</div></div><span class="stream-arrow">→</span></a>
+        <div class="stream-note">NBA Playoffs underway — Warriors did not qualify</div>
+      </div>
+    </div>
+    <button class="expand-btn" onclick="toggleDrawer('warriors')">
+      <span class="expand-arrow" id="arrow-warriors">▼</span><span id="label-warriors">Stats &amp; Schedule</span>
+    </button>
+    <div class="stats-drawer" id="drawer-warriors">
+      <div class="sub-tabs">
+        <button class="sub-tab active" onclick="openSubTab('warriors','results',this)">Results</button>
+        <button class="sub-tab" onclick="openSubTab('warriors','division',this)">Division</button>
+        <button class="sub-tab" onclick="openSubTab('warriors','conference',this)">Conference</button>
+      </div>
+      <div class="sub-panel active" id="warriors-results">
+        <div class="sub-section-lbl">Recent Results</div>
+        <div class="game-list">
+          <div class="game-row"><div><div class="game-opp">@ LA Clippers</div><div class="game-date-lbl">Sun Apr 12</div></div><div class="game-right"><span class="game-score-text">110–115</span><span class="result-pill L">L</span></div></div>
+          <div class="game-row"><div><div class="game-opp">@ Sacramento Kings</div><div class="game-date-lbl">Fri Apr 10</div></div><div class="game-right"><span class="game-score-text">118–124</span><span class="result-pill L">L</span></div></div>
+          <div class="game-row"><div><div class="game-opp">vs LA Lakers</div><div class="game-date-lbl">Thu Apr 9</div></div><div class="game-right"><span class="game-score-text">103–119</span><span class="result-pill L">L</span></div></div>
+          <div class="game-row"><div><div class="game-opp">vs Sacramento Kings</div><div class="game-date-lbl">Tue Apr 7</div></div><div class="game-right"><span class="game-score-text">110–105</span><span class="result-pill W">W</span></div></div>
+          <div class="game-row"><div><div class="game-opp">vs Houston Rockets</div><div class="game-date-lbl">Sun Apr 5</div></div><div class="game-right"><span class="game-score-text">116–117</span><span class="result-pill L">L</span></div></div>
+        </div>
+      </div>
+      <div class="sub-panel" id="warriors-division">
+        <div class="sub-section-lbl">NBA · Pacific Division — Final</div>
+        <div class="game-list">
+          <div class="col-hdr"><span style="min-width:24px;"></span><span style="flex:1;">Team</span><span style="min-width:38px;text-align:right;">W–L</span><span style="min-width:44px;text-align:right;">PCT</span></div>
+          <div class="standing-row"><span class="standing-num">1</span><span class="standing-team">LAL Lakers</span><span class="standing-rec">53–29</span><span class="standing-pct">.646</span></div>
+          <div class="standing-row"><span class="standing-num">2</span><span class="standing-team">PHX Suns</span><span class="standing-rec">45–37</span><span class="standing-pct">.549</span></div>
+          <div class="standing-row"><span class="standing-num">3</span><span class="standing-team">LAC Clippers</span><span class="standing-rec">42–40</span><span class="standing-pct">.512</span></div>
+          <div class="standing-row me" style="border-left:2px solid var(--warriors);"><span class="standing-num" style="color:var(--warriors);">4</span><span class="standing-team" style="color:var(--warriors);">◀ GSW Warriors</span><span class="standing-rec">37–45</span><span class="standing-pct" style="color:var(--warriors);">.451</span></div>
+          <div class="standing-row"><span class="standing-num">5</span><span class="standing-team">SAC Kings</span><span class="standing-rec">22–60</span><span class="standing-pct">.268</span></div>
+        </div>
+      </div>
+      <div class="sub-panel" id="warriors-conference">
+        <div class="sub-section-lbl">NBA · Western Conference — Final</div>
+        <div class="game-list">
+          <div class="col-hdr"><span style="min-width:24px;"></span><span style="flex:1;">Team</span><span style="min-width:38px;text-align:right;">W–L</span><span style="min-width:44px;text-align:right;">PCT</span></div>
+          <div class="standing-row"><span class="standing-num">1</span><span class="standing-team">OKC Thunder</span><span class="standing-rec">64–18</span><span class="standing-pct">.780</span></div>
+          <div class="standing-row"><span class="standing-num">2</span><span class="standing-team">SAS Spurs</span><span class="standing-rec">62–20</span><span class="standing-pct">.756</span></div>
+          <div class="standing-row"><span class="standing-num">3</span><span class="standing-team">DEN Nuggets</span><span class="standing-rec">54–28</span><span class="standing-pct">.659</span></div>
+          <div class="standing-row"><span class="standing-num">4</span><span class="standing-team">HOU Rockets</span><span class="standing-rec">52–30</span><span class="standing-pct">.634</span></div>
+          <div class="standing-row"><span class="standing-num">5</span><span class="standing-team">LAL Lakers</span><span class="standing-rec">53–29</span><span class="standing-pct">.646</span></div>
+          <div class="standing-row"><span class="standing-num">6</span><span class="standing-team">MIN Timberwolves</span><span class="standing-rec">49–33</span><span class="standing-pct">.598</span></div>
+          <div class="standing-row"><span class="standing-num">7</span><span class="standing-team">PHX Suns</span><span class="standing-rec">45–37</span><span class="standing-pct">.549</span></div>
+          <div class="standing-row"><span class="standing-num">8</span><span class="standing-team">POR Trail Blazers</span><span class="standing-rec">42–40</span><span class="standing-pct">.512</span></div>
+          <div class="standing-row"><span class="standing-num">9</span><span class="standing-team">LAC Clippers</span><span class="standing-rec">42–40</span><span class="standing-pct">.512</span></div>
+          <div class="standing-row me" style="border-left:2px solid var(--warriors);"><span class="standing-num" style="color:var(--warriors);">10</span><span class="standing-team" style="color:var(--warriors);">◀ GSW Warriors</span><span class="standing-rec">37–45</span><span class="standing-pct" style="color:var(--warriors);">.451</span></div>
+          <div class="standing-row"><span class="standing-num">11</span><span class="standing-team">MEM Grizzlies</span><span class="standing-rec">25–57</span><span class="standing-pct">.305</span></div>
+          <div class="standing-row"><span class="standing-num">12</span><span class="standing-team">NOP Pelicans</span><span class="standing-rec">26–56</span><span class="standing-pct">.317</span></div>
+          <div class="standing-row"><span class="standing-num">13</span><span class="standing-team">DAL Mavericks</span><span class="standing-rec">26–56</span><span class="standing-pct">.317</span></div>
+          <div class="standing-row"><span class="standing-num">14</span><span class="standing-team">UTA Jazz</span><span class="standing-rec">22–60</span><span class="standing-pct">.268</span></div>
+          <div class="standing-row"><span class="standing-num">15</span><span class="standing-team">SAC Kings</span><span class="standing-rec">22–60</span><span class="standing-pct">.268</span></div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+  <!-- ── ATHLETICS ── -->
+  <div class="team-block"><div class="team-card-wrap">
+    <span class="tc-bar" style="background:linear-gradient(90deg,#00383188,var(--athletics));"></span>
+    <button class="tc-header" onclick="goTab('athletics')">
+      <div class="tc-top">
+        <div class="team-badge" style="background:rgba(239,178,30,.12);color:var(--athletics);">ATH</div>
+        <div class="tc-info"><div class="tc-name" style="color:var(--athletics);">Athletics</div><div class="tc-league">MLB · AL West · 2nd Place</div></div>
+        <div class="record-pill">8–9</div>
+      </div>
+      <div class="last-game">
+        <div><div class="lbl">Last · Apr 13</div><div class="matchup">vs Texas Rangers</div></div>
+        <div class="last-game-right"><span class="score-big">1–8</span><span class="result-pill L">L</span></div>
+      </div>
+      <div class="form-row">
+        <div class="form-dot L">L</div><div class="form-dot W">W</div><div class="form-dot W">W</div><div class="form-dot W">W</div><div class="form-dot W">W</div>
+        <span class="form-label">Last 5</span>
+      </div>
+      <div class="season-record-row">
+        <div class="sr-item"><span class="sr-val">8</span><span class="sr-lbl">Wins</span></div><div class="sr-divider"></div>
+        <div class="sr-item"><span class="sr-val">9</span><span class="sr-lbl">Losses</span></div><div class="sr-divider"></div>
+        <div class="sr-item"><span class="sr-val" style="color:var(--athletics);">.471</span><span class="sr-lbl">Win%</span></div><div class="sr-divider"></div>
+        <div class="sr-item"><span class="sr-val" style="color:var(--athletics);">2nd</span><span class="sr-lbl">AL West</span></div>
+      </div>
+      <div class="next-row">→ Next: <strong>vs Texas Rangers</strong> · Tue Apr 14, 6:40 PM PDT</div>
+    </button>
+    <div class="stream-card" id="ath-card-a">
+      <div class="stream-header" id="ath-hdr-a">
+        <span class="upcoming-dot" id="ath-dot-a" style="background:var(--athletics);"></span>
+        <span class="live-label" id="ath-lbl-a" style="color:var(--athletics);">TONIGHT</span>
+        <span class="live-matchup">Athletics vs Texas Rangers</span>
+        <span class="stream-time-lbl">6:40 PM PDT</span>
+      </div>
+      <div class="stream-body">
+        <a class="stream-link" href="https://www.mlb.tv" target="_blank" rel="noopener"><div><div class="stream-link-name">MLB.tv</div><div class="stream-link-sub">Official MLB streaming · subscription required</div></div><span class="stream-arrow">→</span></a>
+        <a class="stream-link" href="https://www.nbcsportscalifornia.com" target="_blank" rel="noopener"><div><div class="stream-link-name">NBC Sports California</div><div class="stream-link-sub">Local broadcast · in-market only</div></div><span class="stream-arrow">→</span></a>
+        <a class="stream-link" href="https://www.youtube.com/mlb" target="_blank" rel="noopener"><div><div class="stream-link-name">MLB on YouTube</div><div class="stream-link-sub">Free highlights &amp; select games</div></div><span class="stream-arrow">→</span></a>
+        <div class="stream-note" id="ath-note-a">Game starts Tue Apr 14 at 6:40 PM PDT</div>
+      </div>
+    </div>
+    <button class="expand-btn" onclick="toggleDrawer('athletics')">
+      <span class="expand-arrow" id="arrow-athletics">▼</span><span id="label-athletics">Stats &amp; Schedule</span>
+    </button>
+    <div class="stats-drawer" id="drawer-athletics">
+      <div class="sub-tabs">
+        <button class="sub-tab active" onclick="openSubTab('athletics','schedule',this)">Schedule</button>
+        <button class="sub-tab" onclick="openSubTab('athletics','division',this)">Division</button>
+        <button class="sub-tab" onclick="openSubTab('athletics','league',this)">AL League</button>
+      </div>
+      <div class="sub-panel active" id="athletics-schedule">
+        <div class="sub-section-lbl">Upcoming</div>
+        <div class="game-list">
+          <div class="game-row"><div><div class="game-opp">vs Texas Rangers</div><div class="game-date-lbl">Tue Apr 14 · 6:40 PM PDT</div></div><div class="game-right"><span class="game-next">NEXT</span></div></div>
+          <div class="game-row"><div><div class="game-opp">vs Texas Rangers</div><div class="game-date-lbl">Wed Apr 15 · 6:40 PM PDT</div></div></div>
+          <div class="game-row"><div><div class="game-opp">vs Texas Rangers</div><div class="game-date-lbl">Thu Apr 16 · 12:05 PM PDT</div></div></div>
+          <div class="game-row"><div><div class="game-opp">vs Chicago White Sox</div><div class="game-date-lbl">Fri Apr 17 · 6:40 PM PDT</div></div></div>
+          <div class="game-row"><div><div class="game-opp">vs Chicago White Sox</div><div class="game-date-lbl">Sat Apr 18 · 1:05 PM PDT</div></div></div>
+        </div>
+        <div class="sub-section-lbl" style="margin-top:10px;">Recent Results</div>
+        <div class="game-list">
+          <div class="game-row"><div><div class="game-opp">vs Texas Rangers</div><div class="game-date-lbl">Mon Apr 13</div></div><div class="game-right"><span class="game-score-text">1–8</span><span class="result-pill L">L</span></div></div>
+          <div class="game-row"><div><div class="game-opp">@ NY Mets</div><div class="game-date-lbl">Sun Apr 12</div></div><div class="game-right"><span class="game-score-text">1–0</span><span class="result-pill W">W</span></div></div>
+          <div class="game-row"><div><div class="game-opp">@ NY Mets</div><div class="game-date-lbl">Sat Apr 11</div></div><div class="game-right"><span class="game-score-text">11–6</span><span class="result-pill W">W</span></div></div>
+          <div class="game-row"><div><div class="game-opp">@ NY Mets</div><div class="game-date-lbl">Fri Apr 10</div></div><div class="game-right"><span class="game-score-text">4–0</span><span class="result-pill W">W</span></div></div>
+          <div class="game-row"><div><div class="game-opp">@ NY Yankees</div><div class="game-date-lbl">Thu Apr 9</div></div><div class="game-right"><span class="game-score-text">1–0</span><span class="result-pill W">W</span></div></div>
+        </div>
+      </div>
+      <div class="sub-panel" id="athletics-division">
+        <div class="sub-section-lbl">MLB · AL West Division</div>
+        <div class="game-list">
+          <div class="col-hdr"><span style="min-width:24px;"></span><span style="flex:1;">Team</span><span style="min-width:38px;text-align:right;">W–L</span><span style="min-width:44px;text-align:right;">PCT</span></div>
+          <div class="standing-row"><span class="standing-num">1</span><span class="standing-team">TEX Rangers</span><span class="standing-rec">9–7</span><span class="standing-pct">.563</span></div>
+          <div class="standing-row me" style="border-left:2px solid var(--athletics);"><span class="standing-num" style="color:var(--athletics);">2</span><span class="standing-team" style="color:var(--athletics);">◀ Athletics</span><span class="standing-rec">8–9</span><span class="standing-pct" style="color:var(--athletics);">.471</span></div>
+          <div class="standing-row"><span class="standing-num">3</span><span class="standing-team">LAA Angels</span><span class="standing-rec">8–9</span><span class="standing-pct">.471</span></div>
+          <div class="standing-row"><span class="standing-num">4</span><span class="standing-team">SEA Mariners</span><span class="standing-rec">8–9</span><span class="standing-pct">.471</span></div>
+          <div class="standing-row"><span class="standing-num">5</span><span class="standing-team">HOU Astros</span><span class="standing-rec">6–11</span><span class="standing-pct">.353</span></div>
+        </div>
+      </div>
+      <div class="sub-panel" id="athletics-league">
+        <div class="sub-section-lbl">MLB · American League</div>
+        <div class="game-list">
+          <div class="col-hdr"><span style="min-width:24px;"></span><span style="flex:1;">Team</span><span style="min-width:38px;text-align:right;">W–L</span><span style="min-width:44px;text-align:right;">PCT</span></div>
+          <div class="standing-row"><span class="standing-num">1</span><span class="standing-team">CLE Guardians (C)</span><span class="standing-rec">10–7</span><span class="standing-pct">.588</span></div>
+          <div class="standing-row"><span class="standing-num">2</span><span class="standing-team">MIN Twins (C)</span><span class="standing-rec">10–7</span><span class="standing-pct">.588</span></div>
+          <div class="standing-row"><span class="standing-num">3</span><span class="standing-team">BAL Orioles (E)</span><span class="standing-rec">9–7</span><span class="standing-pct">.563</span></div>
+          <div class="standing-row"><span class="standing-num">4</span><span class="standing-team">NYY Yankees (E)</span><span class="standing-rec">9–7</span><span class="standing-pct">.563</span></div>
+          <div class="standing-row"><span class="standing-num">5</span><span class="standing-team">TEX Rangers (W)</span><span class="standing-rec">9–7</span><span class="standing-pct">.563</span></div>
+          <div class="standing-row"><span class="standing-num">6</span><span class="standing-team">TB Rays (E)</span><span class="standing-rec">8–7</span><span class="standing-pct">.533</span></div>
+          <div class="standing-row me" style="border-left:2px solid var(--athletics);"><span class="standing-num" style="color:var(--athletics);">7</span><span class="standing-team" style="color:var(--athletics);">◀ Athletics (W)</span><span class="standing-rec">8–9</span><span class="standing-pct" style="color:var(--athletics);">.471</span></div>
+          <div class="standing-row"><span class="standing-num">8</span><span class="standing-team">LAA Angels (W)</span><span class="standing-rec">8–9</span><span class="standing-pct">.471</span></div>
+          <div class="standing-row"><span class="standing-num">9</span><span class="standing-team">SEA Mariners (W)</span><span class="standing-rec">8–9</span><span class="standing-pct">.471</span></div>
+          <div class="standing-row"><span class="standing-num">10</span><span class="standing-team">DET Tigers (C)</span><span class="standing-rec">7–9</span><span class="standing-pct">.438</span></div>
+          <div class="standing-row"><span class="standing-num">11</span><span class="standing-team">KC Royals (C)</span><span class="standing-rec">7–9</span><span class="standing-pct">.438</span></div>
+          <div class="standing-row"><span class="standing-num">12</span><span class="standing-team">TOR Blue Jays (E)</span><span class="standing-rec">6–9</span><span class="standing-pct">.400</span></div>
+          <div class="standing-row"><span class="standing-num">13</span><span class="standing-team">BOS Red Sox (E)</span><span class="standing-rec">6–10</span><span class="standing-pct">.375</span></div>
+          <div class="standing-row"><span class="standing-num">14</span><span class="standing-team">CWS White Sox (C)</span><span class="standing-rec">6–10</span><span class="standing-pct">.375</span></div>
+          <div class="standing-row"><span class="standing-num">15</span><span class="standing-team">HOU Astros (W)</span><span class="standing-rec">6–11</span><span class="standing-pct">.353</span></div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+</div><!-- end panel-all -->
+
+<!-- ══ SHARKS DETAIL ══ -->
+<div class="panel" id="panel-sharks">
+  <div class="detail-hero">
+    <div class="detail-badge" style="background:rgba(0,194,206,.12);color:var(--sharks);">SJ</div>
+    <div><div class="detail-name" style="color:var(--sharks);">Sharks</div><div class="detail-sub">NHL · Pacific Division</div><div class="detail-rec">38–35 · .521</div></div>
+  </div>
+  <div class="season-record-row" style="margin-bottom:16px;">
+    <div class="sr-item"><span class="sr-val">38</span><span class="sr-lbl">Wins</span></div><div class="sr-divider"></div>
+    <div class="sr-item"><span class="sr-val">35</span><span class="sr-lbl">Losses</span></div><div class="sr-divider"></div>
+    <div class="sr-item"><span class="sr-val" style="color:var(--sharks);">.521</span><span class="sr-lbl">Win%</span></div><div class="sr-divider"></div>
+    <div class="sr-item"><span class="sr-val" style="color:var(--sharks);">5th</span><span class="sr-lbl">Pacific</span></div>
+  </div>
+  <div class="next-game-card"><div class="ng-lbl">Next Game</div><div class="ng-match">@ Chicago Blackhawks</div><div class="ng-time">Wed Apr 15 · 5:30 PM PDT</div></div>
+  <div class="stream-card" id="sj-card-b">
+    <div class="stream-header" id="sj-hdr-b">
+      <span class="upcoming-dot" id="sj-dot-b" style="background:var(--sharks);"></span>
+      <span class="live-label" id="sj-lbl-b" style="color:var(--sharks);">TOMORROW</span>
+      <span class="live-matchup">Sharks @ Chicago</span>
+      <span class="stream-time-lbl">5:30 PM PDT</span>
+    </div>
+    <div class="stream-body">
+      <a class="stream-link" href="https://www.nhl.com/tv" target="_blank" rel="noopener"><div><div class="stream-link-name">NHL.tv / ESPN+</div><div class="stream-link-sub">Official NHL streaming · subscription required</div></div><span class="stream-arrow">→</span></a>
+      <a class="stream-link" href="https://www.nbcsportscalifornia.com" target="_blank" rel="noopener"><div><div class="stream-link-name">NBC Sports California</div><div class="stream-link-sub">Local broadcast · in-market only</div></div><span class="stream-arrow">→</span></a>
+      <a class="stream-link" href="https://www.sportsnet.ca/live" target="_blank" rel="noopener"><div><div class="stream-link-name">Sportsnet Now</div><div class="stream-link-sub">Available in Canada</div></div><span class="stream-arrow">→</span></a>
+      <div class="stream-note" id="sj-note-b">Game starts Wed Apr 15 at 5:30 PM PDT</div>
+    </div>
+  </div>
+  <div class="section-title" style="color:var(--sharks);">Recent Results</div>
+  <div class="game-list">
+    <div class="game-row"><div><div class="game-opp">@ Nashville Predators</div><div class="game-date-lbl">Mon Apr 13</div></div><div class="game-right"><span class="game-score-text">3–2</span><span class="result-pill W">W</span></div></div>
+    <div class="game-row"><div><div class="game-opp">vs Vancouver Canucks</div><div class="game-date-lbl">Sat Apr 11</div></div><div class="game-right"><span class="game-score-text">3–4</span><span class="result-pill L">L</span></div></div>
+    <div class="game-row"><div><div class="game-opp">@ Anaheim Ducks</div><div class="game-date-lbl">Thu Apr 9</div></div><div class="game-right"><span class="game-score-text">1–6</span><span class="result-pill L">L</span></div></div>
+    <div class="game-row"><div><div class="game-opp">vs Edmonton Oilers</div><div class="game-date-lbl">Wed Apr 8</div></div><div class="game-right"><span class="game-score-text">2–5</span><span class="result-pill L">L</span></div></div>
+    <div class="game-row"><div><div class="game-opp">vs Chicago Blackhawks</div><div class="game-date-lbl">Mon Apr 6</div></div><div class="game-right"><span class="game-score-text">3–2</span><span class="result-pill W">W</span></div></div>
+  </div>
+  <div class="section-title" style="color:var(--sharks);">Pacific Division</div>
+  <div class="game-list">
+    <div class="col-hdr"><span style="min-width:24px;"></span><span style="flex:1;">Team</span><span style="min-width:38px;text-align:right;">W–L</span><span style="min-width:44px;text-align:right;">PCT</span></div>
+    <div class="standing-row"><span class="standing-num">1</span><span class="standing-team">VGK Golden Knights</span><span class="standing-rec">38–26</span><span class="standing-pct">.594</span></div>
+    <div class="standing-row"><span class="standing-num">2</span><span class="standing-team">ANA Ducks</span><span class="standing-rec">42–32</span><span class="standing-pct">.568</span></div>
+    <div class="standing-row"><span class="standing-num">3</span><span class="standing-team">EDM Oilers</span><span class="standing-rec">40–30</span><span class="standing-pct">.571</span></div>
+    <div class="standing-row"><span class="standing-num">4</span><span class="standing-team">LAK Kings</span><span class="standing-rec">35–26</span><span class="standing-pct">.574</span></div>
+    <div class="standing-row me" style="border-left:2px solid var(--sharks);"><span class="standing-num" style="color:var(--sharks);">5</span><span class="standing-team" style="color:var(--sharks);">◀ SJ Sharks</span><span class="standing-rec">38–35</span><span class="standing-pct" style="color:var(--sharks);">.521</span></div>
+    <div class="standing-row"><span class="standing-num">6</span><span class="standing-team">SEA Kraken</span><span class="standing-rec">34–35</span><span class="standing-pct">.493</span></div>
+    <div class="standing-row"><span class="standing-num">7</span><span class="standing-team">CGY Flames</span><span class="standing-rec">33–38</span><span class="standing-pct">.465</span></div>
+    <div class="standing-row"><span class="standing-num">8</span><span class="standing-team">VAN Canucks</span><span class="standing-rec">24–48</span><span class="standing-pct">.333</span></div>
+  </div>
+</div>
+
+<!-- ══ COWBOYS DETAIL ══ -->
+<div class="panel" id="panel-cowboys">
+  <div class="detail-hero">
+    <div class="detail-badge" style="background:rgba(154,175,183,.12);color:var(--cowboys);">DAL</div>
+    <div><div class="detail-name" style="color:var(--cowboys);">Cowboys</div><div class="detail-sub">NFL · NFC East · 2025 Final</div><div class="detail-rec">9–8–1 · .529</div></div>
+  </div>
+  <div class="season-record-row" style="margin-bottom:16px;">
+    <div class="sr-item"><span class="sr-val">9</span><span class="sr-lbl">Wins</span></div><div class="sr-divider"></div>
+    <div class="sr-item"><span class="sr-val">8</span><span class="sr-lbl">Losses</span></div><div class="sr-divider"></div>
+    <div class="sr-item"><span class="sr-val">1</span><span class="sr-lbl">Ties</span></div><div class="sr-divider"></div>
+    <div class="sr-item"><span class="sr-val" style="color:var(--cowboys);">3rd</span><span class="sr-lbl">NFC East</span></div>
+  </div>
+  <div style="background:var(--card);border:1px solid var(--bdr);border-radius:13px;margin-bottom:12px;"><div class="offseason-box"><span class="offseason-title">OFFSEASON</span><span class="offseason-sub">2026 NFL schedule not yet released.</span></div></div>
+  <div class="stream-card" style="border-color:rgba(154,175,183,.25);">
+    <div class="stream-header" style="background:rgba(154,175,183,.08);">
+      <span class="upcoming-dot" style="background:var(--cowboys);opacity:.5;"></span>
+      <span class="live-label" style="color:var(--cowboys);">OFFSEASON</span>
+      <span class="live-matchup" style="color:var(--mut);">No games scheduled</span>
+    </div>
+    <div class="stream-body">
+      <a class="stream-link" href="https://www.nfl.com/plus" target="_blank" rel="noopener"><div><div class="stream-link-name">NFL+ / NFL Network</div><div class="stream-link-sub">Official NFL streaming platform</div></div><span class="stream-arrow">→</span></a>
+      <a class="stream-link" href="https://www.espn.com/watch" target="_blank" rel="noopener"><div><div class="stream-link-name">ESPN / ESPN+</div><div class="stream-link-sub">NFL games &amp; analysis</div></div><span class="stream-arrow">→</span></a>
+      <div class="stream-note">Check back when the 2026 season schedule is released</div>
+    </div>
+  </div>
+  <div class="section-title" style="color:var(--cowboys);">NFC East — 2025 Final</div>
+  <div class="game-list">
+    <div class="col-hdr"><span style="min-width:24px;"></span><span style="flex:1;">Team</span><span style="min-width:38px;text-align:right;">W–L</span><span style="min-width:44px;text-align:right;">PCT</span></div>
+    <div class="standing-row"><span class="standing-num">1</span><span class="standing-team">PHI Eagles</span><span class="standing-rec">14–3</span><span class="standing-pct">.824</span></div>
+    <div class="standing-row"><span class="standing-num">2</span><span class="standing-team">WAS Commanders</span><span class="standing-rec">12–5</span><span class="standing-pct">.706</span></div>
+    <div class="standing-row me" style="border-left:2px solid var(--cowboys);"><span class="standing-num" style="color:var(--cowboys);">3</span><span class="standing-team" style="color:var(--cowboys);">◀ DAL Cowboys</span><span class="standing-rec">9–8</span><span class="standing-pct" style="color:var(--cowboys);">.529</span></div>
+    <div class="standing-row"><span class="standing-num">4</span><span class="standing-team">NYG Giants</span><span class="standing-rec">3–14</span><span class="standing-pct">.176</span></div>
+  </div>
+</div>
+
+<!-- ══ WARRIORS DETAIL ══ -->
+<div class="panel" id="panel-warriors">
+  <div class="detail-hero">
+    <div class="detail-badge" style="background:rgba(255,199,44,.12);color:var(--warriors);">GS</div>
+    <div><div class="detail-name" style="color:var(--warriors);">Warriors</div><div class="detail-sub">NBA · Pacific · Season Complete</div><div class="detail-rec">37–45 · .451</div></div>
+  </div>
+  <div class="season-record-row" style="margin-bottom:16px;">
+    <div class="sr-item"><span class="sr-val">37</span><span class="sr-lbl">Wins</span></div><div class="sr-divider"></div>
+    <div class="sr-item"><span class="sr-val">45</span><span class="sr-lbl">Losses</span></div><div class="sr-divider"></div>
+    <div class="sr-item"><span class="sr-val" style="color:var(--warriors);">.451</span><span class="sr-lbl">Win%</span></div><div class="sr-divider"></div>
+    <div class="sr-item"><span class="sr-val" style="color:var(--warriors);">4th</span><span class="sr-lbl">Pacific</span></div>
+  </div>
+  <div class="stream-card" style="border-color:rgba(255,199,44,.25);">
+    <div class="stream-header" style="background:rgba(255,199,44,.08);">
+      <span class="upcoming-dot" style="background:var(--warriors);opacity:.5;"></span>
+      <span class="live-label" style="color:var(--warriors);">OFFSEASON</span>
+      <span class="live-matchup" style="color:var(--mut);">Season complete · 37–45</span>
+    </div>
+    <div class="stream-body">
+      <a class="stream-link" href="https://www.nba.com/warriors/league-pass" target="_blank" rel="noopener"><div><div class="stream-link-name">NBA League Pass</div><div class="stream-link-sub">Replays &amp; next season coverage</div></div><span class="stream-arrow">→</span></a>
+      <a class="stream-link" href="https://www.espn.com/watch" target="_blank" rel="noopener"><div><div class="stream-link-name">ESPN / ESPN+</div><div class="stream-link-sub">NBA playoffs &amp; analysis</div></div><span class="stream-arrow">→</span></a>
+      <div class="stream-note">NBA Playoffs underway — Warriors did not qualify</div>
+    </div>
+  </div>
+  <div class="section-title" style="color:var(--warriors);">Final 5 Games</div>
+  <div class="game-list">
+    <div class="game-row"><div><div class="game-opp">@ LA Clippers</div><div class="game-date-lbl">Sun Apr 12</div></div><div class="game-right"><span class="game-score-text">110–115</span><span class="result-pill L">L</span></div></div>
+    <div class="game-row"><div><div class="game-opp">@ Sacramento Kings</div><div class="game-date-lbl">Fri Apr 10</div></div><div class="game-right"><span class="game-score-text">118–124</span><span class="result-pill L">L</span></div></div>
+    <div class="game-row"><div><div class="game-opp">vs LA Lakers</div><div class="game-date-lbl">Thu Apr 9</div></div><div class="game-right"><span class="game-score-text">103–119</span><span class="result-pill L">L</span></div></div>
+    <div class="game-row"><div><div class="game-opp">vs Sacramento Kings</div><div class="game-date-lbl">Tue Apr 7</div></div><div class="game-right"><span class="game-score-text">110–105</span><span class="result-pill W">W</span></div></div>
+    <div class="game-row"><div><div class="game-opp">vs Houston Rockets</div><div class="game-date-lbl">Sun Apr 5</div></div><div class="game-right"><span class="game-score-text">116–117</span><span class="result-pill L">L</span></div></div>
+  </div>
+  <div class="section-title" style="color:var(--warriors);">Pacific Division — Final</div>
+  <div class="game-list">
+    <div class="col-hdr"><span style="min-width:24px;"></span><span style="flex:1;">Team</span><span style="min-width:38px;text-align:right;">W–L</span><span style="min-width:44px;text-align:right;">PCT</span></div>
+    <div class="standing-row"><span class="standing-num">1</span><span class="standing-team">LAL Lakers</span><span class="standing-rec">53–29</span><span class="standing-pct">.646</span></div>
+    <div class="standing-row"><span class="standing-num">2</span><span class="standing-team">PHX Suns</span><span class="standing-rec">45–37</span><span class="standing-pct">.549</span></div>
+    <div class="standing-row"><span class="standing-num">3</span><span class="standing-team">LAC Clippers</span><span class="standing-rec">42–40</span><span class="standing-pct">.512</span></div>
+    <div class="standing-row me" style="border-left:2px solid var(--warriors);"><span class="standing-num" style="color:var(--warriors);">4</span><span class="standing-team" style="color:var(--warriors);">◀ GSW Warriors</span><span class="standing-rec">37–45</span><span class="standing-pct" style="color:var(--warriors);">.451</span></div>
+    <div class="standing-row"><span class="standing-num">5</span><span class="standing-team">SAC Kings</span><span class="standing-rec">22–60</span><span class="standing-pct">.268</span></div>
+  </div>
+</div>
+
+<!-- ══ ATHLETICS DETAIL ══ -->
+<div class="panel" id="panel-athletics">
+  <div class="detail-hero">
+    <div class="detail-badge" style="background:rgba(239,178,30,.12);color:var(--athletics);">ATH</div>
+    <div><div class="detail-name" style="color:var(--athletics);">Athletics</div><div class="detail-sub">MLB · AL West · 2026 Season</div><div class="detail-rec">8–9 · .471</div></div>
+  </div>
+  <div class="season-record-row" style="margin-bottom:16px;">
+    <div class="sr-item"><span class="sr-val">8</span><span class="sr-lbl">Wins</span></div><div class="sr-divider"></div>
+    <div class="sr-item"><span class="sr-val">9</span><span class="sr-lbl">Losses</span></div><div class="sr-divider"></div>
+    <div class="sr-item"><span class="sr-val" style="color:var(--athletics);">.471</span><span class="sr-lbl">Win%</span></div><div class="sr-divider"></div>
+    <div class="sr-item"><span class="sr-val" style="color:var(--athletics);">2nd</span><span class="sr-lbl">AL West</span></div>
+  </div>
+  <div class="next-game-card"><div class="ng-lbl">Next Game</div><div class="ng-match">vs Texas Rangers</div><div class="ng-time">Tue Apr 14 · 6:40 PM PDT · Oakland</div></div>
+  <div class="stream-card" id="ath-card-b">
+    <div class="stream-header" id="ath-hdr-b">
+      <span class="upcoming-dot" id="ath-dot-b" style="background:var(--athletics);"></span>
+      <span class="live-label" id="ath-lbl-b" style="color:var(--athletics);">TONIGHT</span>
+      <span class="live-matchup">Athletics vs Texas Rangers</span>
+      <span class="stream-time-lbl">6:40 PM PDT</span>
+    </div>
+    <div class="stream-body">
+      <a class="stream-link" href="https://www.mlb.tv" target="_blank" rel="noopener"><div><div class="stream-link-name">MLB.tv</div><div class="stream-link-sub">Official MLB streaming · subscription required</div></div><span class="stream-arrow">→</span></a>
+      <a class="stream-link" href="https://www.nbcsportscalifornia.com" target="_blank" rel="noopener"><div><div class="stream-link-name">NBC Sports California</div><div class="stream-link-sub">Local broadcast · in-market only</div></div><span class="stream-arrow">→</span></a>
+      <a class="stream-link" href="https://www.youtube.com/mlb" target="_blank" rel="noopener"><div><div class="stream-link-name">MLB on YouTube</div><div class="stream-link-sub">Free highlights &amp; select games</div></div><span class="stream-arrow">→</span></a>
+      <div class="stream-note" id="ath-note-b">Game starts Tue Apr 14 at 6:40 PM PDT</div>
+    </div>
+  </div>
+  <div class="section-title" style="color:var(--athletics);">Recent Results</div>
+  <div class="game-list">
+    <div class="game-row"><div><div class="game-opp">vs Texas Rangers</div><div class="game-date-lbl">Mon Apr 13</div></div><div class="game-right"><span class="game-score-text">1–8</span><span class="result-pill L">L</span></div></div>
+    <div class="game-row"><div><div class="game-opp">@ NY Mets</div><div class="game-date-lbl">Sun Apr 12</div></div><div class="game-right"><span class="game-score-text">1–0</span><span class="result-pill W">W</span></div></div>
+    <div class="game-row"><div><div class="game-opp">@ NY Mets</div><div class="game-date-lbl">Sat Apr 11</div></div><div class="game-right"><span class="game-score-text">11–6</span><span class="result-pill W">W</span></div></div>
+    <div class="game-row"><div><div class="game-opp">@ NY Mets</div><div class="game-date-lbl">Fri Apr 10</div></div><div class="game-right"><span class="game-score-text">4–0</span><span class="result-pill W">W</span></div></div>
+    <div class="game-row"><div><div class="game-opp">@ NY Yankees</div><div class="game-date-lbl">Thu Apr 9</div></div><div class="game-right"><span class="game-score-text">1–0</span><span class="result-pill W">W</span></div></div>
+  </div>
+  <div class="section-title" style="color:var(--athletics);">AL West Division</div>
+  <div class="game-list">
+    <div class="col-hdr"><span style="min-width:24px;"></span><span style="flex:1;">Team</span><span style="min-width:38px;text-align:right;">W–L</span><span style="min-width:44px;text-align:right;">PCT</span></div>
+    <div class="standing-row"><span class="standing-num">1</span><span class="standing-team">TEX Rangers</span><span class="standing-rec">9–7</span><span class="standing-pct">.563</span></div>
+    <div class="standing-row me" style="border-left:2px solid var(--athletics);"><span class="standing-num" style="color:var(--athletics);">2</span><span class="standing-team" style="color:var(--athletics);">◀ Athletics</span><span class="standing-rec">8–9</span><span class="standing-pct" style="color:var(--athletics);">.471</span></div>
+    <div class="standing-row"><span class="standing-num">3</span><span class="standing-team">LAA Angels</span><span class="standing-rec">8–9</span><span class="standing-pct">.471</span></div>
+    <div class="standing-row"><span class="standing-num">4</span><span class="standing-team">SEA Mariners</span><span class="standing-rec">8–9</span><span class="standing-pct">.471</span></div>
+    <div class="standing-row"><span class="standing-num">5</span><span class="standing-team">HOU Astros</span><span class="standing-rec">6–11</span><span class="standing-pct">.353</span></div>
+  </div>
+</div>
+
+<script>
+// ── TAB NAVIGATION ───────────────────────────────────────────────
+function goTab(team) {
+  var tabs = document.querySelectorAll('.tab');
+  var panels = document.querySelectorAll('.panel');
+  for (var i = 0; i < tabs.length; i++) tabs[i].classList.remove('active');
+  for (var i = 0; i < panels.length; i++) panels[i].classList.remove('active');
+  var t = document.querySelector('[data-t="' + team + '"]');
+  var p = document.getElementById('panel-' + team);
+  if (t) t.classList.add('active');
+  if (p) p.classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+// ── DRAWER TOGGLE ────────────────────────────────────────────────
+function toggleDrawer(team) {
+  var drawer = document.getElementById('drawer-' + team);
+  var arrow  = document.getElementById('arrow-' + team);
+  var label  = document.getElementById('label-' + team);
+  if (!drawer) return;
+  var open = drawer.style.display === 'block';
+  drawer.style.display = open ? 'none' : 'block';
+  if (arrow) arrow.style.transform = open ? 'rotate(0deg)' : 'rotate(180deg)';
+  if (label) label.textContent = open ? 'Stats & Schedule' : 'Hide Stats';
+}
+
+// ── SUB-TAB SWITCH ───────────────────────────────────────────────
+function openSubTab(team, section, btn) {
+  var drawer = document.getElementById('drawer-' + team);
+  if (!drawer) return;
+  var stabs   = drawer.querySelectorAll('.sub-tab');
+  var spanels = drawer.querySelectorAll('.sub-panel');
+  for (var i = 0; i < stabs.length; i++)   stabs[i].classList.remove('active');
+  for (var i = 0; i < spanels.length; i++) spanels[i].classList.remove('active');
+  btn.classList.add('active');
+  var p = document.getElementById(team + '-' + section);
+  if (p) p.classList.add('active');
+}
+
+// ── LIVE GAME STATUS ─────────────────────────────────────────────
+// Sharks: Wed Apr 15 2026, 5:30 PM PDT = 2026-04-16T00:30:00Z (~2.5hr)
+var sjStart = new Date('2026-04-16T00:30:00Z');
+var sjEnd   = new Date('2026-04-16T03:00:00Z');
+
+// Athletics: Tue Apr 14 2026, 6:40 PM PDT = 2026-04-15T01:40:00Z (~3.5hr)
+var athStart = new Date('2026-04-15T01:40:00Z');
+var athEnd   = new Date('2026-04-15T05:10:00Z');
+
+function setLive(cardIds, dotIds, lblIds, noteIds, color, teamKey) {
+  cardIds.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) el.classList.add('live-now');
+  });
+  dotIds.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) { el.className = 'live-dot-pulse'; }
+  });
+  lblIds.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) { el.textContent = '● LIVE'; el.style.color = '#ef4444'; }
+  });
+  noteIds.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) el.textContent = 'Game is live now — tap a link to watch';
+  });
+  var tabDot = document.querySelector('[data-t="' + teamKey + '"] .tab-dot');
+  if (tabDot) tabDot.style.animation = 'livepulse 1.2s infinite';
+}
+
+function setHide(cardIds) {
+  cardIds.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) el.style.display = 'none';
+  });
+}
+
+function setUpcoming(dotIds, lblIds, color, label) {
+  dotIds.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) { el.className = 'upcoming-dot'; el.style.background = color; }
+  });
+  lblIds.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) { el.textContent = label; el.style.color = color; }
+  });
+}
+
+function updateStatus() {
+  var now = new Date();
+
+  // Sharks
+  var sjCards = ['sj-card-a','sj-card-b'];
+  var sjDots  = ['sj-dot-a','sj-dot-b'];
+  var sjLbls  = ['sj-lbl-a','sj-lbl-b'];
+  var sjNotes = ['sj-note-a','sj-note-b'];
+  if (now >= sjStart && now <= sjEnd) {
+    setLive(sjCards, sjDots, sjLbls, sjNotes, '#00C2CE', 'sharks');
+  } else if (now > sjEnd) {
+    setHide(sjCards);
+  } else {
+    var h = (sjStart - now) / 3600000;
+    setUpcoming(sjDots, sjLbls, 'var(--sharks)', h < 24 ? 'TONIGHT' : 'TOMORROW');
+  }
+
+  // Athletics
+  var athCards = ['ath-card-a','ath-card-b'];
+  var athDots  = ['ath-dot-a','ath-dot-b'];
+  var athLbls  = ['ath-lbl-a','ath-lbl-b'];
+  var athNotes = ['ath-note-a','ath-note-b'];
+  if (now >= athStart && now <= athEnd) {
+    setLive(athCards, athDots, athLbls, athNotes, '#EFB21E', 'athletics');
+  } else if (now > athEnd) {
+    setHide(athCards);
+  } else {
+    var h2 = (athStart - now) / 3600000;
+    setUpcoming(athDots, athLbls, 'var(--athletics)', h2 < 24 ? 'TONIGHT' : 'TOMORROW');
+  }
+}
+
+// ── INIT ─────────────────────────────────────────────────────────
+var now = new Date();
+document.getElementById('last-updated').textContent =
+  now.toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'});
+
+updateStatus();
+setInterval(updateStatus, 30000);
+</script>
+</body>
+</html>
