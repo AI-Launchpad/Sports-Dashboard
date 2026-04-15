@@ -34,41 +34,6 @@ button{font-family:'DM Sans',sans-serif;cursor:pointer;-webkit-appearance:none;a
 .tab.active{color:var(--gold);border-bottom-color:var(--gold);}
 .tab[data-t="sharks"].active{color:var(--sharks);border-bottom-color:var(--sharks);}
 .tab[data-t="cowboys"].active{color:var(--cowboys);border-bottom-color:var(--cowboys);}
-.tab[data-t="warriors"].active{color:var(--warriors);border-bottom-color:var(--warriors);}
-.tab[data-t="athletics"].active{color:var(--athletics);border-bottom-color:var(--athletics);}
-.tab-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;display:inline-block;}
-.tab[data-t="all"] .tab-dot{background:var(--gold);}
-.tab[data-t="sharks"] .tab-dot{background:var(--sharks);}
-.tab[data-t="cowboys"] .tab-dot{background:var(--cowboys);}
-.tab[data-t="warriors"] .tab-dot{background:var(--warriors);}
-.tab[data-t="athletics"] .tab-dot{background:var(--athletics);}
-
-/* PANELS */
-.panel{display:none;padding:16px;}
-.panel.active{display:block;}
-
-/* STATUS */
-.status-row{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--mut);font-family:'DM Mono',monospace;margin-bottom:14px;}
-.status-dot{width:6px;height:6px;border-radius:50%;background:var(--win);flex-shrink:0;}
-
-/* TEAM CARD */
-.team-block{margin-bottom:14px;}
-.team-card-wrap{background:var(--card);border:1px solid var(--bdr);border-radius:16px;overflow:hidden;}
-.tc-bar{height:3px;display:block;width:100%;}
-
-/* tc-header is now a BUTTON — Safari will always fire click on a button */
-.tc-header{
-  display:block;width:100%;text-align:left;
-  padding:14px 14px 0;
-  background:transparent;color:inherit;
-  touch-action:manipulation;
-}
-.tc-header:active{opacity:.8;}
-
-.tc-top{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
-.team-badge{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:.04em;flex-shrink:0;}
-.tc-info{flex:1;min-width:0;text-align:left;}
-.tc-name{font-family:'Bebas Neue',sans-serif;font-size:19px;letter-spacing:.04em;line-height:1.1;}
 .tc-league{font-size:10px;color:var(--mut);margin-top:2px;font-family:'DM Mono',monospace;}
 .record-pill{margin-left:auto;font-family:'DM Mono',monospace;font-size:12px;font-weight:500;padding:4px 10px;border-radius:8px;background:rgba(255,255,255,.07);color:var(--txt);white-space:nowrap;flex-shrink:0;}
 .last-game{background:rgba(255,255,255,.04);border-radius:10px;padding:10px 12px;display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
