@@ -1,0 +1,37 @@
+name: Update Sports Data
+
+on:
+  schedule:
+    # Runs at 9am, 1pm, 5pm, and 9pm UTC (~2am/6am/10am/2pm Pacific).
+    # Adjust times below if you want different refresh points.
+    - cron: '0 9,13,17,21 * * *'
+  workflow_dispatch: {}   # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write   # needed so the Action can commit data.json back to the repo
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch latest sports data
+        run: node fetch-data.js
+
+      - name: Rebuild index.html from fresh data
+        run: node generate-html.js
+
+      - name: Commit updated files (if changed)
+        run: |
+          git config user.name "sports-data-bot"
+          git config user.email "actions@github.com"
+          git add data.json index.html
+          git diff --cached --quiet && echo "No changes to commit" || git commit -m "Auto-update sports dashboard"
+          git push
