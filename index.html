@@ -137,7 +137,7 @@ button{font-family:inherit;cursor:pointer;-webkit-appearance:none;border:none;ba
 <body>
 
 <div class="hdr">
-  <div><div class="title">Jeff's Sports</div><div class="sub" id="datestamp">Jul 14, 2026</div></div>
+  <div><div class="title">Jeff's Sports</div><div class="sub" id="datestamp" style="font-size:15px;font-weight:700;color:#ef4444;">Jul 14, 2026</div></div>
   <button class="rfbtn" onclick="location.reload()">↻ Refresh</button>
 </div>
 
@@ -605,7 +605,7 @@ function openSub(t,s,btn){
   var p=document.getElementById(t+'-'+s);
   if(p)p.classList.add('on');
 }
-  document.getElementById('datestamp').textContent = new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+  var now = new Date(); var dateStr = now.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}); var timeStr = now.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'}); document.getElementById('datestamp').textContent = dateStr; var sr = document.querySelector('.statusrow'); if(sr) sr.innerHTML = '<span class="sdot"></span>Refreshed ' + dateStr + ', ' + timeStr;
 </script>
 </body>
 </html>
