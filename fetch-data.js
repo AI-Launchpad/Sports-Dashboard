@@ -15,7 +15,7 @@ const TEAMS = {
     league: 'NHL',
     sport: 'hockey',
     slug: 'nhl',
-    espnId: '19',
+    espnId: '18',
   },
   cowboys: {
     label: 'Dallas Cowboys',
