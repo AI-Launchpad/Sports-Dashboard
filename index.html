@@ -137,7 +137,7 @@ button{font-family:inherit;cursor:pointer;-webkit-appearance:none;border:none;ba
 <body>
 
 <div class="hdr">
-  <div><div class="title">Jeff's Sports</div><div class="sub" id="datestamp">Jul 8, 2026</div></div>
+  <div><div class="title">Jeff's Sports</div><div class="sub" id="datestamp">Jul 14, 2026</div></div>
   <button class="rfbtn" onclick="location.reload()">↻ Refresh</button>
 </div>
 
@@ -151,603 +151,433 @@ button{font-family:inherit;cursor:pointer;-webkit-appearance:none;border:none;ba
 
 <!-- ════════ ALL TEAMS ════════ -->
 <div class="panel on" id="panel-all">
-<div class="statusrow"><span class="sdot"></span>Data as of Jul 8, 2026</div>
+<div class="statusrow"><span class="sdot"></span>Data as of Jul 14, 2026, 1:39 AM</div>
 
-<!-- SHARKS -->
 <div class="tc">
-  <span class="tbar" style="background:linear-gradient(90deg,#006D7588,var(--sj))"></span>
+  <span class="tbar" style="background:linear-gradient(90deg,rgba(0,194,206,.12),var(--sj))"></span>
   <button class="thead" onclick="goTab('sharks')">
     <div class="ttop">
       <div class="bdg" style="background:rgba(0,194,206,.12);color:var(--sj)">SJ</div>
-      <div class="tinfo"><div class="tnm" style="color:var(--sj)">San Jose Sharks</div><div class="tlg">NHL · Pacific · 5th · Season Complete</div></div>
-      <div class="rpill">39–35</div>
+      <div class="tinfo"><div class="tnm" style="color:var(--sj)">St. Louis Blues</div><div class="tlg">NHL · 5th in Central Division</div></div>
+      <div class="rpill">—</div>
     </div>
-    <div class="champbox"><span class="champtxt">🏆 Carolina Hurricanes won the 2026 Stanley Cup (def. VGK 4–2)</span></div>
-    <div class="sb off"><div class="sb-left"><div class="sb-st">FINAL · Apr 16</div><div class="sb-dt">@ Winnipeg Jets · Last game of season</div></div><div class="sb-box muted"><span class="sb-val sm">SJ 6–1</span><span class="sb-sub">W · Final</span></div></div>
-    <div class="lgame"><div><div class="lbl">Last · Apr 16</div><div class="mtch">@ Winnipeg Jets</div></div><div class="lgr"><span class="bsc">6–1</span><span class="rp W">W</span></div></div>
-    <div class="frow"><div class="fd W">W</div><div class="fd L">L</div><div class="fd W">W</div><div class="fd L">L</div><div class="fd W">W</div><span class="flbl">Last 5</span></div>
-    <div class="srec">
-      <div class="sri"><span class="srv">39</span><span class="srl">Wins</span></div><div class="srd"></div>
-      <div class="sri"><span class="srv">35</span><span class="srl">Losses</span></div><div class="srd"></div>
-      <div class="sri"><span class="srv" style="color:var(--sj)">.527</span><span class="srl">Win%</span></div><div class="srd"></div>
-      <div class="sri"><span class="srv" style="color:var(--sj)">5th</span><span class="srl">Pacific</span></div>
-    </div>
-    <div class="nxtrow">→ Offseason · 2026–27 schedule not released</div>
+    <div class="sb off"><div class="sb-left"><div class="sb-st">NO RECENT GAMES</div><div class="sb-dt">Check back after the next game</div></div></div>
+    <div class="frow"><span class="flbl">No recent games</span></div>
+    <div class="nxtrow">→ Next: <strong>DAL @ STL</strong> · Sat, Sep 19 · 11:00 PM</div>
   </button>
-  <button class="expbtn" onclick="toggleDrawer('sharks')"><span class="earr" id="earr-sharks">▼</span><span id="elbl-sharks">Stats, Standings &amp; Games</span></button>
+  <button class="expbtn" onclick="toggleDrawer('sharks')"><span class="earr" id="earr-sharks">&#9660;</span><span id="elbl-sharks">Games &amp; Standings</span></button>
   <div class="drw" id="drw-sharks">
     <div class="stabs">
       <button class="stab on" onclick="openSub('sharks','games',this)">Games</button>
-      <button class="stab"    onclick="openSub('sharks','playoffs',this)">Playoffs</button>
-      <button class="stab"    onclick="openSub('sharks','players',this)">Players</button>
-      <button class="stab"    onclick="openSub('sharks','standings',this)">Standings</button>
+      <button class="stab" onclick="openSub('sharks','standings',this)">Standings</button>
     </div>
     <div class="spnl on" id="sharks-games">
-      <div class="seclbl">Final 5 Regular Season Games</div>
-      <div class="glist">
-        <div class="grow"><div><div class="gopp">@ Winnipeg Jets</div><div class="gdt">Thu Apr 16</div></div><div class="grgt"><span class="gsc">6–1</span><span class="rp W">W</span></div></div>
-        <div class="grow"><div><div class="gopp">@ Chicago Blackhawks</div><div class="gdt">Wed Apr 15</div></div><div class="grgt"><span class="gsc">2–5</span><span class="rp L">L</span></div></div>
-        <div class="grow"><div><div class="gopp">@ Nashville Predators</div><div class="gdt">Mon Apr 13</div></div><div class="grgt"><span class="gsc">3–2</span><span class="rp W">W</span></div></div>
-        <div class="grow"><div><div class="gopp">vs Vancouver Canucks</div><div class="gdt">Sat Apr 11</div></div><div class="grgt"><span class="gsc">3–4</span><span class="rp L">L</span></div></div>
-        <div class="grow"><div><div class="gopp">@ Anaheim Ducks</div><div class="gdt">Thu Apr 9</div></div><div class="grgt"><span class="gsc">1–6</span><span class="rp L">L</span></div></div>
-      </div>
-      <div class="seclbl" style="margin-top:8px">Upcoming</div>
-      <div class="glist"><div class="grow"><div><div class="gopp">Offseason</div><div class="gdt">2026–27 schedule not yet released</div></div></div></div>
-    </div>
-    <div class="spnl" id="sharks-playoffs">
-      <div class="seclbl">2026 Stanley Cup Playoffs — Complete</div>
-      <div class="glist">
-        <div class="grow"><div><div class="gopp">🏆 Stanley Cup Final: CAR def. VGK</div><div class="gdt">Final</div></div><div class="grgt"><span class="gsc" style="color:var(--win)">4–2</span></div></div>
-        <div class="grow"><div><div class="gopp">Western Final: VGK def. COL</div><div class="gdt">Round 3</div></div><div class="grgt"><span class="gsc">4–0</span></div></div>
-        <div class="grow"><div><div class="gopp">Eastern Final: CAR def. MTL</div><div class="gdt">Round 3</div></div><div class="grgt"><span class="gsc">4–1</span></div></div>
-        <div class="grow"><div><div class="gopp">West Semi: VGK def. ANA</div><div class="gdt">Round 2</div></div><div class="grgt"><span class="gsc">4–2</span></div></div>
-        <div class="grow"><div><div class="gopp">West Semi: COL def. MIN</div><div class="gdt">Round 2</div></div><div class="grgt"><span class="gsc">4–1</span></div></div>
-        <div class="grow"><div><div class="gopp">East Semi: CAR def. PHI</div><div class="gdt">Round 2</div></div><div class="grgt"><span class="gsc">4–0</span></div></div>
-        <div class="grow"><div><div class="gopp">East Semi: MTL def. BUF</div><div class="gdt">Round 2</div></div><div class="grgt"><span class="gsc">4–3</span></div></div>
-      </div>
-      <div class="seclbl" style="margin-top:8px">Sharks did not qualify for the 2026 playoffs</div>
-    </div>
-    <div class="spnl" id="sharks-players">
-      <div class="seclbl">Top performers · @ Nashville Apr 13 · W 3–2</div>
-      <div class="pcard"><div class="ptop"><div class="prnk rg">#1</div><div><div class="pnm">Macklin Celebrini</div><div class="pp">Forward · 2nd Star</div></div></div><div class="sgrid sg4"><div class="sc"><span class="sv" style="color:var(--sj)">2</span><span class="sl">Goals</span></div><div class="sc"><span class="sv">0</span><span class="sl">Ast</span></div><div class="sc"><span class="sv">2</span><span class="sl">Shots</span></div><div class="sc"><span class="sv">+2</span><span class="sl">+/−</span></div></div></div>
-      <div class="pcard"><div class="ptop"><div class="prnk rs">#2</div><div><div class="pnm">Igor Chernyshov</div><div class="pp">Forward</div></div></div><div class="sgrid sg4"><div class="sc"><span class="sv" style="color:var(--sj)">1</span><span class="sl">Goals</span></div><div class="sc"><span class="sv">1</span><span class="sl">Ast</span></div><div class="sc"><span class="sv">3</span><span class="sl">Shots</span></div><div class="sc"><span class="sv">+1</span><span class="sl">+/−</span></div></div></div>
-      <div class="pcard"><div class="ptop"><div class="prnk rb">#3</div><div><div class="pnm">Alexander Wennberg</div><div class="pp">Forward · FO</div></div></div><div class="sgrid sg3"><div class="sc"><span class="sv">0</span><span class="sl">Goals</span></div><div class="sc"><span class="sv">1</span><span class="sl">Ast</span></div><div class="sc"><span class="sv">47%</span><span class="sl">FO%</span></div></div></div>
+      <div class="seclbl">Recent Results</div>
+      <div class="glist"><div class="grow"><div><div class="gopp">No recent games</div></div></div></div>
     </div>
     <div class="spnl" id="sharks-standings">
-      <div class="vtrow">
-        <button class="vtbtn on" onclick="showSt('sh','pac',this)">Pacific</button>
-        <button class="vtbtn"    onclick="showSt('sh','wconf',this)">West Conf</button>
-        <button class="vtbtn"    onclick="showSt('sh','econf',this)">East Conf</button>
-        <button class="vtbtn"    onclick="showSt('sh','edivs',this)">East Divs</button>
-      </div>
-      <div class="stview on" id="sh-pac">
-        <div class="glist">
-          <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Pacific Division — Final</span><span style="min-width:36px;text-align:right">W–L</span><span style="min-width:40px;text-align:right">PCT</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">VGK Golden Knights 🏆</span><span class="strec">39–26</span><span class="stpct">.600</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">EDM Oilers 🏆</span><span class="strec">41–30</span><span class="stpct">.577</span></div>
-          <div class="strow po"><span class="stnum">3</span><span class="sttm">ANA Ducks 🏆</span><span class="strec">43–33</span><span class="stpct">.566</span></div>
-          <div class="strow po"><span class="stnum">4</span><span class="sttm">LAK Kings 🏆</span><span class="strec">35–27</span><span class="stpct">.565</span></div>
-          <div class="strow me" style="border-left:2px solid var(--sj)"><span class="stnum" style="color:var(--sj)">5</span><span class="sttm" style="color:var(--sj)">◀ SJ Sharks</span><span class="strec">39–35</span><span class="stpct" style="color:var(--sj)">.527</span></div>
-          <div class="strow"><span class="stnum">6</span><span class="sttm">SEA Kraken</span><span class="strec">34–37</span><span class="stpct">.479</span></div>
-          <div class="strow"><span class="stnum">7</span><span class="sttm">CGY Flames</span><span class="strec">34–39</span><span class="stpct">.466</span></div>
-          <div class="strow"><span class="stnum">8</span><span class="sttm">VAN Canucks</span><span class="strec">25–49</span><span class="stpct">.338</span></div>
-        </div>
-      </div>
-      <div class="stview" id="sh-wconf">
-        <div class="glist">
-          <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Western Conference — Final</span><span style="min-width:36px;text-align:right">W–L</span><span style="min-width:40px;text-align:right">PCT</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">COL Avalanche 🏆</span><span class="strec">55–16</span><span class="stpct">.775</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">DAL Stars 🏆</span><span class="strec">50–20</span><span class="stpct">.714</span></div>
-          <div class="strow po"><span class="stnum">3</span><span class="sttm">MIN Wild 🏆</span><span class="strec">46–24</span><span class="stpct">.657</span></div>
-          <div class="strow po"><span class="stnum">4</span><span class="sttm">VGK Golden Knights 🏆</span><span class="strec">39–26</span><span class="stpct">.600</span></div>
-          <div class="strow po"><span class="stnum">5</span><span class="sttm">UTA Mammoth 🏆</span><span class="strec">43–33</span><span class="stpct">.566</span></div>
-          <div class="strow po"><span class="stnum">6</span><span class="sttm">EDM Oilers 🏆</span><span class="strec">41–30</span><span class="stpct">.577</span></div>
-          <div class="strow po"><span class="stnum">7</span><span class="sttm">ANA Ducks 🏆</span><span class="strec">43–33</span><span class="stpct">.566</span></div>
-          <div class="strow po"><span class="stnum">8</span><span class="sttm">LAK Kings 🏆</span><span class="strec">35–27</span><span class="stpct">.565</span></div>
-          <div class="strow"><span class="stnum">9</span><span class="sttm">NSH Predators</span><span class="strec">38–34</span><span class="stpct">.528</span></div>
-          <div class="strow"><span class="stnum">10</span><span class="sttm">STL Blues</span><span class="strec">37–33</span><span class="stpct">.529</span></div>
-          <div class="strow"><span class="stnum">11</span><span class="sttm">WPG Jets</span><span class="strec">35–35</span><span class="stpct">.500</span></div>
-          <div class="strow me" style="border-left:2px solid var(--sj)"><span class="stnum" style="color:var(--sj)">12</span><span class="sttm" style="color:var(--sj)">◀ SJ Sharks</span><span class="strec">39–35</span><span class="stpct" style="color:var(--sj)">.527</span></div>
-          <div class="strow"><span class="stnum">13</span><span class="sttm">SEA Kraken</span><span class="strec">34–37</span><span class="stpct">.479</span></div>
-          <div class="strow"><span class="stnum">14</span><span class="sttm">CGY Flames</span><span class="strec">34–39</span><span class="stpct">.466</span></div>
-          <div class="strow"><span class="stnum">15</span><span class="sttm">CHI Blackhawks</span><span class="strec">29–39</span><span class="stpct">.426</span></div>
-          <div class="strow"><span class="stnum">16</span><span class="sttm">VAN Canucks</span><span class="strec">25–49</span><span class="stpct">.338</span></div>
-        </div>
-      </div>
-      <div class="stview" id="sh-econf">
-        <div class="glist">
-          <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Eastern Conference — Final</span><span style="min-width:36px;text-align:right">W–L</span><span style="min-width:40px;text-align:right">PCT</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">CAR Hurricanes 🏆 CHAMPS</span><span class="strec">53–22</span><span class="stpct">.707</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">BUF Sabres 🏆</span><span class="strec">50–23</span><span class="stpct">.685</span></div>
-          <div class="strow po"><span class="stnum">3</span><span class="sttm">TB Lightning 🏆</span><span class="strec">50–26</span><span class="stpct">.658</span></div>
-          <div class="strow po"><span class="stnum">4</span><span class="sttm">MTL Canadiens 🏆</span><span class="strec">48–24</span><span class="stpct">.667</span></div>
-          <div class="strow po"><span class="stnum">5</span><span class="sttm">BOS Bruins 🏆</span><span class="strec">45–27</span><span class="stpct">.625</span></div>
-          <div class="strow po"><span class="stnum">6</span><span class="sttm">OTT Senators 🏆</span><span class="strec">44–27</span><span class="stpct">.620</span></div>
-          <div class="strow po"><span class="stnum">7</span><span class="sttm">PHI Flyers 🏆</span><span class="strec">43–27</span><span class="stpct">.614</span></div>
-          <div class="strow po"><span class="stnum">8</span><span class="sttm">PIT Penguins 🏆</span><span class="strec">41–25</span><span class="stpct">.621</span></div>
-          <div class="strow"><span class="stnum">9</span><span class="sttm">WSH Capitals</span><span class="strec">43–30</span><span class="stpct">.589</span></div>
-          <div class="strow"><span class="stnum">10</span><span class="sttm">DET Red Wings</span><span class="strec">41–31</span><span class="stpct">.569</span></div>
-          <div class="strow"><span class="stnum">11</span><span class="sttm">CBJ Blue Jackets</span><span class="strec">40–30</span><span class="stpct">.571</span></div>
-          <div class="strow"><span class="stnum">12</span><span class="sttm">NYI Islanders</span><span class="strec">43–34</span><span class="stpct">.558</span></div>
-          <div class="strow"><span class="stnum">13</span><span class="sttm">NJD Devils</span><span class="strec">42–37</span><span class="stpct">.532</span></div>
-          <div class="strow"><span class="stnum">14</span><span class="sttm">FLA Panthers</span><span class="strec">40–38</span><span class="stpct">.513</span></div>
-          <div class="strow"><span class="stnum">15</span><span class="sttm">TOR Maple Leafs</span><span class="strec">32–36</span><span class="stpct">.471</span></div>
-          <div class="strow"><span class="stnum">16</span><span class="sttm">NYR Rangers</span><span class="strec">34–39</span><span class="stpct">.466</span></div>
-        </div>
-      </div>
-      <div class="stview" id="sh-edivs">
-        <div class="glist">
-          <div class="divhdr"><span>Atlantic Division</span></div>
-          <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Team</span><span style="min-width:36px;text-align:right">W–L</span><span style="min-width:40px;text-align:right">PCT</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">BUF Sabres 🏆</span><span class="strec">50–23</span><span class="stpct">.685</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">TB Lightning 🏆</span><span class="strec">50–26</span><span class="stpct">.658</span></div>
-          <div class="strow po"><span class="stnum">3</span><span class="sttm">MTL Canadiens 🏆</span><span class="strec">48–24</span><span class="stpct">.667</span></div>
-          <div class="strow po"><span class="stnum">4</span><span class="sttm">BOS Bruins 🏆</span><span class="strec">45–27</span><span class="stpct">.625</span></div>
-          <div class="strow po"><span class="stnum">5</span><span class="sttm">OTT Senators 🏆</span><span class="strec">44–27</span><span class="stpct">.620</span></div>
-          <div class="strow"><span class="stnum">6</span><span class="sttm">DET Red Wings</span><span class="strec">41–31</span><span class="stpct">.569</span></div>
-          <div class="strow"><span class="stnum">7</span><span class="sttm">FLA Panthers</span><span class="strec">40–38</span><span class="stpct">.513</span></div>
-          <div class="strow"><span class="stnum">8</span><span class="sttm">TOR Maple Leafs</span><span class="strec">32–36</span><span class="stpct">.471</span></div>
-          <div class="divhdr"><span>Metropolitan Division</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">CAR Hurricanes 🏆 CHAMPS</span><span class="strec">53–22</span><span class="stpct">.707</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">PIT Penguins 🏆</span><span class="strec">41–25</span><span class="stpct">.621</span></div>
-          <div class="strow po"><span class="stnum">3</span><span class="sttm">PHI Flyers 🏆</span><span class="strec">43–27</span><span class="stpct">.614</span></div>
-          <div class="strow"><span class="stnum">4</span><span class="sttm">WSH Capitals</span><span class="strec">43–30</span><span class="stpct">.589</span></div>
-          <div class="strow"><span class="stnum">5</span><span class="sttm">CBJ Blue Jackets</span><span class="strec">40–30</span><span class="stpct">.571</span></div>
-          <div class="strow"><span class="stnum">6</span><span class="sttm">NYI Islanders</span><span class="strec">43–34</span><span class="stpct">.558</span></div>
-          <div class="strow"><span class="stnum">7</span><span class="sttm">NJD Devils</span><span class="strec">42–37</span><span class="stpct">.532</span></div>
-          <div class="strow"><span class="stnum">8</span><span class="sttm">NYR Rangers</span><span class="strec">34–39</span><span class="stpct">.466</span></div>
-        </div>
-      </div>
+      <div class="glist">
+    <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Team</span><span style="min-width:36px;text-align:right">W-L</span><span style="min-width:40px;text-align:right">PCT</span></div>
+    <div class="strow " ><span class="stnum" >1</span><span class="sttm" >Carolina Hurricanes</span><span class="strec">53-22-7, 113 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >2</span><span class="sttm" >Buffalo Sabres</span><span class="strec">50-23-9, 109 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >3</span><span class="sttm" >Tampa Bay Lightning</span><span class="strec">50-26-6, 106 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >4</span><span class="sttm" >Montreal Canadiens</span><span class="strec">48-24-10, 106 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >5</span><span class="sttm" >Boston Bruins</span><span class="strec">45-27-10, 100 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >6</span><span class="sttm" >Ottawa Senators</span><span class="strec">44-27-11, 99 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >7</span><span class="sttm" >Pittsburgh Penguins</span><span class="strec">41-25-16, 98 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >8</span><span class="sttm" >Philadelphia Flyers</span><span class="strec">43-27-12, 98 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >9</span><span class="sttm" >Washington Capitals</span><span class="strec">43-30-9, 95 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >10</span><span class="sttm" >Detroit Red Wings</span><span class="strec">41-31-10, 92 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >11</span><span class="sttm" >Columbus Blue Jackets</span><span class="strec">40-30-12, 92 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >12</span><span class="sttm" >New York Islanders</span><span class="strec">43-34-5, 91 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >13</span><span class="sttm" >New Jersey Devils</span><span class="strec">42-37-3, 87 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >14</span><span class="sttm" >Florida Panthers</span><span class="strec">40-38-4, 84 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >15</span><span class="sttm" >Toronto Maple Leafs</span><span class="strec">32-36-14, 78 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >16</span><span class="sttm" >New York Rangers</span><span class="strec">34-39-9, 77 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >17</span><span class="sttm" >Vegas Golden Knights</span><span class="strec">39-26-17, 95 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >18</span><span class="sttm" >Dallas Stars</span><span class="strec">50-20-12, 112 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >19</span><span class="sttm" >Minnesota Wild</span><span class="strec">46-24-12, 104 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >20</span><span class="sttm" >Edmonton Oilers</span><span class="strec">41-30-11, 93 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >21</span><span class="sttm" >Utah Mammoth</span><span class="strec">43-33-6, 92 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >22</span><span class="sttm" >Anaheim Ducks</span><span class="strec">43-33-6, 92 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >23</span><span class="sttm" >Los Angeles Kings</span><span class="strec">35-27-20, 90 PTS</span><span class="stpct"></span></div>
+<div class="strow me" style="border-left:2px solid var(--sj)"><span class="stnum" style="color:var(--sj)">24</span><span class="sttm" style="color:var(--sj)">◀ St. Louis Blues</span><span class="strec">37-33-12, 86 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >25</span><span class="sttm" >Nashville Predators</span><span class="strec">38-34-10, 86 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >26</span><span class="sttm" >San Jose Sharks</span><span class="strec">39-35-8, 86 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >27</span><span class="sttm" >Winnipeg Jets</span><span class="strec">35-35-12, 82 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >28</span><span class="sttm" >Seattle Kraken</span><span class="strec">34-37-11, 79 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >29</span><span class="sttm" >Calgary Flames</span><span class="strec">34-39-9, 77 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >30</span><span class="sttm" >Chicago Blackhawks</span><span class="strec">29-39-14, 72 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >31</span><span class="sttm" >Vancouver Canucks</span><span class="strec">25-49-8, 58 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >32</span><span class="sttm" >Colorado Avalanche</span><span class="strec">55-16-11, 121 PTS</span><span class="stpct"></span></div>
+  </div>
     </div>
   </div>
 </div>
 
-<!-- COWBOYS -->
 <div class="tc">
-  <span class="tbar" style="background:linear-gradient(90deg,#00359488,var(--dal))"></span>
+  <span class="tbar" style="background:linear-gradient(90deg,rgba(154,175,183,.12),var(--dal))"></span>
   <button class="thead" onclick="goTab('cowboys')">
     <div class="ttop">
       <div class="bdg" style="background:rgba(154,175,183,.12);color:var(--dal)">DAL</div>
-      <div class="tinfo"><div class="tnm" style="color:var(--dal)">Dallas Cowboys</div><div class="tlg">NFL · NFC East · Offseason 2026</div></div>
-      <div class="rpill">9–8–1</div>
+      <div class="tinfo"><div class="tnm" style="color:var(--dal)">Dallas Cowboys</div><div class="tlg">NFL · 2nd in NFC East</div></div>
+      <div class="rpill">—</div>
     </div>
-    <div class="sb off"><div class="sb-left"><div class="sb-st">OFFSEASON</div><div class="sb-dt">2026 schedule not yet released · Training camp opens late July</div></div><div class="sb-box muted"><span class="sb-val sm">9–8–1</span><span class="sb-sub">2025 Final</span></div></div>
-    <div class="lgame"><div><div class="lbl">Final · Jan 4, 2026</div><div class="mtch">@ NY Giants</div></div><div class="lgr"><span class="bsc">17–34</span><span class="rp L">L</span></div></div>
-    <div class="frow"><div class="fd L">L</div><div class="fd W">W</div><div class="fd W">W</div><div class="fd W">W</div><div class="fd W">W</div><span class="flbl">Last 5</span></div>
-    <div class="srec">
-      <div class="sri"><span class="srv">9</span><span class="srl">Wins</span></div><div class="srd"></div>
-      <div class="sri"><span class="srv">8</span><span class="srl">Losses</span></div><div class="srd"></div>
-      <div class="sri"><span class="srv" style="color:var(--dal)">.529</span><span class="srl">Win%</span></div><div class="srd"></div>
-      <div class="sri"><span class="srv" style="color:var(--dal)">3rd</span><span class="srl">NFC East</span></div>
-    </div>
-    <div class="nxtrow">→ NFL Offseason · Camp opens late July · Season opener September</div>
+    <div class="sb off"><div class="sb-left"><div class="sb-st">NO RECENT GAMES</div><div class="sb-dt">Check back after the next game</div></div></div>
+    <div class="frow"><span class="flbl">No recent games</span></div>
+    <div class="nxtrow">→ Next game not yet scheduled</div>
   </button>
-  <button class="expbtn" onclick="toggleDrawer('cowboys')"><span class="earr" id="earr-cowboys">▼</span><span id="elbl-cowboys">Stats, Standings &amp; Games</span></button>
+  <button class="expbtn" onclick="toggleDrawer('cowboys')"><span class="earr" id="earr-cowboys">&#9660;</span><span id="elbl-cowboys">Games &amp; Standings</span></button>
   <div class="drw" id="drw-cowboys">
     <div class="stabs">
       <button class="stab on" onclick="openSub('cowboys','games',this)">Games</button>
-      <button class="stab"    onclick="openSub('cowboys','players',this)">Players</button>
-      <button class="stab"    onclick="openSub('cowboys','standings',this)">Standings</button>
+      <button class="stab" onclick="openSub('cowboys','standings',this)">Standings</button>
     </div>
     <div class="spnl on" id="cowboys-games">
-      <div class="seclbl">2025 Season — Recent Games</div>
-      <div class="glist">
-        <div class="grow"><div><div class="gopp">@ NY Giants</div><div class="gdt">Sun Jan 4, 2026</div></div><div class="grgt"><span class="gsc">17–34</span><span class="rp L">L</span></div></div>
-        <div class="grow"><div><div class="gopp">vs Washington Commanders (Xmas)</div><div class="gdt">Thu Dec 25, 2025</div></div><div class="grgt"><span class="gsc">30–23</span><span class="rp W">W</span></div></div>
-        <div class="grow"><div><div class="gopp">vs Kansas City Chiefs (T-giving)</div><div class="gdt">Thu Nov 27, 2025</div></div><div class="grgt"><span class="gsc">31–28</span><span class="rp W">W</span></div></div>
-        <div class="grow"><div><div class="gopp">vs Philadelphia Eagles</div><div class="gdt">Sun Nov 23, 2025</div></div><div class="grgt"><span class="gsc">24–21</span><span class="rp W">W</span></div></div>
-        <div class="grow"><div><div class="gopp">@ Las Vegas Raiders</div><div class="gdt">Sun Nov 17, 2025</div></div><div class="grgt"><span class="gsc">33–16</span><span class="rp W">W</span></div></div>
-      </div>
-      <div class="seclbl" style="margin-top:8px">Upcoming — Offseason</div>
-      <div class="glist"><div class="grow"><div><div class="gopp">2026 NFL schedule not released</div><div class="gdt">Training camp opens late July · Season opens September</div></div></div></div>
-    </div>
-    <div class="spnl" id="cowboys-players">
-      <div class="seclbl">2025 Season Leaders</div>
-      <div class="pcard"><div class="ptop"><div class="prnk rg">#1</div><div><div class="pnm">Dak Prescott</div><div class="pp">Quarterback</div></div></div><div class="sgrid sg3"><div class="sc"><span class="sv" style="color:var(--dal)">22</span><span class="sl">TD</span></div><div class="sc"><span class="sv">14</span><span class="sl">INT</span></div><div class="sc"><span class="sv">4,100+</span><span class="sl">Yds</span></div></div></div>
-      <div class="pcard"><div class="ptop"><div class="prnk rs">#2</div><div><div class="pnm">CeeDee Lamb</div><div class="pp">Wide Receiver</div></div></div><div class="sgrid sg3"><div class="sc"><span class="sv" style="color:var(--dal)">100+</span><span class="sl">Rec</span></div><div class="sc"><span class="sv">9</span><span class="sl">TD</span></div><div class="sc"><span class="sv">1,400+</span><span class="sl">Yds</span></div></div></div>
-      <div class="pcard"><div class="ptop"><div class="prnk rb">#3</div><div><div class="pnm">Micah Parsons</div><div class="pp">Linebacker</div></div></div><div class="sgrid sg2"><div class="sc"><span class="sv" style="color:var(--dal)">12+</span><span class="sl">Sacks</span></div><div class="sc"><span class="sv">60+</span><span class="sl">Tackles</span></div></div></div>
+      <div class="seclbl">Recent Results</div>
+      <div class="glist"><div class="grow"><div><div class="gopp">No recent games</div></div></div></div>
     </div>
     <div class="spnl" id="cowboys-standings">
-      <div class="vtrow">
-        <button class="vtbtn on" onclick="showSt('co','nfcdivs',this)">NFC Divs</button>
-        <button class="vtbtn"    onclick="showSt('co','nfc',this)">Full NFC</button>
-        <button class="vtbtn"    onclick="showSt('co','afc',this)">Full AFC</button>
-        <button class="vtbtn"    onclick="showSt('co','afcdivs',this)">AFC Divs</button>
-      </div>
-      <div class="stview on" id="co-nfcdivs">
-        <div class="glist">
-          <div class="divhdr"><span>NFC East — 2025 Final</span></div>
-          <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Team</span><span style="min-width:36px;text-align:right">W–L</span><span style="min-width:40px;text-align:right">PCT</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">PHI Eagles 🏆</span><span class="strec">14–3</span><span class="stpct">.824</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">WAS Commanders 🏆</span><span class="strec">12–5</span><span class="stpct">.706</span></div>
-          <div class="strow me" style="border-left:2px solid var(--dal)"><span class="stnum" style="color:var(--dal)">3</span><span class="sttm" style="color:var(--dal)">◀ DAL Cowboys</span><span class="strec">9–8</span><span class="stpct" style="color:var(--dal)">.529</span></div>
-          <div class="strow"><span class="stnum">4</span><span class="sttm">NYG Giants</span><span class="strec">3–14</span><span class="stpct">.176</span></div>
-          <div class="divhdr"><span>NFC North</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">DET Lions 🏆</span><span class="strec">15–2</span><span class="stpct">.882</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">MIN Vikings 🏆</span><span class="strec">14–3</span><span class="stpct">.824</span></div>
-          <div class="strow"><span class="stnum">3</span><span class="sttm">GB Packers</span><span class="strec">11–6</span><span class="stpct">.647</span></div>
-          <div class="strow"><span class="stnum">4</span><span class="sttm">CHI Bears</span><span class="strec">5–12</span><span class="stpct">.294</span></div>
-          <div class="divhdr"><span>NFC South</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">ATL Falcons 🏆</span><span class="strec">11–6</span><span class="stpct">.647</span></div>
-          <div class="strow"><span class="stnum">2</span><span class="sttm">CAR Panthers</span><span class="strec">8–9</span><span class="stpct">.471</span></div>
-          <div class="strow"><span class="stnum">3</span><span class="sttm">TB Buccaneers</span><span class="strec">7–10</span><span class="stpct">.412</span></div>
-          <div class="strow"><span class="stnum">4</span><span class="sttm">NO Saints</span><span class="strec">5–12</span><span class="stpct">.294</span></div>
-          <div class="divhdr"><span>NFC West</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">LAR Rams 🏆</span><span class="strec">10–7</span><span class="stpct">.588</span></div>
-          <div class="strow"><span class="stnum">2</span><span class="sttm">SEA Seahawks</span><span class="strec">9–8</span><span class="stpct">.529</span></div>
-          <div class="strow"><span class="stnum">3</span><span class="sttm">ARI Cardinals</span><span class="strec">7–10</span><span class="stpct">.412</span></div>
-          <div class="strow"><span class="stnum">4</span><span class="sttm">SF 49ers</span><span class="strec">6–11</span><span class="stpct">.353</span></div>
-        </div>
-      </div>
-      <div class="stview" id="co-nfc">
-        <div class="glist">
-          <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Full NFC — 2025 Final</span><span style="min-width:36px;text-align:right">W–L</span><span style="min-width:40px;text-align:right">PCT</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">DET Lions (N) 🏆</span><span class="strec">15–2</span><span class="stpct">.882</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">PHI Eagles (E) 🏆</span><span class="strec">14–3</span><span class="stpct">.824</span></div>
-          <div class="strow po"><span class="stnum">3</span><span class="sttm">MIN Vikings (N) 🏆</span><span class="strec">14–3</span><span class="stpct">.824</span></div>
-          <div class="strow po"><span class="stnum">4</span><span class="sttm">WAS Commanders (E) 🏆</span><span class="strec">12–5</span><span class="stpct">.706</span></div>
-          <div class="strow po"><span class="stnum">5 WC</span><span class="sttm">GB Packers (N) 🏆</span><span class="strec">11–6</span><span class="stpct">.647</span></div>
-          <div class="strow po"><span class="stnum">6 WC</span><span class="sttm">ATL Falcons (S) 🏆</span><span class="strec">11–6</span><span class="stpct">.647</span></div>
-          <div class="strow po"><span class="stnum">7 WC</span><span class="sttm">LAR Rams (W) 🏆</span><span class="strec">10–7</span><span class="stpct">.588</span></div>
-          <div class="strow me" style="border-left:2px solid var(--dal)"><span class="stnum" style="color:var(--dal)">—</span><span class="sttm" style="color:var(--dal)">◀ DAL Cowboys (E)</span><span class="strec">9–8</span><span class="stpct" style="color:var(--dal)">.529</span></div>
-        </div>
-      </div>
-      <div class="stview" id="co-afc">
-        <div class="glist">
-          <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Full AFC — 2025 Final</span><span style="min-width:36px;text-align:right">W–L</span><span style="min-width:40px;text-align:right">PCT</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">KC Chiefs (W) 🏆</span><span class="strec">15–2</span><span class="stpct">.882</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">BUF Bills (E) 🏆</span><span class="strec">13–4</span><span class="stpct">.765</span></div>
-          <div class="strow po"><span class="stnum">3</span><span class="sttm">BAL Ravens (N) 🏆</span><span class="strec">12–5</span><span class="stpct">.706</span></div>
-          <div class="strow po"><span class="stnum">4</span><span class="sttm">HOU Texans (S) 🏆</span><span class="strec">12–5</span><span class="stpct">.706</span></div>
-          <div class="strow po"><span class="stnum">5 WC</span><span class="sttm">PIT Steelers (N) 🏆</span><span class="strec">11–6</span><span class="stpct">.647</span></div>
-          <div class="strow po"><span class="stnum">6 WC</span><span class="sttm">MIA Dolphins (E) 🏆</span><span class="strec">10–7</span><span class="stpct">.588</span></div>
-          <div class="strow po"><span class="stnum">7 WC</span><span class="sttm">IND Colts (S) 🏆</span><span class="strec">10–7</span><span class="stpct">.588</span></div>
-          <div class="strow"><span class="stnum">8</span><span class="sttm">DEN Broncos (W)</span><span class="strec">10–7</span><span class="stpct">.588</span></div>
-        </div>
-      </div>
-      <div class="stview" id="co-afcdivs">
-        <div class="glist">
-          <div class="divhdr"><span>AFC East</span></div>
-          <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Team</span><span style="min-width:36px;text-align:right">W–L</span><span style="min-width:40px;text-align:right">PCT</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">BUF Bills 🏆</span><span class="strec">13–4</span><span class="stpct">.765</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">MIA Dolphins 🏆</span><span class="strec">10–7</span><span class="stpct">.588</span></div>
-          <div class="strow"><span class="stnum">3</span><span class="sttm">NYJ Jets</span><span class="strec">7–10</span><span class="stpct">.412</span></div>
-          <div class="strow"><span class="stnum">4</span><span class="sttm">NE Patriots</span><span class="strec">4–13</span><span class="stpct">.235</span></div>
-          <div class="divhdr"><span>AFC North</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">BAL Ravens 🏆</span><span class="strec">12–5</span><span class="stpct">.706</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">PIT Steelers 🏆</span><span class="strec">11–6</span><span class="stpct">.647</span></div>
-          <div class="strow"><span class="stnum">3</span><span class="sttm">CLE Browns</span><span class="strec">7–10</span><span class="stpct">.412</span></div>
-          <div class="strow"><span class="stnum">4</span><span class="sttm">CIN Bengals</span><span class="strec">5–12</span><span class="stpct">.294</span></div>
-          <div class="divhdr"><span>AFC South</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">HOU Texans 🏆</span><span class="strec">12–5</span><span class="stpct">.706</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">IND Colts 🏆</span><span class="strec">10–7</span><span class="stpct">.588</span></div>
-          <div class="strow"><span class="stnum">3</span><span class="sttm">JAX Jaguars</span><span class="strec">7–10</span><span class="stpct">.412</span></div>
-          <div class="strow"><span class="stnum">4</span><span class="sttm">TEN Titans</span><span class="strec">3–14</span><span class="stpct">.176</span></div>
-          <div class="divhdr"><span>AFC West</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">KC Chiefs 🏆</span><span class="strec">15–2</span><span class="stpct">.882</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">DEN Broncos 🏆</span><span class="strec">10–7</span><span class="stpct">.588</span></div>
-          <div class="strow"><span class="stnum">3</span><span class="sttm">LV Raiders</span><span class="strec">6–11</span><span class="stpct">.353</span></div>
-          <div class="strow"><span class="stnum">4</span><span class="sttm">LAC Chargers</span><span class="strec">5–12</span><span class="stpct">.294</span></div>
-        </div>
-      </div>
+      <div class="glist">
+    <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Team</span><span style="min-width:36px;text-align:right">W-L</span><span style="min-width:40px;text-align:right">PCT</span></div>
+    <div class="strow " ><span class="stnum" >1</span><span class="sttm" >New England Patriots</span><span class="strec">14-3</span><span class="stpct">.824</span></div>
+<div class="strow " ><span class="stnum" >2</span><span class="sttm" >Jacksonville Jaguars</span><span class="strec">13-4</span><span class="stpct">.765</span></div>
+<div class="strow " ><span class="stnum" >3</span><span class="sttm" >Pittsburgh Steelers</span><span class="strec">10-7</span><span class="stpct">.588</span></div>
+<div class="strow " ><span class="stnum" >4</span><span class="sttm" >Houston Texans</span><span class="strec">12-5</span><span class="stpct">.706</span></div>
+<div class="strow " ><span class="stnum" >5</span><span class="sttm" >Buffalo Bills</span><span class="strec">12-5</span><span class="stpct">.706</span></div>
+<div class="strow " ><span class="stnum" >6</span><span class="sttm" >Los Angeles Chargers</span><span class="strec">11-6</span><span class="stpct">.647</span></div>
+<div class="strow " ><span class="stnum" >7</span><span class="sttm" >Indianapolis Colts</span><span class="strec">8-9</span><span class="stpct">.471</span></div>
+<div class="strow " ><span class="stnum" >8</span><span class="sttm" >Baltimore Ravens</span><span class="strec">8-9</span><span class="stpct">.471</span></div>
+<div class="strow " ><span class="stnum" >9</span><span class="sttm" >Miami Dolphins</span><span class="strec">7-10</span><span class="stpct">.412</span></div>
+<div class="strow " ><span class="stnum" >10</span><span class="sttm" >Cincinnati Bengals</span><span class="strec">6-11</span><span class="stpct">.353</span></div>
+<div class="strow " ><span class="stnum" >11</span><span class="sttm" >Kansas City Chiefs</span><span class="strec">6-11</span><span class="stpct">.353</span></div>
+<div class="strow " ><span class="stnum" >12</span><span class="sttm" >Cleveland Browns</span><span class="strec">5-12</span><span class="stpct">.294</span></div>
+<div class="strow " ><span class="stnum" >13</span><span class="sttm" >Las Vegas Raiders</span><span class="strec">3-14</span><span class="stpct">.176</span></div>
+<div class="strow " ><span class="stnum" >14</span><span class="sttm" >New York Jets</span><span class="strec">3-14</span><span class="stpct">.176</span></div>
+<div class="strow " ><span class="stnum" >15</span><span class="sttm" >Tennessee Titans</span><span class="strec">3-14</span><span class="stpct">.176</span></div>
+<div class="strow " ><span class="stnum" >16</span><span class="sttm" >Denver Broncos</span><span class="strec">14-3</span><span class="stpct">.824</span></div>
+<div class="strow " ><span class="stnum" >17</span><span class="sttm" >Chicago Bears</span><span class="strec">11-6</span><span class="stpct">.647</span></div>
+<div class="strow " ><span class="stnum" >18</span><span class="sttm" >Philadelphia Eagles</span><span class="strec">11-6</span><span class="stpct">.647</span></div>
+<div class="strow " ><span class="stnum" >19</span><span class="sttm" >Carolina Panthers</span><span class="strec">8-9</span><span class="stpct">.471</span></div>
+<div class="strow " ><span class="stnum" >20</span><span class="sttm" >Los Angeles Rams</span><span class="strec">12-5</span><span class="stpct">.706</span></div>
+<div class="strow " ><span class="stnum" >21</span><span class="sttm" >San Francisco 49ers</span><span class="strec">12-5</span><span class="stpct">.706</span></div>
+<div class="strow " ><span class="stnum" >22</span><span class="sttm" >Green Bay Packers</span><span class="strec">9-7-1</span><span class="stpct">.559</span></div>
+<div class="strow " ><span class="stnum" >23</span><span class="sttm" >Minnesota Vikings</span><span class="strec">9-8</span><span class="stpct">.529</span></div>
+<div class="strow " ><span class="stnum" >24</span><span class="sttm" >Detroit Lions</span><span class="strec">9-8</span><span class="stpct">.529</span></div>
+<div class="strow " ><span class="stnum" >25</span><span class="sttm" >Tampa Bay Buccaneers</span><span class="strec">8-9</span><span class="stpct">.471</span></div>
+<div class="strow " ><span class="stnum" >26</span><span class="sttm" >Atlanta Falcons</span><span class="strec">8-9</span><span class="stpct">.471</span></div>
+<div class="strow me" style="border-left:2px solid var(--dal)"><span class="stnum" style="color:var(--dal)">27</span><span class="sttm" style="color:var(--dal)">◀ Dallas Cowboys</span><span class="strec">7-9-1</span><span class="stpct">.441</span></div>
+<div class="strow " ><span class="stnum" >28</span><span class="sttm" >New Orleans Saints</span><span class="strec">6-11</span><span class="stpct">.353</span></div>
+<div class="strow " ><span class="stnum" >29</span><span class="sttm" >Washington Commanders</span><span class="strec">5-12</span><span class="stpct">.294</span></div>
+<div class="strow " ><span class="stnum" >30</span><span class="sttm" >New York Giants</span><span class="strec">4-13</span><span class="stpct">.235</span></div>
+<div class="strow " ><span class="stnum" >31</span><span class="sttm" >Arizona Cardinals</span><span class="strec">3-14</span><span class="stpct">.176</span></div>
+<div class="strow " ><span class="stnum" >32</span><span class="sttm" >Seattle Seahawks</span><span class="strec">14-3</span><span class="stpct">.824</span></div>
+  </div>
     </div>
   </div>
 </div>
 
-<!-- WARRIORS -->
 <div class="tc">
-  <span class="tbar" style="background:linear-gradient(90deg,#1D428A88,var(--gsw))"></span>
+  <span class="tbar" style="background:linear-gradient(90deg,rgba(255,199,44,.12),var(--gsw))"></span>
   <button class="thead" onclick="goTab('warriors')">
     <div class="ttop">
       <div class="bdg" style="background:rgba(255,199,44,.12);color:var(--gsw)">GS</div>
-      <div class="tinfo"><div class="tnm" style="color:var(--gsw)">Golden State Warriors</div><div class="tlg">NBA · Pacific · 4th · Season Complete</div></div>
-      <div class="rpill">37–45</div>
+      <div class="tinfo"><div class="tnm" style="color:var(--gsw)">Golden State Warriors</div><div class="tlg">NBA · 4th in Pacific Division</div></div>
+      <div class="rpill">37-45</div>
     </div>
-    <div class="sb off"><div class="sb-left"><div class="sb-st">SEASON OVER</div><div class="sb-dt">Offseason · Free agency underway</div></div><div class="sb-box muted"><span class="sb-val sm">37–45</span><span class="sb-sub">Final Record</span></div></div>
-    <div class="lgame"><div><div class="lbl">Final · Apr 12</div><div class="mtch">@ LA Clippers</div></div><div class="lgr"><span class="bsc">110–115</span><span class="rp L">L</span></div></div>
-    <div class="frow"><div class="fd L">L</div><div class="fd L">L</div><div class="fd L">L</div><div class="fd L">L</div><div class="fd L">L</div><span class="flbl">Last 5</span></div>
-    <div class="srec">
-      <div class="sri"><span class="srv">37</span><span class="srl">Wins</span></div><div class="srd"></div>
-      <div class="sri"><span class="srv">45</span><span class="srl">Losses</span></div><div class="srd"></div>
-      <div class="sri"><span class="srv" style="color:var(--gsw)">.451</span><span class="srl">Win%</span></div><div class="srd"></div>
-      <div class="sri"><span class="srv" style="color:var(--gsw)">4th</span><span class="srl">Pacific</span></div>
-    </div>
-    <div class="nxtrow">→ Offseason · Season opens October</div>
+    <div class="sb off"><div class="sb-left"><div class="sb-st">NO RECENT GAMES</div><div class="sb-dt">Check back after the next game</div></div></div>
+    <div class="frow"><span class="flbl">No recent games</span></div>
+    <div class="nxtrow">→ Next: <strong>GS @ PHX</strong> · Sat, Apr 18 · 2:00 AM</div>
   </button>
-  <button class="expbtn" onclick="toggleDrawer('warriors')"><span class="earr" id="earr-warriors">▼</span><span id="elbl-warriors">Stats, Standings &amp; Games</span></button>
+  <button class="expbtn" onclick="toggleDrawer('warriors')"><span class="earr" id="earr-warriors">&#9660;</span><span id="elbl-warriors">Games &amp; Standings</span></button>
   <div class="drw" id="drw-warriors">
     <div class="stabs">
       <button class="stab on" onclick="openSub('warriors','games',this)">Games</button>
-      <button class="stab"    onclick="openSub('warriors','players',this)">Players</button>
-      <button class="stab"    onclick="openSub('warriors','standings',this)">Standings</button>
+      <button class="stab" onclick="openSub('warriors','standings',this)">Standings</button>
     </div>
     <div class="spnl on" id="warriors-games">
-      <div class="seclbl">Final 5 Regular Season Games</div>
-      <div class="glist">
-        <div class="grow"><div><div class="gopp">@ LA Clippers</div><div class="gdt">Sun Apr 12</div></div><div class="grgt"><span class="gsc">110–115</span><span class="rp L">L</span></div></div>
-        <div class="grow"><div><div class="gopp">@ Sacramento Kings</div><div class="gdt">Fri Apr 10</div></div><div class="grgt"><span class="gsc">118–124</span><span class="rp L">L</span></div></div>
-        <div class="grow"><div><div class="gopp">vs LA Lakers</div><div class="gdt">Thu Apr 9</div></div><div class="grgt"><span class="gsc">103–119</span><span class="rp L">L</span></div></div>
-        <div class="grow"><div><div class="gopp">vs Sacramento Kings</div><div class="gdt">Tue Apr 7</div></div><div class="grgt"><span class="gsc">110–105</span><span class="rp W">W</span></div></div>
-        <div class="grow"><div><div class="gopp">vs Houston Rockets</div><div class="gdt">Sun Apr 5</div></div><div class="grgt"><span class="gsc">116–117</span><span class="rp L">L</span></div></div>
-      </div>
-      <div class="seclbl" style="margin-top:8px">Upcoming — Offseason</div>
-      <div class="glist"><div class="grow"><div><div class="gopp">2026 NBA Finals: OKC def. SAS</div><div class="gdt">Season complete · Draft &amp; free agency underway</div></div></div></div>
-    </div>
-    <div class="spnl" id="warriors-players">
-      <div class="seclbl">Top performers · @ LA Clippers Apr 12</div>
-      <div class="pcard"><div class="ptop"><div class="prnk rg">#1</div><div><div class="pnm">Stephen Curry</div><div class="pp">Guard</div></div></div><div class="sgrid sg4"><div class="sc"><span class="sv" style="color:var(--gsw)">24</span><span class="sl">Pts</span></div><div class="sc"><span class="sv">6</span><span class="sl">Reb</span></div><div class="sc"><span class="sv">3</span><span class="sl">Ast</span></div><div class="sc"><span class="sv">50%</span><span class="sl">FG%</span></div></div></div>
-      <div class="pcard"><div class="ptop"><div class="prnk rs">#2</div><div><div class="pnm">Charles Bassey</div><div class="pp">Center-Forward</div></div></div><div class="sgrid sg4"><div class="sc"><span class="sv" style="color:var(--gsw)">16</span><span class="sl">Pts</span></div><div class="sc"><span class="sv">3</span><span class="sl">Reb</span></div><div class="sc"><span class="sv">2</span><span class="sl">Ast</span></div><div class="sc"><span class="sv">83%</span><span class="sl">FG%</span></div></div></div>
+      <div class="seclbl">Recent Results</div>
+      <div class="glist"><div class="grow"><div><div class="gopp">No recent games</div></div></div></div>
     </div>
     <div class="spnl" id="warriors-standings">
-      <div class="vtrow">
-        <button class="vtbtn on" onclick="showSt('wa','pac',this)">Pacific</button>
-        <button class="vtbtn"    onclick="showSt('wa','wdivs',this)">West Divs</button>
-        <button class="vtbtn"    onclick="showSt('wa','wconf',this)">West Conf</button>
-        <button class="vtbtn"    onclick="showSt('wa','econf',this)">East Conf</button>
-      </div>
-      <div class="stview on" id="wa-pac">
-        <div class="glist">
-          <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Pacific Division — Final</span><span style="min-width:36px;text-align:right">W–L</span><span style="min-width:40px;text-align:right">PCT</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">LAL Lakers 🏆</span><span class="strec">53–29</span><span class="stpct">.646</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">PHX Suns 🏆</span><span class="strec">45–37</span><span class="stpct">.549</span></div>
-          <div class="strow po"><span class="stnum">3</span><span class="sttm">LAC Clippers 🏆</span><span class="strec">42–40</span><span class="stpct">.512</span></div>
-          <div class="strow me" style="border-left:2px solid var(--gsw)"><span class="stnum" style="color:var(--gsw)">4</span><span class="sttm" style="color:var(--gsw)">◀ GSW Warriors</span><span class="strec">37–45</span><span class="stpct" style="color:var(--gsw)">.451</span></div>
-          <div class="strow"><span class="stnum">5</span><span class="sttm">SAC Kings</span><span class="strec">22–60</span><span class="stpct">.268</span></div>
-        </div>
-      </div>
-      <div class="stview" id="wa-wdivs">
-        <div class="glist">
-          <div class="divhdr"><span>Pacific</span></div>
-          <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Team</span><span style="min-width:36px;text-align:right">W–L</span><span style="min-width:40px;text-align:right">PCT</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">LAL Lakers 🏆</span><span class="strec">53–29</span><span class="stpct">.646</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">PHX Suns 🏆</span><span class="strec">45–37</span><span class="stpct">.549</span></div>
-          <div class="strow po"><span class="stnum">3</span><span class="sttm">LAC Clippers 🏆</span><span class="strec">42–40</span><span class="stpct">.512</span></div>
-          <div class="strow me" style="border-left:2px solid var(--gsw)"><span class="stnum" style="color:var(--gsw)">4</span><span class="sttm" style="color:var(--gsw)">◀ GSW Warriors</span><span class="strec">37–45</span><span class="stpct" style="color:var(--gsw)">.451</span></div>
-          <div class="strow"><span class="stnum">5</span><span class="sttm">SAC Kings</span><span class="strec">22–60</span><span class="stpct">.268</span></div>
-          <div class="divhdr"><span>Northwest</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">OKC Thunder 🏆 CHAMPS</span><span class="strec">64–18</span><span class="stpct">.780</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">DEN Nuggets 🏆</span><span class="strec">54–28</span><span class="stpct">.659</span></div>
-          <div class="strow po"><span class="stnum">3</span><span class="sttm">MIN Timberwolves 🏆</span><span class="strec">49–33</span><span class="stpct">.598</span></div>
-          <div class="strow po"><span class="stnum">4</span><span class="sttm">POR Trail Blazers 🏆</span><span class="strec">42–40</span><span class="stpct">.512</span></div>
-          <div class="strow"><span class="stnum">5</span><span class="sttm">UTA Jazz</span><span class="strec">22–60</span><span class="stpct">.268</span></div>
-          <div class="divhdr"><span>Southwest</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">SAS Spurs 🏆</span><span class="strec">62–20</span><span class="stpct">.756</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">HOU Rockets 🏆</span><span class="strec">52–30</span><span class="stpct">.634</span></div>
-          <div class="strow"><span class="stnum">3</span><span class="sttm">NOP Pelicans</span><span class="strec">26–56</span><span class="stpct">.317</span></div>
-          <div class="strow"><span class="stnum">4</span><span class="sttm">DAL Mavericks</span><span class="strec">26–56</span><span class="stpct">.317</span></div>
-          <div class="strow"><span class="stnum">5</span><span class="sttm">MEM Grizzlies</span><span class="strec">25–57</span><span class="stpct">.305</span></div>
-        </div>
-      </div>
-      <div class="stview" id="wa-wconf">
-        <div class="glist">
-          <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Western Conference — Final</span><span style="min-width:36px;text-align:right">W–L</span><span style="min-width:40px;text-align:right">PCT</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">OKC Thunder 🏆 CHAMPS</span><span class="strec">64–18</span><span class="stpct">.780</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">SAS Spurs 🏆</span><span class="strec">62–20</span><span class="stpct">.756</span></div>
-          <div class="strow po"><span class="stnum">3</span><span class="sttm">DEN Nuggets 🏆</span><span class="strec">54–28</span><span class="stpct">.659</span></div>
-          <div class="strow po"><span class="stnum">4</span><span class="sttm">LAL Lakers 🏆</span><span class="strec">53–29</span><span class="stpct">.646</span></div>
-          <div class="strow po"><span class="stnum">5</span><span class="sttm">HOU Rockets 🏆</span><span class="strec">52–30</span><span class="stpct">.634</span></div>
-          <div class="strow po"><span class="stnum">6</span><span class="sttm">MIN Timberwolves 🏆</span><span class="strec">49–33</span><span class="stpct">.598</span></div>
-          <div class="strow po"><span class="stnum">7</span><span class="sttm">PHX Suns 🏆</span><span class="strec">45–37</span><span class="stpct">.549</span></div>
-          <div class="strow po"><span class="stnum">8</span><span class="sttm">POR Trail Blazers 🏆</span><span class="strec">42–40</span><span class="stpct">.512</span></div>
-          <div class="strow po"><span class="stnum">9</span><span class="sttm">LAC Clippers 🏆</span><span class="strec">42–40</span><span class="stpct">.512</span></div>
-          <div class="strow me" style="border-left:2px solid var(--gsw)"><span class="stnum" style="color:var(--gsw)">10</span><span class="sttm" style="color:var(--gsw)">◀ GSW Warriors</span><span class="strec">37–45</span><span class="stpct" style="color:var(--gsw)">.451</span></div>
-          <div class="strow"><span class="stnum">11</span><span class="sttm">NOP Pelicans</span><span class="strec">26–56</span><span class="stpct">.317</span></div>
-          <div class="strow"><span class="stnum">12</span><span class="sttm">DAL Mavericks</span><span class="strec">26–56</span><span class="stpct">.317</span></div>
-          <div class="strow"><span class="stnum">13</span><span class="sttm">MEM Grizzlies</span><span class="strec">25–57</span><span class="stpct">.305</span></div>
-          <div class="strow"><span class="stnum">14</span><span class="sttm">UTA Jazz</span><span class="strec">22–60</span><span class="stpct">.268</span></div>
-          <div class="strow"><span class="stnum">15</span><span class="sttm">SAC Kings</span><span class="strec">22–60</span><span class="stpct">.268</span></div>
-        </div>
-      </div>
-      <div class="stview" id="wa-econf">
-        <div class="glist">
-          <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Eastern Conference — Final</span><span style="min-width:36px;text-align:right">W–L</span><span style="min-width:40px;text-align:right">PCT</span></div>
-          <div class="strow po"><span class="stnum">1</span><span class="sttm">DET Pistons 🏆</span><span class="strec">60–22</span><span class="stpct">.732</span></div>
-          <div class="strow po"><span class="stnum">2</span><span class="sttm">BOS Celtics 🏆</span><span class="strec">56–26</span><span class="stpct">.683</span></div>
-          <div class="strow po"><span class="stnum">3</span><span class="sttm">NYK Knicks 🏆</span><span class="strec">53–29</span><span class="stpct">.646</span></div>
-          <div class="strow po"><span class="stnum">4</span><span class="sttm">CLE Cavaliers 🏆</span><span class="strec">52–30</span><span class="stpct">.634</span></div>
-          <div class="strow po"><span class="stnum">5</span><span class="sttm">TOR Raptors 🏆</span><span class="strec">46–36</span><span class="stpct">.561</span></div>
-          <div class="strow po"><span class="stnum">6</span><span class="sttm">ATL Hawks 🏆</span><span class="strec">46–36</span><span class="stpct">.561</span></div>
-          <div class="strow po"><span class="stnum">7</span><span class="sttm">PHI 76ers 🏆</span><span class="strec">45–37</span><span class="stpct">.549</span></div>
-          <div class="strow po"><span class="stnum">8</span><span class="sttm">ORL Magic 🏆</span><span class="strec">45–37</span><span class="stpct">.549</span></div>
-          <div class="strow po"><span class="stnum">9</span><span class="sttm">CHA Hornets 🏆</span><span class="strec">44–38</span><span class="stpct">.537</span></div>
-          <div class="strow po"><span class="stnum">10</span><span class="sttm">MIA Heat 🏆</span><span class="strec">43–39</span><span class="stpct">.524</span></div>
-          <div class="strow"><span class="stnum">11</span><span class="sttm">MIL Bucks</span><span class="strec">32–50</span><span class="stpct">.390</span></div>
-          <div class="strow"><span class="stnum">12</span><span class="sttm">CHI Bulls</span><span class="strec">31–51</span><span class="stpct">.378</span></div>
-          <div class="strow"><span class="stnum">13</span><span class="sttm">BKN Nets</span><span class="strec">20–62</span><span class="stpct">.244</span></div>
-          <div class="strow"><span class="stnum">14</span><span class="sttm">IND Pacers</span><span class="strec">19–63</span><span class="stpct">.232</span></div>
-          <div class="strow"><span class="stnum">15</span><span class="sttm">WSH Wizards</span><span class="strec">17–65</span><span class="stpct">.207</span></div>
-        </div>
-      </div>
+      <div class="glist">
+    <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Team</span><span style="min-width:36px;text-align:right">W-L</span><span style="min-width:40px;text-align:right">PCT</span></div>
+    <div class="strow " ><span class="stnum" >1</span><span class="sttm" >Detroit Pistons</span><span class="strec">60-22</span><span class="stpct">.732</span></div>
+<div class="strow " ><span class="stnum" >2</span><span class="sttm" >Atlanta Hawks</span><span class="strec">46-36</span><span class="stpct">.561</span></div>
+<div class="strow " ><span class="stnum" >3</span><span class="sttm" >Boston Celtics</span><span class="strec">56-26</span><span class="stpct">.683</span></div>
+<div class="strow " ><span class="stnum" >4</span><span class="sttm" >Philadelphia 76ers</span><span class="strec">45-37</span><span class="stpct">.549</span></div>
+<div class="strow " ><span class="stnum" >5</span><span class="sttm" >Orlando Magic</span><span class="strec">45-37</span><span class="stpct">.549</span></div>
+<div class="strow " ><span class="stnum" >6</span><span class="sttm" >Toronto Raptors</span><span class="strec">46-36</span><span class="stpct">.561</span></div>
+<div class="strow " ><span class="stnum" >7</span><span class="sttm" >Cleveland Cavaliers</span><span class="strec">52-30</span><span class="stpct">.634</span></div>
+<div class="strow " ><span class="stnum" >8</span><span class="sttm" >New York Knicks</span><span class="strec">53-29</span><span class="stpct">.646</span></div>
+<div class="strow " ><span class="stnum" >9</span><span class="sttm" >Miami Heat</span><span class="strec">43-39</span><span class="stpct">.524</span></div>
+<div class="strow " ><span class="stnum" >10</span><span class="sttm" >Charlotte Hornets</span><span class="strec">44-38</span><span class="stpct">.537</span></div>
+<div class="strow " ><span class="stnum" >11</span><span class="sttm" >Washington Wizards</span><span class="strec">17-65</span><span class="stpct">.207</span></div>
+<div class="strow " ><span class="stnum" >12</span><span class="sttm" >Indiana Pacers</span><span class="strec">19-63</span><span class="stpct">.232</span></div>
+<div class="strow " ><span class="stnum" >13</span><span class="sttm" >Brooklyn Nets</span><span class="strec">20-62</span><span class="stpct">.244</span></div>
+<div class="strow " ><span class="stnum" >14</span><span class="sttm" >Chicago Bulls</span><span class="strec">31-51</span><span class="stpct">.378</span></div>
+<div class="strow " ><span class="stnum" >15</span><span class="sttm" >Milwaukee Bucks</span><span class="strec">32-50</span><span class="stpct">.390</span></div>
+<div class="strow " ><span class="stnum" >16</span><span class="sttm" >Los Angeles Lakers</span><span class="strec">53-29</span><span class="stpct">.646</span></div>
+<div class="strow " ><span class="stnum" >17</span><span class="sttm" >San Antonio Spurs</span><span class="strec">62-20</span><span class="stpct">.756</span></div>
+<div class="strow " ><span class="stnum" >18</span><span class="sttm" >Portland Trail Blazers</span><span class="strec">42-40</span><span class="stpct">.512</span></div>
+<div class="strow " ><span class="stnum" >19</span><span class="sttm" >Phoenix Suns</span><span class="strec">45-37</span><span class="stpct">.549</span></div>
+<div class="strow " ><span class="stnum" >20</span><span class="sttm" >Minnesota Timberwolves</span><span class="strec">49-33</span><span class="stpct">.598</span></div>
+<div class="strow " ><span class="stnum" >21</span><span class="sttm" >Houston Rockets</span><span class="strec">52-30</span><span class="stpct">.634</span></div>
+<div class="strow " ><span class="stnum" >22</span><span class="sttm" >Denver Nuggets</span><span class="strec">54-28</span><span class="stpct">.659</span></div>
+<div class="strow me" style="border-left:2px solid var(--gsw)"><span class="stnum" style="color:var(--gsw)">23</span><span class="sttm" style="color:var(--gsw)">◀ Golden State Warriors</span><span class="strec">37-45</span><span class="stpct">.451</span></div>
+<div class="strow " ><span class="stnum" >24</span><span class="sttm" >LA Clippers</span><span class="strec">42-40</span><span class="stpct">.512</span></div>
+<div class="strow " ><span class="stnum" >25</span><span class="sttm" >Sacramento Kings</span><span class="strec">22-60</span><span class="stpct">.268</span></div>
+<div class="strow " ><span class="stnum" >26</span><span class="sttm" >Utah Jazz</span><span class="strec">22-60</span><span class="stpct">.268</span></div>
+<div class="strow " ><span class="stnum" >27</span><span class="sttm" >Memphis Grizzlies</span><span class="strec">25-57</span><span class="stpct">.305</span></div>
+<div class="strow " ><span class="stnum" >28</span><span class="sttm" >New Orleans Pelicans</span><span class="strec">26-56</span><span class="stpct">.317</span></div>
+<div class="strow " ><span class="stnum" >29</span><span class="sttm" >Dallas Mavericks</span><span class="strec">26-56</span><span class="stpct">.317</span></div>
+<div class="strow " ><span class="stnum" >30</span><span class="sttm" >Oklahoma City Thunder</span><span class="strec">64-18</span><span class="stpct">.780</span></div>
+  </div>
     </div>
   </div>
 </div>
 
-<!-- ATHLETICS -->
 <div class="tc">
-  <span class="tbar" style="background:linear-gradient(90deg,#00383188,var(--ath))"></span>
+  <span class="tbar" style="background:linear-gradient(90deg,rgba(239,178,30,.12),var(--ath))"></span>
   <button class="thead" onclick="goTab('athletics')">
     <div class="ttop">
       <div class="bdg" style="background:rgba(239,178,30,.12);color:var(--ath)">ATH</div>
-      <div class="tinfo"><div class="tnm" style="color:var(--ath)">Athletics</div><div class="tlg">MLB · AL West · 4th Place</div></div>
-      <div class="rpill">41–50</div>
+      <div class="tinfo"><div class="tnm" style="color:var(--ath)">Athletics</div><div class="tlg">MLB · 4th in AL West</div></div>
+      <div class="rpill">41-55</div>
     </div>
-    <div class="sb"><div class="sb-left"><div class="sb-st">FINAL · Jul 7</div><div class="sb-dt">@ Detroit Tigers</div></div><div class="sb-box loss"><span class="sb-val">DET 6–2</span><span class="sb-sub">L · Final</span></div></div>
-    <div class="lgame"><div><div class="lbl">Last · Jul 7</div><div class="mtch">@ Detroit Tigers</div></div><div class="lgr"><span class="bsc">2–6</span><span class="rp L">L</span></div></div>
-    <div class="frow"><div class="fd L">L</div><div class="fd L">L</div><div class="fd" style="opacity:.3">–</div><div class="fd" style="opacity:.3">–</div><div class="fd" style="opacity:.3">–</div><span class="flbl">Last 2</span></div>
-    <div class="srec">
-      <div class="sri"><span class="srv">41</span><span class="srl">Wins</span></div><div class="srd"></div>
-      <div class="sri"><span class="srv">50</span><span class="srl">Losses</span></div><div class="srd"></div>
-      <div class="sri"><span class="srv" style="color:var(--ath)">.451</span><span class="srl">Win%</span></div><div class="srd"></div>
-      <div class="sri"><span class="srv" style="color:var(--ath)">4th</span><span class="srl">AL West</span></div>
-    </div>
-    <div class="nxtrow">→ Next: <strong>@ Detroit Tigers</strong> · Wed Jul 8, 3:40 PM PDT</div>
+    <div class="sb off"><div class="sb-left"><div class="sb-st">FINAL · Jul 11</div><div class="sb-dt">vs Chicago White Sox</div></div><div class="sb-box muted loss"><span class="sb-val sm">0–1</span><span class="sb-sub">L · Final</span></div></div>
+    <div class="frow"><div class="fd L">L</div><div class="fd L">L</div><div class="fd L">L</div><div class="fd L">L</div><div class="fd L">L</div><span class="flbl">Last 5</span></div>
+    <div class="nxtrow">→ Next: <strong>WSH @ ATH</strong> · Sat, Jul 18 · 1:40 AM</div>
   </button>
-  <button class="expbtn" onclick="toggleDrawer('athletics')"><span class="earr" id="earr-athletics">▼</span><span id="elbl-athletics">Stats, Standings &amp; Games</span></button>
+  <button class="expbtn" onclick="toggleDrawer('athletics')"><span class="earr" id="earr-athletics">&#9660;</span><span id="elbl-athletics">Games &amp; Standings</span></button>
   <div class="drw" id="drw-athletics">
     <div class="stabs">
       <button class="stab on" onclick="openSub('athletics','games',this)">Games</button>
-      <button class="stab"    onclick="openSub('athletics','players',this)">Players</button>
-      <button class="stab"    onclick="openSub('athletics','standings',this)">Standings</button>
+      <button class="stab" onclick="openSub('athletics','standings',this)">Standings</button>
     </div>
     <div class="spnl on" id="athletics-games">
-      <div class="seclbl">Upcoming</div>
-      <div class="glist">
-        <div class="grow dim"><div><div class="gopp">@ Detroit Tigers</div><div class="gdt">Wed Jul 8 · 3:40 PM PDT</div></div><div class="grgt"><span class="gnxt">NEXT</span></div></div>
-        <div class="grow dim"><div><div class="gopp">@ Detroit Tigers</div><div class="gdt">Thu Jul 9 · 3:40 PM PDT</div></div></div>
-        <div class="grow dim"><div><div class="gopp">@ Chicago White Sox</div><div class="gdt">Fri Jul 10 · 4:40 PM PDT</div></div></div>
-        <div class="grow dim"><div><div class="gopp">@ Chicago White Sox</div><div class="gdt">Sat Jul 11 · 11:10 AM PDT</div></div></div>
-        <div class="grow dim"><div><div class="gopp">@ Chicago White Sox</div><div class="gdt">Sun Jul 12 · 11:10 AM PDT</div></div></div>
-      </div>
-      <div class="seclbl" style="margin-top:8px">Recent Results</div>
-      <div class="glist">
-        <div class="grow"><div><div class="gopp">@ Detroit Tigers</div><div class="gdt">Tue Jul 7</div></div><div class="grgt"><span class="gsc">2–6</span><span class="rp L">L</span></div></div>
-        <div class="grow"><div><div class="gopp">vs Miami Marlins</div><div class="gdt">Sun Jul 5</div></div><div class="grgt"><span class="gsc">8–9</span><span class="rp L">L</span></div></div>
-      </div>
-    </div>
-    <div class="spnl" id="athletics-players">
-      <div class="seclbl">Recent Top Performers</div>
-      <div class="pcard"><div class="ptop"><div class="prnk rg">#1</div><div><div class="pnm">Lawrence Butler</div><div class="pp">Right Field</div></div></div><div class="sgrid sg4"><div class="sc"><span class="sv" style="color:var(--ath)">1</span><span class="sl">HR</span></div><div class="sc"><span class="sv">1</span><span class="sl">RBI</span></div><div class="sc"><span class="sv">1</span><span class="sl">Hit</span></div><div class="sc"><span class="sv">1</span><span class="sl">Run</span></div></div></div>
-      <div class="pcard"><div class="ptop"><div class="prnk rs">#2</div><div><div class="pnm">Shea Langeliers</div><div class="pp">Catcher</div></div></div><div class="sgrid sg4"><div class="sc"><span class="sv" style="color:var(--ath)">2</span><span class="sl">Hits</span></div><div class="sc"><span class="sv">4</span><span class="sl">AB</span></div><div class="sc"><span class="sv">.500</span><span class="sl">AVG</span></div><div class="sc"><span class="sv">0</span><span class="sl">RBI</span></div></div></div>
+      <div class="seclbl">Recent Results</div>
+      <div class="glist"><div class="grow"><div><div class="gopp">vs Chicago White Sox</div><div class="gdt">Jul 11</div></div><div class="grgt"><span class="gsc">0-1</span><span class="rp L">L</span></div></div>
+<div class="grow"><div><div class="gopp">vs Chicago White Sox</div><div class="gdt">Jul 10</div></div><div class="grgt"><span class="gsc">1-14</span><span class="rp L">L</span></div></div>
+<div class="grow"><div><div class="gopp">vs Detroit Tigers</div><div class="gdt">Jul 9</div></div><div class="grgt"><span class="gsc">1-4</span><span class="rp L">L</span></div></div>
+<div class="grow"><div><div class="gopp">vs Detroit Tigers</div><div class="gdt">Jul 8</div></div><div class="grgt"><span class="gsc">1-6</span><span class="rp L">L</span></div></div>
+<div class="grow"><div><div class="gopp">vs Detroit Tigers</div><div class="gdt">Jul 7</div></div><div class="grgt"><span class="gsc">2-6</span><span class="rp L">L</span></div></div></div>
     </div>
     <div class="spnl" id="athletics-standings">
-      <div class="vtrow">
-        <button class="vtbtn on" onclick="showSt('at','aldivs',this)">AL Divs</button>
-        <button class="vtbtn"    onclick="showSt('at','al',this)">Full AL</button>
-        <button class="vtbtn"    onclick="showSt('at','nl',this)">Full NL</button>
-        <button class="vtbtn"    onclick="showSt('at','nldivs',this)">NL Divs</button>
-      </div>
-      <div class="stview on" id="at-aldivs">
-        <div class="glist">
-          <div class="divhdr"><span>AL East</span></div>
-          <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Team</span><span style="min-width:36px;text-align:right">W–L</span><span style="min-width:40px;text-align:right">PCT</span></div>
-          <div class="strow"><span class="stnum">1</span><span class="sttm">TB Rays</span><span class="strec">53–36</span><span class="stpct">.596</span></div>
-          <div class="strow"><span class="stnum">2</span><span class="sttm">NYY Yankees</span><span class="strec">50–41</span><span class="stpct">.549</span></div>
-          <div class="strow"><span class="stnum">3</span><span class="sttm">TOR Blue Jays</span><span class="strec">44–49</span><span class="stpct">.473</span></div>
-          <div class="strow"><span class="stnum">4</span><span class="sttm">BAL Orioles</span><span class="strec">42–50</span><span class="stpct">.457</span></div>
-          <div class="strow"><span class="stnum">5</span><span class="sttm">BOS Red Sox</span><span class="strec">41–48</span><span class="stpct">.461</span></div>
-          <div class="divhdr"><span>AL Central</span></div>
-          <div class="strow"><span class="stnum">1</span><span class="sttm">CWS White Sox</span><span class="strec">47–43</span><span class="stpct">.522</span></div>
-          <div class="strow"><span class="stnum">2</span><span class="sttm">CLE Guardians</span><span class="strec">47–45</span><span class="stpct">.511</span></div>
-          <div class="strow"><span class="stnum">3</span><span class="sttm">MIN Twins</span><span class="strec">45–47</span><span class="stpct">.489</span></div>
-          <div class="strow"><span class="stnum">4</span><span class="sttm">DET Tigers</span><span class="strec">41–50</span><span class="stpct">.451</span></div>
-          <div class="strow"><span class="stnum">5</span><span class="sttm">KC Royals</span><span class="strec">38–54</span><span class="stpct">.413</span></div>
-          <div class="divhdr"><span>AL West</span></div>
-          <div class="strow"><span class="stnum">1</span><span class="sttm">SEA Mariners</span><span class="strec">47–45</span><span class="stpct">.511</span></div>
-          <div class="strow"><span class="stnum">2</span><span class="sttm">TEX Rangers</span><span class="strec">46–45</span><span class="stpct">.505</span></div>
-          <div class="strow"><span class="stnum">3</span><span class="sttm">HOU Astros</span><span class="strec">46–48</span><span class="stpct">.489</span></div>
-          <div class="strow me" style="border-left:2px solid var(--ath)"><span class="stnum" style="color:var(--ath)">4</span><span class="sttm" style="color:var(--ath)">◀ Athletics</span><span class="strec">41–50</span><span class="stpct" style="color:var(--ath)">.451</span></div>
-          <div class="strow"><span class="stnum">5</span><span class="sttm">LAA Angels</span><span class="strec">36–56</span><span class="stpct">.391</span></div>
-        </div>
-      </div>
-      <div class="stview" id="at-al">
-        <div class="glist">
-          <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Full American League</span><span style="min-width:36px;text-align:right">W–L</span><span style="min-width:40px;text-align:right">PCT</span></div>
-          <div class="strow"><span class="stnum">1</span><span class="sttm">TB Rays (E)</span><span class="strec">53–36</span><span class="stpct">.596</span></div>
-          <div class="strow"><span class="stnum">2</span><span class="sttm">NYY Yankees (E)</span><span class="strec">50–41</span><span class="stpct">.549</span></div>
-          <div class="strow"><span class="stnum">3</span><span class="sttm">CWS White Sox (C)</span><span class="strec">47–43</span><span class="stpct">.522</span></div>
-          <div class="strow"><span class="stnum">4</span><span class="sttm">CLE Guardians (C)</span><span class="strec">47–45</span><span class="stpct">.511</span></div>
-          <div class="strow"><span class="stnum">5</span><span class="sttm">SEA Mariners (W)</span><span class="strec">47–45</span><span class="stpct">.511</span></div>
-          <div class="strow"><span class="stnum">6</span><span class="sttm">TEX Rangers (W)</span><span class="strec">46–45</span><span class="stpct">.505</span></div>
-          <div class="strow"><span class="stnum">7</span><span class="sttm">HOU Astros (W)</span><span class="strec">46–48</span><span class="stpct">.489</span></div>
-          <div class="strow"><span class="stnum">8</span><span class="sttm">MIN Twins (C)</span><span class="strec">45–47</span><span class="stpct">.489</span></div>
-          <div class="strow"><span class="stnum">9</span><span class="sttm">TOR Blue Jays (E)</span><span class="strec">44–49</span><span class="stpct">.473</span></div>
-          <div class="strow"><span class="stnum">10</span><span class="sttm">BOS Red Sox (E)</span><span class="strec">41–48</span><span class="stpct">.461</span></div>
-          <div class="strow"><span class="stnum">11</span><span class="sttm">DET Tigers (C)</span><span class="strec">41–50</span><span class="stpct">.451</span></div>
-          <div class="strow me" style="border-left:2px solid var(--ath)"><span class="stnum" style="color:var(--ath)">12</span><span class="sttm" style="color:var(--ath)">◀ Athletics (W)</span><span class="strec">41–50</span><span class="stpct" style="color:var(--ath)">.451</span></div>
-          <div class="strow"><span class="stnum">13</span><span class="sttm">BAL Orioles (E)</span><span class="strec">42–50</span><span class="stpct">.457</span></div>
-          <div class="strow"><span class="stnum">14</span><span class="sttm">KC Royals (C)</span><span class="strec">38–54</span><span class="stpct">.413</span></div>
-          <div class="strow"><span class="stnum">15</span><span class="sttm">LAA Angels (W)</span><span class="strec">36–56</span><span class="stpct">.391</span></div>
-        </div>
-      </div>
-      <div class="stview" id="at-nl">
-        <div class="glist">
-          <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Full National League</span><span style="min-width:36px;text-align:right">W–L</span><span style="min-width:40px;text-align:right">PCT</span></div>
-          <div class="strow"><span class="stnum">1</span><span class="sttm">LAD Dodgers (W)</span><span class="strec">60–33</span><span class="stpct">.645</span></div>
-          <div class="strow"><span class="stnum">2</span><span class="sttm">MIL Brewers (C)</span><span class="strec">58–33</span><span class="stpct">.637</span></div>
-          <div class="strow"><span class="stnum">3</span><span class="sttm">ATL Braves (E)</span><span class="strec">52–38</span><span class="stpct">.578</span></div>
-          <div class="strow"><span class="stnum">4</span><span class="sttm">PHI Phillies (E)</span><span class="strec">51–41</span><span class="stpct">.554</span></div>
-          <div class="strow"><span class="stnum">5</span><span class="sttm">CHC Cubs (C)</span><span class="strec">51–40</span><span class="stpct">.560</span></div>
-          <div class="strow"><span class="stnum">6</span><span class="sttm">MIA Marlins (E)</span><span class="strec">50–42</span><span class="stpct">.543</span></div>
-          <div class="strow"><span class="stnum">7</span><span class="sttm">STL Cardinals (C)</span><span class="strec">47–43</span><span class="stpct">.522</span></div>
-          <div class="strow"><span class="stnum">8</span><span class="sttm">PIT Pirates (C)</span><span class="strec">47–45</span><span class="stpct">.511</span></div>
-          <div class="strow"><span class="stnum">9</span><span class="sttm">WSH Nationals (E)</span><span class="strec">47–46</span><span class="stpct">.505</span></div>
-          <div class="strow"><span class="stnum">10</span><span class="sttm">AZ Diamondbacks (W)</span><span class="strec">45–46</span><span class="stpct">.495</span></div>
-          <div class="strow"><span class="stnum">11</span><span class="sttm">SD Padres (W)</span><span class="strec">45–46</span><span class="stpct">.495</span></div>
-          <div class="strow"><span class="stnum">12</span><span class="sttm">CIN Reds (C)</span><span class="strec">41–49</span><span class="stpct">.456</span></div>
-          <div class="strow"><span class="stnum">13</span><span class="sttm">NYM Mets (E)</span><span class="strec">38–54</span><span class="stpct">.413</span></div>
-          <div class="strow"><span class="stnum">14</span><span class="sttm">SF Giants (W)</span><span class="strec">38–54</span><span class="stpct">.413</span></div>
-          <div class="strow"><span class="stnum">15</span><span class="sttm">COL Rockies (W)</span><span class="strec">38–55</span><span class="stpct">.409</span></div>
-        </div>
-      </div>
-      <div class="stview" id="at-nldivs">
-        <div class="glist">
-          <div class="divhdr"><span>NL East</span></div>
-          <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Team</span><span style="min-width:36px;text-align:right">W–L</span><span style="min-width:40px;text-align:right">PCT</span></div>
-          <div class="strow"><span class="stnum">1</span><span class="sttm">ATL Braves</span><span class="strec">52–38</span><span class="stpct">.578</span></div>
-          <div class="strow"><span class="stnum">2</span><span class="sttm">PHI Phillies</span><span class="strec">51–41</span><span class="stpct">.554</span></div>
-          <div class="strow"><span class="stnum">3</span><span class="sttm">MIA Marlins</span><span class="strec">50–42</span><span class="stpct">.543</span></div>
-          <div class="strow"><span class="stnum">4</span><span class="sttm">WSH Nationals</span><span class="strec">47–46</span><span class="stpct">.505</span></div>
-          <div class="strow"><span class="stnum">5</span><span class="sttm">NYM Mets</span><span class="strec">38–54</span><span class="stpct">.413</span></div>
-          <div class="divhdr"><span>NL Central</span></div>
-          <div class="strow"><span class="stnum">1</span><span class="sttm">MIL Brewers</span><span class="strec">58–33</span><span class="stpct">.637</span></div>
-          <div class="strow"><span class="stnum">2</span><span class="sttm">CHC Cubs</span><span class="strec">51–40</span><span class="stpct">.560</span></div>
-          <div class="strow"><span class="stnum">3</span><span class="sttm">STL Cardinals</span><span class="strec">47–43</span><span class="stpct">.522</span></div>
-          <div class="strow"><span class="stnum">4</span><span class="sttm">PIT Pirates</span><span class="strec">47–45</span><span class="stpct">.511</span></div>
-          <div class="strow"><span class="stnum">5</span><span class="sttm">CIN Reds</span><span class="strec">41–49</span><span class="stpct">.456</span></div>
-          <div class="divhdr"><span>NL West</span></div>
-          <div class="strow"><span class="stnum">1</span><span class="sttm">LAD Dodgers</span><span class="strec">60–33</span><span class="stpct">.645</span></div>
-          <div class="strow"><span class="stnum">2</span><span class="sttm">AZ Diamondbacks</span><span class="strec">45–46</span><span class="stpct">.495</span></div>
-          <div class="strow"><span class="stnum">3</span><span class="sttm">SD Padres</span><span class="strec">45–46</span><span class="stpct">.495</span></div>
-          <div class="strow"><span class="stnum">4</span><span class="sttm">SF Giants</span><span class="strec">38–54</span><span class="stpct">.413</span></div>
-          <div class="strow"><span class="stnum">5</span><span class="sttm">COL Rockies</span><span class="strec">38–55</span><span class="stpct">.409</span></div>
-        </div>
-      </div>
+      <div class="glist">
+    <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Team</span><span style="min-width:36px;text-align:right">W-L</span><span style="min-width:40px;text-align:right">PCT</span></div>
+    <div class="strow " ><span class="stnum" >1</span><span class="sttm" >Tampa Bay Rays</span><span class="strec">56-38</span><span class="stpct">.596</span></div>
+<div class="strow " ><span class="stnum" >2</span><span class="sttm" >New York Yankees</span><span class="strec">54-42</span><span class="stpct">.563</span></div>
+<div class="strow " ><span class="stnum" >3</span><span class="sttm" >Chicago White Sox</span><span class="strec">50-45</span><span class="stpct">.526</span></div>
+<div class="strow " ><span class="stnum" >4</span><span class="sttm" >Cleveland Guardians</span><span class="strec">51-46</span><span class="stpct">.526</span></div>
+<div class="strow " ><span class="stnum" >5</span><span class="sttm" >Texas Rangers</span><span class="strec">49-47</span><span class="stpct">.510</span></div>
+<div class="strow " ><span class="stnum" >6</span><span class="sttm" >Seattle Mariners</span><span class="strec">48-49</span><span class="stpct">.495</span></div>
+<div class="strow " ><span class="stnum" >7</span><span class="sttm" >Minnesota Twins</span><span class="strec">48-49</span><span class="stpct">.495</span></div>
+<div class="strow " ><span class="stnum" >8</span><span class="sttm" >Boston Red Sox</span><span class="strec">46-48</span><span class="stpct">.489</span></div>
+<div class="strow " ><span class="stnum" >9</span><span class="sttm" >Houston Astros</span><span class="strec">47-51</span><span class="stpct">.480</span></div>
+<div class="strow " ><span class="stnum" >10</span><span class="sttm" >Baltimore Orioles</span><span class="strec">46-51</span><span class="stpct">.474</span></div>
+<div class="strow " ><span class="stnum" >11</span><span class="sttm" >Toronto Blue Jays</span><span class="strec">45-51</span><span class="stpct">.469</span></div>
+<div class="strow " ><span class="stnum" >12</span><span class="sttm" >Detroit Tigers</span><span class="strec">44-52</span><span class="stpct">.458</span></div>
+<div class="strow me" style="border-left:2px solid var(--ath)"><span class="stnum" style="color:var(--ath)">13</span><span class="sttm" style="color:var(--ath)">◀ Athletics</span><span class="strec">41-55</span><span class="stpct">.427</span></div>
+<div class="strow " ><span class="stnum" >14</span><span class="sttm" >Kansas City Royals</span><span class="strec">38-59</span><span class="stpct">.392</span></div>
+<div class="strow " ><span class="stnum" >15</span><span class="sttm" >Los Angeles Angels</span><span class="strec">38-59</span><span class="stpct">.392</span></div>
+<div class="strow " ><span class="stnum" >16</span><span class="sttm" >Los Angeles Dodgers</span><span class="strec">61-36</span><span class="stpct">.629</span></div>
+<div class="strow " ><span class="stnum" >17</span><span class="sttm" >Milwaukee Brewers</span><span class="strec">59-37</span><span class="stpct">.615</span></div>
+<div class="strow " ><span class="stnum" >18</span><span class="sttm" >Atlanta Braves</span><span class="strec">55-40</span><span class="stpct">.579</span></div>
+<div class="strow " ><span class="stnum" >19</span><span class="sttm" >Chicago Cubs</span><span class="strec">54-42</span><span class="stpct">.563</span></div>
+<div class="strow " ><span class="stnum" >20</span><span class="sttm" >Philadelphia Phillies</span><span class="strec">54-43</span><span class="stpct">.557</span></div>
+<div class="strow " ><span class="stnum" >21</span><span class="sttm" >Miami Marlins</span><span class="strec">52-45</span><span class="stpct">.536</span></div>
+<div class="strow " ><span class="stnum" >22</span><span class="sttm" >St. Louis Cardinals</span><span class="strec">50-45</span><span class="stpct">.526</span></div>
+<div class="strow " ><span class="stnum" >23</span><span class="sttm" >Pittsburgh Pirates</span><span class="strec">50-47</span><span class="stpct">.515</span></div>
+<div class="strow " ><span class="stnum" >24</span><span class="sttm" >Arizona Diamondbacks</span><span class="strec">49-47</span><span class="stpct">.510</span></div>
+<div class="strow " ><span class="stnum" >25</span><span class="sttm" >San Diego Padres</span><span class="strec">48-48</span><span class="stpct">.500</span></div>
+<div class="strow " ><span class="stnum" >26</span><span class="sttm" >Washington Nationals</span><span class="strec">48-49</span><span class="stpct">.495</span></div>
+<div class="strow " ><span class="stnum" >27</span><span class="sttm" >Cincinnati Reds</span><span class="strec">43-52</span><span class="stpct">.453</span></div>
+<div class="strow " ><span class="stnum" >28</span><span class="sttm" >San Francisco Giants</span><span class="strec">41-55</span><span class="stpct">.427</span></div>
+<div class="strow " ><span class="stnum" >29</span><span class="sttm" >New York Mets</span><span class="strec">40-57</span><span class="stpct">.412</span></div>
+<div class="strow " ><span class="stnum" >30</span><span class="sttm" >Colorado Rockies</span><span class="strec">39-59</span><span class="stpct">.398</span></div>
+  </div>
     </div>
   </div>
 </div>
 </div><!-- end panel-all -->
 
-<!-- ════════ TEAM DETAIL PANELS ════════ -->
+<!-- TEAM DETAIL PANELS -->
+
 <div class="panel" id="panel-sharks">
-  <div class="dhero"><div class="dbdg" style="background:rgba(0,194,206,.12);color:var(--sj)">SJ</div><div><div class="dnm" style="color:var(--sj)">Sharks</div><div class="dsb">NHL · Pacific · Season Complete</div><div class="drec">39–35 · .527</div></div></div>
-  <div class="champbox"><span class="champtxt">🏆 Carolina Hurricanes won the 2026 Stanley Cup (def. VGK 4–2)</span></div>
-  <div class="srec" style="margin-bottom:11px"><div class="sri"><span class="srv">39</span><span class="srl">Wins</span></div><div class="srd"></div><div class="sri"><span class="srv">35</span><span class="srl">Losses</span></div><div class="srd"></div><div class="sri"><span class="srv" style="color:var(--sj)">.527</span><span class="srl">Win%</span></div><div class="srd"></div><div class="sri"><span class="srv" style="color:var(--sj)">5th</span><span class="srl">Pacific</span></div></div>
-  <div class="sb off"><div class="sb-left"><div class="sb-st">FINAL · Apr 16</div><div class="sb-dt">@ WPG Jets</div></div><div class="sb-box muted"><span class="sb-val">SJ 6–1</span><span class="sb-sub">W · Final</span></div></div>
-  <div class="sectitle" style="color:var(--sj)">Watch</div>
-  <a class="slink" href="https://www.nhl.com/tv" target="_blank"><div><div class="slname">NHL.tv / ESPN+</div><div class="slsub">Offseason coverage &amp; replays</div></div><span>→</span></a>
-  <a class="slink" href="https://www.nbcsportscalifornia.com" target="_blank"><div><div class="slname">NBC Sports California</div><div class="slsub">Local · in-market only</div></div><span>→</span></a>
-  <a class="slink" href="https://www.sportsnet.ca/live" target="_blank"><div><div class="slname">Sportsnet Now</div><div class="slsub">Canada</div></div><span>→</span></a>
+  <div class="dhero"><div class="dbdg" style="background:rgba(0,194,206,.12);color:var(--sj)">SJ</div><div><div class="dnm" style="color:var(--sj)">St. Louis Blues</div><div class="dsb">NHL · 5th in Central Division</div><div class="drec">—</div></div></div>
+  <div class="sb off"><div class="sb-left"><div class="sb-st">NO RECENT GAMES</div><div class="sb-dt">Check back after the next game</div></div></div>
+  <div class="nxtrow">→ Next: <strong>DAL @ STL</strong> · Sat, Sep 19 · 11:00 PM</div>
+  <div class="sectitle" style="color:var(--sj)">Recent Results</div>
+  <div class="glist"><div class="grow"><div><div class="gopp">No recent games</div></div></div></div>
+  <div class="sectitle" style="color:var(--sj)">Standings</div>
+  <div class="glist">
+    <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Team</span><span style="min-width:36px;text-align:right">W-L</span><span style="min-width:40px;text-align:right">PCT</span></div>
+    <div class="strow " ><span class="stnum" >1</span><span class="sttm" >Carolina Hurricanes</span><span class="strec">53-22-7, 113 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >2</span><span class="sttm" >Buffalo Sabres</span><span class="strec">50-23-9, 109 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >3</span><span class="sttm" >Tampa Bay Lightning</span><span class="strec">50-26-6, 106 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >4</span><span class="sttm" >Montreal Canadiens</span><span class="strec">48-24-10, 106 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >5</span><span class="sttm" >Boston Bruins</span><span class="strec">45-27-10, 100 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >6</span><span class="sttm" >Ottawa Senators</span><span class="strec">44-27-11, 99 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >7</span><span class="sttm" >Pittsburgh Penguins</span><span class="strec">41-25-16, 98 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >8</span><span class="sttm" >Philadelphia Flyers</span><span class="strec">43-27-12, 98 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >9</span><span class="sttm" >Washington Capitals</span><span class="strec">43-30-9, 95 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >10</span><span class="sttm" >Detroit Red Wings</span><span class="strec">41-31-10, 92 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >11</span><span class="sttm" >Columbus Blue Jackets</span><span class="strec">40-30-12, 92 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >12</span><span class="sttm" >New York Islanders</span><span class="strec">43-34-5, 91 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >13</span><span class="sttm" >New Jersey Devils</span><span class="strec">42-37-3, 87 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >14</span><span class="sttm" >Florida Panthers</span><span class="strec">40-38-4, 84 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >15</span><span class="sttm" >Toronto Maple Leafs</span><span class="strec">32-36-14, 78 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >16</span><span class="sttm" >New York Rangers</span><span class="strec">34-39-9, 77 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >17</span><span class="sttm" >Vegas Golden Knights</span><span class="strec">39-26-17, 95 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >18</span><span class="sttm" >Dallas Stars</span><span class="strec">50-20-12, 112 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >19</span><span class="sttm" >Minnesota Wild</span><span class="strec">46-24-12, 104 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >20</span><span class="sttm" >Edmonton Oilers</span><span class="strec">41-30-11, 93 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >21</span><span class="sttm" >Utah Mammoth</span><span class="strec">43-33-6, 92 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >22</span><span class="sttm" >Anaheim Ducks</span><span class="strec">43-33-6, 92 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >23</span><span class="sttm" >Los Angeles Kings</span><span class="strec">35-27-20, 90 PTS</span><span class="stpct"></span></div>
+<div class="strow me" style="border-left:2px solid var(--sj)"><span class="stnum" style="color:var(--sj)">24</span><span class="sttm" style="color:var(--sj)">◀ St. Louis Blues</span><span class="strec">37-33-12, 86 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >25</span><span class="sttm" >Nashville Predators</span><span class="strec">38-34-10, 86 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >26</span><span class="sttm" >San Jose Sharks</span><span class="strec">39-35-8, 86 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >27</span><span class="sttm" >Winnipeg Jets</span><span class="strec">35-35-12, 82 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >28</span><span class="sttm" >Seattle Kraken</span><span class="strec">34-37-11, 79 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >29</span><span class="sttm" >Calgary Flames</span><span class="strec">34-39-9, 77 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >30</span><span class="sttm" >Chicago Blackhawks</span><span class="strec">29-39-14, 72 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >31</span><span class="sttm" >Vancouver Canucks</span><span class="strec">25-49-8, 58 PTS</span><span class="stpct"></span></div>
+<div class="strow " ><span class="stnum" >32</span><span class="sttm" >Colorado Avalanche</span><span class="strec">55-16-11, 121 PTS</span><span class="stpct"></span></div>
+  </div>
 </div>
 
 <div class="panel" id="panel-cowboys">
-  <div class="dhero"><div class="dbdg" style="background:rgba(154,175,183,.12);color:var(--dal)">DAL</div><div><div class="dnm" style="color:var(--dal)">Cowboys</div><div class="dsb">NFL · NFC East · 2025 Final</div><div class="drec">9–8–1 · .529</div></div></div>
-  <div class="srec" style="margin-bottom:11px"><div class="sri"><span class="srv">9</span><span class="srl">Wins</span></div><div class="srd"></div><div class="sri"><span class="srv">8</span><span class="srl">Losses</span></div><div class="srd"></div><div class="sri"><span class="srv">1</span><span class="srl">Ties</span></div><div class="srd"></div><div class="sri"><span class="srv" style="color:var(--dal)">3rd</span><span class="srl">NFC East</span></div></div>
-  <div class="sb off"><div class="sb-left"><div class="sb-st">OFFSEASON</div><div class="sb-dt">Training camp opens late July</div></div><div class="sb-box muted"><span class="sb-val sm">9–8–1</span><span class="sb-sub">2025 Final</span></div></div>
-  <div style="background:var(--card);border:1px solid var(--bdr);border-radius:12px;margin-bottom:11px"><div class="offbox"><span class="offtitle">OFFSEASON</span><span class="offsub">Camp opens late July, season opener September.</span></div></div>
-  <div class="sectitle" style="color:var(--dal)">Watch</div>
-  <a class="slink" href="https://www.nfl.com/plus" target="_blank"><div><div class="slname">NFL+ / NFL Network</div><div class="slsub">Official NFL streaming</div></div><span>→</span></a>
-  <a class="slink" href="https://www.espn.com/watch" target="_blank"><div><div class="slname">ESPN / ESPN+</div><div class="slsub">Games &amp; analysis</div></div><span>→</span></a>
+  <div class="dhero"><div class="dbdg" style="background:rgba(154,175,183,.12);color:var(--dal)">DAL</div><div><div class="dnm" style="color:var(--dal)">Dallas Cowboys</div><div class="dsb">NFL · 2nd in NFC East</div><div class="drec">—</div></div></div>
+  <div class="sb off"><div class="sb-left"><div class="sb-st">NO RECENT GAMES</div><div class="sb-dt">Check back after the next game</div></div></div>
+  <div class="nxtrow">→ Next game not yet scheduled</div>
+  <div class="sectitle" style="color:var(--dal)">Recent Results</div>
+  <div class="glist"><div class="grow"><div><div class="gopp">No recent games</div></div></div></div>
+  <div class="sectitle" style="color:var(--dal)">Standings</div>
+  <div class="glist">
+    <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Team</span><span style="min-width:36px;text-align:right">W-L</span><span style="min-width:40px;text-align:right">PCT</span></div>
+    <div class="strow " ><span class="stnum" >1</span><span class="sttm" >New England Patriots</span><span class="strec">14-3</span><span class="stpct">.824</span></div>
+<div class="strow " ><span class="stnum" >2</span><span class="sttm" >Jacksonville Jaguars</span><span class="strec">13-4</span><span class="stpct">.765</span></div>
+<div class="strow " ><span class="stnum" >3</span><span class="sttm" >Pittsburgh Steelers</span><span class="strec">10-7</span><span class="stpct">.588</span></div>
+<div class="strow " ><span class="stnum" >4</span><span class="sttm" >Houston Texans</span><span class="strec">12-5</span><span class="stpct">.706</span></div>
+<div class="strow " ><span class="stnum" >5</span><span class="sttm" >Buffalo Bills</span><span class="strec">12-5</span><span class="stpct">.706</span></div>
+<div class="strow " ><span class="stnum" >6</span><span class="sttm" >Los Angeles Chargers</span><span class="strec">11-6</span><span class="stpct">.647</span></div>
+<div class="strow " ><span class="stnum" >7</span><span class="sttm" >Indianapolis Colts</span><span class="strec">8-9</span><span class="stpct">.471</span></div>
+<div class="strow " ><span class="stnum" >8</span><span class="sttm" >Baltimore Ravens</span><span class="strec">8-9</span><span class="stpct">.471</span></div>
+<div class="strow " ><span class="stnum" >9</span><span class="sttm" >Miami Dolphins</span><span class="strec">7-10</span><span class="stpct">.412</span></div>
+<div class="strow " ><span class="stnum" >10</span><span class="sttm" >Cincinnati Bengals</span><span class="strec">6-11</span><span class="stpct">.353</span></div>
+<div class="strow " ><span class="stnum" >11</span><span class="sttm" >Kansas City Chiefs</span><span class="strec">6-11</span><span class="stpct">.353</span></div>
+<div class="strow " ><span class="stnum" >12</span><span class="sttm" >Cleveland Browns</span><span class="strec">5-12</span><span class="stpct">.294</span></div>
+<div class="strow " ><span class="stnum" >13</span><span class="sttm" >Las Vegas Raiders</span><span class="strec">3-14</span><span class="stpct">.176</span></div>
+<div class="strow " ><span class="stnum" >14</span><span class="sttm" >New York Jets</span><span class="strec">3-14</span><span class="stpct">.176</span></div>
+<div class="strow " ><span class="stnum" >15</span><span class="sttm" >Tennessee Titans</span><span class="strec">3-14</span><span class="stpct">.176</span></div>
+<div class="strow " ><span class="stnum" >16</span><span class="sttm" >Denver Broncos</span><span class="strec">14-3</span><span class="stpct">.824</span></div>
+<div class="strow " ><span class="stnum" >17</span><span class="sttm" >Chicago Bears</span><span class="strec">11-6</span><span class="stpct">.647</span></div>
+<div class="strow " ><span class="stnum" >18</span><span class="sttm" >Philadelphia Eagles</span><span class="strec">11-6</span><span class="stpct">.647</span></div>
+<div class="strow " ><span class="stnum" >19</span><span class="sttm" >Carolina Panthers</span><span class="strec">8-9</span><span class="stpct">.471</span></div>
+<div class="strow " ><span class="stnum" >20</span><span class="sttm" >Los Angeles Rams</span><span class="strec">12-5</span><span class="stpct">.706</span></div>
+<div class="strow " ><span class="stnum" >21</span><span class="sttm" >San Francisco 49ers</span><span class="strec">12-5</span><span class="stpct">.706</span></div>
+<div class="strow " ><span class="stnum" >22</span><span class="sttm" >Green Bay Packers</span><span class="strec">9-7-1</span><span class="stpct">.559</span></div>
+<div class="strow " ><span class="stnum" >23</span><span class="sttm" >Minnesota Vikings</span><span class="strec">9-8</span><span class="stpct">.529</span></div>
+<div class="strow " ><span class="stnum" >24</span><span class="sttm" >Detroit Lions</span><span class="strec">9-8</span><span class="stpct">.529</span></div>
+<div class="strow " ><span class="stnum" >25</span><span class="sttm" >Tampa Bay Buccaneers</span><span class="strec">8-9</span><span class="stpct">.471</span></div>
+<div class="strow " ><span class="stnum" >26</span><span class="sttm" >Atlanta Falcons</span><span class="strec">8-9</span><span class="stpct">.471</span></div>
+<div class="strow me" style="border-left:2px solid var(--dal)"><span class="stnum" style="color:var(--dal)">27</span><span class="sttm" style="color:var(--dal)">◀ Dallas Cowboys</span><span class="strec">7-9-1</span><span class="stpct">.441</span></div>
+<div class="strow " ><span class="stnum" >28</span><span class="sttm" >New Orleans Saints</span><span class="strec">6-11</span><span class="stpct">.353</span></div>
+<div class="strow " ><span class="stnum" >29</span><span class="sttm" >Washington Commanders</span><span class="strec">5-12</span><span class="stpct">.294</span></div>
+<div class="strow " ><span class="stnum" >30</span><span class="sttm" >New York Giants</span><span class="strec">4-13</span><span class="stpct">.235</span></div>
+<div class="strow " ><span class="stnum" >31</span><span class="sttm" >Arizona Cardinals</span><span class="strec">3-14</span><span class="stpct">.176</span></div>
+<div class="strow " ><span class="stnum" >32</span><span class="sttm" >Seattle Seahawks</span><span class="strec">14-3</span><span class="stpct">.824</span></div>
+  </div>
 </div>
 
 <div class="panel" id="panel-warriors">
-  <div class="dhero"><div class="dbdg" style="background:rgba(255,199,44,.12);color:var(--gsw)">GS</div><div><div class="dnm" style="color:var(--gsw)">Warriors</div><div class="dsb">NBA · Pacific · Season Complete</div><div class="drec">37–45 · .451</div></div></div>
-  <div class="champbox"><span class="champtxt">🏆 Oklahoma City Thunder won the 2026 NBA Finals (def. SAS)</span></div>
-  <div class="srec" style="margin-bottom:11px"><div class="sri"><span class="srv">37</span><span class="srl">Wins</span></div><div class="srd"></div><div class="sri"><span class="srv">45</span><span class="srl">Losses</span></div><div class="srd"></div><div class="sri"><span class="srv" style="color:var(--gsw)">.451</span><span class="srl">Win%</span></div><div class="srd"></div><div class="sri"><span class="srv" style="color:var(--gsw)">4th</span><span class="srl">Pacific</span></div></div>
-  <div class="sb off"><div class="sb-left"><div class="sb-st">SEASON OVER</div><div class="sb-dt">Offseason · Free agency underway</div></div><div class="sb-box muted"><span class="sb-val sm">37–45</span><span class="sb-sub">Final Record</span></div></div>
-  <div class="sectitle" style="color:var(--gsw)">Watch</div>
-  <a class="slink" href="https://www.nba.com/warriors/league-pass" target="_blank"><div><div class="slname">NBA League Pass</div><div class="slsub">Offseason coverage &amp; replays</div></div><span>→</span></a>
-  <a class="slink" href="https://www.espn.com/watch" target="_blank"><div><div class="slname">ESPN / ESPN+</div><div class="slsub">Free agency &amp; draft coverage</div></div><span>→</span></a>
+  <div class="dhero"><div class="dbdg" style="background:rgba(255,199,44,.12);color:var(--gsw)">GS</div><div><div class="dnm" style="color:var(--gsw)">Golden State Warriors</div><div class="dsb">NBA · 4th in Pacific Division</div><div class="drec">37-45</div></div></div>
+  <div class="sb off"><div class="sb-left"><div class="sb-st">NO RECENT GAMES</div><div class="sb-dt">Check back after the next game</div></div></div>
+  <div class="nxtrow">→ Next: <strong>GS @ PHX</strong> · Sat, Apr 18 · 2:00 AM</div>
+  <div class="sectitle" style="color:var(--gsw)">Recent Results</div>
+  <div class="glist"><div class="grow"><div><div class="gopp">No recent games</div></div></div></div>
+  <div class="sectitle" style="color:var(--gsw)">Standings</div>
+  <div class="glist">
+    <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Team</span><span style="min-width:36px;text-align:right">W-L</span><span style="min-width:40px;text-align:right">PCT</span></div>
+    <div class="strow " ><span class="stnum" >1</span><span class="sttm" >Detroit Pistons</span><span class="strec">60-22</span><span class="stpct">.732</span></div>
+<div class="strow " ><span class="stnum" >2</span><span class="sttm" >Atlanta Hawks</span><span class="strec">46-36</span><span class="stpct">.561</span></div>
+<div class="strow " ><span class="stnum" >3</span><span class="sttm" >Boston Celtics</span><span class="strec">56-26</span><span class="stpct">.683</span></div>
+<div class="strow " ><span class="stnum" >4</span><span class="sttm" >Philadelphia 76ers</span><span class="strec">45-37</span><span class="stpct">.549</span></div>
+<div class="strow " ><span class="stnum" >5</span><span class="sttm" >Orlando Magic</span><span class="strec">45-37</span><span class="stpct">.549</span></div>
+<div class="strow " ><span class="stnum" >6</span><span class="sttm" >Toronto Raptors</span><span class="strec">46-36</span><span class="stpct">.561</span></div>
+<div class="strow " ><span class="stnum" >7</span><span class="sttm" >Cleveland Cavaliers</span><span class="strec">52-30</span><span class="stpct">.634</span></div>
+<div class="strow " ><span class="stnum" >8</span><span class="sttm" >New York Knicks</span><span class="strec">53-29</span><span class="stpct">.646</span></div>
+<div class="strow " ><span class="stnum" >9</span><span class="sttm" >Miami Heat</span><span class="strec">43-39</span><span class="stpct">.524</span></div>
+<div class="strow " ><span class="stnum" >10</span><span class="sttm" >Charlotte Hornets</span><span class="strec">44-38</span><span class="stpct">.537</span></div>
+<div class="strow " ><span class="stnum" >11</span><span class="sttm" >Washington Wizards</span><span class="strec">17-65</span><span class="stpct">.207</span></div>
+<div class="strow " ><span class="stnum" >12</span><span class="sttm" >Indiana Pacers</span><span class="strec">19-63</span><span class="stpct">.232</span></div>
+<div class="strow " ><span class="stnum" >13</span><span class="sttm" >Brooklyn Nets</span><span class="strec">20-62</span><span class="stpct">.244</span></div>
+<div class="strow " ><span class="stnum" >14</span><span class="sttm" >Chicago Bulls</span><span class="strec">31-51</span><span class="stpct">.378</span></div>
+<div class="strow " ><span class="stnum" >15</span><span class="sttm" >Milwaukee Bucks</span><span class="strec">32-50</span><span class="stpct">.390</span></div>
+<div class="strow " ><span class="stnum" >16</span><span class="sttm" >Los Angeles Lakers</span><span class="strec">53-29</span><span class="stpct">.646</span></div>
+<div class="strow " ><span class="stnum" >17</span><span class="sttm" >San Antonio Spurs</span><span class="strec">62-20</span><span class="stpct">.756</span></div>
+<div class="strow " ><span class="stnum" >18</span><span class="sttm" >Portland Trail Blazers</span><span class="strec">42-40</span><span class="stpct">.512</span></div>
+<div class="strow " ><span class="stnum" >19</span><span class="sttm" >Phoenix Suns</span><span class="strec">45-37</span><span class="stpct">.549</span></div>
+<div class="strow " ><span class="stnum" >20</span><span class="sttm" >Minnesota Timberwolves</span><span class="strec">49-33</span><span class="stpct">.598</span></div>
+<div class="strow " ><span class="stnum" >21</span><span class="sttm" >Houston Rockets</span><span class="strec">52-30</span><span class="stpct">.634</span></div>
+<div class="strow " ><span class="stnum" >22</span><span class="sttm" >Denver Nuggets</span><span class="strec">54-28</span><span class="stpct">.659</span></div>
+<div class="strow me" style="border-left:2px solid var(--gsw)"><span class="stnum" style="color:var(--gsw)">23</span><span class="sttm" style="color:var(--gsw)">◀ Golden State Warriors</span><span class="strec">37-45</span><span class="stpct">.451</span></div>
+<div class="strow " ><span class="stnum" >24</span><span class="sttm" >LA Clippers</span><span class="strec">42-40</span><span class="stpct">.512</span></div>
+<div class="strow " ><span class="stnum" >25</span><span class="sttm" >Sacramento Kings</span><span class="strec">22-60</span><span class="stpct">.268</span></div>
+<div class="strow " ><span class="stnum" >26</span><span class="sttm" >Utah Jazz</span><span class="strec">22-60</span><span class="stpct">.268</span></div>
+<div class="strow " ><span class="stnum" >27</span><span class="sttm" >Memphis Grizzlies</span><span class="strec">25-57</span><span class="stpct">.305</span></div>
+<div class="strow " ><span class="stnum" >28</span><span class="sttm" >New Orleans Pelicans</span><span class="strec">26-56</span><span class="stpct">.317</span></div>
+<div class="strow " ><span class="stnum" >29</span><span class="sttm" >Dallas Mavericks</span><span class="strec">26-56</span><span class="stpct">.317</span></div>
+<div class="strow " ><span class="stnum" >30</span><span class="sttm" >Oklahoma City Thunder</span><span class="strec">64-18</span><span class="stpct">.780</span></div>
+  </div>
 </div>
 
 <div class="panel" id="panel-athletics">
-  <div class="dhero"><div class="dbdg" style="background:rgba(239,178,30,.12);color:var(--ath)">ATH</div><div><div class="dnm" style="color:var(--ath)">Athletics</div><div class="dsb">MLB · AL West · 4th Place</div><div class="drec">41–50 · .451</div></div></div>
-  <div class="srec" style="margin-bottom:11px"><div class="sri"><span class="srv">41</span><span class="srl">Wins</span></div><div class="srd"></div><div class="sri"><span class="srv">50</span><span class="srl">Losses</span></div><div class="srd"></div><div class="sri"><span class="srv" style="color:var(--ath)">.451</span><span class="srl">Win%</span></div><div class="srd"></div><div class="sri"><span class="srv" style="color:var(--ath)">4th</span><span class="srl">AL West</span></div></div>
-  <div class="sb"><div class="sb-left"><div class="sb-st">FINAL · Jul 7</div><div class="sb-dt">@ Detroit Tigers</div></div><div class="sb-box loss"><span class="sb-val">DET 6–2</span><span class="sb-sub">L · Final</span></div></div>
-  <div class="ngcard"><div class="nglbl">Next Game</div><div class="ngmatch">@ Detroit Tigers</div><div class="ngtime">Wed Jul 8 · 3:40 PM PDT</div></div>
-  <div class="sectitle" style="color:var(--ath)">Watch</div>
-  <a class="slink" href="https://www.mlb.tv" target="_blank"><div><div class="slname">MLB.tv</div><div class="slsub">Official MLB streaming</div></div><span>→</span></a>
-  <a class="slink" href="https://www.nbcsportscalifornia.com" target="_blank"><div><div class="slname">NBC Sports California</div><div class="slsub">Local · in-market only</div></div><span>→</span></a>
-  <a class="slink" href="https://www.youtube.com/mlb" target="_blank"><div><div class="slname">MLB on YouTube</div><div class="slsub">Free highlights &amp; select games</div></div><span>→</span></a>
+  <div class="dhero"><div class="dbdg" style="background:rgba(239,178,30,.12);color:var(--ath)">ATH</div><div><div class="dnm" style="color:var(--ath)">Athletics</div><div class="dsb">MLB · 4th in AL West</div><div class="drec">41-55</div></div></div>
+  <div class="sb off"><div class="sb-left"><div class="sb-st">FINAL · Jul 11</div><div class="sb-dt">vs Chicago White Sox</div></div><div class="sb-box muted loss"><span class="sb-val sm">0–1</span><span class="sb-sub">L · Final</span></div></div>
+  <div class="nxtrow">→ Next: <strong>WSH @ ATH</strong> · Sat, Jul 18 · 1:40 AM</div>
+  <div class="sectitle" style="color:var(--ath)">Recent Results</div>
+  <div class="glist"><div class="grow"><div><div class="gopp">vs Chicago White Sox</div><div class="gdt">Jul 11</div></div><div class="grgt"><span class="gsc">0-1</span><span class="rp L">L</span></div></div>
+<div class="grow"><div><div class="gopp">vs Chicago White Sox</div><div class="gdt">Jul 10</div></div><div class="grgt"><span class="gsc">1-14</span><span class="rp L">L</span></div></div>
+<div class="grow"><div><div class="gopp">vs Detroit Tigers</div><div class="gdt">Jul 9</div></div><div class="grgt"><span class="gsc">1-4</span><span class="rp L">L</span></div></div>
+<div class="grow"><div><div class="gopp">vs Detroit Tigers</div><div class="gdt">Jul 8</div></div><div class="grgt"><span class="gsc">1-6</span><span class="rp L">L</span></div></div>
+<div class="grow"><div><div class="gopp">vs Detroit Tigers</div><div class="gdt">Jul 7</div></div><div class="grgt"><span class="gsc">2-6</span><span class="rp L">L</span></div></div></div>
+  <div class="sectitle" style="color:var(--ath)">Standings</div>
+  <div class="glist">
+    <div class="chdr"><span style="min-width:22px"></span><span style="flex:1">Team</span><span style="min-width:36px;text-align:right">W-L</span><span style="min-width:40px;text-align:right">PCT</span></div>
+    <div class="strow " ><span class="stnum" >1</span><span class="sttm" >Tampa Bay Rays</span><span class="strec">56-38</span><span class="stpct">.596</span></div>
+<div class="strow " ><span class="stnum" >2</span><span class="sttm" >New York Yankees</span><span class="strec">54-42</span><span class="stpct">.563</span></div>
+<div class="strow " ><span class="stnum" >3</span><span class="sttm" >Chicago White Sox</span><span class="strec">50-45</span><span class="stpct">.526</span></div>
+<div class="strow " ><span class="stnum" >4</span><span class="sttm" >Cleveland Guardians</span><span class="strec">51-46</span><span class="stpct">.526</span></div>
+<div class="strow " ><span class="stnum" >5</span><span class="sttm" >Texas Rangers</span><span class="strec">49-47</span><span class="stpct">.510</span></div>
+<div class="strow " ><span class="stnum" >6</span><span class="sttm" >Seattle Mariners</span><span class="strec">48-49</span><span class="stpct">.495</span></div>
+<div class="strow " ><span class="stnum" >7</span><span class="sttm" >Minnesota Twins</span><span class="strec">48-49</span><span class="stpct">.495</span></div>
+<div class="strow " ><span class="stnum" >8</span><span class="sttm" >Boston Red Sox</span><span class="strec">46-48</span><span class="stpct">.489</span></div>
+<div class="strow " ><span class="stnum" >9</span><span class="sttm" >Houston Astros</span><span class="strec">47-51</span><span class="stpct">.480</span></div>
+<div class="strow " ><span class="stnum" >10</span><span class="sttm" >Baltimore Orioles</span><span class="strec">46-51</span><span class="stpct">.474</span></div>
+<div class="strow " ><span class="stnum" >11</span><span class="sttm" >Toronto Blue Jays</span><span class="strec">45-51</span><span class="stpct">.469</span></div>
+<div class="strow " ><span class="stnum" >12</span><span class="sttm" >Detroit Tigers</span><span class="strec">44-52</span><span class="stpct">.458</span></div>
+<div class="strow me" style="border-left:2px solid var(--ath)"><span class="stnum" style="color:var(--ath)">13</span><span class="sttm" style="color:var(--ath)">◀ Athletics</span><span class="strec">41-55</span><span class="stpct">.427</span></div>
+<div class="strow " ><span class="stnum" >14</span><span class="sttm" >Kansas City Royals</span><span class="strec">38-59</span><span class="stpct">.392</span></div>
+<div class="strow " ><span class="stnum" >15</span><span class="sttm" >Los Angeles Angels</span><span class="strec">38-59</span><span class="stpct">.392</span></div>
+<div class="strow " ><span class="stnum" >16</span><span class="sttm" >Los Angeles Dodgers</span><span class="strec">61-36</span><span class="stpct">.629</span></div>
+<div class="strow " ><span class="stnum" >17</span><span class="sttm" >Milwaukee Brewers</span><span class="strec">59-37</span><span class="stpct">.615</span></div>
+<div class="strow " ><span class="stnum" >18</span><span class="sttm" >Atlanta Braves</span><span class="strec">55-40</span><span class="stpct">.579</span></div>
+<div class="strow " ><span class="stnum" >19</span><span class="sttm" >Chicago Cubs</span><span class="strec">54-42</span><span class="stpct">.563</span></div>
+<div class="strow " ><span class="stnum" >20</span><span class="sttm" >Philadelphia Phillies</span><span class="strec">54-43</span><span class="stpct">.557</span></div>
+<div class="strow " ><span class="stnum" >21</span><span class="sttm" >Miami Marlins</span><span class="strec">52-45</span><span class="stpct">.536</span></div>
+<div class="strow " ><span class="stnum" >22</span><span class="sttm" >St. Louis Cardinals</span><span class="strec">50-45</span><span class="stpct">.526</span></div>
+<div class="strow " ><span class="stnum" >23</span><span class="sttm" >Pittsburgh Pirates</span><span class="strec">50-47</span><span class="stpct">.515</span></div>
+<div class="strow " ><span class="stnum" >24</span><span class="sttm" >Arizona Diamondbacks</span><span class="strec">49-47</span><span class="stpct">.510</span></div>
+<div class="strow " ><span class="stnum" >25</span><span class="sttm" >San Diego Padres</span><span class="strec">48-48</span><span class="stpct">.500</span></div>
+<div class="strow " ><span class="stnum" >26</span><span class="sttm" >Washington Nationals</span><span class="strec">48-49</span><span class="stpct">.495</span></div>
+<div class="strow " ><span class="stnum" >27</span><span class="sttm" >Cincinnati Reds</span><span class="strec">43-52</span><span class="stpct">.453</span></div>
+<div class="strow " ><span class="stnum" >28</span><span class="sttm" >San Francisco Giants</span><span class="strec">41-55</span><span class="stpct">.427</span></div>
+<div class="strow " ><span class="stnum" >29</span><span class="sttm" >New York Mets</span><span class="strec">40-57</span><span class="stpct">.412</span></div>
+<div class="strow " ><span class="stnum" >30</span><span class="sttm" >Colorado Rockies</span><span class="strec">39-59</span><span class="stpct">.398</span></div>
+  </div>
 </div>
 
 <script>
@@ -764,7 +594,7 @@ function toggleDrawer(t){
   var open=d.style.display==='block';
   d.style.display=open?'none':'block';
   if(a)a.style.transform=open?'':'rotate(180deg)';
-  if(l)l.textContent=open?'Stats, Standings & Games':'Hide';
+  if(l)l.textContent=open?'Games & Standings':'Hide';
 }
 function openSub(t,s,btn){
   var d=document.getElementById('drw-'+t);
@@ -774,15 +604,6 @@ function openSub(t,s,btn){
   btn.classList.add('on');
   var p=document.getElementById(t+'-'+s);
   if(p)p.classList.add('on');
-}
-function showSt(pfx,view,btn){
-  document.querySelectorAll('[id^="'+pfx+'-"]').forEach(e=>{
-    if(e.classList.contains('stview'))e.classList.remove('on');
-  });
-  btn.closest('.spnl').querySelectorAll('.vtbtn').forEach(e=>e.classList.remove('on'));
-  var el=document.getElementById(pfx+'-'+view);
-  if(el)el.classList.add('on');
-  btn.classList.add('on');
 }
 </script>
 </body>
