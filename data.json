@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T15:02:16.878Z",
+  "lastUpdated": "2026-07-20T18:48:33.134Z",
   "teams": {
     "sharks": {
       "key": "sharks",
@@ -21122,12 +21122,12 @@
       "displayName": "Golden State Warriors",
       "abbreviation": "GS",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
-      "record": "37-45",
+      "record": null,
       "standingSummary": "4th in Pacific Division",
       "nextGame": {
-        "name": "Golden State Warriors at Phoenix Suns",
-        "date": "2026-04-18T02:00Z",
-        "shortName": "GS @ PHX"
+        "name": "Los Angeles Lakers at Golden State Warriors",
+        "date": "2026-10-07T02:00Z",
+        "shortName": "LAL @ GS"
       },
       "recentForm": [],
       "standings": {
@@ -30854,9 +30854,9 @@
       "record": "42-57",
       "standingSummary": "4th in AL West",
       "nextGame": {
-        "name": "Washington Nationals at Athletics Athletics",
-        "date": "2026-07-19T20:05Z",
-        "shortName": "WSH @ ATH"
+        "name": "Athletics Athletics at Arizona Diamondbacks",
+        "date": "2026-07-21T01:40Z",
+        "shortName": "ATH @ ARI"
       },
       "recentForm": [
         {
