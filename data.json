@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-31T11:20:55.067Z",
+  "lastUpdated": "2026-07-31T15:13:05.589Z",
   "teams": {
     "sharks": {
       "key": "sharks",
@@ -13759,7 +13759,7 @@
                           "full",
                           "default"
                         ],
-                        "lastUpdated": "2020-02-25T17:01Z"
+                        "lastUpdated": "2024-09-22T22:51Z"
                       },
                       {
                         "href": "https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/lv.png",
@@ -30854,9 +30854,9 @@
       "record": "45-64",
       "standingSummary": "4th in AL West",
       "nextGame": {
-        "name": "Boston Red Sox at Athletics Athletics",
-        "date": "2026-07-31T01:40Z",
-        "shortName": "BOS @ ATH"
+        "name": "Detroit Tigers at Athletics Athletics",
+        "date": "2026-08-01T01:40Z",
+        "shortName": "DET @ ATH"
       },
       "recentForm": [
         {
