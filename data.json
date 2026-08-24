@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T17:22:12.081Z",
+  "lastUpdated": "2026-08-24T21:19:29.953Z",
   "teams": {
     "sharks": {
       "key": "sharks",
@@ -12197,6 +12197,16 @@
                       "displayValue": "0.000"
                     },
                     {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
                       "id": "0",
                       "name": "overall",
                       "abbreviation": "Any",
@@ -12447,6 +12457,16 @@
                       "type": "divisionwins",
                       "value": 0,
                       "displayValue": "0.000"
+                    },
+                    {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
                     },
                     {
                       "id": "0",
@@ -12701,6 +12721,16 @@
                       "displayValue": "0.000"
                     },
                     {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
                       "id": "0",
                       "name": "overall",
                       "abbreviation": "Any",
@@ -12951,6 +12981,16 @@
                       "type": "divisionwins",
                       "value": 0,
                       "displayValue": "0.000"
+                    },
+                    {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
                     },
                     {
                       "id": "0",
@@ -13205,6 +13245,16 @@
                       "displayValue": "0.000"
                     },
                     {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
                       "id": "0",
                       "name": "overall",
                       "abbreviation": "Any",
@@ -13455,6 +13505,16 @@
                       "type": "divisionwins",
                       "value": 0,
                       "displayValue": "0.000"
+                    },
+                    {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
                     },
                     {
                       "id": "0",
@@ -13709,6 +13769,16 @@
                       "displayValue": "0.000"
                     },
                     {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
                       "id": "0",
                       "name": "overall",
                       "abbreviation": "Any",
@@ -13959,6 +14029,16 @@
                       "type": "divisionwins",
                       "value": 0,
                       "displayValue": "0.000"
+                    },
+                    {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
                     },
                     {
                       "id": "0",
@@ -14213,6 +14293,16 @@
                       "displayValue": "0.000"
                     },
                     {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
                       "id": "0",
                       "name": "overall",
                       "abbreviation": "Any",
@@ -14463,6 +14553,16 @@
                       "type": "divisionwins",
                       "value": 0,
                       "displayValue": "0.000"
+                    },
+                    {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
                     },
                     {
                       "id": "0",
@@ -14717,6 +14817,16 @@
                       "displayValue": "0.000"
                     },
                     {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
                       "id": "0",
                       "name": "overall",
                       "abbreviation": "Any",
@@ -14967,6 +15077,16 @@
                       "type": "divisionwins",
                       "value": 0,
                       "displayValue": "0.000"
+                    },
+                    {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
                     },
                     {
                       "id": "0",
@@ -15221,6 +15341,16 @@
                       "displayValue": "0.000"
                     },
                     {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
                       "id": "0",
                       "name": "overall",
                       "abbreviation": "Any",
@@ -15471,6 +15601,16 @@
                       "type": "divisionwins",
                       "value": 0,
                       "displayValue": "0.000"
+                    },
+                    {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
                     },
                     {
                       "id": "0",
@@ -15725,6 +15865,16 @@
                       "displayValue": "0.000"
                     },
                     {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
                       "id": "0",
                       "name": "overall",
                       "abbreviation": "Any",
@@ -15975,6 +16125,16 @@
                       "type": "divisionwins",
                       "value": 0,
                       "displayValue": "0.000"
+                    },
+                    {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
                     },
                     {
                       "id": "0",
@@ -16260,6 +16420,16 @@
                       "displayValue": "0.000"
                     },
                     {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
                       "id": "0",
                       "name": "overall",
                       "abbreviation": "Any",
@@ -16510,6 +16680,16 @@
                       "type": "divisionwins",
                       "value": 0,
                       "displayValue": "0.000"
+                    },
+                    {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
                     },
                     {
                       "id": "0",
@@ -16764,6 +16944,16 @@
                       "displayValue": "0.000"
                     },
                     {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
                       "id": "0",
                       "name": "overall",
                       "abbreviation": "Any",
@@ -17014,6 +17204,16 @@
                       "type": "divisionwins",
                       "value": 0,
                       "displayValue": "0.000"
+                    },
+                    {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
                     },
                     {
                       "id": "0",
@@ -17268,6 +17468,16 @@
                       "displayValue": "0.000"
                     },
                     {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
                       "id": "0",
                       "name": "overall",
                       "abbreviation": "Any",
@@ -17518,6 +17728,16 @@
                       "type": "divisionwins",
                       "value": 0,
                       "displayValue": "0.000"
+                    },
+                    {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
                     },
                     {
                       "id": "0",
@@ -17772,6 +17992,16 @@
                       "displayValue": "0.000"
                     },
                     {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
                       "id": "0",
                       "name": "overall",
                       "abbreviation": "Any",
@@ -18022,6 +18252,16 @@
                       "type": "divisionwins",
                       "value": 0,
                       "displayValue": "0.000"
+                    },
+                    {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
                     },
                     {
                       "id": "0",
@@ -18276,6 +18516,16 @@
                       "displayValue": "0.000"
                     },
                     {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
                       "id": "0",
                       "name": "overall",
                       "abbreviation": "Any",
@@ -18526,6 +18776,16 @@
                       "type": "divisionwins",
                       "value": 0,
                       "displayValue": "0.000"
+                    },
+                    {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
                     },
                     {
                       "id": "0",
@@ -18780,6 +19040,16 @@
                       "displayValue": "0.000"
                     },
                     {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
                       "id": "0",
                       "name": "overall",
                       "abbreviation": "Any",
@@ -19030,6 +19300,16 @@
                       "type": "divisionwins",
                       "value": 0,
                       "displayValue": "0.000"
+                    },
+                    {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
                     },
                     {
                       "id": "0",
@@ -19284,6 +19564,16 @@
                       "displayValue": "0.000"
                     },
                     {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
                       "id": "0",
                       "name": "overall",
                       "abbreviation": "Any",
@@ -19534,6 +19824,16 @@
                       "type": "divisionwins",
                       "value": 0,
                       "displayValue": "0.000"
+                    },
+                    {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
                     },
                     {
                       "id": "0",
@@ -19788,6 +20088,16 @@
                       "displayValue": "0.000"
                     },
                     {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
                       "id": "0",
                       "name": "overall",
                       "abbreviation": "Any",
@@ -20038,6 +20348,16 @@
                       "type": "divisionwins",
                       "value": 0,
                       "displayValue": "0.000"
+                    },
+                    {
+                      "name": "lockedDivRank",
+                      "displayName": "Locked Div Rank",
+                      "shortDisplayName": "LDR",
+                      "description": "Locked Div Rank",
+                      "abbreviation": "LDR",
+                      "type": "lockeddivrank",
+                      "value": 0,
+                      "displayValue": "0"
                     },
                     {
                       "id": "0",
