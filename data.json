@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-16T13:52:53.664Z",
+  "lastUpdated": "2026-09-16T19:48:08.006Z",
   "teams": {
     "sharks": {
       "key": "sharks",
@@ -12768,7 +12768,7 @@
                           "full",
                           "default"
                         ],
-                        "lastUpdated": "2020-02-25T17:01Z"
+                        "lastUpdated": "2024-09-22T22:51Z"
                       },
                       {
                         "href": "https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/lv.png",
@@ -30319,7 +30319,7 @@
       "standingSummary": "4th in AL West",
       "nextGame": {
         "name": "Athletics Athletics at Tampa Bay Rays",
-        "date": "2026-09-15T22:40Z",
+        "date": "2026-09-16T22:40Z",
         "shortName": "ATH @ TB"
       },
       "recentForm": [],
