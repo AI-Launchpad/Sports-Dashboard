@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-21T20:42:37.306Z",
+  "lastUpdated": "2026-09-21T23:44:05.607Z",
   "teams": {
     "sharks": {
       "key": "sharks",
@@ -34169,8 +34169,8 @@
                       "description": " % chance of winning the Division",
                       "abbreviation": "DIV",
                       "type": "divisionpercent",
-                      "value": 62.900001525878906,
-                      "displayValue": "62.9%"
+                      "value": 62.5,
+                      "displayValue": "62.5%"
                     },
                     {
                       "name": "divisionTied",
@@ -34239,8 +34239,8 @@
                       "description": "% chance of making the playoffs",
                       "abbreviation": "POFF",
                       "type": "playoffpercent",
-                      "value": 97.80000305175781,
-                      "displayValue": "97.8%"
+                      "value": 97.5999984741211,
+                      "displayValue": "97.6%"
                     },
                     {
                       "name": "roadLosses",
@@ -34279,8 +34279,8 @@
                       "description": "% chance of winning the Wild Card",
                       "abbreviation": "WC",
                       "type": "wildcardpercent",
-                      "value": 34.900001525878906,
-                      "displayValue": "34.9%"
+                      "value": 35.099998474121094,
+                      "displayValue": "35.1%"
                     },
                     {
                       "id": "0",
@@ -34603,8 +34603,8 @@
                       "description": " % chance of winning the Division",
                       "abbreviation": "DIV",
                       "type": "divisionpercent",
-                      "value": 37.099998474121094,
-                      "displayValue": "37.1%"
+                      "value": 37.5,
+                      "displayValue": "37.5%"
                     },
                     {
                       "name": "divisionTied",
@@ -34673,8 +34673,8 @@
                       "description": "% chance of making the playoffs",
                       "abbreviation": "POFF",
                       "type": "playoffpercent",
-                      "value": 95.69999694824219,
-                      "displayValue": "95.7%"
+                      "value": 96.19999694824219,
+                      "displayValue": "96.2%"
                     },
                     {
                       "name": "roadLosses",
@@ -34713,8 +34713,8 @@
                       "description": "% chance of winning the Wild Card",
                       "abbreviation": "WC",
                       "type": "wildcardpercent",
-                      "value": 58.599998474121094,
-                      "displayValue": "58.6%"
+                      "value": 58.70000076293945,
+                      "displayValue": "58.7%"
                     },
                     {
                       "id": "0",
@@ -35037,8 +35037,8 @@
                       "description": " % chance of winning the Division",
                       "abbreviation": "DIV",
                       "type": "divisionpercent",
-                      "value": 56.400001525878906,
-                      "displayValue": "56.4%"
+                      "value": 55.29999923706055,
+                      "displayValue": "55.3%"
                     },
                     {
                       "name": "divisionTied",
@@ -35107,8 +35107,8 @@
                       "description": "% chance of making the playoffs",
                       "abbreviation": "POFF",
                       "type": "playoffpercent",
-                      "value": 57.599998474121094,
-                      "displayValue": "57.6%"
+                      "value": 56.599998474121094,
+                      "displayValue": "56.6%"
                     },
                     {
                       "name": "roadLosses",
@@ -35147,8 +35147,8 @@
                       "description": "% chance of winning the Wild Card",
                       "abbreviation": "WC",
                       "type": "wildcardpercent",
-                      "value": 1.2000000476837158,
-                      "displayValue": "1.2%"
+                      "value": 1.2999999523162842,
+                      "displayValue": "1.3%"
                     },
                     {
                       "id": "0",
@@ -35471,8 +35471,8 @@
                       "description": " % chance of winning the Division",
                       "abbreviation": "DIV",
                       "type": "divisionpercent",
-                      "value": 43.400001525878906,
-                      "displayValue": "43.4%"
+                      "value": 44.5,
+                      "displayValue": "44.5%"
                     },
                     {
                       "name": "divisionTied",
@@ -35541,8 +35541,8 @@
                       "description": "% chance of making the playoffs",
                       "abbreviation": "POFF",
                       "type": "playoffpercent",
-                      "value": 45,
-                      "displayValue": "45.0%"
+                      "value": 46,
+                      "displayValue": "46.0%"
                     },
                     {
                       "name": "roadLosses",
@@ -35975,8 +35975,8 @@
                       "description": "% chance of making the playoffs",
                       "abbreviation": "POFF",
                       "type": "playoffpercent",
-                      "value": 3.700000047683716,
-                      "displayValue": "3.7%"
+                      "value": 3.299999952316284,
+                      "displayValue": "3.3%"
                     },
                     {
                       "name": "roadLosses",
@@ -36015,8 +36015,8 @@
                       "description": "% chance of winning the Wild Card",
                       "abbreviation": "WC",
                       "type": "wildcardpercent",
-                      "value": 3.700000047683716,
-                      "displayValue": "3.7%"
+                      "value": 3.299999952316284,
+                      "displayValue": "3.3%"
                     },
                     {
                       "id": "0",
@@ -36773,8 +36773,8 @@
                       "description": " % chance of winning the Division",
                       "abbreviation": "DIV",
                       "type": "divisionpercent",
-                      "value": 0.10000000149011612,
-                      "displayValue": "0.1%"
+                      "value": 0.20000000298023224,
+                      "displayValue": "0.2%"
                     },
                     {
                       "name": "divisionTied",
@@ -36843,8 +36843,8 @@
                       "description": "% chance of making the playoffs",
                       "abbreviation": "POFF",
                       "type": "playoffpercent",
-                      "value": 0.10000000149011612,
-                      "displayValue": "0.1%"
+                      "value": 0.20000000298023224,
+                      "displayValue": "0.2%"
                     },
                     {
                       "name": "roadLosses",
@@ -42626,8 +42626,8 @@
                       "description": "% chance of making the playoffs",
                       "abbreviation": "POFF",
                       "type": "playoffpercent",
-                      "value": 97,
-                      "displayValue": "97.0%"
+                      "value": 97.19999694824219,
+                      "displayValue": "97.2%"
                     },
                     {
                       "name": "roadLosses",
@@ -42666,8 +42666,8 @@
                       "description": "% chance of winning the Wild Card",
                       "abbreviation": "WC",
                       "type": "wildcardpercent",
-                      "value": 97,
-                      "displayValue": "97.0%"
+                      "value": 97.19999694824219,
+                      "displayValue": "97.2%"
                     },
                     {
                       "id": "0",
@@ -43060,8 +43060,8 @@
                       "description": "% chance of making the playoffs",
                       "abbreviation": "POFF",
                       "type": "playoffpercent",
-                      "value": 97.0999984741211,
-                      "displayValue": "97.1%"
+                      "value": 97.4000015258789,
+                      "displayValue": "97.4%"
                     },
                     {
                       "name": "roadLosses",
@@ -43100,8 +43100,8 @@
                       "description": "% chance of winning the Wild Card",
                       "abbreviation": "WC",
                       "type": "wildcardpercent",
-                      "value": 97.0999984741211,
-                      "displayValue": "97.1%"
+                      "value": 97.4000015258789,
+                      "displayValue": "97.4%"
                     },
                     {
                       "id": "0",
@@ -43494,8 +43494,8 @@
                       "description": "% chance of making the playoffs",
                       "abbreviation": "POFF",
                       "type": "playoffpercent",
-                      "value": 5.900000095367432,
-                      "displayValue": "5.9%"
+                      "value": 5.5,
+                      "displayValue": "5.5%"
                     },
                     {
                       "name": "roadLosses",
@@ -43534,8 +43534,8 @@
                       "description": "% chance of winning the Wild Card",
                       "abbreviation": "WC",
                       "type": "wildcardpercent",
-                      "value": 5.900000095367432,
-                      "displayValue": "5.9%"
+                      "value": 5.5,
+                      "displayValue": "5.5%"
                     },
                     {
                       "id": "0",
