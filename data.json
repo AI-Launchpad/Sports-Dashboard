@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-22T19:57:28.865Z",
+  "lastUpdated": "2026-09-22T23:22:38.889Z",
   "teams": {
     "sharks": {
       "key": "sharks",
@@ -25,11 +25,11 @@
             "uid": "s:70~l:90~g:7",
             "id": "7",
             "name": "Eastern Conference",
-            "abbreviation": "EAST",
+            "abbreviation": "East",
             "standings": {
               "id": "0",
               "name": "overall",
-              "displayName": "Overall Standings",
+              "displayName": "Standings",
               "links": [
                 {
                   "language": "en-US",
@@ -38,7 +38,7 @@
                     "desktop"
                   ],
                   "href": "https://www.espn.com/nhl/standings/_/group/7",
-                  "text": "Standings",
+                  "text": "Table",
                   "shortText": "Standings",
                   "isExternal": false,
                   "isPremium": false
@@ -116,7 +116,7 @@
                     {
                       "name": "otLosses",
                       "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
+                      "shortDisplayName": "OTL",
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "otlosses",
@@ -165,8 +165,8 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
@@ -325,7 +325,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "TOTAL",
                       "displayName": "Team Season Record",
                       "shortDisplayName": "Season",
@@ -348,17 +348,17 @@
                     {
                       "id": "3",
                       "name": "Road",
-                      "abbreviation": "ROAD",
+                      "abbreviation": "AWAY",
                       "displayName": "Away",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "1-0-0",
                       "displayValue": "1-0-0"
                     },
                     {
                       "id": "5",
-                      "name": "Last Ten",
+                      "name": "Last Ten Games",
                       "abbreviation": "L10",
                       "displayName": "Last Ten Games",
                       "shortDisplayName": "L10",
@@ -369,7 +369,7 @@
                     },
                     {
                       "id": "6",
-                      "name": "vs. Division",
+                      "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
                       "summary": "3-0-0",
@@ -438,20 +438,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:70~l:90~t:11",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -459,7 +445,7 @@
                     {
                       "name": "otLosses",
                       "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
+                      "shortDisplayName": "OTL",
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "otlosses",
@@ -508,8 +494,8 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
@@ -668,7 +654,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "TOTAL",
                       "displayName": "Team Season Record",
                       "shortDisplayName": "Season",
@@ -691,17 +677,17 @@
                     {
                       "id": "3",
                       "name": "Road",
-                      "abbreviation": "ROAD",
+                      "abbreviation": "AWAY",
                       "displayName": "Away",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0-0",
                       "displayValue": "0-0-0"
                     },
                     {
                       "id": "5",
-                      "name": "Last Ten",
+                      "name": "Last Ten Games",
                       "abbreviation": "L10",
                       "displayName": "Last Ten Games",
                       "shortDisplayName": "L10",
@@ -712,7 +698,7 @@
                     },
                     {
                       "id": "6",
-                      "name": "vs. Division",
+                      "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
                       "summary": "2-0-0",
@@ -788,7 +774,7 @@
                     {
                       "name": "otLosses",
                       "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
+                      "shortDisplayName": "OTL",
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "otlosses",
@@ -837,8 +823,8 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
@@ -997,7 +983,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "TOTAL",
                       "displayName": "Team Season Record",
                       "shortDisplayName": "Season",
@@ -1020,17 +1006,17 @@
                     {
                       "id": "3",
                       "name": "Road",
-                      "abbreviation": "ROAD",
+                      "abbreviation": "AWAY",
                       "displayName": "Away",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0-1",
                       "displayValue": "0-0-1"
                     },
                     {
                       "id": "5",
-                      "name": "Last Ten",
+                      "name": "Last Ten Games",
                       "abbreviation": "L10",
                       "displayName": "Last Ten Games",
                       "shortDisplayName": "L10",
@@ -1041,7 +1027,7 @@
                     },
                     {
                       "id": "6",
-                      "name": "vs. Division",
+                      "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
                       "summary": "1-0-0",
@@ -1110,20 +1096,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:70~l:90~t:26",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -1131,7 +1103,7 @@
                     {
                       "name": "otLosses",
                       "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
+                      "shortDisplayName": "OTL",
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "otlosses",
@@ -1180,8 +1152,8 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
@@ -1340,7 +1312,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "TOTAL",
                       "displayName": "Team Season Record",
                       "shortDisplayName": "Season",
@@ -1363,17 +1335,17 @@
                     {
                       "id": "3",
                       "name": "Road",
-                      "abbreviation": "ROAD",
+                      "abbreviation": "AWAY",
                       "displayName": "Away",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0-0",
                       "displayValue": "0-0-0"
                     },
                     {
                       "id": "5",
-                      "name": "Last Ten",
+                      "name": "Last Ten Games",
                       "abbreviation": "L10",
                       "displayName": "Last Ten Games",
                       "shortDisplayName": "L10",
@@ -1384,7 +1356,7 @@
                     },
                     {
                       "id": "6",
-                      "name": "vs. Division",
+                      "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
                       "summary": "0-0-0",
@@ -1453,20 +1425,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:70~l:90~t:16",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -1474,7 +1432,7 @@
                     {
                       "name": "otLosses",
                       "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
+                      "shortDisplayName": "OTL",
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "otlosses",
@@ -1523,8 +1481,8 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
@@ -1683,7 +1641,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "TOTAL",
                       "displayName": "Team Season Record",
                       "shortDisplayName": "Season",
@@ -1706,17 +1664,17 @@
                     {
                       "id": "3",
                       "name": "Road",
-                      "abbreviation": "ROAD",
+                      "abbreviation": "AWAY",
                       "displayName": "Away",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0-0",
                       "displayValue": "0-0-0"
                     },
                     {
                       "id": "5",
-                      "name": "Last Ten",
+                      "name": "Last Ten Games",
                       "abbreviation": "L10",
                       "displayName": "Last Ten Games",
                       "shortDisplayName": "L10",
@@ -1727,7 +1685,7 @@
                     },
                     {
                       "id": "6",
-                      "name": "vs. Division",
+                      "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
                       "summary": "0-0-0",
@@ -1803,7 +1761,7 @@
                     {
                       "name": "otLosses",
                       "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
+                      "shortDisplayName": "OTL",
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "otlosses",
@@ -1852,8 +1810,8 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
@@ -2012,7 +1970,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "TOTAL",
                       "displayName": "Team Season Record",
                       "shortDisplayName": "Season",
@@ -2035,17 +1993,17 @@
                     {
                       "id": "3",
                       "name": "Road",
-                      "abbreviation": "ROAD",
+                      "abbreviation": "AWAY",
                       "displayName": "Away",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0-0",
                       "displayValue": "0-0-0"
                     },
                     {
                       "id": "5",
-                      "name": "Last Ten",
+                      "name": "Last Ten Games",
                       "abbreviation": "L10",
                       "displayName": "Last Ten Games",
                       "shortDisplayName": "L10",
@@ -2056,7 +2014,7 @@
                     },
                     {
                       "id": "6",
-                      "name": "vs. Division",
+                      "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
                       "summary": "0-0-0",
@@ -2132,7 +2090,7 @@
                     {
                       "name": "otLosses",
                       "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
+                      "shortDisplayName": "OTL",
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "otlosses",
@@ -2181,8 +2139,8 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
@@ -2341,7 +2299,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "TOTAL",
                       "displayName": "Team Season Record",
                       "shortDisplayName": "Season",
@@ -2364,17 +2322,17 @@
                     {
                       "id": "3",
                       "name": "Road",
-                      "abbreviation": "ROAD",
+                      "abbreviation": "AWAY",
                       "displayName": "Away",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0-0",
                       "displayValue": "0-0-0"
                     },
                     {
                       "id": "5",
-                      "name": "Last Ten",
+                      "name": "Last Ten Games",
                       "abbreviation": "L10",
                       "displayName": "Last Ten Games",
                       "shortDisplayName": "L10",
@@ -2385,7 +2343,7 @@
                     },
                     {
                       "id": "6",
-                      "name": "vs. Division",
+                      "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
                       "summary": "0-0-0",
@@ -2461,7 +2419,7 @@
                     {
                       "name": "otLosses",
                       "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
+                      "shortDisplayName": "OTL",
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "otlosses",
@@ -2510,8 +2468,8 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
@@ -2670,7 +2628,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "TOTAL",
                       "displayName": "Team Season Record",
                       "shortDisplayName": "Season",
@@ -2693,17 +2651,17 @@
                     {
                       "id": "3",
                       "name": "Road",
-                      "abbreviation": "ROAD",
+                      "abbreviation": "AWAY",
                       "displayName": "Away",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0-0",
                       "displayValue": "0-0-0"
                     },
                     {
                       "id": "5",
-                      "name": "Last Ten",
+                      "name": "Last Ten Games",
                       "abbreviation": "L10",
                       "displayName": "Last Ten Games",
                       "shortDisplayName": "L10",
@@ -2714,7 +2672,7 @@
                     },
                     {
                       "id": "6",
-                      "name": "vs. Division",
+                      "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
                       "summary": "0-0-0",
@@ -2783,20 +2741,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:70~l:90~t:14",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -2804,7 +2748,7 @@
                     {
                       "name": "otLosses",
                       "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
+                      "shortDisplayName": "OTL",
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "otlosses",
@@ -2853,8 +2797,8 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
@@ -3013,7 +2957,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "TOTAL",
                       "displayName": "Team Season Record",
                       "shortDisplayName": "Season",
@@ -3036,17 +2980,17 @@
                     {
                       "id": "3",
                       "name": "Road",
-                      "abbreviation": "ROAD",
+                      "abbreviation": "AWAY",
                       "displayName": "Away",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0-1",
                       "displayValue": "0-0-1"
                     },
                     {
                       "id": "5",
-                      "name": "Last Ten",
+                      "name": "Last Ten Games",
                       "abbreviation": "L10",
                       "displayName": "Last Ten Games",
                       "shortDisplayName": "L10",
@@ -3057,7 +3001,7 @@
                     },
                     {
                       "id": "6",
-                      "name": "vs. Division",
+                      "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
                       "summary": "0-0-1",
@@ -3133,7 +3077,7 @@
                     {
                       "name": "otLosses",
                       "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
+                      "shortDisplayName": "OTL",
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "otlosses",
@@ -3182,8 +3126,8 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
@@ -3342,7 +3286,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "TOTAL",
                       "displayName": "Team Season Record",
                       "shortDisplayName": "Season",
@@ -3365,17 +3309,17 @@
                     {
                       "id": "3",
                       "name": "Road",
-                      "abbreviation": "ROAD",
+                      "abbreviation": "AWAY",
                       "displayName": "Away",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0-1",
                       "displayValue": "0-0-1"
                     },
                     {
                       "id": "5",
-                      "name": "Last Ten",
+                      "name": "Last Ten Games",
                       "abbreviation": "L10",
                       "displayName": "Last Ten Games",
                       "shortDisplayName": "L10",
@@ -3386,7 +3330,7 @@
                     },
                     {
                       "id": "6",
-                      "name": "vs. Division",
+                      "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
                       "summary": "0-0-0",
@@ -3462,7 +3406,7 @@
                     {
                       "name": "otLosses",
                       "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
+                      "shortDisplayName": "OTL",
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "otlosses",
@@ -3511,8 +3455,8 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
@@ -3671,7 +3615,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "TOTAL",
                       "displayName": "Team Season Record",
                       "shortDisplayName": "Season",
@@ -3694,17 +3638,17 @@
                     {
                       "id": "3",
                       "name": "Road",
-                      "abbreviation": "ROAD",
+                      "abbreviation": "AWAY",
                       "displayName": "Away",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0-1",
                       "displayValue": "0-0-1"
                     },
                     {
                       "id": "5",
-                      "name": "Last Ten",
+                      "name": "Last Ten Games",
                       "abbreviation": "L10",
                       "displayName": "Last Ten Games",
                       "shortDisplayName": "L10",
@@ -3715,7 +3659,7 @@
                     },
                     {
                       "id": "6",
-                      "name": "vs. Division",
+                      "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
                       "summary": "0-1-1",
@@ -3784,20 +3728,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:70~l:90~t:13",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -3805,7 +3735,7 @@
                     {
                       "name": "otLosses",
                       "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
+                      "shortDisplayName": "OTL",
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "otlosses",
@@ -3854,8 +3784,8 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
@@ -4014,7 +3944,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "TOTAL",
                       "displayName": "Team Season Record",
                       "shortDisplayName": "Season",
@@ -4037,17 +3967,17 @@
                     {
                       "id": "3",
                       "name": "Road",
-                      "abbreviation": "ROAD",
+                      "abbreviation": "AWAY",
                       "displayName": "Away",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-1-0",
                       "displayValue": "0-1-0"
                     },
                     {
                       "id": "5",
-                      "name": "Last Ten",
+                      "name": "Last Ten Games",
                       "abbreviation": "L10",
                       "displayName": "Last Ten Games",
                       "shortDisplayName": "L10",
@@ -4058,7 +3988,7 @@
                     },
                     {
                       "id": "6",
-                      "name": "vs. Division",
+                      "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
                       "summary": "0-1-0",
@@ -4134,7 +4064,7 @@
                     {
                       "name": "otLosses",
                       "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
+                      "shortDisplayName": "OTL",
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "otlosses",
@@ -4183,8 +4113,8 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
@@ -4343,7 +4273,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "TOTAL",
                       "displayName": "Team Season Record",
                       "shortDisplayName": "Season",
@@ -4366,17 +4296,17 @@
                     {
                       "id": "3",
                       "name": "Road",
-                      "abbreviation": "ROAD",
+                      "abbreviation": "AWAY",
                       "displayName": "Away",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-1-0",
                       "displayValue": "0-1-0"
                     },
                     {
                       "id": "5",
-                      "name": "Last Ten",
+                      "name": "Last Ten Games",
                       "abbreviation": "L10",
                       "displayName": "Last Ten Games",
                       "shortDisplayName": "L10",
@@ -4387,7 +4317,7 @@
                     },
                     {
                       "id": "6",
-                      "name": "vs. Division",
+                      "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
                       "summary": "0-1-0",
@@ -4456,20 +4386,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:70~l:90~t:2",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -4477,7 +4393,7 @@
                     {
                       "name": "otLosses",
                       "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
+                      "shortDisplayName": "OTL",
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "otlosses",
@@ -4526,8 +4442,8 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
@@ -4686,7 +4602,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "TOTAL",
                       "displayName": "Team Season Record",
                       "shortDisplayName": "Season",
@@ -4709,17 +4625,17 @@
                     {
                       "id": "3",
                       "name": "Road",
-                      "abbreviation": "ROAD",
+                      "abbreviation": "AWAY",
                       "displayName": "Away",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-1-0",
                       "displayValue": "0-1-0"
                     },
                     {
                       "id": "5",
-                      "name": "Last Ten",
+                      "name": "Last Ten Games",
                       "abbreviation": "L10",
                       "displayName": "Last Ten Games",
                       "shortDisplayName": "L10",
@@ -4730,7 +4646,7 @@
                     },
                     {
                       "id": "6",
-                      "name": "vs. Division",
+                      "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
                       "summary": "0-0-0",
@@ -4806,7 +4722,7 @@
                     {
                       "name": "otLosses",
                       "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
+                      "shortDisplayName": "OTL",
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "otlosses",
@@ -4855,8 +4771,8 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
@@ -5015,7 +4931,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "TOTAL",
                       "displayName": "Team Season Record",
                       "shortDisplayName": "Season",
@@ -5038,17 +4954,17 @@
                     {
                       "id": "3",
                       "name": "Road",
-                      "abbreviation": "ROAD",
+                      "abbreviation": "AWAY",
                       "displayName": "Away",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-1-0",
                       "displayValue": "0-1-0"
                     },
                     {
                       "id": "5",
-                      "name": "Last Ten",
+                      "name": "Last Ten Games",
                       "abbreviation": "L10",
                       "displayName": "Last Ten Games",
                       "shortDisplayName": "L10",
@@ -5059,7 +4975,7 @@
                     },
                     {
                       "id": "6",
-                      "name": "vs. Division",
+                      "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
                       "summary": "0-0-0",
@@ -5135,7 +5051,7 @@
                     {
                       "name": "otLosses",
                       "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
+                      "shortDisplayName": "OTL",
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "otlosses",
@@ -5184,8 +5100,8 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
@@ -5344,7 +5260,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "TOTAL",
                       "displayName": "Team Season Record",
                       "shortDisplayName": "Season",
@@ -5367,17 +5283,17 @@
                     {
                       "id": "3",
                       "name": "Road",
-                      "abbreviation": "ROAD",
+                      "abbreviation": "AWAY",
                       "displayName": "Away",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-1-0",
                       "displayValue": "0-1-0"
                     },
                     {
                       "id": "5",
-                      "name": "Last Ten",
+                      "name": "Last Ten Games",
                       "abbreviation": "L10",
                       "displayName": "Last Ten Games",
                       "shortDisplayName": "L10",
@@ -5388,7 +5304,7 @@
                     },
                     {
                       "id": "6",
-                      "name": "vs. Division",
+                      "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
                       "summary": "0-1-0",
@@ -6141,20 +6057,6 @@
                           "team"
                         ],
                         "href": "https://m.espn.com/nhl/clubhouse?teamId=4",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:70~l:90~t:4",
                         "text": "Clubhouse",
                         "shortText": "Clubhouse",
                         "isExternal": false,
@@ -9449,20 +9351,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:70~l:90~t:8",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -9788,20 +9676,6 @@
                           "team"
                         ],
                         "href": "https://m.espn.com/nhl/clubhouse?teamId=129764",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:70~l:90~t:129764",
                         "text": "Clubhouse",
                         "shortText": "Clubhouse",
                         "isExternal": false,
@@ -10135,20 +10009,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:70~l:90~t:18",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -10474,20 +10334,6 @@
                           "team"
                         ],
                         "href": "https://m.espn.com/nhl/clubhouse?teamId=19",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:70~l:90~t:19",
                         "text": "Clubhouse",
                         "shortText": "Clubhouse",
                         "isExternal": false,
@@ -11137,7 +10983,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2019-04-09T07:00Z",
                 "endDate": "2019-06-17T06:59Z",
@@ -11219,7 +11065,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2017-04-12T07:00Z",
                 "endDate": "2017-06-21T06:59Z",
@@ -11301,7 +11147,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2015-04-14T07:00Z",
                 "endDate": "2015-06-17T06:59Z",
@@ -11424,7 +11270,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2012-04-10T07:00Z",
                 "endDate": "2012-06-20T06:59Z",
@@ -11465,7 +11311,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2011-04-11T07:00Z",
                 "endDate": "2011-06-21T06:59Z",
@@ -11588,7 +11434,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2008-04-07T07:00Z",
                 "endDate": "2008-06-10T06:59Z",
@@ -11703,7 +11549,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2005-04-18T07:00Z",
                 "endDate": "2005-06-06T06:59Z",
@@ -12688,20 +12534,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~t:13",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -12964,20 +12796,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~t:30",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -13236,20 +13054,6 @@
                           "team"
                         ],
                         "href": "https://www.espn.com/nfl/team/_/name/ne/new-england-patriots",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~t:17",
                         "text": "Clubhouse",
                         "shortText": "Clubhouse",
                         "isExternal": false,
@@ -14564,20 +14368,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~t:23",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -14836,20 +14626,6 @@
                           "team"
                         ],
                         "href": "https://www.espn.com/nfl/team/_/name/hou/houston-texans",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~t:34",
                         "text": "Clubhouse",
                         "shortText": "Clubhouse",
                         "isExternal": false,
@@ -20125,20 +19901,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~t:1",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -20690,7 +20452,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2020-01-01T08:00Z",
                 "endDate": "2020-02-06T07:59Z",
@@ -20731,7 +20493,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2019-01-02T08:00Z",
                 "endDate": "2019-02-06T07:59Z",
@@ -21424,12 +21186,12 @@
             "uid": "s:40~l:46~g:5",
             "id": "5",
             "name": "Eastern Conference",
-            "abbreviation": "E",
+            "abbreviation": "East",
             "isConference": true,
             "standings": {
               "id": "0",
               "name": "overall",
-              "displayName": "Overall Standings",
+              "displayName": "Standings",
               "links": [
                 {
                   "language": "en-US",
@@ -21438,7 +21200,7 @@
                     "desktop"
                   ],
                   "href": "https://www.espn.com/nba/standings/_/group/5",
-                  "text": "Standings",
+                  "text": "Table",
                   "shortText": "Standings",
                   "isExternal": false,
                   "isPremium": false
@@ -21492,20 +21254,6 @@
                           "team"
                         ],
                         "href": "https://www.espn.com/nba/team/_/name/atl/atlanta-hawks",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:1",
                         "text": "Clubhouse",
                         "shortText": "Clubhouse",
                         "isExternal": false,
@@ -21586,9 +21334,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -21676,7 +21424,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -21699,8 +21447,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -21851,9 +21599,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -21941,7 +21689,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -21964,8 +21712,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -22036,20 +21784,6 @@
                           "team"
                         ],
                         "href": "https://www.espn.com/nba/team/_/name/chi/chicago-bulls",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:4",
                         "text": "Clubhouse",
                         "shortText": "Clubhouse",
                         "isExternal": false,
@@ -22130,9 +21864,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -22220,7 +21954,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -22243,8 +21977,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -22395,9 +22129,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -22485,7 +22219,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -22508,8 +22242,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -22584,20 +22318,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:8",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -22674,9 +22394,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -22764,7 +22484,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -22787,8 +22507,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -22863,20 +22583,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:11",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -22953,9 +22659,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -23043,7 +22749,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -23066,8 +22772,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -23218,9 +22924,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -23308,7 +23014,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -23331,8 +23037,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -23407,20 +23113,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:15",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -23497,9 +23189,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -23587,7 +23279,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -23610,8 +23302,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -23686,20 +23378,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:17",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -23776,9 +23454,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -23866,7 +23544,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -23889,8 +23567,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -23965,20 +23643,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:18",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -24055,9 +23719,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -24145,7 +23809,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -24168,8 +23832,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -24244,20 +23908,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:19",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -24334,9 +23984,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -24424,7 +24074,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -24447,8 +24097,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -24523,20 +24173,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:20",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -24613,9 +24249,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -24703,7 +24339,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -24726,8 +24362,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -24802,20 +24438,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:27",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -24892,9 +24514,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -24982,7 +24604,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -25005,8 +24627,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -25081,20 +24703,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:28",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -25171,9 +24779,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -25261,7 +24869,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -25284,8 +24892,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -25360,20 +24968,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:30",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -25450,9 +25044,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -25540,7 +25134,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -25563,8 +25157,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -25598,12 +25192,12 @@
             "uid": "s:40~l:46~g:6",
             "id": "6",
             "name": "Western Conference",
-            "abbreviation": "W",
+            "abbreviation": "West",
             "isConference": true,
             "standings": {
               "id": "0",
               "name": "overall",
-              "displayName": "Overall Standings",
+              "displayName": "Standings",
               "links": [
                 {
                   "language": "en-US",
@@ -25612,7 +25206,7 @@
                     "desktop"
                   ],
                   "href": "https://www.espn.com/nba/standings/_/group/6",
-                  "text": "Standings",
+                  "text": "Table",
                   "shortText": "Standings",
                   "isExternal": false,
                   "isPremium": false
@@ -25670,20 +25264,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:3",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -25760,9 +25340,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -25850,7 +25430,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -25873,8 +25453,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -25949,20 +25529,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:6",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -26039,9 +25605,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -26129,7 +25695,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -26152,8 +25718,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -26228,20 +25794,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:7",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -26318,9 +25870,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -26408,7 +25960,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -26431,8 +25983,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -26507,20 +26059,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:9",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -26597,9 +26135,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -26687,7 +26225,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -26710,8 +26248,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -26786,20 +26324,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:10",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -26876,9 +26400,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -26966,7 +26490,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -26989,8 +26513,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -27065,20 +26589,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:12",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -27155,9 +26665,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -27245,7 +26755,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -27268,8 +26778,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -27344,20 +26854,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:13",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -27434,9 +26930,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -27524,7 +27020,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -27547,8 +27043,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -27623,20 +27119,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:16",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -27713,9 +27195,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -27803,7 +27285,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -27826,8 +27308,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -27902,20 +27384,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:21",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -27992,9 +27460,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -28082,7 +27550,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -28105,8 +27573,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -28181,20 +27649,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:22",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -28271,9 +27725,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -28361,7 +27815,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -28384,8 +27838,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -28460,20 +27914,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:23",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -28550,9 +27990,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -28640,7 +28080,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -28663,8 +28103,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -28739,20 +28179,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:24",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -28829,9 +28255,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -28919,7 +28345,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -28942,8 +28368,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -29018,20 +28444,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:25",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -29108,9 +28520,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -29198,7 +28610,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -29221,8 +28633,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -29297,20 +28709,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:26",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -29387,9 +28785,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -29477,7 +28875,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -29500,8 +28898,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -29576,20 +28974,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~t:29",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -29666,9 +29050,9 @@
                     },
                     {
                       "name": "playoffSeed",
-                      "displayName": "Playoff Seed",
-                      "shortDisplayName": "SEED",
-                      "description": "Playoff Seed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
                       "value": 0,
@@ -29756,7 +29140,7 @@
                     },
                     {
                       "id": "0",
-                      "name": "Total",
+                      "name": "overall",
                       "abbreviation": "Total",
                       "displayName": "Overall",
                       "shortDisplayName": "OVER",
@@ -29779,8 +29163,8 @@
                       "id": "34",
                       "name": "Road",
                       "displayName": "Road",
-                      "shortDisplayName": "ROAD",
-                      "description": "Road Record",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
                       "type": "road",
                       "summary": "0-0",
                       "displayValue": "0-0"
@@ -29826,7 +29210,7 @@
               "desktop"
             ],
             "href": "https://www.espn.com/nba/standings/_/group/7",
-            "text": "Standings",
+            "text": "Table",
             "shortText": "Standings",
             "isExternal": false,
             "isPremium": false
@@ -29906,7 +29290,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2026-04-18T07:00Z",
                 "endDate": "2026-06-27T06:59Z",
@@ -30004,7 +29388,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2024-04-20T07:00Z",
                 "endDate": "2024-06-21T06:59Z",
@@ -30053,7 +29437,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2023-04-17T07:00Z",
                 "endDate": "2023-06-24T06:59Z",
@@ -30102,7 +29486,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2022-04-16T07:00Z",
                 "endDate": "2022-06-20T06:59Z",
@@ -30200,7 +29584,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2020-08-17T07:00Z",
                 "endDate": "2020-10-22T06:59Z",
@@ -30249,7 +29633,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2019-04-13T07:00Z",
                 "endDate": "2019-06-24T06:59Z",
@@ -30290,7 +29674,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2018-04-13T07:00Z",
                 "endDate": "2018-07-01T06:59Z",
@@ -30331,7 +29715,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2017-04-13T07:00Z",
                 "endDate": "2017-07-01T06:59Z",
@@ -30413,7 +29797,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2015-04-18T07:00Z",
                 "endDate": "2015-07-01T06:59Z",
@@ -30454,7 +29838,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2014-04-19T07:00Z",
                 "endDate": "2014-07-01T06:59Z",
@@ -30577,7 +29961,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2011-04-14T07:00Z",
                 "endDate": "2011-06-22T06:59Z",
@@ -30659,7 +30043,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2009-04-16T07:00Z",
                 "endDate": "2009-06-23T06:59Z",
@@ -30700,7 +30084,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2008-04-17T07:00Z",
                 "endDate": "2008-06-23T06:59Z",
@@ -30782,7 +30166,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2006-04-21T07:00Z",
                 "endDate": "2006-06-26T06:59Z",
@@ -30823,7 +30207,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2005-04-22T07:00Z",
                 "endDate": "2005-06-27T06:59Z",
@@ -30864,7 +30248,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2004-04-15T07:00Z",
                 "endDate": "2004-06-20T06:59Z",
@@ -30905,7 +30289,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2003-04-19T07:00Z",
                 "endDate": "2003-06-16T06:59Z",
@@ -31466,20 +30850,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:10",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -31920,20 +31290,6 @@
                           "team"
                         ],
                         "href": "https://www.espn.com/mlb/team/_/name/bos/boston-red-sox",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:2",
                         "text": "Clubhouse",
                         "shortText": "Clubhouse",
                         "isExternal": false,
@@ -33266,20 +32622,6 @@
                           "team"
                         ],
                         "href": "https://www.espn.com/mlb/team/_/name/kc/kansas-city-royals",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:7",
                         "text": "Clubhouse",
                         "shortText": "Clubhouse",
                         "isExternal": false,
@@ -35484,20 +34826,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:13",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -35928,20 +35256,6 @@
                           "team"
                         ],
                         "href": "https://www.espn.com/mlb/team/_/name/hou/houston-astros",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:18",
                         "text": "Clubhouse",
                         "shortText": "Clubhouse",
                         "isExternal": false,
@@ -36380,20 +35694,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:14",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -36824,20 +36124,6 @@
                           "team"
                         ],
                         "href": "https://www.espn.com/mlb/team/_/name/bal/baltimore-orioles",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:1",
                         "text": "Clubhouse",
                         "shortText": "Clubhouse",
                         "isExternal": false,
@@ -38181,20 +37467,6 @@
                           "team"
                         ],
                         "href": "https://www.espn.com/mlb/team/_/name/lad/los-angeles-dodgers",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:19",
                         "text": "Clubhouse",
                         "shortText": "Clubhouse",
                         "isExternal": false,
@@ -41307,20 +40579,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:21",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -43955,20 +43213,6 @@
                         "shortText": "Clubhouse",
                         "isExternal": false,
                         "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "sportscenter",
-                          "app",
-                          "team"
-                        ],
-                        "href": "sportscenter://x-callback-url/showClubhouse?uid=s:1~l:10~t:29",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
                       }
                     ]
                   },
@@ -44404,7 +43648,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2026-09-29T07:00Z",
                 "endDate": "2026-11-12T07:59Z",
@@ -44428,7 +43672,7 @@
             "types": [
               {
                 "id": "1",
-                "name": "Preseason",
+                "name": "Spring Training",
                 "abbreviation": "pre",
                 "startDate": "2025-02-15T08:00Z",
                 "endDate": "2025-03-26T06:59Z",
@@ -44508,7 +43752,7 @@
             "types": [
               {
                 "id": "1",
-                "name": "Preseason",
+                "name": "Spring Training",
                 "abbreviation": "pre",
                 "startDate": "2023-02-15T08:00Z",
                 "endDate": "2023-03-30T06:59Z",
@@ -44524,7 +43768,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2023-10-03T07:00Z",
                 "endDate": "2023-11-07T20:59Z",
@@ -44604,7 +43848,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2021-10-04T07:00Z",
                 "endDate": "2021-11-15T07:59Z",
@@ -44748,7 +43992,7 @@
             "types": [
               {
                 "id": "1",
-                "name": "Preseason",
+                "name": "Spring Training",
                 "abbreviation": "pre",
                 "startDate": "2017-02-01T08:00Z",
                 "endDate": "2017-04-01T06:59Z",
@@ -44804,7 +44048,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2016-10-03T07:00Z",
                 "endDate": "2016-11-11T07:59Z",
@@ -44924,7 +44168,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2013-10-01T07:00Z",
                 "endDate": "2013-11-01T06:59Z",
@@ -44948,7 +44192,7 @@
             "types": [
               {
                 "id": "1",
-                "name": "Preseason",
+                "name": "Spring Training",
                 "abbreviation": "pre",
                 "startDate": "2012-02-28T08:00Z",
                 "endDate": "2012-03-27T18:59Z",
@@ -45044,7 +44288,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2010-10-06T07:00Z",
                 "endDate": "2010-11-05T06:59Z",
@@ -45068,7 +44312,7 @@
             "types": [
               {
                 "id": "1",
-                "name": "Preseason",
+                "name": "Spring Training",
                 "abbreviation": "pre",
                 "startDate": "2009-02-25T08:00Z",
                 "endDate": "2009-04-05T06:59Z",
@@ -45108,7 +44352,7 @@
             "types": [
               {
                 "id": "1",
-                "name": "Preseason",
+                "name": "Spring Training",
                 "abbreviation": "pre",
                 "startDate": "2008-02-26T08:00Z",
                 "endDate": "2008-03-25T06:59Z",
@@ -45124,7 +44368,7 @@
               },
               {
                 "id": "3",
-                "name": "Post Season",
+                "name": "Postseason",
                 "abbreviation": "post",
                 "startDate": "2008-10-01T07:00Z",
                 "endDate": "2008-11-01T06:59Z",
@@ -45228,7 +44472,7 @@
             "types": [
               {
                 "id": "1",
-                "name": "Preseason",
+                "name": "Spring Training",
                 "abbreviation": "pre",
                 "startDate": "2005-03-01T08:00Z",
                 "endDate": "2005-04-03T07:59Z",
