@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-23T13:57:45.934Z",
+  "lastUpdated": "2026-09-23T19:54:35.853Z",
   "teams": {
     "sharks": {
       "key": "sharks",
@@ -10,9 +10,9 @@
       "record": "0-1-1",
       "standingSummary": "6th in Pacific Division",
       "nextGame": {
-        "name": "Vegas Golden Knights at San Jose Sharks",
-        "date": "2026-09-23T02:00Z",
-        "shortName": "VGK @ SJ"
+        "name": "Anaheim Ducks at San Jose Sharks",
+        "date": "2026-09-25T02:00Z",
+        "shortName": "ANA @ SJ"
       },
       "recentForm": [],
       "standings": {
@@ -30319,7 +30319,7 @@
       "standingSummary": "4th in AL West",
       "nextGame": {
         "name": "Los Angeles Angels at Athletics Athletics",
-        "date": "2026-09-23T01:40Z",
+        "date": "2026-09-24T01:40Z",
         "shortName": "LAA @ ATH"
       },
       "recentForm": [],
