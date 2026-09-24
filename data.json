@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-24T13:54:31.535Z",
+  "lastUpdated": "2026-09-24T20:12:44.186Z",
   "teams": {
     "sharks": {
       "key": "sharks",
@@ -30318,9 +30318,9 @@
       "record": "63-95",
       "standingSummary": "4th in AL West",
       "nextGame": {
-        "name": "Los Angeles Angels at Athletics Athletics",
-        "date": "2026-09-24T01:40Z",
-        "shortName": "LAA @ ATH"
+        "name": "Houston Astros at Athletics Athletics",
+        "date": "2026-09-25T01:40Z",
+        "shortName": "HOU @ ATH"
       },
       "recentForm": [],
       "standings": {
@@ -34613,8 +34613,8 @@
                       "description": " % chance of winning the Division",
                       "abbreviation": "DIV",
                       "type": "divisionpercent",
-                      "value": 65.5999984741211,
-                      "displayValue": "65.6%"
+                      "value": 65.4000015258789,
+                      "displayValue": "65.4%"
                     },
                     {
                       "name": "divisionTied",
@@ -34723,8 +34723,8 @@
                       "description": "% chance of winning the Wild Card",
                       "abbreviation": "WC",
                       "type": "wildcardpercent",
-                      "value": 34.400001525878906,
-                      "displayValue": "34.4%"
+                      "value": 34.5,
+                      "displayValue": "34.5%"
                     },
                     {
                       "id": "0",
@@ -35047,8 +35047,8 @@
                       "description": " % chance of winning the Division",
                       "abbreviation": "DIV",
                       "type": "divisionpercent",
-                      "value": 34.400001525878906,
-                      "displayValue": "34.4%"
+                      "value": 34.599998474121094,
+                      "displayValue": "34.6%"
                     },
                     {
                       "name": "divisionTied",
@@ -35157,8 +35157,8 @@
                       "description": "% chance of winning the Wild Card",
                       "abbreviation": "WC",
                       "type": "wildcardpercent",
-                      "value": 65,
-                      "displayValue": "65.0%"
+                      "value": 64.80000305175781,
+                      "displayValue": "64.8%"
                     },
                     {
                       "id": "0",
@@ -35481,8 +35481,8 @@
                       "description": " % chance of winning the Division",
                       "abbreviation": "DIV",
                       "type": "divisionpercent",
-                      "value": 72.30000305175781,
-                      "displayValue": "72.3%"
+                      "value": 71.19999694824219,
+                      "displayValue": "71.2%"
                     },
                     {
                       "name": "divisionTied",
@@ -35551,8 +35551,8 @@
                       "description": "% chance of making the playoffs",
                       "abbreviation": "POFF",
                       "type": "playoffpercent",
-                      "value": 72.4000015258789,
-                      "displayValue": "72.4%"
+                      "value": 71.30000305175781,
+                      "displayValue": "71.3%"
                     },
                     {
                       "name": "roadLosses",
@@ -35915,8 +35915,8 @@
                       "description": " % chance of winning the Division",
                       "abbreviation": "DIV",
                       "type": "divisionpercent",
-                      "value": 27.700000762939453,
-                      "displayValue": "27.7%"
+                      "value": 28.799999237060547,
+                      "displayValue": "28.8%"
                     },
                     {
                       "name": "divisionTied",
@@ -35985,8 +35985,8 @@
                       "description": "% chance of making the playoffs",
                       "abbreviation": "POFF",
                       "type": "playoffpercent",
-                      "value": 27.799999237060547,
-                      "displayValue": "27.8%"
+                      "value": 28.899999618530273,
+                      "displayValue": "28.9%"
                     },
                     {
                       "name": "roadLosses",
@@ -38400,7 +38400,7 @@
                       "description": "Average Runs Allowed",
                       "abbreviation": "ARA",
                       "type": "avgpointsagainst",
-                      "value": 4.5822783,
+                      "value": 4.5597486,
                       "displayValue": "4.6"
                     },
                     {
@@ -38410,8 +38410,8 @@
                       "description": "Average Runs Scored",
                       "abbreviation": "ARS",
                       "type": "avgpointsfor",
-                      "value": 4.753165,
-                      "displayValue": "4.8"
+                      "value": 4.735849,
+                      "displayValue": "4.7"
                     },
                     {
                       "name": "clincher",
@@ -38430,8 +38430,8 @@
                       "description": "Average Run Differential",
                       "abbreviation": "ADIFF",
                       "type": "differential",
-                      "value": 0.20000000000000018,
-                      "displayValue": "+0.2"
+                      "value": 0.10000000000000053,
+                      "displayValue": "+0.1"
                     },
                     {
                       "name": "divisionWinPercent",
@@ -38440,8 +38440,8 @@
                       "description": "Division Winning Percentage",
                       "abbreviation": "DPCT",
                       "type": "divisionwinpercent",
-                      "value": 0.49019608,
-                      "displayValue": "0.490"
+                      "value": 0.5,
+                      "displayValue": "0.500"
                     },
                     {
                       "name": "gamesBehind",
@@ -38450,8 +38450,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 19,
-                      "displayValue": "19"
+                      "value": 18.5,
+                      "displayValue": "18.5"
                     },
                     {
                       "name": "gamesPlayed",
@@ -38460,8 +38460,8 @@
                       "description": "Games Played",
                       "abbreviation": "GP",
                       "type": "gamesplayed",
-                      "value": 158,
-                      "displayValue": "158"
+                      "value": 159,
+                      "displayValue": "159"
                     },
                     {
                       "name": "leagueWinPercent",
@@ -38470,8 +38470,8 @@
                       "description": "League Winning Percentage",
                       "abbreviation": "LPCT",
                       "type": "leaguewinpercent",
-                      "value": 0.43362832,
-                      "displayValue": "0.434"
+                      "value": 0.4385965,
+                      "displayValue": "0.439"
                     },
                     {
                       "name": "losses",
@@ -38500,8 +38500,8 @@
                       "description": "Run Differential",
                       "abbreviation": "DIFF",
                       "type": "pointdifferential",
-                      "value": 27,
-                      "displayValue": "+27"
+                      "value": 28,
+                      "displayValue": "+28"
                     },
                     {
                       "name": "points",
@@ -38510,8 +38510,8 @@
                       "description": "Relative value from the leader to determine the actual gamesBehind.",
                       "abbreviation": "GBP",
                       "type": "points",
-                      "value": 1,
-                      "displayValue": "1.0"
+                      "value": 1.5,
+                      "displayValue": "1.5"
                     },
                     {
                       "name": "pointsAgainst",
@@ -38520,8 +38520,8 @@
                       "description": "Runs allowed",
                       "abbreviation": "RA",
                       "type": "pointsagainst",
-                      "value": 724,
-                      "displayValue": "724"
+                      "value": 725,
+                      "displayValue": "725"
                     },
                     {
                       "name": "pointsFor",
@@ -38530,8 +38530,8 @@
                       "description": "Runs scored",
                       "abbreviation": "RS",
                       "type": "pointsfor",
-                      "value": 751,
-                      "displayValue": "751"
+                      "value": 753,
+                      "displayValue": "753"
                     },
                     {
                       "name": "streak",
@@ -38540,8 +38540,8 @@
                       "description": "Current Streak",
                       "abbreviation": "STRK",
                       "type": "streak",
-                      "value": -1,
-                      "displayValue": "L1"
+                      "value": 1,
+                      "displayValue": "W1"
                     },
                     {
                       "name": "ties",
@@ -38560,8 +38560,8 @@
                       "description": "Winning Percentage",
                       "abbreviation": "PCT",
                       "type": "winpercent",
-                      "value": 0.5063291,
-                      "displayValue": ".506"
+                      "value": 0.509434,
+                      "displayValue": ".509"
                     },
                     {
                       "name": "wins",
@@ -38570,8 +38570,8 @@
                       "description": "Wins",
                       "abbreviation": "W",
                       "type": "wins",
-                      "value": 80,
-                      "displayValue": "80"
+                      "value": 81,
+                      "displayValue": "81"
                     },
                     {
                       "name": "divisionGamesBehind",
@@ -38580,8 +38580,8 @@
                       "description": "Division Games Back",
                       "abbreviation": "DGB",
                       "type": "divisiongamesbehind",
-                      "value": 19,
-                      "displayValue": "19"
+                      "value": 18.5,
+                      "displayValue": "18.5"
                     },
                     {
                       "name": "divisionPercent",
@@ -38630,8 +38630,8 @@
                       "description": "Home Wins",
                       "abbreviation": "HW",
                       "type": "homewins",
-                      "value": 43,
-                      "displayValue": "43"
+                      "value": 44,
+                      "displayValue": "44"
                     },
                     {
                       "name": "magicNumberDivision",
@@ -38640,8 +38640,8 @@
                       "description": "Any combination of wins by the leader and losses by the trailing team for the leading team to win the division.",
                       "abbreviation": "MND",
                       "type": "magicnumberdivision",
-                      "value": 24,
-                      "displayValue": "24"
+                      "value": 23,
+                      "displayValue": "23"
                     },
                     {
                       "name": "magicNumberWildcard",
@@ -38650,8 +38650,8 @@
                       "description": "Any combination of wins by the leader and losses by the trailing team for the leading team to win the wildcard.",
                       "abbreviation": "MNW",
                       "type": "magicnumberwildcard",
-                      "value": 12,
-                      "displayValue": "12"
+                      "value": 11,
+                      "displayValue": "11"
                     },
                     {
                       "name": "playoffPercent",
@@ -38711,8 +38711,8 @@
                       "shortDisplayName": "OVER",
                       "description": "Overall Record",
                       "type": "total",
-                      "summary": "80-78",
-                      "displayValue": "80-78"
+                      "summary": "81-78",
+                      "displayValue": "81-78"
                     },
                     {
                       "id": "33",
@@ -38722,8 +38722,8 @@
                       "shortDisplayName": "HOME",
                       "description": "Home Record",
                       "type": "home",
-                      "summary": "43-37",
-                      "displayValue": "43-37"
+                      "summary": "44-37",
+                      "displayValue": "44-37"
                     },
                     {
                       "id": "34",
@@ -38741,16 +38741,16 @@
                       "name": "Intradivision",
                       "abbreviation": "Intradivision",
                       "type": "intradivision",
-                      "summary": "25-26",
-                      "displayValue": "25-26"
+                      "summary": "26-26",
+                      "displayValue": "26-26"
                     },
                     {
                       "id": "613",
                       "name": "Intraleague",
                       "abbreviation": "Intraleague",
                       "type": "intraleague",
-                      "summary": "49-64",
-                      "displayValue": "49-64"
+                      "summary": "50-64",
+                      "displayValue": "50-64"
                     },
                     {
                       "id": "614",
@@ -38760,8 +38760,8 @@
                       "shortDisplayName": "L10",
                       "description": "Record last 10 games",
                       "type": "lasttengames",
-                      "summary": "6-4",
-                      "displayValue": "6-4"
+                      "summary": "7-3",
+                      "displayValue": "7-3"
                     }
                   ]
                 },
@@ -39288,7 +39288,7 @@
                       "description": "Average Runs Allowed",
                       "abbreviation": "ARA",
                       "type": "avgpointsagainst",
-                      "value": 4.620253,
+                      "value": 4.6037736,
                       "displayValue": "4.6"
                     },
                     {
@@ -39298,7 +39298,7 @@
                       "description": "Average Runs Scored",
                       "abbreviation": "ARS",
                       "type": "avgpointsfor",
-                      "value": 4.487342,
+                      "value": 4.465409,
                       "displayValue": "4.5"
                     },
                     {
@@ -39328,8 +39328,8 @@
                       "description": "Division Winning Percentage",
                       "abbreviation": "DPCT",
                       "type": "divisionwinpercent",
-                      "value": 0.5,
-                      "displayValue": "0.500"
+                      "value": 0.48979592,
+                      "displayValue": "0.490"
                     },
                     {
                       "name": "gamesBehind",
@@ -39338,8 +39338,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 22,
-                      "displayValue": "22"
+                      "value": 22.5,
+                      "displayValue": "22.5"
                     },
                     {
                       "name": "gamesPlayed",
@@ -39348,8 +39348,8 @@
                       "description": "Games Played",
                       "abbreviation": "GP",
                       "type": "gamesplayed",
-                      "value": 158,
-                      "displayValue": "158"
+                      "value": 159,
+                      "displayValue": "159"
                     },
                     {
                       "name": "leagueWinPercent",
@@ -39358,8 +39358,8 @@
                       "description": "League Winning Percentage",
                       "abbreviation": "LPCT",
                       "type": "leaguewinpercent",
-                      "value": 0.4909091,
-                      "displayValue": "0.491"
+                      "value": 0.4864865,
+                      "displayValue": "0.486"
                     },
                     {
                       "name": "losses",
@@ -39368,8 +39368,8 @@
                       "description": "Losses",
                       "abbreviation": "L",
                       "type": "losses",
-                      "value": 81,
-                      "displayValue": "81"
+                      "value": 82,
+                      "displayValue": "82"
                     },
                     {
                       "name": "playoffSeed",
@@ -39388,8 +39388,8 @@
                       "description": "Run Differential",
                       "abbreviation": "DIFF",
                       "type": "pointdifferential",
-                      "value": -21,
-                      "displayValue": "-21"
+                      "value": -22,
+                      "displayValue": "-22"
                     },
                     {
                       "name": "points",
@@ -39398,8 +39398,8 @@
                       "description": "Relative value from the leader to determine the actual gamesBehind.",
                       "abbreviation": "GBP",
                       "type": "points",
-                      "value": -2,
-                      "displayValue": "-2.0"
+                      "value": -2.5,
+                      "displayValue": "-2.5"
                     },
                     {
                       "name": "pointsAgainst",
@@ -39408,8 +39408,8 @@
                       "description": "Runs allowed",
                       "abbreviation": "RA",
                       "type": "pointsagainst",
-                      "value": 730,
-                      "displayValue": "730"
+                      "value": 732,
+                      "displayValue": "732"
                     },
                     {
                       "name": "pointsFor",
@@ -39418,8 +39418,8 @@
                       "description": "Runs scored",
                       "abbreviation": "RS",
                       "type": "pointsfor",
-                      "value": 709,
-                      "displayValue": "709"
+                      "value": 710,
+                      "displayValue": "710"
                     },
                     {
                       "name": "streak",
@@ -39428,8 +39428,8 @@
                       "description": "Current Streak",
                       "abbreviation": "STRK",
                       "type": "streak",
-                      "value": 1,
-                      "displayValue": "W1"
+                      "value": -1,
+                      "displayValue": "L1"
                     },
                     {
                       "name": "ties",
@@ -39448,8 +39448,8 @@
                       "description": "Winning Percentage",
                       "abbreviation": "PCT",
                       "type": "winpercent",
-                      "value": 0.48734176,
-                      "displayValue": ".487"
+                      "value": 0.48427674,
+                      "displayValue": ".484"
                     },
                     {
                       "name": "wins",
@@ -39468,8 +39468,8 @@
                       "description": "Division Games Back",
                       "abbreviation": "DGB",
                       "type": "divisiongamesbehind",
-                      "value": 22,
-                      "displayValue": "22"
+                      "value": 22.5,
+                      "displayValue": "22.5"
                     },
                     {
                       "name": "divisionPercent",
@@ -39558,8 +39558,8 @@
                       "description": "Away Losses",
                       "abbreviation": "AL",
                       "type": "roadlosses",
-                      "value": 38,
-                      "displayValue": "38"
+                      "value": 39,
+                      "displayValue": "39"
                     },
                     {
                       "name": "roadTies",
@@ -39599,8 +39599,8 @@
                       "shortDisplayName": "OVER",
                       "description": "Overall Record",
                       "type": "total",
-                      "summary": "77-81",
-                      "displayValue": "77-81"
+                      "summary": "77-82",
+                      "displayValue": "77-82"
                     },
                     {
                       "id": "33",
@@ -39621,24 +39621,24 @@
                       "shortDisplayName": "AWAY",
                       "description": "Away Record",
                       "type": "road",
-                      "summary": "39-38",
-                      "displayValue": "39-38"
+                      "summary": "39-39",
+                      "displayValue": "39-39"
                     },
                     {
                       "id": "612",
                       "name": "Intradivision",
                       "abbreviation": "Intradivision",
                       "type": "intradivision",
-                      "summary": "24-24",
-                      "displayValue": "24-24"
+                      "summary": "24-25",
+                      "displayValue": "24-25"
                     },
                     {
                       "id": "613",
                       "name": "Intraleague",
                       "abbreviation": "Intraleague",
                       "type": "intraleague",
-                      "summary": "54-56",
-                      "displayValue": "54-56"
+                      "summary": "54-57",
+                      "displayValue": "54-57"
                     },
                     {
                       "id": "614",
@@ -42202,8 +42202,8 @@
                       "description": "% chance of making the playoffs",
                       "abbreviation": "POFF",
                       "type": "playoffpercent",
-                      "value": 95.5999984741211,
-                      "displayValue": "95.6%"
+                      "value": 95.69999694824219,
+                      "displayValue": "95.7%"
                     },
                     {
                       "name": "roadLosses",
@@ -42242,8 +42242,8 @@
                       "description": "% chance of winning the Wild Card",
                       "abbreviation": "WC",
                       "type": "wildcardpercent",
-                      "value": 95.5999984741211,
-                      "displayValue": "95.6%"
+                      "value": 95.69999694824219,
+                      "displayValue": "95.7%"
                     },
                     {
                       "id": "0",
@@ -42636,8 +42636,8 @@
                       "description": "% chance of making the playoffs",
                       "abbreviation": "POFF",
                       "type": "playoffpercent",
-                      "value": 99.5999984741211,
-                      "displayValue": "99.6%"
+                      "value": 99.69999694824219,
+                      "displayValue": "99.7%"
                     },
                     {
                       "name": "roadLosses",
@@ -42676,8 +42676,8 @@
                       "description": "% chance of winning the Wild Card",
                       "abbreviation": "WC",
                       "type": "wildcardpercent",
-                      "value": 99.5999984741211,
-                      "displayValue": "99.6%"
+                      "value": 99.69999694824219,
+                      "displayValue": "99.7%"
                     },
                     {
                       "id": "0",
@@ -43504,8 +43504,8 @@
                       "description": "% chance of making the playoffs",
                       "abbreviation": "POFF",
                       "type": "playoffpercent",
-                      "value": 8,
-                      "displayValue": "8.0%"
+                      "value": 7.900000095367432,
+                      "displayValue": "7.9%"
                     },
                     {
                       "name": "roadLosses",
@@ -43544,8 +43544,8 @@
                       "description": "% chance of winning the Wild Card",
                       "abbreviation": "WC",
                       "type": "wildcardpercent",
-                      "value": 8,
-                      "displayValue": "8.0%"
+                      "value": 7.900000095367432,
+                      "displayValue": "7.9%"
                     },
                     {
                       "id": "0",
