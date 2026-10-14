@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-14T14:11:23.511Z",
+  "lastUpdated": "2026-10-14T20:22:14.435Z",
   "teams": {
     "sharks": {
       "key": "sharks",
@@ -8,7 +8,7 @@
       "abbreviation": "SJ",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/sj.png",
       "record": "3-3",
-      "standingSummary": "1st in Western Conference",
+      "standingSummary": "10th in Western Conference",
       "nextGame": {
         "name": "San Jose Sharks at Nashville Predators",
         "date": "2026-10-16T00:00Z",
@@ -21167,7 +21167,7 @@
       "displayName": "Golden State Warriors",
       "abbreviation": "GS",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
-      "record": "0-0",
+      "record": "3-2",
       "standingSummary": "1st in Pacific Division",
       "nextGame": {
         "name": "Portland Trail Blazers at Golden State Warriors",
@@ -30646,7 +30646,7 @@
       "abbreviation": "ATH",
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/ath.png",
       "record": "64-98",
-      "standingSummary": "4th in AL West",
+      "standingSummary": "1st in AL West",
       "nextGame": {
         "name": "Chicago Cubs at Athletics",
         "date": "2027-02-19T05:00Z",
