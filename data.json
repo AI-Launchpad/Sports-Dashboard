@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-22T20:20:54.360Z",
+  "lastUpdated": "2026-10-22T23:46:18.729Z",
   "teams": {
     "sharks": {
       "key": "sharks",
@@ -10,9 +10,9 @@
       "record": "5-4",
       "standingSummary": "6th in Western Conference",
       "nextGame": {
-        "name": "San Jose Sharks at Ottawa Senators",
-        "date": "2026-10-22T23:00Z",
-        "shortName": "SJ @ OTT"
+        "name": "San Jose Sharks at Boston Bruins",
+        "date": "2026-10-24T23:00Z",
+        "shortName": "SJ @ BOS"
       },
       "recentForm": [],
       "standings": {
