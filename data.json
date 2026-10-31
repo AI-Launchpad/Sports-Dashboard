@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-31T20:21:12.210Z",
+  "lastUpdated": "2026-10-31T23:51:35.607Z",
   "teams": {
     "sharks": {
       "key": "sharks",
@@ -7,7 +7,7 @@
       "displayName": "San Jose Sharks",
       "abbreviation": "SJ",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/sj.png",
-      "record": "7-6",
+      "record": "7-7",
       "standingSummary": "6th in Western Conference",
       "nextGame": {
         "name": "Calgary Flames at San Jose Sharks",
@@ -708,6 +708,664 @@
                 },
                 {
                   "team": {
+                    "id": "14",
+                    "uid": "s:70~l:90~t:14",
+                    "location": "Ottawa",
+                    "name": "Senators",
+                    "abbreviation": "OTT",
+                    "displayName": "Ottawa Senators",
+                    "shortDisplayName": "Senators",
+                    "isActive": true,
+                    "logos": [
+                      {
+                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500/ott.png",
+                        "width": 500,
+                        "height": 500,
+                        "alt": "",
+                        "rel": [
+                          "full",
+                          "default"
+                        ],
+                        "lastUpdated": "2024-07-02T15:51Z"
+                      },
+                      {
+                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/ott.png",
+                        "width": 500,
+                        "height": 500,
+                        "alt": "",
+                        "rel": [
+                          "full",
+                          "scoreboard",
+                          "dark"
+                        ],
+                        "lastUpdated": "2024-07-02T15:46Z"
+                      }
+                    ],
+                    "links": [
+                      {
+                        "language": "en-US",
+                        "rel": [
+                          "clubhouse",
+                          "desktop",
+                          "team"
+                        ],
+                        "href": "https://www.espn.com/nhl/team/_/name/ott/ottawa-senators",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false
+                      },
+                      {
+                        "language": "en-US",
+                        "rel": [
+                          "clubhouse",
+                          "mobile",
+                          "team"
+                        ],
+                        "href": "https://m.espn.com/nhl/clubhouse?teamId=14",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false
+                      }
+                    ]
+                  },
+                  "stats": [
+                    {
+                      "name": "otLosses",
+                      "displayName": "Overtime Losses",
+                      "shortDisplayName": "OTL",
+                      "description": "Number of Overtime Losses",
+                      "abbreviation": "OTL",
+                      "type": "otlosses",
+                      "value": 1,
+                      "displayValue": "1"
+                    },
+                    {
+                      "name": "differential",
+                      "displayName": "Average Point Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Average Point Differential",
+                      "abbreviation": "DIFF",
+                      "type": "differential",
+                      "value": 0.2999999999999998,
+                      "displayValue": "+0.3"
+                    },
+                    {
+                      "name": "gamesBehind",
+                      "displayName": "Games Back",
+                      "shortDisplayName": "GB",
+                      "description": "Games Back",
+                      "abbreviation": "GB",
+                      "type": "gamesbehind",
+                      "value": 5,
+                      "displayValue": "5"
+                    },
+                    {
+                      "name": "gamesPlayed",
+                      "displayName": "Games Played",
+                      "shortDisplayName": "GP",
+                      "description": "Number of Games Played",
+                      "abbreviation": "GP",
+                      "type": "gamesplayed",
+                      "value": 15,
+                      "displayValue": "15"
+                    },
+                    {
+                      "name": "losses",
+                      "displayName": "Losses",
+                      "shortDisplayName": "L",
+                      "description": "Losses",
+                      "abbreviation": "L",
+                      "type": "losses",
+                      "value": 5,
+                      "displayValue": "5"
+                    },
+                    {
+                      "name": "playoffSeed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Playoff Seed",
+                      "abbreviation": "SEED",
+                      "type": "playoffseed",
+                      "value": 3,
+                      "displayValue": "3"
+                    },
+                    {
+                      "name": "pointDifferential",
+                      "displayName": "Point Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Point Differential",
+                      "abbreviation": "DIFF",
+                      "type": "pointdifferential",
+                      "value": 4,
+                      "displayValue": "+4"
+                    },
+                    {
+                      "name": "points",
+                      "displayName": "Points",
+                      "shortDisplayName": "PTS",
+                      "description": "Total Points",
+                      "abbreviation": "PTS",
+                      "type": "points",
+                      "value": 19,
+                      "displayValue": "19"
+                    },
+                    {
+                      "name": "pointsAgainst",
+                      "displayName": "Goals Against",
+                      "shortDisplayName": "GA",
+                      "description": "Goals Against",
+                      "abbreviation": "GA",
+                      "type": "pointsagainst",
+                      "value": 45,
+                      "displayValue": "45"
+                    },
+                    {
+                      "name": "pointsFor",
+                      "displayName": "Goals For",
+                      "shortDisplayName": "GF",
+                      "description": "Goals For",
+                      "abbreviation": "GF",
+                      "type": "pointsfor",
+                      "value": 49,
+                      "displayValue": "49"
+                    },
+                    {
+                      "name": "streak",
+                      "displayName": "Streak",
+                      "shortDisplayName": "STRK",
+                      "description": "Current Streak",
+                      "abbreviation": "STRK",
+                      "type": "streak",
+                      "value": 1,
+                      "displayValue": "W1"
+                    },
+                    {
+                      "name": "wins",
+                      "displayName": "Wins",
+                      "shortDisplayName": "W",
+                      "description": "Wins",
+                      "abbreviation": "W",
+                      "type": "wins",
+                      "value": 9,
+                      "displayValue": "9"
+                    },
+                    {
+                      "name": "overtimeLosses",
+                      "displayName": "Overtime Losses",
+                      "shortDisplayName": "OT Losses",
+                      "description": "Number of Overtime Losses",
+                      "abbreviation": "OTL",
+                      "type": "overtimelosses",
+                      "value": 1,
+                      "displayValue": "1"
+                    },
+                    {
+                      "name": "overtimeWins",
+                      "displayName": "Overtime Wins",
+                      "shortDisplayName": "OTW Wins",
+                      "description": "Number Overtime Wins",
+                      "abbreviation": "OTW",
+                      "type": "overtimewins",
+                      "value": 2,
+                      "displayValue": "2"
+                    },
+                    {
+                      "name": "pointsDiff",
+                      "displayName": "Goal Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Goal Differential",
+                      "abbreviation": "DIFF",
+                      "type": "pointsdiff",
+                      "value": 4,
+                      "displayValue": "+4"
+                    },
+                    {
+                      "name": "regLosses",
+                      "displayName": "Regulation Losses",
+                      "shortDisplayName": "RL",
+                      "description": "Number of Regulation Losses",
+                      "abbreviation": "RL",
+                      "type": "reglosses",
+                      "value": 4,
+                      "displayValue": "4"
+                    },
+                    {
+                      "name": "regWins",
+                      "displayName": "Regulation Wins",
+                      "shortDisplayName": "RW",
+                      "description": "Number of Regulation Wins",
+                      "abbreviation": "RW",
+                      "type": "regwins",
+                      "value": 7,
+                      "displayValue": "7"
+                    },
+                    {
+                      "name": "rotLosses",
+                      "displayName": "Regulation and Overtime Losses",
+                      "shortDisplayName": "ROW Losses",
+                      "description": "Number of Regulation and Overtime Losses",
+                      "abbreviation": "ROL",
+                      "type": "rotlosses",
+                      "value": 5,
+                      "displayValue": "5"
+                    },
+                    {
+                      "name": "rotWins",
+                      "displayName": "Regulation and Overtime Wins",
+                      "shortDisplayName": "ROW Wins",
+                      "description": "Number of Regulation and Overtime Wins",
+                      "abbreviation": "ROW",
+                      "type": "rotwins",
+                      "value": 7,
+                      "displayValue": "7"
+                    },
+                    {
+                      "name": "shootoutLosses",
+                      "displayName": "Shootout Losses",
+                      "shortDisplayName": "SOL",
+                      "description": "Shootout Losses",
+                      "abbreviation": "SOL",
+                      "type": "shootoutlosses",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
+                      "name": "shootoutWins",
+                      "displayName": "Shootout Wins",
+                      "shortDisplayName": "SOW",
+                      "description": "Shootout Wins",
+                      "abbreviation": "SOW",
+                      "type": "shootoutwins",
+                      "value": 2,
+                      "displayValue": "2"
+                    },
+                    {
+                      "id": "0",
+                      "name": "overall",
+                      "abbreviation": "TOTAL",
+                      "displayName": "Team Season Record",
+                      "shortDisplayName": "Season",
+                      "description": "Overall Record",
+                      "type": "total",
+                      "summary": "9-5-1",
+                      "displayValue": "9-5-1, 19 PTS"
+                    },
+                    {
+                      "id": "2",
+                      "name": "Home",
+                      "abbreviation": "HOME",
+                      "displayName": "Home",
+                      "shortDisplayName": "HOME",
+                      "description": "Home Record",
+                      "type": "home",
+                      "summary": "5-2-0",
+                      "displayValue": "5-2-0"
+                    },
+                    {
+                      "id": "3",
+                      "name": "Road",
+                      "abbreviation": "AWAY",
+                      "displayName": "Away",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
+                      "type": "road",
+                      "summary": "4-3-1",
+                      "displayValue": "4-3-1"
+                    },
+                    {
+                      "id": "5",
+                      "name": "Last Ten Games",
+                      "abbreviation": "L10",
+                      "displayName": "Last Ten Games",
+                      "shortDisplayName": "L10",
+                      "description": "Record last 10 games",
+                      "type": "lasttengames",
+                      "summary": "5-4-1",
+                      "displayValue": "5-4-1, 0 PTS"
+                    },
+                    {
+                      "id": "6",
+                      "name": "vs. Div.",
+                      "abbreviation": "DIV",
+                      "type": "vsdiv",
+                      "summary": "3-1-0",
+                      "displayValue": "3-1-0, 0 PTS"
+                    }
+                  ]
+                },
+                {
+                  "team": {
+                    "id": "20",
+                    "uid": "s:70~l:90~t:20",
+                    "location": "Tampa Bay",
+                    "name": "Lightning",
+                    "abbreviation": "TB",
+                    "displayName": "Tampa Bay Lightning",
+                    "shortDisplayName": "Lightning",
+                    "isActive": true,
+                    "logos": [
+                      {
+                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500/tb.png",
+                        "width": 500,
+                        "height": 500,
+                        "alt": "",
+                        "rel": [
+                          "full",
+                          "default"
+                        ],
+                        "lastUpdated": "2024-07-03T19:45Z"
+                      },
+                      {
+                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/tb.png",
+                        "width": 500,
+                        "height": 500,
+                        "alt": "",
+                        "rel": [
+                          "full",
+                          "scoreboard",
+                          "dark"
+                        ],
+                        "lastUpdated": "2024-07-02T15:46Z"
+                      }
+                    ],
+                    "links": [
+                      {
+                        "language": "en-US",
+                        "rel": [
+                          "clubhouse",
+                          "desktop",
+                          "team"
+                        ],
+                        "href": "https://www.espn.com/nhl/team/_/name/tb/tampa-bay-lightning",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false
+                      },
+                      {
+                        "language": "en-US",
+                        "rel": [
+                          "clubhouse",
+                          "mobile",
+                          "team"
+                        ],
+                        "href": "https://m.espn.com/nhl/clubhouse?teamId=20",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false
+                      }
+                    ]
+                  },
+                  "stats": [
+                    {
+                      "name": "otLosses",
+                      "displayName": "Overtime Losses",
+                      "shortDisplayName": "OTL",
+                      "description": "Number of Overtime Losses",
+                      "abbreviation": "OTL",
+                      "type": "otlosses",
+                      "value": 2,
+                      "displayValue": "2"
+                    },
+                    {
+                      "name": "differential",
+                      "displayName": "Average Point Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Average Point Differential",
+                      "abbreviation": "DIFF",
+                      "type": "differential",
+                      "value": 0.40000000000000036,
+                      "displayValue": "+0.4"
+                    },
+                    {
+                      "name": "gamesBehind",
+                      "displayName": "Games Back",
+                      "shortDisplayName": "GB",
+                      "description": "Games Back",
+                      "abbreviation": "GB",
+                      "type": "gamesbehind",
+                      "value": 6,
+                      "displayValue": "6"
+                    },
+                    {
+                      "name": "gamesPlayed",
+                      "displayName": "Games Played",
+                      "shortDisplayName": "GP",
+                      "description": "Number of Games Played",
+                      "abbreviation": "GP",
+                      "type": "gamesplayed",
+                      "value": 13,
+                      "displayValue": "13"
+                    },
+                    {
+                      "name": "losses",
+                      "displayName": "Losses",
+                      "shortDisplayName": "L",
+                      "description": "Losses",
+                      "abbreviation": "L",
+                      "type": "losses",
+                      "value": 3,
+                      "displayValue": "3"
+                    },
+                    {
+                      "name": "playoffSeed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Playoff Seed",
+                      "abbreviation": "SEED",
+                      "type": "playoffseed",
+                      "value": 4,
+                      "displayValue": "4"
+                    },
+                    {
+                      "name": "pointDifferential",
+                      "displayName": "Point Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Point Differential",
+                      "abbreviation": "DIFF",
+                      "type": "pointdifferential",
+                      "value": 5,
+                      "displayValue": "+5"
+                    },
+                    {
+                      "name": "points",
+                      "displayName": "Points",
+                      "shortDisplayName": "PTS",
+                      "description": "Total Points",
+                      "abbreviation": "PTS",
+                      "type": "points",
+                      "value": 18,
+                      "displayValue": "18"
+                    },
+                    {
+                      "name": "pointsAgainst",
+                      "displayName": "Goals Against",
+                      "shortDisplayName": "GA",
+                      "description": "Goals Against",
+                      "abbreviation": "GA",
+                      "type": "pointsagainst",
+                      "value": 43,
+                      "displayValue": "43"
+                    },
+                    {
+                      "name": "pointsFor",
+                      "displayName": "Goals For",
+                      "shortDisplayName": "GF",
+                      "description": "Goals For",
+                      "abbreviation": "GF",
+                      "type": "pointsfor",
+                      "value": 48,
+                      "displayValue": "48"
+                    },
+                    {
+                      "name": "streak",
+                      "displayName": "Streak",
+                      "shortDisplayName": "STRK",
+                      "description": "Current Streak",
+                      "abbreviation": "STRK",
+                      "type": "streak",
+                      "value": -1,
+                      "displayValue": "L1"
+                    },
+                    {
+                      "name": "wins",
+                      "displayName": "Wins",
+                      "shortDisplayName": "W",
+                      "description": "Wins",
+                      "abbreviation": "W",
+                      "type": "wins",
+                      "value": 8,
+                      "displayValue": "8"
+                    },
+                    {
+                      "name": "overtimeLosses",
+                      "displayName": "Overtime Losses",
+                      "shortDisplayName": "OT Losses",
+                      "description": "Number of Overtime Losses",
+                      "abbreviation": "OTL",
+                      "type": "overtimelosses",
+                      "value": 2,
+                      "displayValue": "2"
+                    },
+                    {
+                      "name": "overtimeWins",
+                      "displayName": "Overtime Wins",
+                      "shortDisplayName": "OTW Wins",
+                      "description": "Number Overtime Wins",
+                      "abbreviation": "OTW",
+                      "type": "overtimewins",
+                      "value": 1,
+                      "displayValue": "1"
+                    },
+                    {
+                      "name": "pointsDiff",
+                      "displayName": "Goal Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Goal Differential",
+                      "abbreviation": "DIFF",
+                      "type": "pointsdiff",
+                      "value": 5,
+                      "displayValue": "+5"
+                    },
+                    {
+                      "name": "regLosses",
+                      "displayName": "Regulation Losses",
+                      "shortDisplayName": "RL",
+                      "description": "Number of Regulation Losses",
+                      "abbreviation": "RL",
+                      "type": "reglosses",
+                      "value": 1,
+                      "displayValue": "1"
+                    },
+                    {
+                      "name": "regWins",
+                      "displayName": "Regulation Wins",
+                      "shortDisplayName": "RW",
+                      "description": "Number of Regulation Wins",
+                      "abbreviation": "RW",
+                      "type": "regwins",
+                      "value": 7,
+                      "displayValue": "7"
+                    },
+                    {
+                      "name": "rotLosses",
+                      "displayName": "Regulation and Overtime Losses",
+                      "shortDisplayName": "ROW Losses",
+                      "description": "Number of Regulation and Overtime Losses",
+                      "abbreviation": "ROL",
+                      "type": "rotlosses",
+                      "value": 2,
+                      "displayValue": "2"
+                    },
+                    {
+                      "name": "rotWins",
+                      "displayName": "Regulation and Overtime Wins",
+                      "shortDisplayName": "ROW Wins",
+                      "description": "Number of Regulation and Overtime Wins",
+                      "abbreviation": "ROW",
+                      "type": "rotwins",
+                      "value": 8,
+                      "displayValue": "8"
+                    },
+                    {
+                      "name": "shootoutLosses",
+                      "displayName": "Shootout Losses",
+                      "shortDisplayName": "SOL",
+                      "description": "Shootout Losses",
+                      "abbreviation": "SOL",
+                      "type": "shootoutlosses",
+                      "value": 1,
+                      "displayValue": "1"
+                    },
+                    {
+                      "name": "shootoutWins",
+                      "displayName": "Shootout Wins",
+                      "shortDisplayName": "SOW",
+                      "description": "Shootout Wins",
+                      "abbreviation": "SOW",
+                      "type": "shootoutwins",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
+                      "id": "0",
+                      "name": "overall",
+                      "abbreviation": "TOTAL",
+                      "displayName": "Team Season Record",
+                      "shortDisplayName": "Season",
+                      "description": "Overall Record",
+                      "type": "total",
+                      "summary": "8-3-2",
+                      "displayValue": "8-3-2, 18 PTS"
+                    },
+                    {
+                      "id": "2",
+                      "name": "Home",
+                      "abbreviation": "HOME",
+                      "displayName": "Home",
+                      "shortDisplayName": "HOME",
+                      "description": "Home Record",
+                      "type": "home",
+                      "summary": "6-0-0",
+                      "displayValue": "6-0-0"
+                    },
+                    {
+                      "id": "3",
+                      "name": "Road",
+                      "abbreviation": "AWAY",
+                      "displayName": "Away",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
+                      "type": "road",
+                      "summary": "2-3-2",
+                      "displayValue": "2-3-2"
+                    },
+                    {
+                      "id": "5",
+                      "name": "Last Ten Games",
+                      "abbreviation": "L10",
+                      "displayName": "Last Ten Games",
+                      "shortDisplayName": "L10",
+                      "description": "Record last 10 games",
+                      "type": "lasttengames",
+                      "summary": "6-2-2",
+                      "displayValue": "6-2-2, 0 PTS"
+                    },
+                    {
+                      "id": "6",
+                      "name": "vs. Div.",
+                      "abbreviation": "DIV",
+                      "type": "vsdiv",
+                      "summary": "0-0-0",
+                      "displayValue": "0-0-0, 0 PTS"
+                    }
+                  ]
+                },
+                {
+                  "team": {
                     "id": "10",
                     "uid": "s:70~l:90~t:10",
                     "location": "Montreal",
@@ -828,8 +1486,8 @@
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
-                      "value": 3,
-                      "displayValue": "3"
+                      "value": 5,
+                      "displayValue": "5"
                     },
                     {
                       "name": "pointDifferential",
@@ -1157,8 +1815,8 @@
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
-                      "value": 4,
-                      "displayValue": "4"
+                      "value": 6,
+                      "displayValue": "6"
                     },
                     {
                       "name": "pointDifferential",
@@ -1486,8 +2144,8 @@
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
-                      "value": 5,
-                      "displayValue": "5"
+                      "value": 7,
+                      "displayValue": "7"
                     },
                     {
                       "name": "pointDifferential",
@@ -1695,346 +2353,17 @@
                 },
                 {
                   "team": {
-                    "id": "20",
-                    "uid": "s:70~l:90~t:20",
-                    "location": "Tampa Bay",
-                    "name": "Lightning",
-                    "abbreviation": "TB",
-                    "displayName": "Tampa Bay Lightning",
-                    "shortDisplayName": "Lightning",
+                    "id": "2",
+                    "uid": "s:70~l:90~t:2",
+                    "location": "Buffalo",
+                    "name": "Sabres",
+                    "abbreviation": "BUF",
+                    "displayName": "Buffalo Sabres",
+                    "shortDisplayName": "Sabres",
                     "isActive": true,
                     "logos": [
                       {
-                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500/tb.png",
-                        "width": 500,
-                        "height": 500,
-                        "alt": "",
-                        "rel": [
-                          "full",
-                          "default"
-                        ],
-                        "lastUpdated": "2024-07-03T19:45Z"
-                      },
-                      {
-                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/tb.png",
-                        "width": 500,
-                        "height": 500,
-                        "alt": "",
-                        "rel": [
-                          "full",
-                          "scoreboard",
-                          "dark"
-                        ],
-                        "lastUpdated": "2024-07-02T15:46Z"
-                      }
-                    ],
-                    "links": [
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "desktop",
-                          "team"
-                        ],
-                        "href": "https://www.espn.com/nhl/team/_/name/tb/tampa-bay-lightning",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "mobile",
-                          "team"
-                        ],
-                        "href": "https://m.espn.com/nhl/clubhouse?teamId=20",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      }
-                    ]
-                  },
-                  "stats": [
-                    {
-                      "name": "otLosses",
-                      "displayName": "Overtime Losses",
-                      "shortDisplayName": "OTL",
-                      "description": "Number of Overtime Losses",
-                      "abbreviation": "OTL",
-                      "type": "otlosses",
-                      "value": 1,
-                      "displayValue": "1"
-                    },
-                    {
-                      "name": "differential",
-                      "displayName": "Average Point Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Average Point Differential",
-                      "abbreviation": "DIFF",
-                      "type": "differential",
-                      "value": 0.5,
-                      "displayValue": "+0.5"
-                    },
-                    {
-                      "name": "gamesBehind",
-                      "displayName": "Games Back",
-                      "shortDisplayName": "GB",
-                      "description": "Games Back",
-                      "abbreviation": "GB",
-                      "type": "gamesbehind",
-                      "value": 7,
-                      "displayValue": "7"
-                    },
-                    {
-                      "name": "gamesPlayed",
-                      "displayName": "Games Played",
-                      "shortDisplayName": "GP",
-                      "description": "Number of Games Played",
-                      "abbreviation": "GP",
-                      "type": "gamesplayed",
-                      "value": 12,
-                      "displayValue": "12"
-                    },
-                    {
-                      "name": "losses",
-                      "displayName": "Losses",
-                      "shortDisplayName": "L",
-                      "description": "Losses",
-                      "abbreviation": "L",
-                      "type": "losses",
-                      "value": 3,
-                      "displayValue": "3"
-                    },
-                    {
-                      "name": "playoffSeed",
-                      "displayName": "Position",
-                      "shortDisplayName": "POS",
-                      "description": "Playoff Seed",
-                      "abbreviation": "SEED",
-                      "type": "playoffseed",
-                      "value": 6,
-                      "displayValue": "6"
-                    },
-                    {
-                      "name": "pointDifferential",
-                      "displayName": "Point Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Point Differential",
-                      "abbreviation": "DIFF",
-                      "type": "pointdifferential",
-                      "value": 6,
-                      "displayValue": "+6"
-                    },
-                    {
-                      "name": "points",
-                      "displayName": "Points",
-                      "shortDisplayName": "PTS",
-                      "description": "Total Points",
-                      "abbreviation": "PTS",
-                      "type": "points",
-                      "value": 17,
-                      "displayValue": "17"
-                    },
-                    {
-                      "name": "pointsAgainst",
-                      "displayName": "Goals Against",
-                      "shortDisplayName": "GA",
-                      "description": "Goals Against",
-                      "abbreviation": "GA",
-                      "type": "pointsagainst",
-                      "value": 38,
-                      "displayValue": "38"
-                    },
-                    {
-                      "name": "pointsFor",
-                      "displayName": "Goals For",
-                      "shortDisplayName": "GF",
-                      "description": "Goals For",
-                      "abbreviation": "GF",
-                      "type": "pointsfor",
-                      "value": 44,
-                      "displayValue": "44"
-                    },
-                    {
-                      "name": "streak",
-                      "displayName": "Streak",
-                      "shortDisplayName": "STRK",
-                      "description": "Current Streak",
-                      "abbreviation": "STRK",
-                      "type": "streak",
-                      "value": 1,
-                      "displayValue": "W1"
-                    },
-                    {
-                      "name": "wins",
-                      "displayName": "Wins",
-                      "shortDisplayName": "W",
-                      "description": "Wins",
-                      "abbreviation": "W",
-                      "type": "wins",
-                      "value": 8,
-                      "displayValue": "8"
-                    },
-                    {
-                      "name": "overtimeLosses",
-                      "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
-                      "description": "Number of Overtime Losses",
-                      "abbreviation": "OTL",
-                      "type": "overtimelosses",
-                      "value": 1,
-                      "displayValue": "1"
-                    },
-                    {
-                      "name": "overtimeWins",
-                      "displayName": "Overtime Wins",
-                      "shortDisplayName": "OTW Wins",
-                      "description": "Number Overtime Wins",
-                      "abbreviation": "OTW",
-                      "type": "overtimewins",
-                      "value": 1,
-                      "displayValue": "1"
-                    },
-                    {
-                      "name": "pointsDiff",
-                      "displayName": "Goal Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Goal Differential",
-                      "abbreviation": "DIFF",
-                      "type": "pointsdiff",
-                      "value": 6,
-                      "displayValue": "+6"
-                    },
-                    {
-                      "name": "regLosses",
-                      "displayName": "Regulation Losses",
-                      "shortDisplayName": "RL",
-                      "description": "Number of Regulation Losses",
-                      "abbreviation": "RL",
-                      "type": "reglosses",
-                      "value": 2,
-                      "displayValue": "2"
-                    },
-                    {
-                      "name": "regWins",
-                      "displayName": "Regulation Wins",
-                      "shortDisplayName": "RW",
-                      "description": "Number of Regulation Wins",
-                      "abbreviation": "RW",
-                      "type": "regwins",
-                      "value": 7,
-                      "displayValue": "7"
-                    },
-                    {
-                      "name": "rotLosses",
-                      "displayName": "Regulation and Overtime Losses",
-                      "shortDisplayName": "ROW Losses",
-                      "description": "Number of Regulation and Overtime Losses",
-                      "abbreviation": "ROL",
-                      "type": "rotlosses",
-                      "value": 3,
-                      "displayValue": "3"
-                    },
-                    {
-                      "name": "rotWins",
-                      "displayName": "Regulation and Overtime Wins",
-                      "shortDisplayName": "ROW Wins",
-                      "description": "Number of Regulation and Overtime Wins",
-                      "abbreviation": "ROW",
-                      "type": "rotwins",
-                      "value": 8,
-                      "displayValue": "8"
-                    },
-                    {
-                      "name": "shootoutLosses",
-                      "displayName": "Shootout Losses",
-                      "shortDisplayName": "SOL",
-                      "description": "Shootout Losses",
-                      "abbreviation": "SOL",
-                      "type": "shootoutlosses",
-                      "value": 0,
-                      "displayValue": "0"
-                    },
-                    {
-                      "name": "shootoutWins",
-                      "displayName": "Shootout Wins",
-                      "shortDisplayName": "SOW",
-                      "description": "Shootout Wins",
-                      "abbreviation": "SOW",
-                      "type": "shootoutwins",
-                      "value": 0,
-                      "displayValue": "0"
-                    },
-                    {
-                      "id": "0",
-                      "name": "overall",
-                      "abbreviation": "TOTAL",
-                      "displayName": "Team Season Record",
-                      "shortDisplayName": "Season",
-                      "description": "Overall Record",
-                      "type": "total",
-                      "summary": "8-3-1",
-                      "displayValue": "8-3-1, 17 PTS"
-                    },
-                    {
-                      "id": "2",
-                      "name": "Home",
-                      "abbreviation": "HOME",
-                      "displayName": "Home",
-                      "shortDisplayName": "HOME",
-                      "description": "Home Record",
-                      "type": "home",
-                      "summary": "6-0-0",
-                      "displayValue": "6-0-0"
-                    },
-                    {
-                      "id": "3",
-                      "name": "Road",
-                      "abbreviation": "AWAY",
-                      "displayName": "Away",
-                      "shortDisplayName": "AWAY",
-                      "description": "Away Record",
-                      "type": "road",
-                      "summary": "2-3-1",
-                      "displayValue": "2-3-1"
-                    },
-                    {
-                      "id": "5",
-                      "name": "Last Ten Games",
-                      "abbreviation": "L10",
-                      "displayName": "Last Ten Games",
-                      "shortDisplayName": "L10",
-                      "description": "Record last 10 games",
-                      "type": "lasttengames",
-                      "summary": "7-2-1",
-                      "displayValue": "7-2-1, 0 PTS"
-                    },
-                    {
-                      "id": "6",
-                      "name": "vs. Div.",
-                      "abbreviation": "DIV",
-                      "type": "vsdiv",
-                      "summary": "0-0-0",
-                      "displayValue": "0-0-0, 0 PTS"
-                    }
-                  ]
-                },
-                {
-                  "team": {
-                    "id": "14",
-                    "uid": "s:70~l:90~t:14",
-                    "location": "Ottawa",
-                    "name": "Senators",
-                    "abbreviation": "OTT",
-                    "displayName": "Ottawa Senators",
-                    "shortDisplayName": "Senators",
-                    "isActive": true,
-                    "logos": [
-                      {
-                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500/ott.png",
+                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500/buf.png",
                         "width": 500,
                         "height": 500,
                         "alt": "",
@@ -2045,7 +2374,7 @@
                         "lastUpdated": "2024-07-02T15:51Z"
                       },
                       {
-                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/ott.png",
+                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/buf.png",
                         "width": 500,
                         "height": 500,
                         "alt": "",
@@ -2065,7 +2394,7 @@
                           "desktop",
                           "team"
                         ],
-                        "href": "https://www.espn.com/nhl/team/_/name/ott/ottawa-senators",
+                        "href": "https://www.espn.com/nhl/team/_/name/buf/buffalo-sabres",
                         "text": "Clubhouse",
                         "shortText": "Clubhouse",
                         "isExternal": false,
@@ -2078,7 +2407,7 @@
                           "mobile",
                           "team"
                         ],
-                        "href": "https://m.espn.com/nhl/clubhouse?teamId=14",
+                        "href": "https://m.espn.com/nhl/clubhouse?teamId=2",
                         "text": "Clubhouse",
                         "shortText": "Clubhouse",
                         "isExternal": false,
@@ -2094,8 +2423,8 @@
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "otlosses",
-                      "value": 1,
-                      "displayValue": "1"
+                      "value": 3,
+                      "displayValue": "3"
                     },
                     {
                       "name": "differential",
@@ -2104,8 +2433,8 @@
                       "description": "Average Point Differential",
                       "abbreviation": "DIFF",
                       "type": "differential",
-                      "value": 0,
-                      "displayValue": "0.0"
+                      "value": -0.3999999999999999,
+                      "displayValue": "-0.4"
                     },
                     {
                       "name": "gamesBehind",
@@ -2134,8 +2463,8 @@
                       "description": "Losses",
                       "abbreviation": "L",
                       "type": "losses",
-                      "value": 5,
-                      "displayValue": "5"
+                      "value": 4,
+                      "displayValue": "4"
                     },
                     {
                       "name": "playoffSeed",
@@ -2144,8 +2473,8 @@
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
-                      "value": 7,
-                      "displayValue": "7"
+                      "value": 8,
+                      "displayValue": "8"
                     },
                     {
                       "name": "pointDifferential",
@@ -2154,8 +2483,8 @@
                       "description": "Point Differential",
                       "abbreviation": "DIFF",
                       "type": "pointdifferential",
-                      "value": 0,
-                      "displayValue": "0"
+                      "value": -6,
+                      "displayValue": "-6"
                     },
                     {
                       "name": "points",
@@ -2174,8 +2503,8 @@
                       "description": "Goals Against",
                       "abbreviation": "GA",
                       "type": "pointsagainst",
-                      "value": 44,
-                      "displayValue": "44"
+                      "value": 49,
+                      "displayValue": "49"
                     },
                     {
                       "name": "pointsFor",
@@ -2184,8 +2513,8 @@
                       "description": "Goals For",
                       "abbreviation": "GF",
                       "type": "pointsfor",
-                      "value": 44,
-                      "displayValue": "44"
+                      "value": 43,
+                      "displayValue": "43"
                     },
                     {
                       "name": "streak",
@@ -2194,8 +2523,8 @@
                       "description": "Current Streak",
                       "abbreviation": "STRK",
                       "type": "streak",
-                      "value": -2,
-                      "displayValue": "L2"
+                      "value": 3,
+                      "displayValue": "W3"
                     },
                     {
                       "name": "wins",
@@ -2204,8 +2533,8 @@
                       "description": "Wins",
                       "abbreviation": "W",
                       "type": "wins",
-                      "value": 8,
-                      "displayValue": "8"
+                      "value": 7,
+                      "displayValue": "7"
                     },
                     {
                       "name": "overtimeLosses",
@@ -2214,8 +2543,8 @@
                       "description": "Number of Overtime Losses",
                       "abbreviation": "OTL",
                       "type": "overtimelosses",
-                      "value": 1,
-                      "displayValue": "1"
+                      "value": 3,
+                      "displayValue": "3"
                     },
                     {
                       "name": "overtimeWins",
@@ -2234,8 +2563,8 @@
                       "description": "Goal Differential",
                       "abbreviation": "DIFF",
                       "type": "pointsdiff",
-                      "value": 0,
-                      "displayValue": "0"
+                      "value": -6,
+                      "displayValue": "-6"
                     },
                     {
                       "name": "regLosses",
@@ -2244,8 +2573,8 @@
                       "description": "Number of Regulation Losses",
                       "abbreviation": "RL",
                       "type": "reglosses",
-                      "value": 4,
-                      "displayValue": "4"
+                      "value": 1,
+                      "displayValue": "1"
                     },
                     {
                       "name": "regWins",
@@ -2254,8 +2583,8 @@
                       "description": "Number of Regulation Wins",
                       "abbreviation": "RW",
                       "type": "regwins",
-                      "value": 6,
-                      "displayValue": "6"
+                      "value": 5,
+                      "displayValue": "5"
                     },
                     {
                       "name": "rotLosses",
@@ -2264,8 +2593,8 @@
                       "description": "Number of Regulation and Overtime Losses",
                       "abbreviation": "ROL",
                       "type": "rotlosses",
-                      "value": 5,
-                      "displayValue": "5"
+                      "value": 3,
+                      "displayValue": "3"
                     },
                     {
                       "name": "rotWins",
@@ -2274,8 +2603,8 @@
                       "description": "Number of Regulation and Overtime Wins",
                       "abbreviation": "ROW",
                       "type": "rotwins",
-                      "value": 6,
-                      "displayValue": "6"
+                      "value": 7,
+                      "displayValue": "7"
                     },
                     {
                       "name": "shootoutLosses",
@@ -2284,8 +2613,8 @@
                       "description": "Shootout Losses",
                       "abbreviation": "SOL",
                       "type": "shootoutlosses",
-                      "value": 0,
-                      "displayValue": "0"
+                      "value": 1,
+                      "displayValue": "1"
                     },
                     {
                       "name": "shootoutWins",
@@ -2294,8 +2623,8 @@
                       "description": "Shootout Wins",
                       "abbreviation": "SOW",
                       "type": "shootoutwins",
-                      "value": 2,
-                      "displayValue": "2"
+                      "value": 0,
+                      "displayValue": "0"
                     },
                     {
                       "id": "0",
@@ -2305,8 +2634,8 @@
                       "shortDisplayName": "Season",
                       "description": "Overall Record",
                       "type": "total",
-                      "summary": "8-5-1",
-                      "displayValue": "8-5-1, 17 PTS"
+                      "summary": "7-4-3",
+                      "displayValue": "7-4-3, 17 PTS"
                     },
                     {
                       "id": "2",
@@ -2316,8 +2645,8 @@
                       "shortDisplayName": "HOME",
                       "description": "Home Record",
                       "type": "home",
-                      "summary": "5-2-0",
-                      "displayValue": "5-2-0"
+                      "summary": "3-3-0",
+                      "displayValue": "3-3-0"
                     },
                     {
                       "id": "3",
@@ -2327,8 +2656,8 @@
                       "shortDisplayName": "AWAY",
                       "description": "Away Record",
                       "type": "road",
-                      "summary": "3-3-1",
-                      "displayValue": "3-3-1"
+                      "summary": "4-1-3",
+                      "displayValue": "4-1-3"
                     },
                     {
                       "id": "5",
@@ -2338,16 +2667,16 @@
                       "shortDisplayName": "L10",
                       "description": "Record last 10 games",
                       "type": "lasttengames",
-                      "summary": "5-4-1",
-                      "displayValue": "5-4-1, 0 PTS"
+                      "summary": "5-2-3",
+                      "displayValue": "5-2-3, 0 PTS"
                     },
                     {
                       "id": "6",
                       "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
-                      "summary": "3-1-0",
-                      "displayValue": "3-1-0, 0 PTS"
+                      "summary": "2-0-2",
+                      "displayValue": "2-0-2, 0 PTS"
                     }
                   ]
                 },
@@ -2473,8 +2802,8 @@
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
-                      "value": 8,
-                      "displayValue": "8"
+                      "value": 9,
+                      "displayValue": "9"
                     },
                     {
                       "name": "pointDifferential",
@@ -2762,8 +3091,8 @@
                       "description": "Average Point Differential",
                       "abbreviation": "DIFF",
                       "type": "differential",
-                      "value": 0.3999999999999999,
-                      "displayValue": "+0.4"
+                      "value": 0.10000000000000009,
+                      "displayValue": "+0.1"
                     },
                     {
                       "name": "gamesBehind",
@@ -2782,8 +3111,8 @@
                       "description": "Number of Games Played",
                       "abbreviation": "GP",
                       "type": "gamesplayed",
-                      "value": 13,
-                      "displayValue": "13"
+                      "value": 14,
+                      "displayValue": "14"
                     },
                     {
                       "name": "losses",
@@ -2792,8 +3121,8 @@
                       "description": "Losses",
                       "abbreviation": "L",
                       "type": "losses",
-                      "value": 4,
-                      "displayValue": "4"
+                      "value": 5,
+                      "displayValue": "5"
                     },
                     {
                       "name": "playoffSeed",
@@ -2802,8 +3131,8 @@
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
-                      "value": 9,
-                      "displayValue": "9"
+                      "value": 10,
+                      "displayValue": "10"
                     },
                     {
                       "name": "pointDifferential",
@@ -2812,8 +3141,8 @@
                       "description": "Point Differential",
                       "abbreviation": "DIFF",
                       "type": "pointdifferential",
-                      "value": 5,
-                      "displayValue": "+5"
+                      "value": 1,
+                      "displayValue": "+1"
                     },
                     {
                       "name": "points",
@@ -2832,8 +3161,8 @@
                       "description": "Goals Against",
                       "abbreviation": "GA",
                       "type": "pointsagainst",
-                      "value": 35,
-                      "displayValue": "35"
+                      "value": 39,
+                      "displayValue": "39"
                     },
                     {
                       "name": "pointsFor",
@@ -2852,8 +3181,8 @@
                       "description": "Current Streak",
                       "abbreviation": "STRK",
                       "type": "streak",
-                      "value": 2,
-                      "displayValue": "W2"
+                      "value": -1,
+                      "displayValue": "L1"
                     },
                     {
                       "name": "wins",
@@ -2892,8 +3221,8 @@
                       "description": "Goal Differential",
                       "abbreviation": "DIFF",
                       "type": "pointsdiff",
-                      "value": 5,
-                      "displayValue": "+5"
+                      "value": 1,
+                      "displayValue": "+1"
                     },
                     {
                       "name": "regLosses",
@@ -2902,8 +3231,8 @@
                       "description": "Number of Regulation Losses",
                       "abbreviation": "RL",
                       "type": "reglosses",
-                      "value": 2,
-                      "displayValue": "2"
+                      "value": 3,
+                      "displayValue": "3"
                     },
                     {
                       "name": "regWins",
@@ -2922,8 +3251,8 @@
                       "description": "Number of Regulation and Overtime Losses",
                       "abbreviation": "ROL",
                       "type": "rotlosses",
-                      "value": 3,
-                      "displayValue": "3"
+                      "value": 4,
+                      "displayValue": "4"
                     },
                     {
                       "name": "rotWins",
@@ -2963,8 +3292,8 @@
                       "shortDisplayName": "Season",
                       "description": "Overall Record",
                       "type": "total",
-                      "summary": "7-4-2",
-                      "displayValue": "7-4-2, 16 PTS"
+                      "summary": "7-5-2",
+                      "displayValue": "7-5-2, 16 PTS"
                     },
                     {
                       "id": "2",
@@ -2974,8 +3303,8 @@
                       "shortDisplayName": "HOME",
                       "description": "Home Record",
                       "type": "home",
-                      "summary": "4-1-1",
-                      "displayValue": "4-1-1"
+                      "summary": "4-2-1",
+                      "displayValue": "4-2-1"
                     },
                     {
                       "id": "3",
@@ -2996,8 +3325,8 @@
                       "shortDisplayName": "L10",
                       "description": "Record last 10 games",
                       "type": "lasttengames",
-                      "summary": "6-2-2",
-                      "displayValue": "6-2-2, 0 PTS"
+                      "summary": "5-3-2",
+                      "displayValue": "5-3-2, 0 PTS"
                     },
                     {
                       "id": "6",
@@ -3131,8 +3460,8 @@
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
-                      "value": 10,
-                      "displayValue": "10"
+                      "value": 11,
+                      "displayValue": "11"
                     },
                     {
                       "name": "pointDifferential",
@@ -3335,335 +3664,6 @@
                       "type": "vsdiv",
                       "summary": "0-2-1",
                       "displayValue": "0-2-1, 0 PTS"
-                    }
-                  ]
-                },
-                {
-                  "team": {
-                    "id": "2",
-                    "uid": "s:70~l:90~t:2",
-                    "location": "Buffalo",
-                    "name": "Sabres",
-                    "abbreviation": "BUF",
-                    "displayName": "Buffalo Sabres",
-                    "shortDisplayName": "Sabres",
-                    "isActive": true,
-                    "logos": [
-                      {
-                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500/buf.png",
-                        "width": 500,
-                        "height": 500,
-                        "alt": "",
-                        "rel": [
-                          "full",
-                          "default"
-                        ],
-                        "lastUpdated": "2024-07-02T15:51Z"
-                      },
-                      {
-                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/buf.png",
-                        "width": 500,
-                        "height": 500,
-                        "alt": "",
-                        "rel": [
-                          "full",
-                          "scoreboard",
-                          "dark"
-                        ],
-                        "lastUpdated": "2024-07-02T15:46Z"
-                      }
-                    ],
-                    "links": [
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "desktop",
-                          "team"
-                        ],
-                        "href": "https://www.espn.com/nhl/team/_/name/buf/buffalo-sabres",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "mobile",
-                          "team"
-                        ],
-                        "href": "https://m.espn.com/nhl/clubhouse?teamId=2",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      }
-                    ]
-                  },
-                  "stats": [
-                    {
-                      "name": "otLosses",
-                      "displayName": "Overtime Losses",
-                      "shortDisplayName": "OTL",
-                      "description": "Number of Overtime Losses",
-                      "abbreviation": "OTL",
-                      "type": "otlosses",
-                      "value": 3,
-                      "displayValue": "3"
-                    },
-                    {
-                      "name": "differential",
-                      "displayName": "Average Point Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Average Point Differential",
-                      "abbreviation": "DIFF",
-                      "type": "differential",
-                      "value": -0.5,
-                      "displayValue": "-0.5"
-                    },
-                    {
-                      "name": "gamesBehind",
-                      "displayName": "Games Back",
-                      "shortDisplayName": "GB",
-                      "description": "Games Back",
-                      "abbreviation": "GB",
-                      "type": "gamesbehind",
-                      "value": 9,
-                      "displayValue": "9"
-                    },
-                    {
-                      "name": "gamesPlayed",
-                      "displayName": "Games Played",
-                      "shortDisplayName": "GP",
-                      "description": "Number of Games Played",
-                      "abbreviation": "GP",
-                      "type": "gamesplayed",
-                      "value": 13,
-                      "displayValue": "13"
-                    },
-                    {
-                      "name": "losses",
-                      "displayName": "Losses",
-                      "shortDisplayName": "L",
-                      "description": "Losses",
-                      "abbreviation": "L",
-                      "type": "losses",
-                      "value": 4,
-                      "displayValue": "4"
-                    },
-                    {
-                      "name": "playoffSeed",
-                      "displayName": "Position",
-                      "shortDisplayName": "POS",
-                      "description": "Playoff Seed",
-                      "abbreviation": "SEED",
-                      "type": "playoffseed",
-                      "value": 11,
-                      "displayValue": "11"
-                    },
-                    {
-                      "name": "pointDifferential",
-                      "displayName": "Point Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Point Differential",
-                      "abbreviation": "DIFF",
-                      "type": "pointdifferential",
-                      "value": -7,
-                      "displayValue": "-7"
-                    },
-                    {
-                      "name": "points",
-                      "displayName": "Points",
-                      "shortDisplayName": "PTS",
-                      "description": "Total Points",
-                      "abbreviation": "PTS",
-                      "type": "points",
-                      "value": 15,
-                      "displayValue": "15"
-                    },
-                    {
-                      "name": "pointsAgainst",
-                      "displayName": "Goals Against",
-                      "shortDisplayName": "GA",
-                      "description": "Goals Against",
-                      "abbreviation": "GA",
-                      "type": "pointsagainst",
-                      "value": 47,
-                      "displayValue": "47"
-                    },
-                    {
-                      "name": "pointsFor",
-                      "displayName": "Goals For",
-                      "shortDisplayName": "GF",
-                      "description": "Goals For",
-                      "abbreviation": "GF",
-                      "type": "pointsfor",
-                      "value": 40,
-                      "displayValue": "40"
-                    },
-                    {
-                      "name": "streak",
-                      "displayName": "Streak",
-                      "shortDisplayName": "STRK",
-                      "description": "Current Streak",
-                      "abbreviation": "STRK",
-                      "type": "streak",
-                      "value": 2,
-                      "displayValue": "W2"
-                    },
-                    {
-                      "name": "wins",
-                      "displayName": "Wins",
-                      "shortDisplayName": "W",
-                      "description": "Wins",
-                      "abbreviation": "W",
-                      "type": "wins",
-                      "value": 6,
-                      "displayValue": "6"
-                    },
-                    {
-                      "name": "overtimeLosses",
-                      "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
-                      "description": "Number of Overtime Losses",
-                      "abbreviation": "OTL",
-                      "type": "overtimelosses",
-                      "value": 3,
-                      "displayValue": "3"
-                    },
-                    {
-                      "name": "overtimeWins",
-                      "displayName": "Overtime Wins",
-                      "shortDisplayName": "OTW Wins",
-                      "description": "Number Overtime Wins",
-                      "abbreviation": "OTW",
-                      "type": "overtimewins",
-                      "value": 2,
-                      "displayValue": "2"
-                    },
-                    {
-                      "name": "pointsDiff",
-                      "displayName": "Goal Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Goal Differential",
-                      "abbreviation": "DIFF",
-                      "type": "pointsdiff",
-                      "value": -7,
-                      "displayValue": "-7"
-                    },
-                    {
-                      "name": "regLosses",
-                      "displayName": "Regulation Losses",
-                      "shortDisplayName": "RL",
-                      "description": "Number of Regulation Losses",
-                      "abbreviation": "RL",
-                      "type": "reglosses",
-                      "value": 1,
-                      "displayValue": "1"
-                    },
-                    {
-                      "name": "regWins",
-                      "displayName": "Regulation Wins",
-                      "shortDisplayName": "RW",
-                      "description": "Number of Regulation Wins",
-                      "abbreviation": "RW",
-                      "type": "regwins",
-                      "value": 4,
-                      "displayValue": "4"
-                    },
-                    {
-                      "name": "rotLosses",
-                      "displayName": "Regulation and Overtime Losses",
-                      "shortDisplayName": "ROW Losses",
-                      "description": "Number of Regulation and Overtime Losses",
-                      "abbreviation": "ROL",
-                      "type": "rotlosses",
-                      "value": 3,
-                      "displayValue": "3"
-                    },
-                    {
-                      "name": "rotWins",
-                      "displayName": "Regulation and Overtime Wins",
-                      "shortDisplayName": "ROW Wins",
-                      "description": "Number of Regulation and Overtime Wins",
-                      "abbreviation": "ROW",
-                      "type": "rotwins",
-                      "value": 6,
-                      "displayValue": "6"
-                    },
-                    {
-                      "name": "shootoutLosses",
-                      "displayName": "Shootout Losses",
-                      "shortDisplayName": "SOL",
-                      "description": "Shootout Losses",
-                      "abbreviation": "SOL",
-                      "type": "shootoutlosses",
-                      "value": 1,
-                      "displayValue": "1"
-                    },
-                    {
-                      "name": "shootoutWins",
-                      "displayName": "Shootout Wins",
-                      "shortDisplayName": "SOW",
-                      "description": "Shootout Wins",
-                      "abbreviation": "SOW",
-                      "type": "shootoutwins",
-                      "value": 0,
-                      "displayValue": "0"
-                    },
-                    {
-                      "id": "0",
-                      "name": "overall",
-                      "abbreviation": "TOTAL",
-                      "displayName": "Team Season Record",
-                      "shortDisplayName": "Season",
-                      "description": "Overall Record",
-                      "type": "total",
-                      "summary": "6-4-3",
-                      "displayValue": "6-4-3, 15 PTS"
-                    },
-                    {
-                      "id": "2",
-                      "name": "Home",
-                      "abbreviation": "HOME",
-                      "displayName": "Home",
-                      "shortDisplayName": "HOME",
-                      "description": "Home Record",
-                      "type": "home",
-                      "summary": "3-3-0",
-                      "displayValue": "3-3-0"
-                    },
-                    {
-                      "id": "3",
-                      "name": "Road",
-                      "abbreviation": "AWAY",
-                      "displayName": "Away",
-                      "shortDisplayName": "AWAY",
-                      "description": "Away Record",
-                      "type": "road",
-                      "summary": "3-1-3",
-                      "displayValue": "3-1-3"
-                    },
-                    {
-                      "id": "5",
-                      "name": "Last Ten Games",
-                      "abbreviation": "L10",
-                      "displayName": "Last Ten Games",
-                      "shortDisplayName": "L10",
-                      "description": "Record last 10 games",
-                      "type": "lasttengames",
-                      "summary": "4-3-3",
-                      "displayValue": "4-3-3, 0 PTS"
-                    },
-                    {
-                      "id": "6",
-                      "name": "vs. Div.",
-                      "abbreviation": "DIV",
-                      "type": "vsdiv",
-                      "summary": "2-0-2",
-                      "displayValue": "2-0-2, 0 PTS"
                     }
                   ]
                 },
@@ -5344,6 +5344,335 @@
               "entries": [
                 {
                   "team": {
+                    "id": "6",
+                    "uid": "s:70~l:90~t:6",
+                    "location": "Edmonton",
+                    "name": "Oilers",
+                    "abbreviation": "EDM",
+                    "displayName": "Edmonton Oilers",
+                    "shortDisplayName": "Oilers",
+                    "isActive": true,
+                    "logos": [
+                      {
+                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+                        "width": 500,
+                        "height": 500,
+                        "alt": "",
+                        "rel": [
+                          "full",
+                          "default"
+                        ],
+                        "lastUpdated": "2024-07-02T15:51Z"
+                      },
+                      {
+                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/edm.png",
+                        "width": 500,
+                        "height": 500,
+                        "alt": "",
+                        "rel": [
+                          "full",
+                          "scoreboard",
+                          "dark"
+                        ],
+                        "lastUpdated": "2024-07-02T15:46Z"
+                      }
+                    ],
+                    "links": [
+                      {
+                        "language": "en-US",
+                        "rel": [
+                          "clubhouse",
+                          "desktop",
+                          "team"
+                        ],
+                        "href": "https://www.espn.com/nhl/team/_/name/edm/edmonton-oilers",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false
+                      },
+                      {
+                        "language": "en-US",
+                        "rel": [
+                          "clubhouse",
+                          "mobile",
+                          "team"
+                        ],
+                        "href": "https://m.espn.com/nhl/clubhouse?teamId=6",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false
+                      }
+                    ]
+                  },
+                  "stats": [
+                    {
+                      "name": "otLosses",
+                      "displayName": "Overtime Losses",
+                      "shortDisplayName": "OTL",
+                      "description": "Number of Overtime Losses",
+                      "abbreviation": "OTL",
+                      "type": "otlosses",
+                      "value": 2,
+                      "displayValue": "2"
+                    },
+                    {
+                      "name": "differential",
+                      "displayName": "Average Point Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Average Point Differential",
+                      "abbreviation": "DIFF",
+                      "type": "differential",
+                      "value": 1.1999999999999997,
+                      "displayValue": "+1.2"
+                    },
+                    {
+                      "name": "gamesBehind",
+                      "displayName": "Games Back",
+                      "shortDisplayName": "GB",
+                      "description": "Games Back",
+                      "abbreviation": "GB",
+                      "type": "gamesbehind",
+                      "value": 0,
+                      "displayValue": "-"
+                    },
+                    {
+                      "name": "gamesPlayed",
+                      "displayName": "Games Played",
+                      "shortDisplayName": "GP",
+                      "description": "Number of Games Played",
+                      "abbreviation": "GP",
+                      "type": "gamesplayed",
+                      "value": 14,
+                      "displayValue": "14"
+                    },
+                    {
+                      "name": "losses",
+                      "displayName": "Losses",
+                      "shortDisplayName": "L",
+                      "description": "Losses",
+                      "abbreviation": "L",
+                      "type": "losses",
+                      "value": 2,
+                      "displayValue": "2"
+                    },
+                    {
+                      "name": "playoffSeed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Playoff Seed",
+                      "abbreviation": "SEED",
+                      "type": "playoffseed",
+                      "value": 1,
+                      "displayValue": "1"
+                    },
+                    {
+                      "name": "pointDifferential",
+                      "displayName": "Point Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Point Differential",
+                      "abbreviation": "DIFF",
+                      "type": "pointdifferential",
+                      "value": 17,
+                      "displayValue": "+17"
+                    },
+                    {
+                      "name": "points",
+                      "displayName": "Points",
+                      "shortDisplayName": "PTS",
+                      "description": "Total Points",
+                      "abbreviation": "PTS",
+                      "type": "points",
+                      "value": 22,
+                      "displayValue": "22"
+                    },
+                    {
+                      "name": "pointsAgainst",
+                      "displayName": "Goals Against",
+                      "shortDisplayName": "GA",
+                      "description": "Goals Against",
+                      "abbreviation": "GA",
+                      "type": "pointsagainst",
+                      "value": 43,
+                      "displayValue": "43"
+                    },
+                    {
+                      "name": "pointsFor",
+                      "displayName": "Goals For",
+                      "shortDisplayName": "GF",
+                      "description": "Goals For",
+                      "abbreviation": "GF",
+                      "type": "pointsfor",
+                      "value": 60,
+                      "displayValue": "60"
+                    },
+                    {
+                      "name": "streak",
+                      "displayName": "Streak",
+                      "shortDisplayName": "STRK",
+                      "description": "Current Streak",
+                      "abbreviation": "STRK",
+                      "type": "streak",
+                      "value": 2,
+                      "displayValue": "W2"
+                    },
+                    {
+                      "name": "wins",
+                      "displayName": "Wins",
+                      "shortDisplayName": "W",
+                      "description": "Wins",
+                      "abbreviation": "W",
+                      "type": "wins",
+                      "value": 10,
+                      "displayValue": "10"
+                    },
+                    {
+                      "name": "overtimeLosses",
+                      "displayName": "Overtime Losses",
+                      "shortDisplayName": "OT Losses",
+                      "description": "Number of Overtime Losses",
+                      "abbreviation": "OTL",
+                      "type": "overtimelosses",
+                      "value": 2,
+                      "displayValue": "2"
+                    },
+                    {
+                      "name": "overtimeWins",
+                      "displayName": "Overtime Wins",
+                      "shortDisplayName": "OTW Wins",
+                      "description": "Number Overtime Wins",
+                      "abbreviation": "OTW",
+                      "type": "overtimewins",
+                      "value": 2,
+                      "displayValue": "2"
+                    },
+                    {
+                      "name": "pointsDiff",
+                      "displayName": "Goal Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Goal Differential",
+                      "abbreviation": "DIFF",
+                      "type": "pointsdiff",
+                      "value": 17,
+                      "displayValue": "+17"
+                    },
+                    {
+                      "name": "regLosses",
+                      "displayName": "Regulation Losses",
+                      "shortDisplayName": "RL",
+                      "description": "Number of Regulation Losses",
+                      "abbreviation": "RL",
+                      "type": "reglosses",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
+                      "name": "regWins",
+                      "displayName": "Regulation Wins",
+                      "shortDisplayName": "RW",
+                      "description": "Number of Regulation Wins",
+                      "abbreviation": "RW",
+                      "type": "regwins",
+                      "value": 8,
+                      "displayValue": "8"
+                    },
+                    {
+                      "name": "rotLosses",
+                      "displayName": "Regulation and Overtime Losses",
+                      "shortDisplayName": "ROW Losses",
+                      "description": "Number of Regulation and Overtime Losses",
+                      "abbreviation": "ROL",
+                      "type": "rotlosses",
+                      "value": 1,
+                      "displayValue": "1"
+                    },
+                    {
+                      "name": "rotWins",
+                      "displayName": "Regulation and Overtime Wins",
+                      "shortDisplayName": "ROW Wins",
+                      "description": "Number of Regulation and Overtime Wins",
+                      "abbreviation": "ROW",
+                      "type": "rotwins",
+                      "value": 9,
+                      "displayValue": "9"
+                    },
+                    {
+                      "name": "shootoutLosses",
+                      "displayName": "Shootout Losses",
+                      "shortDisplayName": "SOL",
+                      "description": "Shootout Losses",
+                      "abbreviation": "SOL",
+                      "type": "shootoutlosses",
+                      "value": 1,
+                      "displayValue": "1"
+                    },
+                    {
+                      "name": "shootoutWins",
+                      "displayName": "Shootout Wins",
+                      "shortDisplayName": "SOW",
+                      "description": "Shootout Wins",
+                      "abbreviation": "SOW",
+                      "type": "shootoutwins",
+                      "value": 1,
+                      "displayValue": "1"
+                    },
+                    {
+                      "id": "0",
+                      "name": "overall",
+                      "abbreviation": "TOTAL",
+                      "displayName": "Team Season Record",
+                      "shortDisplayName": "Season",
+                      "description": "Overall Record",
+                      "type": "total",
+                      "summary": "10-2-2",
+                      "displayValue": "10-2-2, 22 PTS"
+                    },
+                    {
+                      "id": "2",
+                      "name": "Home",
+                      "abbreviation": "HOME",
+                      "displayName": "Home",
+                      "shortDisplayName": "HOME",
+                      "description": "Home Record",
+                      "type": "home",
+                      "summary": "4-2-2",
+                      "displayValue": "4-2-2"
+                    },
+                    {
+                      "id": "3",
+                      "name": "Road",
+                      "abbreviation": "AWAY",
+                      "displayName": "Away",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
+                      "type": "road",
+                      "summary": "6-0-0",
+                      "displayValue": "6-0-0"
+                    },
+                    {
+                      "id": "5",
+                      "name": "Last Ten Games",
+                      "abbreviation": "L10",
+                      "displayName": "Last Ten Games",
+                      "shortDisplayName": "L10",
+                      "description": "Record last 10 games",
+                      "type": "lasttengames",
+                      "summary": "7-2-1",
+                      "displayValue": "7-2-1, 0 PTS"
+                    },
+                    {
+                      "id": "6",
+                      "name": "vs. Div.",
+                      "abbreviation": "DIV",
+                      "type": "vsdiv",
+                      "summary": "6-0-1",
+                      "displayValue": "6-0-1, 0 PTS"
+                    }
+                  ]
+                },
+                {
+                  "team": {
                     "id": "30",
                     "uid": "s:70~l:90~t:30",
                     "location": "Minnesota",
@@ -5434,8 +5763,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 0,
-                      "displayValue": "-"
+                      "value": 1,
+                      "displayValue": "1"
                     },
                     {
                       "name": "gamesPlayed",
@@ -5464,8 +5793,8 @@
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
-                      "value": 1,
-                      "displayValue": "1"
+                      "value": 2,
+                      "displayValue": "2"
                     },
                     {
                       "name": "pointDifferential",
@@ -5673,335 +6002,6 @@
                 },
                 {
                   "team": {
-                    "id": "6",
-                    "uid": "s:70~l:90~t:6",
-                    "location": "Edmonton",
-                    "name": "Oilers",
-                    "abbreviation": "EDM",
-                    "displayName": "Edmonton Oilers",
-                    "shortDisplayName": "Oilers",
-                    "isActive": true,
-                    "logos": [
-                      {
-                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
-                        "width": 500,
-                        "height": 500,
-                        "alt": "",
-                        "rel": [
-                          "full",
-                          "default"
-                        ],
-                        "lastUpdated": "2024-07-02T15:51Z"
-                      },
-                      {
-                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/edm.png",
-                        "width": 500,
-                        "height": 500,
-                        "alt": "",
-                        "rel": [
-                          "full",
-                          "scoreboard",
-                          "dark"
-                        ],
-                        "lastUpdated": "2024-07-02T15:46Z"
-                      }
-                    ],
-                    "links": [
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "desktop",
-                          "team"
-                        ],
-                        "href": "https://www.espn.com/nhl/team/_/name/edm/edmonton-oilers",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "mobile",
-                          "team"
-                        ],
-                        "href": "https://m.espn.com/nhl/clubhouse?teamId=6",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      }
-                    ]
-                  },
-                  "stats": [
-                    {
-                      "name": "otLosses",
-                      "displayName": "Overtime Losses",
-                      "shortDisplayName": "OTL",
-                      "description": "Number of Overtime Losses",
-                      "abbreviation": "OTL",
-                      "type": "otlosses",
-                      "value": 2,
-                      "displayValue": "2"
-                    },
-                    {
-                      "name": "differential",
-                      "displayName": "Average Point Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Average Point Differential",
-                      "abbreviation": "DIFF",
-                      "type": "differential",
-                      "value": 1,
-                      "displayValue": "+1.0"
-                    },
-                    {
-                      "name": "gamesBehind",
-                      "displayName": "Games Back",
-                      "shortDisplayName": "GB",
-                      "description": "Games Back",
-                      "abbreviation": "GB",
-                      "type": "gamesbehind",
-                      "value": 1,
-                      "displayValue": "1"
-                    },
-                    {
-                      "name": "gamesPlayed",
-                      "displayName": "Games Played",
-                      "shortDisplayName": "GP",
-                      "description": "Number of Games Played",
-                      "abbreviation": "GP",
-                      "type": "gamesplayed",
-                      "value": 13,
-                      "displayValue": "13"
-                    },
-                    {
-                      "name": "losses",
-                      "displayName": "Losses",
-                      "shortDisplayName": "L",
-                      "description": "Losses",
-                      "abbreviation": "L",
-                      "type": "losses",
-                      "value": 2,
-                      "displayValue": "2"
-                    },
-                    {
-                      "name": "playoffSeed",
-                      "displayName": "Position",
-                      "shortDisplayName": "POS",
-                      "description": "Playoff Seed",
-                      "abbreviation": "SEED",
-                      "type": "playoffseed",
-                      "value": 2,
-                      "displayValue": "2"
-                    },
-                    {
-                      "name": "pointDifferential",
-                      "displayName": "Point Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Point Differential",
-                      "abbreviation": "DIFF",
-                      "type": "pointdifferential",
-                      "value": 13,
-                      "displayValue": "+13"
-                    },
-                    {
-                      "name": "points",
-                      "displayName": "Points",
-                      "shortDisplayName": "PTS",
-                      "description": "Total Points",
-                      "abbreviation": "PTS",
-                      "type": "points",
-                      "value": 20,
-                      "displayValue": "20"
-                    },
-                    {
-                      "name": "pointsAgainst",
-                      "displayName": "Goals Against",
-                      "shortDisplayName": "GA",
-                      "description": "Goals Against",
-                      "abbreviation": "GA",
-                      "type": "pointsagainst",
-                      "value": 43,
-                      "displayValue": "43"
-                    },
-                    {
-                      "name": "pointsFor",
-                      "displayName": "Goals For",
-                      "shortDisplayName": "GF",
-                      "description": "Goals For",
-                      "abbreviation": "GF",
-                      "type": "pointsfor",
-                      "value": 56,
-                      "displayValue": "56"
-                    },
-                    {
-                      "name": "streak",
-                      "displayName": "Streak",
-                      "shortDisplayName": "STRK",
-                      "description": "Current Streak",
-                      "abbreviation": "STRK",
-                      "type": "streak",
-                      "value": 1,
-                      "displayValue": "W1"
-                    },
-                    {
-                      "name": "wins",
-                      "displayName": "Wins",
-                      "shortDisplayName": "W",
-                      "description": "Wins",
-                      "abbreviation": "W",
-                      "type": "wins",
-                      "value": 9,
-                      "displayValue": "9"
-                    },
-                    {
-                      "name": "overtimeLosses",
-                      "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
-                      "description": "Number of Overtime Losses",
-                      "abbreviation": "OTL",
-                      "type": "overtimelosses",
-                      "value": 2,
-                      "displayValue": "2"
-                    },
-                    {
-                      "name": "overtimeWins",
-                      "displayName": "Overtime Wins",
-                      "shortDisplayName": "OTW Wins",
-                      "description": "Number Overtime Wins",
-                      "abbreviation": "OTW",
-                      "type": "overtimewins",
-                      "value": 2,
-                      "displayValue": "2"
-                    },
-                    {
-                      "name": "pointsDiff",
-                      "displayName": "Goal Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Goal Differential",
-                      "abbreviation": "DIFF",
-                      "type": "pointsdiff",
-                      "value": 13,
-                      "displayValue": "+13"
-                    },
-                    {
-                      "name": "regLosses",
-                      "displayName": "Regulation Losses",
-                      "shortDisplayName": "RL",
-                      "description": "Number of Regulation Losses",
-                      "abbreviation": "RL",
-                      "type": "reglosses",
-                      "value": 0,
-                      "displayValue": "0"
-                    },
-                    {
-                      "name": "regWins",
-                      "displayName": "Regulation Wins",
-                      "shortDisplayName": "RW",
-                      "description": "Number of Regulation Wins",
-                      "abbreviation": "RW",
-                      "type": "regwins",
-                      "value": 7,
-                      "displayValue": "7"
-                    },
-                    {
-                      "name": "rotLosses",
-                      "displayName": "Regulation and Overtime Losses",
-                      "shortDisplayName": "ROW Losses",
-                      "description": "Number of Regulation and Overtime Losses",
-                      "abbreviation": "ROL",
-                      "type": "rotlosses",
-                      "value": 1,
-                      "displayValue": "1"
-                    },
-                    {
-                      "name": "rotWins",
-                      "displayName": "Regulation and Overtime Wins",
-                      "shortDisplayName": "ROW Wins",
-                      "description": "Number of Regulation and Overtime Wins",
-                      "abbreviation": "ROW",
-                      "type": "rotwins",
-                      "value": 8,
-                      "displayValue": "8"
-                    },
-                    {
-                      "name": "shootoutLosses",
-                      "displayName": "Shootout Losses",
-                      "shortDisplayName": "SOL",
-                      "description": "Shootout Losses",
-                      "abbreviation": "SOL",
-                      "type": "shootoutlosses",
-                      "value": 1,
-                      "displayValue": "1"
-                    },
-                    {
-                      "name": "shootoutWins",
-                      "displayName": "Shootout Wins",
-                      "shortDisplayName": "SOW",
-                      "description": "Shootout Wins",
-                      "abbreviation": "SOW",
-                      "type": "shootoutwins",
-                      "value": 1,
-                      "displayValue": "1"
-                    },
-                    {
-                      "id": "0",
-                      "name": "overall",
-                      "abbreviation": "TOTAL",
-                      "displayName": "Team Season Record",
-                      "shortDisplayName": "Season",
-                      "description": "Overall Record",
-                      "type": "total",
-                      "summary": "9-2-2",
-                      "displayValue": "9-2-2, 20 PTS"
-                    },
-                    {
-                      "id": "2",
-                      "name": "Home",
-                      "abbreviation": "HOME",
-                      "displayName": "Home",
-                      "shortDisplayName": "HOME",
-                      "description": "Home Record",
-                      "type": "home",
-                      "summary": "4-2-2",
-                      "displayValue": "4-2-2"
-                    },
-                    {
-                      "id": "3",
-                      "name": "Road",
-                      "abbreviation": "AWAY",
-                      "displayName": "Away",
-                      "shortDisplayName": "AWAY",
-                      "description": "Away Record",
-                      "type": "road",
-                      "summary": "5-0-0",
-                      "displayValue": "5-0-0"
-                    },
-                    {
-                      "id": "5",
-                      "name": "Last Ten Games",
-                      "abbreviation": "L10",
-                      "displayName": "Last Ten Games",
-                      "shortDisplayName": "L10",
-                      "description": "Record last 10 games",
-                      "type": "lasttengames",
-                      "summary": "7-2-1",
-                      "displayValue": "7-2-1, 0 PTS"
-                    },
-                    {
-                      "id": "6",
-                      "name": "vs. Div.",
-                      "abbreviation": "DIV",
-                      "type": "vsdiv",
-                      "summary": "6-0-1",
-                      "displayValue": "6-0-1, 0 PTS"
-                    }
-                  ]
-                },
-                {
-                  "team": {
                     "id": "37",
                     "uid": "s:70~l:90~t:37",
                     "location": "Vegas",
@@ -6092,8 +6092,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 2,
-                      "displayValue": "2"
+                      "value": 3,
+                      "displayValue": "3"
                     },
                     {
                       "name": "gamesPlayed",
@@ -6421,8 +6421,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 3,
-                      "displayValue": "3"
+                      "value": 4,
+                      "displayValue": "4"
                     },
                     {
                       "name": "gamesPlayed",
@@ -6750,8 +6750,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 4,
-                      "displayValue": "4"
+                      "value": 5,
+                      "displayValue": "5"
                     },
                     {
                       "name": "gamesPlayed",
@@ -7079,8 +7079,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 6,
-                      "displayValue": "6"
+                      "value": 7,
+                      "displayValue": "7"
                     },
                     {
                       "name": "gamesPlayed",
@@ -7408,8 +7408,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 6,
-                      "displayValue": "6"
+                      "value": 7,
+                      "displayValue": "7"
                     },
                     {
                       "name": "gamesPlayed",
@@ -7737,8 +7737,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 6,
-                      "displayValue": "6"
+                      "value": 7,
+                      "displayValue": "7"
                     },
                     {
                       "name": "gamesPlayed",
@@ -7976,335 +7976,6 @@
                 },
                 {
                   "team": {
-                    "id": "18",
-                    "uid": "s:70~l:90~t:18",
-                    "location": "San Jose",
-                    "name": "Sharks",
-                    "abbreviation": "SJ",
-                    "displayName": "San Jose Sharks",
-                    "shortDisplayName": "Sharks",
-                    "isActive": true,
-                    "logos": [
-                      {
-                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500/sj.png",
-                        "width": 500,
-                        "height": 500,
-                        "alt": "",
-                        "rel": [
-                          "full",
-                          "default"
-                        ],
-                        "lastUpdated": "2024-07-02T15:51Z"
-                      },
-                      {
-                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/sj.png",
-                        "width": 500,
-                        "height": 500,
-                        "alt": "",
-                        "rel": [
-                          "full",
-                          "scoreboard",
-                          "dark"
-                        ],
-                        "lastUpdated": "2024-07-02T15:46Z"
-                      }
-                    ],
-                    "links": [
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "desktop",
-                          "team"
-                        ],
-                        "href": "https://www.espn.com/nhl/team/_/name/sj/san-jose-sharks",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "mobile",
-                          "team"
-                        ],
-                        "href": "https://m.espn.com/nhl/clubhouse?teamId=18",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      }
-                    ]
-                  },
-                  "stats": [
-                    {
-                      "name": "otLosses",
-                      "displayName": "Overtime Losses",
-                      "shortDisplayName": "OTL",
-                      "description": "Number of Overtime Losses",
-                      "abbreviation": "OTL",
-                      "type": "otlosses",
-                      "value": 1,
-                      "displayValue": "1"
-                    },
-                    {
-                      "name": "differential",
-                      "displayName": "Average Point Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Average Point Differential",
-                      "abbreviation": "DIFF",
-                      "type": "differential",
-                      "value": -0.5,
-                      "displayValue": "-0.5"
-                    },
-                    {
-                      "name": "gamesBehind",
-                      "displayName": "Games Back",
-                      "shortDisplayName": "GB",
-                      "description": "Games Back",
-                      "abbreviation": "GB",
-                      "type": "gamesbehind",
-                      "value": 6,
-                      "displayValue": "6"
-                    },
-                    {
-                      "name": "gamesPlayed",
-                      "displayName": "Games Played",
-                      "shortDisplayName": "GP",
-                      "description": "Number of Games Played",
-                      "abbreviation": "GP",
-                      "type": "gamesplayed",
-                      "value": 14,
-                      "displayValue": "14"
-                    },
-                    {
-                      "name": "losses",
-                      "displayName": "Losses",
-                      "shortDisplayName": "L",
-                      "description": "Losses",
-                      "abbreviation": "L",
-                      "type": "losses",
-                      "value": 6,
-                      "displayValue": "6"
-                    },
-                    {
-                      "name": "playoffSeed",
-                      "displayName": "Position",
-                      "shortDisplayName": "POS",
-                      "description": "Playoff Seed",
-                      "abbreviation": "SEED",
-                      "type": "playoffseed",
-                      "value": 9,
-                      "displayValue": "9"
-                    },
-                    {
-                      "name": "pointDifferential",
-                      "displayName": "Point Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Point Differential",
-                      "abbreviation": "DIFF",
-                      "type": "pointdifferential",
-                      "value": -7,
-                      "displayValue": "-7"
-                    },
-                    {
-                      "name": "points",
-                      "displayName": "Points",
-                      "shortDisplayName": "PTS",
-                      "description": "Total Points",
-                      "abbreviation": "PTS",
-                      "type": "points",
-                      "value": 15,
-                      "displayValue": "15"
-                    },
-                    {
-                      "name": "pointsAgainst",
-                      "displayName": "Goals Against",
-                      "shortDisplayName": "GA",
-                      "description": "Goals Against",
-                      "abbreviation": "GA",
-                      "type": "pointsagainst",
-                      "value": 47,
-                      "displayValue": "47"
-                    },
-                    {
-                      "name": "pointsFor",
-                      "displayName": "Goals For",
-                      "shortDisplayName": "GF",
-                      "description": "Goals For",
-                      "abbreviation": "GF",
-                      "type": "pointsfor",
-                      "value": 40,
-                      "displayValue": "40"
-                    },
-                    {
-                      "name": "streak",
-                      "displayName": "Streak",
-                      "shortDisplayName": "STRK",
-                      "description": "Current Streak",
-                      "abbreviation": "STRK",
-                      "type": "streak",
-                      "value": 1,
-                      "displayValue": "W1"
-                    },
-                    {
-                      "name": "wins",
-                      "displayName": "Wins",
-                      "shortDisplayName": "W",
-                      "description": "Wins",
-                      "abbreviation": "W",
-                      "type": "wins",
-                      "value": 7,
-                      "displayValue": "7"
-                    },
-                    {
-                      "name": "overtimeLosses",
-                      "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
-                      "description": "Number of Overtime Losses",
-                      "abbreviation": "OTL",
-                      "type": "overtimelosses",
-                      "value": 1,
-                      "displayValue": "1"
-                    },
-                    {
-                      "name": "overtimeWins",
-                      "displayName": "Overtime Wins",
-                      "shortDisplayName": "OTW Wins",
-                      "description": "Number Overtime Wins",
-                      "abbreviation": "OTW",
-                      "type": "overtimewins",
-                      "value": 5,
-                      "displayValue": "5"
-                    },
-                    {
-                      "name": "pointsDiff",
-                      "displayName": "Goal Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Goal Differential",
-                      "abbreviation": "DIFF",
-                      "type": "pointsdiff",
-                      "value": -7,
-                      "displayValue": "-7"
-                    },
-                    {
-                      "name": "regLosses",
-                      "displayName": "Regulation Losses",
-                      "shortDisplayName": "RL",
-                      "description": "Number of Regulation Losses",
-                      "abbreviation": "RL",
-                      "type": "reglosses",
-                      "value": 5,
-                      "displayValue": "5"
-                    },
-                    {
-                      "name": "regWins",
-                      "displayName": "Regulation Wins",
-                      "shortDisplayName": "RW",
-                      "description": "Number of Regulation Wins",
-                      "abbreviation": "RW",
-                      "type": "regwins",
-                      "value": 2,
-                      "displayValue": "2"
-                    },
-                    {
-                      "name": "rotLosses",
-                      "displayName": "Regulation and Overtime Losses",
-                      "shortDisplayName": "ROW Losses",
-                      "description": "Number of Regulation and Overtime Losses",
-                      "abbreviation": "ROL",
-                      "type": "rotlosses",
-                      "value": 5,
-                      "displayValue": "5"
-                    },
-                    {
-                      "name": "rotWins",
-                      "displayName": "Regulation and Overtime Wins",
-                      "shortDisplayName": "ROW Wins",
-                      "description": "Number of Regulation and Overtime Wins",
-                      "abbreviation": "ROW",
-                      "type": "rotwins",
-                      "value": 6,
-                      "displayValue": "6"
-                    },
-                    {
-                      "name": "shootoutLosses",
-                      "displayName": "Shootout Losses",
-                      "shortDisplayName": "SOL",
-                      "description": "Shootout Losses",
-                      "abbreviation": "SOL",
-                      "type": "shootoutlosses",
-                      "value": 1,
-                      "displayValue": "1"
-                    },
-                    {
-                      "name": "shootoutWins",
-                      "displayName": "Shootout Wins",
-                      "shortDisplayName": "SOW",
-                      "description": "Shootout Wins",
-                      "abbreviation": "SOW",
-                      "type": "shootoutwins",
-                      "value": 1,
-                      "displayValue": "1"
-                    },
-                    {
-                      "id": "0",
-                      "name": "overall",
-                      "abbreviation": "TOTAL",
-                      "displayName": "Team Season Record",
-                      "shortDisplayName": "Season",
-                      "description": "Overall Record",
-                      "type": "total",
-                      "summary": "7-6-1",
-                      "displayValue": "7-6-1, 15 PTS"
-                    },
-                    {
-                      "id": "2",
-                      "name": "Home",
-                      "abbreviation": "HOME",
-                      "displayName": "Home",
-                      "shortDisplayName": "HOME",
-                      "description": "Home Record",
-                      "type": "home",
-                      "summary": "3-3-0",
-                      "displayValue": "3-3-0"
-                    },
-                    {
-                      "id": "3",
-                      "name": "Road",
-                      "abbreviation": "AWAY",
-                      "displayName": "Away",
-                      "shortDisplayName": "AWAY",
-                      "description": "Away Record",
-                      "type": "road",
-                      "summary": "4-3-1",
-                      "displayValue": "4-3-1"
-                    },
-                    {
-                      "id": "5",
-                      "name": "Last Ten Games",
-                      "abbreviation": "L10",
-                      "displayName": "Last Ten Games",
-                      "shortDisplayName": "L10",
-                      "description": "Record last 10 games",
-                      "type": "lasttengames",
-                      "summary": "4-5-1",
-                      "displayValue": "4-5-1, 0 PTS"
-                    },
-                    {
-                      "id": "6",
-                      "name": "vs. Div.",
-                      "abbreviation": "DIV",
-                      "type": "vsdiv",
-                      "summary": "2-1-0",
-                      "displayValue": "2-1-0, 0 PTS"
-                    }
-                  ]
-                },
-                {
-                  "team": {
                     "id": "27",
                     "uid": "s:70~l:90~t:27",
                     "location": "Nashville",
@@ -8385,8 +8056,8 @@
                       "description": "Average Point Differential",
                       "abbreviation": "DIFF",
                       "type": "differential",
-                      "value": -0.5,
-                      "displayValue": "-0.5"
+                      "value": -0.3999999999999999,
+                      "displayValue": "-0.4"
                     },
                     {
                       "name": "gamesBehind",
@@ -8395,8 +8066,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 8,
-                      "displayValue": "8"
+                      "value": 7,
+                      "displayValue": "7"
                     },
                     {
                       "name": "gamesPlayed",
@@ -8405,8 +8076,8 @@
                       "description": "Number of Games Played",
                       "abbreviation": "GP",
                       "type": "gamesplayed",
-                      "value": 13,
-                      "displayValue": "13"
+                      "value": 14,
+                      "displayValue": "14"
                     },
                     {
                       "name": "losses",
@@ -8425,8 +8096,8 @@
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
-                      "value": 10,
-                      "displayValue": "10"
+                      "value": 9,
+                      "displayValue": "9"
                     },
                     {
                       "name": "pointDifferential",
@@ -8435,8 +8106,8 @@
                       "description": "Point Differential",
                       "abbreviation": "DIFF",
                       "type": "pointdifferential",
-                      "value": -6,
-                      "displayValue": "-6"
+                      "value": -5,
+                      "displayValue": "-5"
                     },
                     {
                       "name": "points",
@@ -8445,8 +8116,8 @@
                       "description": "Total Points",
                       "abbreviation": "PTS",
                       "type": "points",
-                      "value": 13,
-                      "displayValue": "13"
+                      "value": 15,
+                      "displayValue": "15"
                     },
                     {
                       "name": "pointsAgainst",
@@ -8455,8 +8126,8 @@
                       "description": "Goals Against",
                       "abbreviation": "GA",
                       "type": "pointsagainst",
-                      "value": 43,
-                      "displayValue": "43"
+                      "value": 47,
+                      "displayValue": "47"
                     },
                     {
                       "name": "pointsFor",
@@ -8465,8 +8136,8 @@
                       "description": "Goals For",
                       "abbreviation": "GF",
                       "type": "pointsfor",
-                      "value": 37,
-                      "displayValue": "37"
+                      "value": 42,
+                      "displayValue": "42"
                     },
                     {
                       "name": "streak",
@@ -8475,8 +8146,8 @@
                       "description": "Current Streak",
                       "abbreviation": "STRK",
                       "type": "streak",
-                      "value": -2,
-                      "displayValue": "L2"
+                      "value": 1,
+                      "displayValue": "W1"
                     },
                     {
                       "name": "wins",
@@ -8485,8 +8156,8 @@
                       "description": "Wins",
                       "abbreviation": "W",
                       "type": "wins",
-                      "value": 4,
-                      "displayValue": "4"
+                      "value": 5,
+                      "displayValue": "5"
                     },
                     {
                       "name": "overtimeLosses",
@@ -8505,8 +8176,8 @@
                       "description": "Number Overtime Wins",
                       "abbreviation": "OTW",
                       "type": "overtimewins",
-                      "value": 0,
-                      "displayValue": "0"
+                      "value": 1,
+                      "displayValue": "1"
                     },
                     {
                       "name": "pointsDiff",
@@ -8515,8 +8186,8 @@
                       "description": "Goal Differential",
                       "abbreviation": "DIFF",
                       "type": "pointsdiff",
-                      "value": -6,
-                      "displayValue": "-6"
+                      "value": -5,
+                      "displayValue": "-5"
                     },
                     {
                       "name": "regLosses",
@@ -8575,8 +8246,8 @@
                       "description": "Shootout Wins",
                       "abbreviation": "SOW",
                       "type": "shootoutwins",
-                      "value": 0,
-                      "displayValue": "0"
+                      "value": 1,
+                      "displayValue": "1"
                     },
                     {
                       "id": "0",
@@ -8586,8 +8257,8 @@
                       "shortDisplayName": "Season",
                       "description": "Overall Record",
                       "type": "total",
-                      "summary": "4-4-5",
-                      "displayValue": "4-4-5, 13 PTS"
+                      "summary": "5-4-5",
+                      "displayValue": "5-4-5, 15 PTS"
                     },
                     {
                       "id": "2",
@@ -8597,8 +8268,8 @@
                       "shortDisplayName": "HOME",
                       "description": "Home Record",
                       "type": "home",
-                      "summary": "3-3-2",
-                      "displayValue": "3-3-2"
+                      "summary": "4-3-2",
+                      "displayValue": "4-3-2"
                     },
                     {
                       "id": "3",
@@ -8629,6 +8300,335 @@
                       "type": "vsdiv",
                       "summary": "3-1-0",
                       "displayValue": "3-1-0, 0 PTS"
+                    }
+                  ]
+                },
+                {
+                  "team": {
+                    "id": "18",
+                    "uid": "s:70~l:90~t:18",
+                    "location": "San Jose",
+                    "name": "Sharks",
+                    "abbreviation": "SJ",
+                    "displayName": "San Jose Sharks",
+                    "shortDisplayName": "Sharks",
+                    "isActive": true,
+                    "logos": [
+                      {
+                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500/sj.png",
+                        "width": 500,
+                        "height": 500,
+                        "alt": "",
+                        "rel": [
+                          "full",
+                          "default"
+                        ],
+                        "lastUpdated": "2024-07-02T15:51Z"
+                      },
+                      {
+                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/sj.png",
+                        "width": 500,
+                        "height": 500,
+                        "alt": "",
+                        "rel": [
+                          "full",
+                          "scoreboard",
+                          "dark"
+                        ],
+                        "lastUpdated": "2024-07-02T15:46Z"
+                      }
+                    ],
+                    "links": [
+                      {
+                        "language": "en-US",
+                        "rel": [
+                          "clubhouse",
+                          "desktop",
+                          "team"
+                        ],
+                        "href": "https://www.espn.com/nhl/team/_/name/sj/san-jose-sharks",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false
+                      },
+                      {
+                        "language": "en-US",
+                        "rel": [
+                          "clubhouse",
+                          "mobile",
+                          "team"
+                        ],
+                        "href": "https://m.espn.com/nhl/clubhouse?teamId=18",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false
+                      }
+                    ]
+                  },
+                  "stats": [
+                    {
+                      "name": "otLosses",
+                      "displayName": "Overtime Losses",
+                      "shortDisplayName": "OTL",
+                      "description": "Number of Overtime Losses",
+                      "abbreviation": "OTL",
+                      "type": "otlosses",
+                      "value": 1,
+                      "displayValue": "1"
+                    },
+                    {
+                      "name": "differential",
+                      "displayName": "Average Point Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Average Point Differential",
+                      "abbreviation": "DIFF",
+                      "type": "differential",
+                      "value": -0.7999999999999998,
+                      "displayValue": "-0.8"
+                    },
+                    {
+                      "name": "gamesBehind",
+                      "displayName": "Games Back",
+                      "shortDisplayName": "GB",
+                      "description": "Games Back",
+                      "abbreviation": "GB",
+                      "type": "gamesbehind",
+                      "value": 7,
+                      "displayValue": "7"
+                    },
+                    {
+                      "name": "gamesPlayed",
+                      "displayName": "Games Played",
+                      "shortDisplayName": "GP",
+                      "description": "Number of Games Played",
+                      "abbreviation": "GP",
+                      "type": "gamesplayed",
+                      "value": 15,
+                      "displayValue": "15"
+                    },
+                    {
+                      "name": "losses",
+                      "displayName": "Losses",
+                      "shortDisplayName": "L",
+                      "description": "Losses",
+                      "abbreviation": "L",
+                      "type": "losses",
+                      "value": 7,
+                      "displayValue": "7"
+                    },
+                    {
+                      "name": "playoffSeed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Playoff Seed",
+                      "abbreviation": "SEED",
+                      "type": "playoffseed",
+                      "value": 10,
+                      "displayValue": "10"
+                    },
+                    {
+                      "name": "pointDifferential",
+                      "displayName": "Point Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Point Differential",
+                      "abbreviation": "DIFF",
+                      "type": "pointdifferential",
+                      "value": -11,
+                      "displayValue": "-11"
+                    },
+                    {
+                      "name": "points",
+                      "displayName": "Points",
+                      "shortDisplayName": "PTS",
+                      "description": "Total Points",
+                      "abbreviation": "PTS",
+                      "type": "points",
+                      "value": 15,
+                      "displayValue": "15"
+                    },
+                    {
+                      "name": "pointsAgainst",
+                      "displayName": "Goals Against",
+                      "shortDisplayName": "GA",
+                      "description": "Goals Against",
+                      "abbreviation": "GA",
+                      "type": "pointsagainst",
+                      "value": 52,
+                      "displayValue": "52"
+                    },
+                    {
+                      "name": "pointsFor",
+                      "displayName": "Goals For",
+                      "shortDisplayName": "GF",
+                      "description": "Goals For",
+                      "abbreviation": "GF",
+                      "type": "pointsfor",
+                      "value": 41,
+                      "displayValue": "41"
+                    },
+                    {
+                      "name": "streak",
+                      "displayName": "Streak",
+                      "shortDisplayName": "STRK",
+                      "description": "Current Streak",
+                      "abbreviation": "STRK",
+                      "type": "streak",
+                      "value": -1,
+                      "displayValue": "L1"
+                    },
+                    {
+                      "name": "wins",
+                      "displayName": "Wins",
+                      "shortDisplayName": "W",
+                      "description": "Wins",
+                      "abbreviation": "W",
+                      "type": "wins",
+                      "value": 7,
+                      "displayValue": "7"
+                    },
+                    {
+                      "name": "overtimeLosses",
+                      "displayName": "Overtime Losses",
+                      "shortDisplayName": "OT Losses",
+                      "description": "Number of Overtime Losses",
+                      "abbreviation": "OTL",
+                      "type": "overtimelosses",
+                      "value": 1,
+                      "displayValue": "1"
+                    },
+                    {
+                      "name": "overtimeWins",
+                      "displayName": "Overtime Wins",
+                      "shortDisplayName": "OTW Wins",
+                      "description": "Number Overtime Wins",
+                      "abbreviation": "OTW",
+                      "type": "overtimewins",
+                      "value": 5,
+                      "displayValue": "5"
+                    },
+                    {
+                      "name": "pointsDiff",
+                      "displayName": "Goal Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Goal Differential",
+                      "abbreviation": "DIFF",
+                      "type": "pointsdiff",
+                      "value": -11,
+                      "displayValue": "-11"
+                    },
+                    {
+                      "name": "regLosses",
+                      "displayName": "Regulation Losses",
+                      "shortDisplayName": "RL",
+                      "description": "Number of Regulation Losses",
+                      "abbreviation": "RL",
+                      "type": "reglosses",
+                      "value": 6,
+                      "displayValue": "6"
+                    },
+                    {
+                      "name": "regWins",
+                      "displayName": "Regulation Wins",
+                      "shortDisplayName": "RW",
+                      "description": "Number of Regulation Wins",
+                      "abbreviation": "RW",
+                      "type": "regwins",
+                      "value": 2,
+                      "displayValue": "2"
+                    },
+                    {
+                      "name": "rotLosses",
+                      "displayName": "Regulation and Overtime Losses",
+                      "shortDisplayName": "ROW Losses",
+                      "description": "Number of Regulation and Overtime Losses",
+                      "abbreviation": "ROL",
+                      "type": "rotlosses",
+                      "value": 6,
+                      "displayValue": "6"
+                    },
+                    {
+                      "name": "rotWins",
+                      "displayName": "Regulation and Overtime Wins",
+                      "shortDisplayName": "ROW Wins",
+                      "description": "Number of Regulation and Overtime Wins",
+                      "abbreviation": "ROW",
+                      "type": "rotwins",
+                      "value": 6,
+                      "displayValue": "6"
+                    },
+                    {
+                      "name": "shootoutLosses",
+                      "displayName": "Shootout Losses",
+                      "shortDisplayName": "SOL",
+                      "description": "Shootout Losses",
+                      "abbreviation": "SOL",
+                      "type": "shootoutlosses",
+                      "value": 1,
+                      "displayValue": "1"
+                    },
+                    {
+                      "name": "shootoutWins",
+                      "displayName": "Shootout Wins",
+                      "shortDisplayName": "SOW",
+                      "description": "Shootout Wins",
+                      "abbreviation": "SOW",
+                      "type": "shootoutwins",
+                      "value": 1,
+                      "displayValue": "1"
+                    },
+                    {
+                      "id": "0",
+                      "name": "overall",
+                      "abbreviation": "TOTAL",
+                      "displayName": "Team Season Record",
+                      "shortDisplayName": "Season",
+                      "description": "Overall Record",
+                      "type": "total",
+                      "summary": "7-7-1",
+                      "displayValue": "7-7-1, 15 PTS"
+                    },
+                    {
+                      "id": "2",
+                      "name": "Home",
+                      "abbreviation": "HOME",
+                      "displayName": "Home",
+                      "shortDisplayName": "HOME",
+                      "description": "Home Record",
+                      "type": "home",
+                      "summary": "3-4-0",
+                      "displayValue": "3-4-0"
+                    },
+                    {
+                      "id": "3",
+                      "name": "Road",
+                      "abbreviation": "AWAY",
+                      "displayName": "Away",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
+                      "type": "road",
+                      "summary": "4-3-1",
+                      "displayValue": "4-3-1"
+                    },
+                    {
+                      "id": "5",
+                      "name": "Last Ten Games",
+                      "abbreviation": "L10",
+                      "displayName": "Last Ten Games",
+                      "shortDisplayName": "L10",
+                      "description": "Record last 10 games",
+                      "type": "lasttengames",
+                      "summary": "4-5-1",
+                      "displayValue": "4-5-1, 0 PTS"
+                    },
+                    {
+                      "id": "6",
+                      "name": "vs. Div.",
+                      "abbreviation": "DIV",
+                      "type": "vsdiv",
+                      "summary": "2-1-0",
+                      "displayValue": "2-1-0, 0 PTS"
                     }
                   ]
                 },
@@ -8724,8 +8724,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 9,
-                      "displayValue": "9"
+                      "value": 10,
+                      "displayValue": "10"
                     },
                     {
                       "name": "gamesPlayed",
@@ -9053,8 +9053,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 10,
-                      "displayValue": "10"
+                      "value": 11,
+                      "displayValue": "11"
                     },
                     {
                       "name": "gamesPlayed",
@@ -9382,8 +9382,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 10,
-                      "displayValue": "10"
+                      "value": 11,
+                      "displayValue": "11"
                     },
                     {
                       "name": "gamesPlayed",
@@ -9711,8 +9711,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 11,
-                      "displayValue": "11"
+                      "value": 12,
+                      "displayValue": "12"
                     },
                     {
                       "name": "gamesPlayed",
@@ -9721,8 +9721,8 @@
                       "description": "Number of Games Played",
                       "abbreviation": "GP",
                       "type": "gamesplayed",
-                      "value": 12,
-                      "displayValue": "12"
+                      "value": 13,
+                      "displayValue": "13"
                     },
                     {
                       "name": "losses",
@@ -9731,8 +9731,8 @@
                       "description": "Losses",
                       "abbreviation": "L",
                       "type": "losses",
-                      "value": 6,
-                      "displayValue": "6"
+                      "value": 7,
+                      "displayValue": "7"
                     },
                     {
                       "name": "playoffSeed",
@@ -9751,8 +9751,8 @@
                       "description": "Point Differential",
                       "abbreviation": "DIFF",
                       "type": "pointdifferential",
-                      "value": -8,
-                      "displayValue": "-8"
+                      "value": -9,
+                      "displayValue": "-9"
                     },
                     {
                       "name": "points",
@@ -9771,8 +9771,8 @@
                       "description": "Goals Against",
                       "abbreviation": "GA",
                       "type": "pointsagainst",
-                      "value": 42,
-                      "displayValue": "42"
+                      "value": 45,
+                      "displayValue": "45"
                     },
                     {
                       "name": "pointsFor",
@@ -9781,8 +9781,8 @@
                       "description": "Goals For",
                       "abbreviation": "GF",
                       "type": "pointsfor",
-                      "value": 34,
-                      "displayValue": "34"
+                      "value": 36,
+                      "displayValue": "36"
                     },
                     {
                       "name": "streak",
@@ -9791,8 +9791,8 @@
                       "description": "Current Streak",
                       "abbreviation": "STRK",
                       "type": "streak",
-                      "value": 1,
-                      "displayValue": "W1"
+                      "value": -1,
+                      "displayValue": "L1"
                     },
                     {
                       "name": "wins",
@@ -9831,8 +9831,8 @@
                       "description": "Goal Differential",
                       "abbreviation": "DIFF",
                       "type": "pointsdiff",
-                      "value": -8,
-                      "displayValue": "-8"
+                      "value": -9,
+                      "displayValue": "-9"
                     },
                     {
                       "name": "regLosses",
@@ -9841,8 +9841,8 @@
                       "description": "Number of Regulation Losses",
                       "abbreviation": "RL",
                       "type": "reglosses",
-                      "value": 4,
-                      "displayValue": "4"
+                      "value": 5,
+                      "displayValue": "5"
                     },
                     {
                       "name": "regWins",
@@ -9861,8 +9861,8 @@
                       "description": "Number of Regulation and Overtime Losses",
                       "abbreviation": "ROL",
                       "type": "rotlosses",
-                      "value": 6,
-                      "displayValue": "6"
+                      "value": 7,
+                      "displayValue": "7"
                     },
                     {
                       "name": "rotWins",
@@ -9902,8 +9902,8 @@
                       "shortDisplayName": "Season",
                       "description": "Overall Record",
                       "type": "total",
-                      "summary": "4-6-2",
-                      "displayValue": "4-6-2, 10 PTS"
+                      "summary": "4-7-2",
+                      "displayValue": "4-7-2, 10 PTS"
                     },
                     {
                       "id": "2",
@@ -9913,8 +9913,8 @@
                       "shortDisplayName": "HOME",
                       "description": "Home Record",
                       "type": "home",
-                      "summary": "1-3-0",
-                      "displayValue": "1-3-0"
+                      "summary": "1-4-0",
+                      "displayValue": "1-4-0"
                     },
                     {
                       "id": "3",
@@ -10040,8 +10040,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 12,
-                      "displayValue": "12"
+                      "value": 13,
+                      "displayValue": "13"
                     },
                     {
                       "name": "gamesPlayed",
@@ -10369,8 +10369,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 14,
-                      "displayValue": "14"
+                      "value": 15,
+                      "displayValue": "15"
                     },
                     {
                       "name": "gamesPlayed",
@@ -25716,8 +25716,8 @@
                       "description": "Opponent Points Per Game",
                       "abbreviation": "OPP PPG",
                       "type": "avgpointsagainst",
-                      "value": 120.2,
-                      "displayValue": "120.2"
+                      "value": 118.833336,
+                      "displayValue": "118.8"
                     },
                     {
                       "name": "avgPointsFor",
@@ -25726,8 +25726,8 @@
                       "description": "Points Per Game",
                       "abbreviation": "PPG",
                       "type": "avgpointsfor",
-                      "value": 112.4,
-                      "displayValue": "112.4"
+                      "value": 108.666664,
+                      "displayValue": "108.7"
                     },
                     {
                       "name": "differential",
@@ -25736,8 +25736,8 @@
                       "description": "Average Point Differential",
                       "abbreviation": "DIFF",
                       "type": "differential",
-                      "value": -7.799999999999997,
-                      "displayValue": "-7.8"
+                      "value": -10.099999999999994,
+                      "displayValue": "-10.1"
                     },
                     {
                       "name": "divisionWinPercent",
@@ -25756,8 +25756,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 4,
-                      "displayValue": "4"
+                      "value": 4.5,
+                      "displayValue": "4.5"
                     },
                     {
                       "name": "leagueWinPercent",
@@ -25766,8 +25766,8 @@
                       "description": "League Winning Percentage",
                       "abbreviation": "LPCT",
                       "type": "leaguewinpercent",
-                      "value": 0.2,
-                      "displayValue": "0.200"
+                      "value": 0.16666667,
+                      "displayValue": "0.167"
                     },
                     {
                       "name": "losses",
@@ -25776,8 +25776,8 @@
                       "description": "Losses",
                       "abbreviation": "L",
                       "type": "losses",
-                      "value": 4,
-                      "displayValue": "4"
+                      "value": 5,
+                      "displayValue": "5"
                     },
                     {
                       "name": "playoffSeed",
@@ -25786,8 +25786,8 @@
                       "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
-                      "value": 12,
-                      "displayValue": "12"
+                      "value": 14,
+                      "displayValue": "14"
                     },
                     {
                       "name": "pointDifferential",
@@ -25796,8 +25796,8 @@
                       "description": "Point Differential",
                       "abbreviation": "DIFF",
                       "type": "pointdifferential",
-                      "value": -39,
-                      "displayValue": "-39"
+                      "value": -61,
+                      "displayValue": "-61"
                     },
                     {
                       "name": "points",
@@ -25806,8 +25806,8 @@
                       "description": "Total Points",
                       "abbreviation": "PTS",
                       "type": "points",
-                      "value": -1.5,
-                      "displayValue": "-1.5"
+                      "value": -2,
+                      "displayValue": "-2.0"
                     },
                     {
                       "name": "pointsAgainst",
@@ -25816,8 +25816,8 @@
                       "description": "Total Points Against",
                       "abbreviation": "PA",
                       "type": "pointsagainst",
-                      "value": 601,
-                      "displayValue": "601"
+                      "value": 713,
+                      "displayValue": "713"
                     },
                     {
                       "name": "pointsFor",
@@ -25826,8 +25826,8 @@
                       "description": "Total Points For",
                       "abbreviation": "PF",
                       "type": "pointsfor",
-                      "value": 562,
-                      "displayValue": "562"
+                      "value": 652,
+                      "displayValue": "652"
                     },
                     {
                       "name": "streak",
@@ -25836,8 +25836,8 @@
                       "description": "Current Streak",
                       "abbreviation": "STRK",
                       "type": "streak",
-                      "value": -3,
-                      "displayValue": "L3"
+                      "value": -4,
+                      "displayValue": "L4"
                     },
                     {
                       "name": "winPercent",
@@ -25846,8 +25846,8 @@
                       "description": "Winning Percentage",
                       "abbreviation": "PCT",
                       "type": "winpercent",
-                      "value": 0.2,
-                      "displayValue": ".200"
+                      "value": 0.16666667,
+                      "displayValue": ".167"
                     },
                     {
                       "name": "wins",
@@ -25866,8 +25866,8 @@
                       "description": "Games Ahead",
                       "abbreviation": "GA",
                       "type": "gamesahead",
-                      "value": 1,
-                      "displayValue": "1"
+                      "value": 0.5,
+                      "displayValue": "0.5"
                     },
                     {
                       "id": "0",
@@ -25877,8 +25877,8 @@
                       "shortDisplayName": "OVER",
                       "description": "Overall Record",
                       "type": "total",
-                      "summary": "1-4",
-                      "displayValue": "1-4"
+                      "summary": "1-5",
+                      "displayValue": "1-5"
                     },
                     {
                       "id": "33",
@@ -25887,8 +25887,8 @@
                       "shortDisplayName": "HOME",
                       "description": "Home Record",
                       "type": "home",
-                      "summary": "1-3",
-                      "displayValue": "1-3"
+                      "summary": "1-4",
+                      "displayValue": "1-4"
                     },
                     {
                       "id": "34",
@@ -25907,8 +25907,8 @@
                       "shortDisplayName": "DIV",
                       "description": "Division Record",
                       "type": "vsdiv",
-                      "summary": "0-0",
-                      "displayValue": "0-0"
+                      "summary": "0-1",
+                      "displayValue": "0-1"
                     },
                     {
                       "id": "61",
@@ -25917,8 +25917,8 @@
                       "shortDisplayName": "CONF",
                       "description": "Conference Record",
                       "type": "vsconf",
-                      "summary": "1-4",
-                      "displayValue": "1-4"
+                      "summary": "1-5",
+                      "displayValue": "1-5"
                     },
                     {
                       "id": "901",
@@ -25928,8 +25928,8 @@
                       "shortDisplayName": "L10",
                       "description": "Record last 10 games",
                       "type": "lasttengames",
-                      "summary": "1-4",
-                      "displayValue": "1-4"
+                      "summary": "1-5",
+                      "displayValue": "1-5"
                     }
                   ]
                 },
@@ -26062,8 +26062,8 @@
                       "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
-                      "value": 13,
-                      "displayValue": "13"
+                      "value": 12,
+                      "displayValue": "12"
                     },
                     {
                       "name": "pointDifferential",
@@ -26338,8 +26338,8 @@
                       "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
-                      "value": 14,
-                      "displayValue": "14"
+                      "value": 13,
+                      "displayValue": "13"
                     },
                     {
                       "name": "pointDifferential",
@@ -27591,282 +27591,6 @@
                 },
                 {
                   "team": {
-                    "id": "22",
-                    "uid": "s:40~l:46~t:22",
-                    "location": "Portland",
-                    "name": "Trail Blazers",
-                    "abbreviation": "POR",
-                    "displayName": "Portland Trail Blazers",
-                    "shortDisplayName": "Trail Blazers",
-                    "isActive": true,
-                    "logos": [
-                      {
-                        "href": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
-                        "width": 500,
-                        "height": 500,
-                        "alt": "",
-                        "rel": [
-                          "full",
-                          "default"
-                        ],
-                        "lastUpdated": "2024-06-25T21:17Z"
-                      },
-                      {
-                        "href": "https://a.espncdn.com/i/teamlogos/nba/500-dark/scoreboard/por.png",
-                        "width": 500,
-                        "height": 500,
-                        "alt": "",
-                        "rel": [
-                          "full",
-                          "scoreboard",
-                          "dark"
-                        ],
-                        "lastUpdated": "2024-06-25T21:14Z"
-                      }
-                    ],
-                    "links": [
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "desktop",
-                          "team"
-                        ],
-                        "href": "https://www.espn.com/nba/team/_/name/por/portland-trail-blazers",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      }
-                    ]
-                  },
-                  "stats": [
-                    {
-                      "name": "avgPointsAgainst",
-                      "displayName": "Opponent Points Per Game",
-                      "shortDisplayName": "OPP PPG",
-                      "description": "Opponent Points Per Game",
-                      "abbreviation": "OPP PPG",
-                      "type": "avgpointsagainst",
-                      "value": 114,
-                      "displayValue": "114.0"
-                    },
-                    {
-                      "name": "avgPointsFor",
-                      "displayName": "Points Per Game",
-                      "shortDisplayName": "PPG",
-                      "description": "Points Per Game",
-                      "abbreviation": "PPG",
-                      "type": "avgpointsfor",
-                      "value": 122.75,
-                      "displayValue": "122.8"
-                    },
-                    {
-                      "name": "differential",
-                      "displayName": "Average Point Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Average Point Differential",
-                      "abbreviation": "DIFF",
-                      "type": "differential",
-                      "value": 8.799999999999997,
-                      "displayValue": "+8.8"
-                    },
-                    {
-                      "name": "divisionWinPercent",
-                      "displayName": "Division Win Percentage",
-                      "shortDisplayName": "DPCT",
-                      "description": "Division Winning Percentage",
-                      "abbreviation": "DPCT",
-                      "type": "divisionwinpercent",
-                      "value": 0,
-                      "displayValue": "0.000"
-                    },
-                    {
-                      "name": "gamesBehind",
-                      "displayName": "Games Back",
-                      "shortDisplayName": "GB",
-                      "description": "Games Back",
-                      "abbreviation": "GB",
-                      "type": "gamesbehind",
-                      "value": 1.5,
-                      "displayValue": "1.5"
-                    },
-                    {
-                      "name": "leagueWinPercent",
-                      "displayName": "League Win Percentage",
-                      "shortDisplayName": "LPCT",
-                      "description": "League Winning Percentage",
-                      "abbreviation": "LPCT",
-                      "type": "leaguewinpercent",
-                      "value": 0.75,
-                      "displayValue": "0.750"
-                    },
-                    {
-                      "name": "losses",
-                      "displayName": "Losses",
-                      "shortDisplayName": "L",
-                      "description": "Losses",
-                      "abbreviation": "L",
-                      "type": "losses",
-                      "value": 1,
-                      "displayValue": "1"
-                    },
-                    {
-                      "name": "playoffSeed",
-                      "displayName": "Position",
-                      "shortDisplayName": "POS",
-                      "description": "Projected seed in the NBA Playoffs, according to BPI",
-                      "abbreviation": "SEED",
-                      "type": "playoffseed",
-                      "value": 4,
-                      "displayValue": "4"
-                    },
-                    {
-                      "name": "pointDifferential",
-                      "displayName": "Point Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Point Differential",
-                      "abbreviation": "DIFF",
-                      "type": "pointdifferential",
-                      "value": 35,
-                      "displayValue": "+35"
-                    },
-                    {
-                      "name": "points",
-                      "displayName": "Points",
-                      "shortDisplayName": "PTS",
-                      "description": "Total Points",
-                      "abbreviation": "PTS",
-                      "type": "points",
-                      "value": 1,
-                      "displayValue": "1.0"
-                    },
-                    {
-                      "name": "pointsAgainst",
-                      "displayName": "Points Against",
-                      "shortDisplayName": "PA",
-                      "description": "Total Points Against",
-                      "abbreviation": "PA",
-                      "type": "pointsagainst",
-                      "value": 456,
-                      "displayValue": "456"
-                    },
-                    {
-                      "name": "pointsFor",
-                      "displayName": "Points For",
-                      "shortDisplayName": "PF",
-                      "description": "Total Points For",
-                      "abbreviation": "PF",
-                      "type": "pointsfor",
-                      "value": 491,
-                      "displayValue": "491"
-                    },
-                    {
-                      "name": "streak",
-                      "displayName": "Streak",
-                      "shortDisplayName": "STRK",
-                      "description": "Current Streak",
-                      "abbreviation": "STRK",
-                      "type": "streak",
-                      "value": -1,
-                      "displayValue": "L1"
-                    },
-                    {
-                      "name": "winPercent",
-                      "displayName": "Win Percentage",
-                      "shortDisplayName": "PCT",
-                      "description": "Winning Percentage",
-                      "abbreviation": "PCT",
-                      "type": "winpercent",
-                      "value": 0.75,
-                      "displayValue": ".750"
-                    },
-                    {
-                      "name": "wins",
-                      "displayName": "Wins",
-                      "shortDisplayName": "W",
-                      "description": "Wins",
-                      "abbreviation": "W",
-                      "type": "wins",
-                      "value": 3,
-                      "displayValue": "3"
-                    },
-                    {
-                      "name": "gamesAhead",
-                      "displayName": "Games Ahead",
-                      "shortDisplayName": "GA",
-                      "description": "Games Ahead",
-                      "abbreviation": "GA",
-                      "type": "gamesahead",
-                      "value": 3.5,
-                      "displayValue": "3.5"
-                    },
-                    {
-                      "id": "0",
-                      "name": "overall",
-                      "abbreviation": "Total",
-                      "displayName": "Overall",
-                      "shortDisplayName": "OVER",
-                      "description": "Overall Record",
-                      "type": "total",
-                      "summary": "3-1",
-                      "displayValue": "3-1"
-                    },
-                    {
-                      "id": "33",
-                      "name": "Home",
-                      "displayName": "Home",
-                      "shortDisplayName": "HOME",
-                      "description": "Home Record",
-                      "type": "home",
-                      "summary": "1-1",
-                      "displayValue": "1-1"
-                    },
-                    {
-                      "id": "34",
-                      "name": "Road",
-                      "displayName": "Road",
-                      "shortDisplayName": "AWAY",
-                      "description": "Away Record",
-                      "type": "road",
-                      "summary": "2-0",
-                      "displayValue": "2-0"
-                    },
-                    {
-                      "id": "60",
-                      "name": "vs. Div.",
-                      "displayName": "DIV",
-                      "shortDisplayName": "DIV",
-                      "description": "Division Record",
-                      "type": "vsdiv",
-                      "summary": "0-0",
-                      "displayValue": "0-0"
-                    },
-                    {
-                      "id": "61",
-                      "name": "vs. Conf.",
-                      "displayName": "CONF",
-                      "shortDisplayName": "CONF",
-                      "description": "Conference Record",
-                      "type": "vsconf",
-                      "summary": "3-1",
-                      "displayValue": "3-1"
-                    },
-                    {
-                      "id": "901",
-                      "name": "Last Ten Games",
-                      "abbreviation": "L10",
-                      "displayName": "Last Ten Games",
-                      "shortDisplayName": "L10",
-                      "description": "Record last 10 games",
-                      "type": "lasttengames",
-                      "summary": "3-1",
-                      "displayValue": "3-1"
-                    }
-                  ]
-                },
-                {
-                  "team": {
                     "id": "13",
                     "uid": "s:40~l:46~t:13",
                     "location": "Los Angeles",
@@ -28935,6 +28659,282 @@
                       "type": "road",
                       "summary": "1-1",
                       "displayValue": "1-1"
+                    },
+                    {
+                      "id": "60",
+                      "name": "vs. Div.",
+                      "displayName": "DIV",
+                      "shortDisplayName": "DIV",
+                      "description": "Division Record",
+                      "type": "vsdiv",
+                      "summary": "1-0",
+                      "displayValue": "1-0"
+                    },
+                    {
+                      "id": "61",
+                      "name": "vs. Conf.",
+                      "displayName": "CONF",
+                      "shortDisplayName": "CONF",
+                      "description": "Conference Record",
+                      "type": "vsconf",
+                      "summary": "4-1",
+                      "displayValue": "4-1"
+                    },
+                    {
+                      "id": "901",
+                      "name": "Last Ten Games",
+                      "abbreviation": "L10",
+                      "displayName": "Last Ten Games",
+                      "shortDisplayName": "L10",
+                      "description": "Record last 10 games",
+                      "type": "lasttengames",
+                      "summary": "4-1",
+                      "displayValue": "4-1"
+                    }
+                  ]
+                },
+                {
+                  "team": {
+                    "id": "22",
+                    "uid": "s:40~l:46~t:22",
+                    "location": "Portland",
+                    "name": "Trail Blazers",
+                    "abbreviation": "POR",
+                    "displayName": "Portland Trail Blazers",
+                    "shortDisplayName": "Trail Blazers",
+                    "isActive": true,
+                    "logos": [
+                      {
+                        "href": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
+                        "width": 500,
+                        "height": 500,
+                        "alt": "",
+                        "rel": [
+                          "full",
+                          "default"
+                        ],
+                        "lastUpdated": "2024-06-25T21:17Z"
+                      },
+                      {
+                        "href": "https://a.espncdn.com/i/teamlogos/nba/500-dark/scoreboard/por.png",
+                        "width": 500,
+                        "height": 500,
+                        "alt": "",
+                        "rel": [
+                          "full",
+                          "scoreboard",
+                          "dark"
+                        ],
+                        "lastUpdated": "2024-06-25T21:14Z"
+                      }
+                    ],
+                    "links": [
+                      {
+                        "language": "en-US",
+                        "rel": [
+                          "clubhouse",
+                          "desktop",
+                          "team"
+                        ],
+                        "href": "https://www.espn.com/nba/team/_/name/por/portland-trail-blazers",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false
+                      }
+                    ]
+                  },
+                  "stats": [
+                    {
+                      "name": "avgPointsAgainst",
+                      "displayName": "Opponent Points Per Game",
+                      "shortDisplayName": "OPP PPG",
+                      "description": "Opponent Points Per Game",
+                      "abbreviation": "OPP PPG",
+                      "type": "avgpointsagainst",
+                      "value": 109.2,
+                      "displayValue": "109.2"
+                    },
+                    {
+                      "name": "avgPointsFor",
+                      "displayName": "Points Per Game",
+                      "shortDisplayName": "PPG",
+                      "description": "Points Per Game",
+                      "abbreviation": "PPG",
+                      "type": "avgpointsfor",
+                      "value": 120.6,
+                      "displayValue": "120.6"
+                    },
+                    {
+                      "name": "differential",
+                      "displayName": "Average Point Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Average Point Differential",
+                      "abbreviation": "DIFF",
+                      "type": "differential",
+                      "value": 11.399999999999991,
+                      "displayValue": "+11.4"
+                    },
+                    {
+                      "name": "divisionWinPercent",
+                      "displayName": "Division Win Percentage",
+                      "shortDisplayName": "DPCT",
+                      "description": "Division Winning Percentage",
+                      "abbreviation": "DPCT",
+                      "type": "divisionwinpercent",
+                      "value": 1,
+                      "displayValue": "1.000"
+                    },
+                    {
+                      "name": "gamesBehind",
+                      "displayName": "Games Back",
+                      "shortDisplayName": "GB",
+                      "description": "Games Back",
+                      "abbreviation": "GB",
+                      "type": "gamesbehind",
+                      "value": 1,
+                      "displayValue": "1"
+                    },
+                    {
+                      "name": "leagueWinPercent",
+                      "displayName": "League Win Percentage",
+                      "shortDisplayName": "LPCT",
+                      "description": "League Winning Percentage",
+                      "abbreviation": "LPCT",
+                      "type": "leaguewinpercent",
+                      "value": 0.8,
+                      "displayValue": "0.800"
+                    },
+                    {
+                      "name": "losses",
+                      "displayName": "Losses",
+                      "shortDisplayName": "L",
+                      "description": "Losses",
+                      "abbreviation": "L",
+                      "type": "losses",
+                      "value": 1,
+                      "displayValue": "1"
+                    },
+                    {
+                      "name": "playoffSeed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
+                      "abbreviation": "SEED",
+                      "type": "playoffseed",
+                      "value": 4,
+                      "displayValue": "4"
+                    },
+                    {
+                      "name": "pointDifferential",
+                      "displayName": "Point Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Point Differential",
+                      "abbreviation": "DIFF",
+                      "type": "pointdifferential",
+                      "value": 57,
+                      "displayValue": "+57"
+                    },
+                    {
+                      "name": "points",
+                      "displayName": "Points",
+                      "shortDisplayName": "PTS",
+                      "description": "Total Points",
+                      "abbreviation": "PTS",
+                      "type": "points",
+                      "value": 1.5,
+                      "displayValue": "1.5"
+                    },
+                    {
+                      "name": "pointsAgainst",
+                      "displayName": "Points Against",
+                      "shortDisplayName": "PA",
+                      "description": "Total Points Against",
+                      "abbreviation": "PA",
+                      "type": "pointsagainst",
+                      "value": 546,
+                      "displayValue": "546"
+                    },
+                    {
+                      "name": "pointsFor",
+                      "displayName": "Points For",
+                      "shortDisplayName": "PF",
+                      "description": "Total Points For",
+                      "abbreviation": "PF",
+                      "type": "pointsfor",
+                      "value": 603,
+                      "displayValue": "603"
+                    },
+                    {
+                      "name": "streak",
+                      "displayName": "Streak",
+                      "shortDisplayName": "STRK",
+                      "description": "Current Streak",
+                      "abbreviation": "STRK",
+                      "type": "streak",
+                      "value": 1,
+                      "displayValue": "W1"
+                    },
+                    {
+                      "name": "winPercent",
+                      "displayName": "Win Percentage",
+                      "shortDisplayName": "PCT",
+                      "description": "Winning Percentage",
+                      "abbreviation": "PCT",
+                      "type": "winpercent",
+                      "value": 0.8,
+                      "displayValue": ".800"
+                    },
+                    {
+                      "name": "wins",
+                      "displayName": "Wins",
+                      "shortDisplayName": "W",
+                      "description": "Wins",
+                      "abbreviation": "W",
+                      "type": "wins",
+                      "value": 4,
+                      "displayValue": "4"
+                    },
+                    {
+                      "name": "gamesAhead",
+                      "displayName": "Games Ahead",
+                      "shortDisplayName": "GA",
+                      "description": "Games Ahead",
+                      "abbreviation": "GA",
+                      "type": "gamesahead",
+                      "value": 4,
+                      "displayValue": "4"
+                    },
+                    {
+                      "id": "0",
+                      "name": "overall",
+                      "abbreviation": "Total",
+                      "displayName": "Overall",
+                      "shortDisplayName": "OVER",
+                      "description": "Overall Record",
+                      "type": "total",
+                      "summary": "4-1",
+                      "displayValue": "4-1"
+                    },
+                    {
+                      "id": "33",
+                      "name": "Home",
+                      "displayName": "Home",
+                      "shortDisplayName": "HOME",
+                      "description": "Home Record",
+                      "type": "home",
+                      "summary": "1-1",
+                      "displayValue": "1-1"
+                    },
+                    {
+                      "id": "34",
+                      "name": "Road",
+                      "displayName": "Road",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
+                      "type": "road",
+                      "summary": "3-0",
+                      "displayValue": "3-0"
                     },
                     {
                       "id": "60",
@@ -30647,11 +30647,7 @@
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/ath.png",
       "record": "64-98",
       "standingSummary": "1st in AL West",
-      "nextGame": {
-        "name": "Chicago Cubs at Athletics",
-        "date": "2027-02-19T05:00Z",
-        "shortName": "CHC @ ATH"
-      },
+      "nextGame": null,
       "recentForm": [],
       "standings": {
         "uid": "s:1~l:10~g:9",
