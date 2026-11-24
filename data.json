@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-24T05:03:31.412Z",
+  "lastUpdated": "2026-11-24T19:47:51.295Z",
   "teams": {
     "sharks": {
       "key": "sharks",
@@ -7,7 +7,7 @@
       "displayName": "San Jose Sharks",
       "abbreviation": "SJ",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/sj.png",
-      "record": "11-12",
+      "record": "11-13",
       "standingSummary": "10th in Western Conference",
       "nextGame": {
         "name": "San Jose Sharks at Anaheim Ducks",
@@ -5424,8 +5424,8 @@
                       "description": "Average Point Differential",
                       "abbreviation": "DIFF",
                       "type": "differential",
-                      "value": 1.4,
-                      "displayValue": "+1.4"
+                      "value": 1.5,
+                      "displayValue": "+1.5"
                     },
                     {
                       "name": "gamesBehind",
@@ -5444,8 +5444,8 @@
                       "description": "Number of Games Played",
                       "abbreviation": "GP",
                       "type": "gamesplayed",
-                      "value": 25,
-                      "displayValue": "25"
+                      "value": 26,
+                      "displayValue": "26"
                     },
                     {
                       "name": "losses",
@@ -5474,8 +5474,8 @@
                       "description": "Point Differential",
                       "abbreviation": "DIFF",
                       "type": "pointdifferential",
-                      "value": 34,
-                      "displayValue": "+34"
+                      "value": 37,
+                      "displayValue": "+37"
                     },
                     {
                       "name": "points",
@@ -5484,8 +5484,8 @@
                       "description": "Total Points",
                       "abbreviation": "PTS",
                       "type": "points",
-                      "value": 39,
-                      "displayValue": "39"
+                      "value": 41,
+                      "displayValue": "41"
                     },
                     {
                       "name": "pointsAgainst",
@@ -5494,8 +5494,8 @@
                       "description": "Goals Against",
                       "abbreviation": "GA",
                       "type": "pointsagainst",
-                      "value": 56,
-                      "displayValue": "56"
+                      "value": 58,
+                      "displayValue": "58"
                     },
                     {
                       "name": "pointsFor",
@@ -5504,8 +5504,8 @@
                       "description": "Goals For",
                       "abbreviation": "GF",
                       "type": "pointsfor",
-                      "value": 90,
-                      "displayValue": "90"
+                      "value": 95,
+                      "displayValue": "95"
                     },
                     {
                       "name": "streak",
@@ -5514,8 +5514,8 @@
                       "description": "Current Streak",
                       "abbreviation": "STRK",
                       "type": "streak",
-                      "value": -1,
-                      "displayValue": "L1"
+                      "value": 1,
+                      "displayValue": "W1"
                     },
                     {
                       "name": "wins",
@@ -5524,8 +5524,8 @@
                       "description": "Wins",
                       "abbreviation": "W",
                       "type": "wins",
-                      "value": 17,
-                      "displayValue": "17"
+                      "value": 18,
+                      "displayValue": "18"
                     },
                     {
                       "name": "overtimeLosses",
@@ -5554,8 +5554,8 @@
                       "description": "Goal Differential",
                       "abbreviation": "DIFF",
                       "type": "pointsdiff",
-                      "value": 34,
-                      "displayValue": "+34"
+                      "value": 37,
+                      "displayValue": "+37"
                     },
                     {
                       "name": "regLosses",
@@ -5574,8 +5574,8 @@
                       "description": "Number of Regulation Wins",
                       "abbreviation": "RW",
                       "type": "regwins",
-                      "value": 16,
-                      "displayValue": "16"
+                      "value": 17,
+                      "displayValue": "17"
                     },
                     {
                       "name": "rotLosses",
@@ -5594,8 +5594,8 @@
                       "description": "Number of Regulation and Overtime Wins",
                       "abbreviation": "ROW",
                       "type": "rotwins",
-                      "value": 17,
-                      "displayValue": "17"
+                      "value": 18,
+                      "displayValue": "18"
                     },
                     {
                       "name": "shootoutLosses",
@@ -5625,8 +5625,8 @@
                       "shortDisplayName": "Season",
                       "description": "Overall Record",
                       "type": "total",
-                      "summary": "17-3-5",
-                      "displayValue": "17-3-5, 39 PTS"
+                      "summary": "18-3-5",
+                      "displayValue": "18-3-5, 41 PTS"
                     },
                     {
                       "id": "2",
@@ -5647,8 +5647,8 @@
                       "shortDisplayName": "AWAY",
                       "description": "Away Record",
                       "type": "road",
-                      "summary": "11-3-3",
-                      "displayValue": "11-3-3"
+                      "summary": "12-3-3",
+                      "displayValue": "12-3-3"
                     },
                     {
                       "id": "5",
@@ -5763,8 +5763,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 1,
-                      "displayValue": "1"
+                      "value": 3,
+                      "displayValue": "3"
                     },
                     {
                       "name": "gamesPlayed",
@@ -6092,8 +6092,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 6,
-                      "displayValue": "6"
+                      "value": 8,
+                      "displayValue": "8"
                     },
                     {
                       "name": "gamesPlayed",
@@ -6421,8 +6421,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 7,
-                      "displayValue": "7"
+                      "value": 9,
+                      "displayValue": "9"
                     },
                     {
                       "name": "gamesPlayed",
@@ -6750,8 +6750,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 10,
-                      "displayValue": "10"
+                      "value": 12,
+                      "displayValue": "12"
                     },
                     {
                       "name": "gamesPlayed",
@@ -7079,8 +7079,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 10,
-                      "displayValue": "10"
+                      "value": 12,
+                      "displayValue": "12"
                     },
                     {
                       "name": "gamesPlayed",
@@ -7408,8 +7408,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 11,
-                      "displayValue": "11"
+                      "value": 13,
+                      "displayValue": "13"
                     },
                     {
                       "name": "gamesPlayed",
@@ -7737,8 +7737,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 11,
-                      "displayValue": "11"
+                      "value": 13,
+                      "displayValue": "13"
                     },
                     {
                       "name": "gamesPlayed",
@@ -8066,8 +8066,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 12,
-                      "displayValue": "12"
+                      "value": 14,
+                      "displayValue": "14"
                     },
                     {
                       "name": "gamesPlayed",
@@ -8385,8 +8385,8 @@
                       "description": "Average Point Differential",
                       "abbreviation": "DIFF",
                       "type": "differential",
-                      "value": -0.8000000000000003,
-                      "displayValue": "-0.8"
+                      "value": -0.8999999999999999,
+                      "displayValue": "-0.9"
                     },
                     {
                       "name": "gamesBehind",
@@ -8395,8 +8395,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 15,
-                      "displayValue": "15"
+                      "value": 17,
+                      "displayValue": "17"
                     },
                     {
                       "name": "gamesPlayed",
@@ -8405,8 +8405,8 @@
                       "description": "Number of Games Played",
                       "abbreviation": "GP",
                       "type": "gamesplayed",
-                      "value": 25,
-                      "displayValue": "25"
+                      "value": 26,
+                      "displayValue": "26"
                     },
                     {
                       "name": "losses",
@@ -8415,8 +8415,8 @@
                       "description": "Losses",
                       "abbreviation": "L",
                       "type": "losses",
-                      "value": 12,
-                      "displayValue": "12"
+                      "value": 13,
+                      "displayValue": "13"
                     },
                     {
                       "name": "playoffSeed",
@@ -8435,8 +8435,8 @@
                       "description": "Point Differential",
                       "abbreviation": "DIFF",
                       "type": "pointdifferential",
-                      "value": -20,
-                      "displayValue": "-20"
+                      "value": -23,
+                      "displayValue": "-23"
                     },
                     {
                       "name": "points",
@@ -8455,8 +8455,8 @@
                       "description": "Goals Against",
                       "abbreviation": "GA",
                       "type": "pointsagainst",
-                      "value": 89,
-                      "displayValue": "89"
+                      "value": 94,
+                      "displayValue": "94"
                     },
                     {
                       "name": "pointsFor",
@@ -8465,8 +8465,8 @@
                       "description": "Goals For",
                       "abbreviation": "GF",
                       "type": "pointsfor",
-                      "value": 69,
-                      "displayValue": "69"
+                      "value": 71,
+                      "displayValue": "71"
                     },
                     {
                       "name": "streak",
@@ -8475,8 +8475,8 @@
                       "description": "Current Streak",
                       "abbreviation": "STRK",
                       "type": "streak",
-                      "value": 1,
-                      "displayValue": "W1"
+                      "value": -1,
+                      "displayValue": "L1"
                     },
                     {
                       "name": "wins",
@@ -8515,8 +8515,8 @@
                       "description": "Goal Differential",
                       "abbreviation": "DIFF",
                       "type": "pointsdiff",
-                      "value": -20,
-                      "displayValue": "-20"
+                      "value": -23,
+                      "displayValue": "-23"
                     },
                     {
                       "name": "regLosses",
@@ -8525,8 +8525,8 @@
                       "description": "Number of Regulation Losses",
                       "abbreviation": "RL",
                       "type": "reglosses",
-                      "value": 10,
-                      "displayValue": "10"
+                      "value": 11,
+                      "displayValue": "11"
                     },
                     {
                       "name": "regWins",
@@ -8545,8 +8545,8 @@
                       "description": "Number of Regulation and Overtime Losses",
                       "abbreviation": "ROL",
                       "type": "rotlosses",
-                      "value": 10,
-                      "displayValue": "10"
+                      "value": 11,
+                      "displayValue": "11"
                     },
                     {
                       "name": "rotWins",
@@ -8586,8 +8586,8 @@
                       "shortDisplayName": "Season",
                       "description": "Overall Record",
                       "type": "total",
-                      "summary": "11-12-2",
-                      "displayValue": "11-12-2, 24 PTS"
+                      "summary": "11-13-2",
+                      "displayValue": "11-13-2, 24 PTS"
                     },
                     {
                       "id": "2",
@@ -8597,8 +8597,8 @@
                       "shortDisplayName": "HOME",
                       "description": "Home Record",
                       "type": "home",
-                      "summary": "6-6-1",
-                      "displayValue": "6-6-1"
+                      "summary": "6-7-1",
+                      "displayValue": "6-7-1"
                     },
                     {
                       "id": "3",
@@ -8629,6 +8629,335 @@
                       "type": "vsdiv",
                       "summary": "3-4-0",
                       "displayValue": "3-4-0, 0 PTS"
+                    }
+                  ]
+                },
+                {
+                  "team": {
+                    "id": "124292",
+                    "uid": "s:70~l:90~t:124292",
+                    "location": "Seattle",
+                    "name": "Kraken",
+                    "abbreviation": "SEA",
+                    "displayName": "Seattle Kraken",
+                    "shortDisplayName": "Kraken",
+                    "isActive": true,
+                    "logos": [
+                      {
+                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500/sea.png",
+                        "width": 500,
+                        "height": 500,
+                        "alt": "",
+                        "rel": [
+                          "full",
+                          "default"
+                        ],
+                        "lastUpdated": "2024-07-02T15:51Z"
+                      },
+                      {
+                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/sea.png",
+                        "width": 500,
+                        "height": 500,
+                        "alt": "",
+                        "rel": [
+                          "full",
+                          "scoreboard",
+                          "dark"
+                        ],
+                        "lastUpdated": "2024-07-02T15:46Z"
+                      }
+                    ],
+                    "links": [
+                      {
+                        "language": "en-US",
+                        "rel": [
+                          "clubhouse",
+                          "desktop",
+                          "team"
+                        ],
+                        "href": "https://www.espn.com/nhl/team/_/name/sea/seattle-kraken",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false
+                      },
+                      {
+                        "language": "en-US",
+                        "rel": [
+                          "clubhouse",
+                          "mobile",
+                          "team"
+                        ],
+                        "href": "https://m.espn.com/nhl/clubhouse?teamId=124292",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false
+                      }
+                    ]
+                  },
+                  "stats": [
+                    {
+                      "name": "otLosses",
+                      "displayName": "Overtime Losses",
+                      "shortDisplayName": "OTL",
+                      "description": "Number of Overtime Losses",
+                      "abbreviation": "OTL",
+                      "type": "otlosses",
+                      "value": 1,
+                      "displayValue": "1"
+                    },
+                    {
+                      "name": "differential",
+                      "displayName": "Average Point Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Average Point Differential",
+                      "abbreviation": "DIFF",
+                      "type": "differential",
+                      "value": -0.20000000000000018,
+                      "displayValue": "-0.2"
+                    },
+                    {
+                      "name": "gamesBehind",
+                      "displayName": "Games Back",
+                      "shortDisplayName": "GB",
+                      "description": "Games Back",
+                      "abbreviation": "GB",
+                      "type": "gamesbehind",
+                      "value": 18,
+                      "displayValue": "18"
+                    },
+                    {
+                      "name": "gamesPlayed",
+                      "displayName": "Games Played",
+                      "shortDisplayName": "GP",
+                      "description": "Number of Games Played",
+                      "abbreviation": "GP",
+                      "type": "gamesplayed",
+                      "value": 21,
+                      "displayValue": "21"
+                    },
+                    {
+                      "name": "losses",
+                      "displayName": "Losses",
+                      "shortDisplayName": "L",
+                      "description": "Losses",
+                      "abbreviation": "L",
+                      "type": "losses",
+                      "value": 9,
+                      "displayValue": "9"
+                    },
+                    {
+                      "name": "playoffSeed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Playoff Seed",
+                      "abbreviation": "SEED",
+                      "type": "playoffseed",
+                      "value": 11,
+                      "displayValue": "11"
+                    },
+                    {
+                      "name": "pointDifferential",
+                      "displayName": "Point Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Point Differential",
+                      "abbreviation": "DIFF",
+                      "type": "pointdifferential",
+                      "value": -3,
+                      "displayValue": "-3"
+                    },
+                    {
+                      "name": "points",
+                      "displayName": "Points",
+                      "shortDisplayName": "PTS",
+                      "description": "Total Points",
+                      "abbreviation": "PTS",
+                      "type": "points",
+                      "value": 23,
+                      "displayValue": "23"
+                    },
+                    {
+                      "name": "pointsAgainst",
+                      "displayName": "Goals Against",
+                      "shortDisplayName": "GA",
+                      "description": "Goals Against",
+                      "abbreviation": "GA",
+                      "type": "pointsagainst",
+                      "value": 73,
+                      "displayValue": "73"
+                    },
+                    {
+                      "name": "pointsFor",
+                      "displayName": "Goals For",
+                      "shortDisplayName": "GF",
+                      "description": "Goals For",
+                      "abbreviation": "GF",
+                      "type": "pointsfor",
+                      "value": 70,
+                      "displayValue": "70"
+                    },
+                    {
+                      "name": "streak",
+                      "displayName": "Streak",
+                      "shortDisplayName": "STRK",
+                      "description": "Current Streak",
+                      "abbreviation": "STRK",
+                      "type": "streak",
+                      "value": 1,
+                      "displayValue": "W1"
+                    },
+                    {
+                      "name": "wins",
+                      "displayName": "Wins",
+                      "shortDisplayName": "W",
+                      "description": "Wins",
+                      "abbreviation": "W",
+                      "type": "wins",
+                      "value": 11,
+                      "displayValue": "11"
+                    },
+                    {
+                      "name": "overtimeLosses",
+                      "displayName": "Overtime Losses",
+                      "shortDisplayName": "OT Losses",
+                      "description": "Number of Overtime Losses",
+                      "abbreviation": "OTL",
+                      "type": "overtimelosses",
+                      "value": 1,
+                      "displayValue": "1"
+                    },
+                    {
+                      "name": "overtimeWins",
+                      "displayName": "Overtime Wins",
+                      "shortDisplayName": "OTW Wins",
+                      "description": "Number Overtime Wins",
+                      "abbreviation": "OTW",
+                      "type": "overtimewins",
+                      "value": 3,
+                      "displayValue": "3"
+                    },
+                    {
+                      "name": "pointsDiff",
+                      "displayName": "Goal Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Goal Differential",
+                      "abbreviation": "DIFF",
+                      "type": "pointsdiff",
+                      "value": -3,
+                      "displayValue": "-3"
+                    },
+                    {
+                      "name": "regLosses",
+                      "displayName": "Regulation Losses",
+                      "shortDisplayName": "RL",
+                      "description": "Number of Regulation Losses",
+                      "abbreviation": "RL",
+                      "type": "reglosses",
+                      "value": 8,
+                      "displayValue": "8"
+                    },
+                    {
+                      "name": "regWins",
+                      "displayName": "Regulation Wins",
+                      "shortDisplayName": "RW",
+                      "description": "Number of Regulation Wins",
+                      "abbreviation": "RW",
+                      "type": "regwins",
+                      "value": 8,
+                      "displayValue": "8"
+                    },
+                    {
+                      "name": "rotLosses",
+                      "displayName": "Regulation and Overtime Losses",
+                      "shortDisplayName": "ROW Losses",
+                      "description": "Number of Regulation and Overtime Losses",
+                      "abbreviation": "ROL",
+                      "type": "rotlosses",
+                      "value": 9,
+                      "displayValue": "9"
+                    },
+                    {
+                      "name": "rotWins",
+                      "displayName": "Regulation and Overtime Wins",
+                      "shortDisplayName": "ROW Wins",
+                      "description": "Number of Regulation and Overtime Wins",
+                      "abbreviation": "ROW",
+                      "type": "rotwins",
+                      "value": 9,
+                      "displayValue": "9"
+                    },
+                    {
+                      "name": "shootoutLosses",
+                      "displayName": "Shootout Losses",
+                      "shortDisplayName": "SOL",
+                      "description": "Shootout Losses",
+                      "abbreviation": "SOL",
+                      "type": "shootoutlosses",
+                      "value": 0,
+                      "displayValue": "0"
+                    },
+                    {
+                      "name": "shootoutWins",
+                      "displayName": "Shootout Wins",
+                      "shortDisplayName": "SOW",
+                      "description": "Shootout Wins",
+                      "abbreviation": "SOW",
+                      "type": "shootoutwins",
+                      "value": 2,
+                      "displayValue": "2"
+                    },
+                    {
+                      "id": "0",
+                      "name": "overall",
+                      "abbreviation": "TOTAL",
+                      "displayName": "Team Season Record",
+                      "shortDisplayName": "Season",
+                      "description": "Overall Record",
+                      "type": "total",
+                      "summary": "11-9-1",
+                      "displayValue": "11-9-1, 23 PTS"
+                    },
+                    {
+                      "id": "2",
+                      "name": "Home",
+                      "abbreviation": "HOME",
+                      "displayName": "Home",
+                      "shortDisplayName": "HOME",
+                      "description": "Home Record",
+                      "type": "home",
+                      "summary": "7-4-0",
+                      "displayValue": "7-4-0"
+                    },
+                    {
+                      "id": "3",
+                      "name": "Road",
+                      "abbreviation": "AWAY",
+                      "displayName": "Away",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
+                      "type": "road",
+                      "summary": "4-5-1",
+                      "displayValue": "4-5-1"
+                    },
+                    {
+                      "id": "5",
+                      "name": "Last Ten Games",
+                      "abbreviation": "L10",
+                      "displayName": "Last Ten Games",
+                      "shortDisplayName": "L10",
+                      "description": "Record last 10 games",
+                      "type": "lasttengames",
+                      "summary": "4-6-0",
+                      "displayValue": "4-6-0, 0 PTS"
+                    },
+                    {
+                      "id": "6",
+                      "name": "vs. Div.",
+                      "abbreviation": "DIV",
+                      "type": "vsdiv",
+                      "summary": "5-4-0",
+                      "displayValue": "5-4-0, 0 PTS"
                     }
                   ]
                 },
@@ -8724,8 +9053,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 16,
-                      "displayValue": "16"
+                      "value": 18,
+                      "displayValue": "18"
                     },
                     {
                       "name": "gamesPlayed",
@@ -8734,8 +9063,8 @@
                       "description": "Number of Games Played",
                       "abbreviation": "GP",
                       "type": "gamesplayed",
-                      "value": 24,
-                      "displayValue": "24"
+                      "value": 25,
+                      "displayValue": "25"
                     },
                     {
                       "name": "losses",
@@ -8744,8 +9073,8 @@
                       "description": "Losses",
                       "abbreviation": "L",
                       "type": "losses",
-                      "value": 12,
-                      "displayValue": "12"
+                      "value": 13,
+                      "displayValue": "13"
                     },
                     {
                       "name": "playoffSeed",
@@ -8754,8 +9083,8 @@
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
-                      "value": 11,
-                      "displayValue": "11"
+                      "value": 12,
+                      "displayValue": "12"
                     },
                     {
                       "name": "pointDifferential",
@@ -8764,8 +9093,8 @@
                       "description": "Point Differential",
                       "abbreviation": "DIFF",
                       "type": "pointdifferential",
-                      "value": -5,
-                      "displayValue": "-5"
+                      "value": -6,
+                      "displayValue": "-6"
                     },
                     {
                       "name": "points",
@@ -8784,8 +9113,8 @@
                       "description": "Goals Against",
                       "abbreviation": "GA",
                       "type": "pointsagainst",
-                      "value": 92,
-                      "displayValue": "92"
+                      "value": 95,
+                      "displayValue": "95"
                     },
                     {
                       "name": "pointsFor",
@@ -8794,8 +9123,8 @@
                       "description": "Goals For",
                       "abbreviation": "GF",
                       "type": "pointsfor",
-                      "value": 87,
-                      "displayValue": "87"
+                      "value": 89,
+                      "displayValue": "89"
                     },
                     {
                       "name": "streak",
@@ -8804,8 +9133,8 @@
                       "description": "Current Streak",
                       "abbreviation": "STRK",
                       "type": "streak",
-                      "value": -3,
-                      "displayValue": "L3"
+                      "value": -4,
+                      "displayValue": "L4"
                     },
                     {
                       "name": "wins",
@@ -8844,8 +9173,8 @@
                       "description": "Goal Differential",
                       "abbreviation": "DIFF",
                       "type": "pointsdiff",
-                      "value": -5,
-                      "displayValue": "-5"
+                      "value": -6,
+                      "displayValue": "-6"
                     },
                     {
                       "name": "regLosses",
@@ -8854,8 +9183,8 @@
                       "description": "Number of Regulation Losses",
                       "abbreviation": "RL",
                       "type": "reglosses",
-                      "value": 11,
-                      "displayValue": "11"
+                      "value": 12,
+                      "displayValue": "12"
                     },
                     {
                       "name": "regWins",
@@ -8874,8 +9203,8 @@
                       "description": "Number of Regulation and Overtime Losses",
                       "abbreviation": "ROL",
                       "type": "rotlosses",
-                      "value": 12,
-                      "displayValue": "12"
+                      "value": 13,
+                      "displayValue": "13"
                     },
                     {
                       "name": "rotWins",
@@ -8915,8 +9244,8 @@
                       "shortDisplayName": "Season",
                       "description": "Overall Record",
                       "type": "total",
-                      "summary": "11-12-1",
-                      "displayValue": "11-12-1, 23 PTS"
+                      "summary": "11-13-1",
+                      "displayValue": "11-13-1, 23 PTS"
                     },
                     {
                       "id": "2",
@@ -8937,8 +9266,8 @@
                       "shortDisplayName": "AWAY",
                       "description": "Away Record",
                       "type": "road",
-                      "summary": "7-6-0",
-                      "displayValue": "7-6-0"
+                      "summary": "7-7-0",
+                      "displayValue": "7-7-0"
                     },
                     {
                       "id": "5",
@@ -8948,16 +9277,16 @@
                       "shortDisplayName": "L10",
                       "description": "Record last 10 games",
                       "type": "lasttengames",
-                      "summary": "5-5-0",
-                      "displayValue": "5-5-0, 0 PTS"
+                      "summary": "4-6-0",
+                      "displayValue": "4-6-0, 0 PTS"
                     },
                     {
                       "id": "6",
                       "name": "vs. Div.",
                       "abbreviation": "DIV",
                       "type": "vsdiv",
-                      "summary": "6-2-1",
-                      "displayValue": "6-2-1, 0 PTS"
+                      "summary": "6-3-1",
+                      "displayValue": "6-3-1, 0 PTS"
                     }
                   ]
                 },
@@ -9053,8 +9382,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 17,
-                      "displayValue": "17"
+                      "value": 19,
+                      "displayValue": "19"
                     },
                     {
                       "name": "gamesPlayed",
@@ -9083,8 +9412,8 @@
                       "description": "Playoff Seed",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
-                      "value": 12,
-                      "displayValue": "12"
+                      "value": 13,
+                      "displayValue": "13"
                     },
                     {
                       "name": "pointDifferential",
@@ -9292,335 +9621,6 @@
                 },
                 {
                   "team": {
-                    "id": "124292",
-                    "uid": "s:70~l:90~t:124292",
-                    "location": "Seattle",
-                    "name": "Kraken",
-                    "abbreviation": "SEA",
-                    "displayName": "Seattle Kraken",
-                    "shortDisplayName": "Kraken",
-                    "isActive": true,
-                    "logos": [
-                      {
-                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500/sea.png",
-                        "width": 500,
-                        "height": 500,
-                        "alt": "",
-                        "rel": [
-                          "full",
-                          "default"
-                        ],
-                        "lastUpdated": "2024-07-02T15:51Z"
-                      },
-                      {
-                        "href": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/sea.png",
-                        "width": 500,
-                        "height": 500,
-                        "alt": "",
-                        "rel": [
-                          "full",
-                          "scoreboard",
-                          "dark"
-                        ],
-                        "lastUpdated": "2024-07-02T15:46Z"
-                      }
-                    ],
-                    "links": [
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "desktop",
-                          "team"
-                        ],
-                        "href": "https://www.espn.com/nhl/team/_/name/sea/seattle-kraken",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      },
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "mobile",
-                          "team"
-                        ],
-                        "href": "https://m.espn.com/nhl/clubhouse?teamId=124292",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      }
-                    ]
-                  },
-                  "stats": [
-                    {
-                      "name": "otLosses",
-                      "displayName": "Overtime Losses",
-                      "shortDisplayName": "OTL",
-                      "description": "Number of Overtime Losses",
-                      "abbreviation": "OTL",
-                      "type": "otlosses",
-                      "value": 1,
-                      "displayValue": "1"
-                    },
-                    {
-                      "name": "differential",
-                      "displayName": "Average Point Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Average Point Differential",
-                      "abbreviation": "DIFF",
-                      "type": "differential",
-                      "value": -0.20000000000000018,
-                      "displayValue": "-0.2"
-                    },
-                    {
-                      "name": "gamesBehind",
-                      "displayName": "Games Back",
-                      "shortDisplayName": "GB",
-                      "description": "Games Back",
-                      "abbreviation": "GB",
-                      "type": "gamesbehind",
-                      "value": 18,
-                      "displayValue": "18"
-                    },
-                    {
-                      "name": "gamesPlayed",
-                      "displayName": "Games Played",
-                      "shortDisplayName": "GP",
-                      "description": "Number of Games Played",
-                      "abbreviation": "GP",
-                      "type": "gamesplayed",
-                      "value": 20,
-                      "displayValue": "20"
-                    },
-                    {
-                      "name": "losses",
-                      "displayName": "Losses",
-                      "shortDisplayName": "L",
-                      "description": "Losses",
-                      "abbreviation": "L",
-                      "type": "losses",
-                      "value": 9,
-                      "displayValue": "9"
-                    },
-                    {
-                      "name": "playoffSeed",
-                      "displayName": "Position",
-                      "shortDisplayName": "POS",
-                      "description": "Playoff Seed",
-                      "abbreviation": "SEED",
-                      "type": "playoffseed",
-                      "value": 13,
-                      "displayValue": "13"
-                    },
-                    {
-                      "name": "pointDifferential",
-                      "displayName": "Point Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Point Differential",
-                      "abbreviation": "DIFF",
-                      "type": "pointdifferential",
-                      "value": -4,
-                      "displayValue": "-4"
-                    },
-                    {
-                      "name": "points",
-                      "displayName": "Points",
-                      "shortDisplayName": "PTS",
-                      "description": "Total Points",
-                      "abbreviation": "PTS",
-                      "type": "points",
-                      "value": 21,
-                      "displayValue": "21"
-                    },
-                    {
-                      "name": "pointsAgainst",
-                      "displayName": "Goals Against",
-                      "shortDisplayName": "GA",
-                      "description": "Goals Against",
-                      "abbreviation": "GA",
-                      "type": "pointsagainst",
-                      "value": 71,
-                      "displayValue": "71"
-                    },
-                    {
-                      "name": "pointsFor",
-                      "displayName": "Goals For",
-                      "shortDisplayName": "GF",
-                      "description": "Goals For",
-                      "abbreviation": "GF",
-                      "type": "pointsfor",
-                      "value": 67,
-                      "displayValue": "67"
-                    },
-                    {
-                      "name": "streak",
-                      "displayName": "Streak",
-                      "shortDisplayName": "STRK",
-                      "description": "Current Streak",
-                      "abbreviation": "STRK",
-                      "type": "streak",
-                      "value": -1,
-                      "displayValue": "L1"
-                    },
-                    {
-                      "name": "wins",
-                      "displayName": "Wins",
-                      "shortDisplayName": "W",
-                      "description": "Wins",
-                      "abbreviation": "W",
-                      "type": "wins",
-                      "value": 10,
-                      "displayValue": "10"
-                    },
-                    {
-                      "name": "overtimeLosses",
-                      "displayName": "Overtime Losses",
-                      "shortDisplayName": "OT Losses",
-                      "description": "Number of Overtime Losses",
-                      "abbreviation": "OTL",
-                      "type": "overtimelosses",
-                      "value": 1,
-                      "displayValue": "1"
-                    },
-                    {
-                      "name": "overtimeWins",
-                      "displayName": "Overtime Wins",
-                      "shortDisplayName": "OTW Wins",
-                      "description": "Number Overtime Wins",
-                      "abbreviation": "OTW",
-                      "type": "overtimewins",
-                      "value": 3,
-                      "displayValue": "3"
-                    },
-                    {
-                      "name": "pointsDiff",
-                      "displayName": "Goal Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Goal Differential",
-                      "abbreviation": "DIFF",
-                      "type": "pointsdiff",
-                      "value": -4,
-                      "displayValue": "-4"
-                    },
-                    {
-                      "name": "regLosses",
-                      "displayName": "Regulation Losses",
-                      "shortDisplayName": "RL",
-                      "description": "Number of Regulation Losses",
-                      "abbreviation": "RL",
-                      "type": "reglosses",
-                      "value": 8,
-                      "displayValue": "8"
-                    },
-                    {
-                      "name": "regWins",
-                      "displayName": "Regulation Wins",
-                      "shortDisplayName": "RW",
-                      "description": "Number of Regulation Wins",
-                      "abbreviation": "RW",
-                      "type": "regwins",
-                      "value": 7,
-                      "displayValue": "7"
-                    },
-                    {
-                      "name": "rotLosses",
-                      "displayName": "Regulation and Overtime Losses",
-                      "shortDisplayName": "ROW Losses",
-                      "description": "Number of Regulation and Overtime Losses",
-                      "abbreviation": "ROL",
-                      "type": "rotlosses",
-                      "value": 9,
-                      "displayValue": "9"
-                    },
-                    {
-                      "name": "rotWins",
-                      "displayName": "Regulation and Overtime Wins",
-                      "shortDisplayName": "ROW Wins",
-                      "description": "Number of Regulation and Overtime Wins",
-                      "abbreviation": "ROW",
-                      "type": "rotwins",
-                      "value": 8,
-                      "displayValue": "8"
-                    },
-                    {
-                      "name": "shootoutLosses",
-                      "displayName": "Shootout Losses",
-                      "shortDisplayName": "SOL",
-                      "description": "Shootout Losses",
-                      "abbreviation": "SOL",
-                      "type": "shootoutlosses",
-                      "value": 0,
-                      "displayValue": "0"
-                    },
-                    {
-                      "name": "shootoutWins",
-                      "displayName": "Shootout Wins",
-                      "shortDisplayName": "SOW",
-                      "description": "Shootout Wins",
-                      "abbreviation": "SOW",
-                      "type": "shootoutwins",
-                      "value": 2,
-                      "displayValue": "2"
-                    },
-                    {
-                      "id": "0",
-                      "name": "overall",
-                      "abbreviation": "TOTAL",
-                      "displayName": "Team Season Record",
-                      "shortDisplayName": "Season",
-                      "description": "Overall Record",
-                      "type": "total",
-                      "summary": "10-9-1",
-                      "displayValue": "10-9-1, 21 PTS"
-                    },
-                    {
-                      "id": "2",
-                      "name": "Home",
-                      "abbreviation": "HOME",
-                      "displayName": "Home",
-                      "shortDisplayName": "HOME",
-                      "description": "Home Record",
-                      "type": "home",
-                      "summary": "6-4-0",
-                      "displayValue": "6-4-0"
-                    },
-                    {
-                      "id": "3",
-                      "name": "Road",
-                      "abbreviation": "AWAY",
-                      "displayName": "Away",
-                      "shortDisplayName": "AWAY",
-                      "description": "Away Record",
-                      "type": "road",
-                      "summary": "4-5-1",
-                      "displayValue": "4-5-1"
-                    },
-                    {
-                      "id": "5",
-                      "name": "Last Ten Games",
-                      "abbreviation": "L10",
-                      "displayName": "Last Ten Games",
-                      "shortDisplayName": "L10",
-                      "description": "Record last 10 games",
-                      "type": "lasttengames",
-                      "summary": "4-6-0",
-                      "displayValue": "4-6-0, 0 PTS"
-                    },
-                    {
-                      "id": "6",
-                      "name": "vs. Div.",
-                      "abbreviation": "DIV",
-                      "type": "vsdiv",
-                      "summary": "4-4-0",
-                      "displayValue": "4-4-0, 0 PTS"
-                    }
-                  ]
-                },
-                {
-                  "team": {
                     "id": "8",
                     "uid": "s:70~l:90~t:8",
                     "location": "Los Angeles",
@@ -9711,8 +9711,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 21,
-                      "displayValue": "21"
+                      "value": 23,
+                      "displayValue": "23"
                     },
                     {
                       "name": "gamesPlayed",
@@ -10040,8 +10040,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 21,
-                      "displayValue": "21"
+                      "value": 23,
+                      "displayValue": "23"
                     },
                     {
                       "name": "gamesPlayed",
@@ -10369,8 +10369,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 26,
-                      "displayValue": "26"
+                      "value": 28,
+                      "displayValue": "28"
                     },
                     {
                       "name": "gamesPlayed",
@@ -25440,8 +25440,8 @@
                       "description": "Opponent Points Per Game",
                       "abbreviation": "OPP PPG",
                       "type": "avgpointsagainst",
-                      "value": 115.72222,
-                      "displayValue": "115.7"
+                      "value": 115.36842,
+                      "displayValue": "115.4"
                     },
                     {
                       "name": "avgPointsFor",
@@ -25450,8 +25450,8 @@
                       "description": "Points Per Game",
                       "abbreviation": "PPG",
                       "type": "avgpointsfor",
-                      "value": 108.611115,
-                      "displayValue": "108.6"
+                      "value": 107.8421,
+                      "displayValue": "107.8"
                     },
                     {
                       "name": "differential",
@@ -25460,8 +25460,8 @@
                       "description": "Average Point Differential",
                       "abbreviation": "DIFF",
                       "type": "differential",
-                      "value": -7.1000000000000085,
-                      "displayValue": "-7.1"
+                      "value": -7.6000000000000085,
+                      "displayValue": "-7.6"
                     },
                     {
                       "name": "divisionWinPercent",
@@ -25480,8 +25480,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 11.5,
-                      "displayValue": "11.5"
+                      "value": 12.5,
+                      "displayValue": "12.5"
                     },
                     {
                       "name": "leagueWinPercent",
@@ -25490,8 +25490,8 @@
                       "description": "League Winning Percentage",
                       "abbreviation": "LPCT",
                       "type": "leaguewinpercent",
-                      "value": 0.1875,
-                      "displayValue": "0.188"
+                      "value": 0.1764706,
+                      "displayValue": "0.176"
                     },
                     {
                       "name": "losses",
@@ -25500,8 +25500,8 @@
                       "description": "Losses",
                       "abbreviation": "L",
                       "type": "losses",
-                      "value": 15,
-                      "displayValue": "15"
+                      "value": 16,
+                      "displayValue": "16"
                     },
                     {
                       "name": "playoffSeed",
@@ -25520,8 +25520,8 @@
                       "description": "Point Differential",
                       "abbreviation": "DIFF",
                       "type": "pointdifferential",
-                      "value": -128,
-                      "displayValue": "-128"
+                      "value": -143,
+                      "displayValue": "-143"
                     },
                     {
                       "name": "points",
@@ -25530,8 +25530,8 @@
                       "description": "Total Points",
                       "abbreviation": "PTS",
                       "type": "points",
-                      "value": -6,
-                      "displayValue": "-6.0"
+                      "value": -6.5,
+                      "displayValue": "-6.5"
                     },
                     {
                       "name": "pointsAgainst",
@@ -25540,8 +25540,8 @@
                       "description": "Total Points Against",
                       "abbreviation": "PA",
                       "type": "pointsagainst",
-                      "value": 2083,
-                      "displayValue": "2083"
+                      "value": 2192,
+                      "displayValue": "2192"
                     },
                     {
                       "name": "pointsFor",
@@ -25550,8 +25550,8 @@
                       "description": "Total Points For",
                       "abbreviation": "PF",
                       "type": "pointsfor",
-                      "value": 1955,
-                      "displayValue": "1955"
+                      "value": 2049,
+                      "displayValue": "2049"
                     },
                     {
                       "name": "streak",
@@ -25560,8 +25560,8 @@
                       "description": "Current Streak",
                       "abbreviation": "STRK",
                       "type": "streak",
-                      "value": -2,
-                      "displayValue": "L2"
+                      "value": -3,
+                      "displayValue": "L3"
                     },
                     {
                       "name": "winPercent",
@@ -25570,8 +25570,8 @@
                       "description": "Winning Percentage",
                       "abbreviation": "PCT",
                       "type": "winpercent",
-                      "value": 0.16666667,
-                      "displayValue": ".167"
+                      "value": 0.15789473,
+                      "displayValue": ".158"
                     },
                     {
                       "name": "wins",
@@ -25601,8 +25601,8 @@
                       "shortDisplayName": "OVER",
                       "description": "Overall Record",
                       "type": "total",
-                      "summary": "3-15",
-                      "displayValue": "3-15"
+                      "summary": "3-16",
+                      "displayValue": "3-16"
                     },
                     {
                       "id": "33",
@@ -25621,8 +25621,8 @@
                       "shortDisplayName": "AWAY",
                       "description": "Away Record",
                       "type": "road",
-                      "summary": "2-6",
-                      "displayValue": "2-6"
+                      "summary": "2-7",
+                      "displayValue": "2-7"
                     },
                     {
                       "id": "60",
@@ -25641,8 +25641,8 @@
                       "shortDisplayName": "CONF",
                       "description": "Conference Record",
                       "type": "vsconf",
-                      "summary": "3-13",
-                      "displayValue": "3-13"
+                      "summary": "3-14",
+                      "displayValue": "3-14"
                     },
                     {
                       "id": "901",
@@ -25716,8 +25716,8 @@
                       "description": "Opponent Points Per Game",
                       "abbreviation": "OPP PPG",
                       "type": "avgpointsagainst",
-                      "value": 119.125,
-                      "displayValue": "119.1"
+                      "value": 119.35294,
+                      "displayValue": "119.4"
                     },
                     {
                       "name": "avgPointsFor",
@@ -25726,7 +25726,7 @@
                       "description": "Points Per Game",
                       "abbreviation": "PPG",
                       "type": "avgpointsfor",
-                      "value": 106.8125,
+                      "value": 106.82353,
                       "displayValue": "106.8"
                     },
                     {
@@ -25736,8 +25736,8 @@
                       "description": "Average Point Differential",
                       "abbreviation": "DIFF",
                       "type": "differential",
-                      "value": -12.299999999999997,
-                      "displayValue": "-12.3"
+                      "value": -12.600000000000009,
+                      "displayValue": "-12.6"
                     },
                     {
                       "name": "divisionWinPercent",
@@ -25756,8 +25756,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 11.5,
-                      "displayValue": "11.5"
+                      "value": 12.5,
+                      "displayValue": "12.5"
                     },
                     {
                       "name": "leagueWinPercent",
@@ -25766,8 +25766,8 @@
                       "description": "League Winning Percentage",
                       "abbreviation": "LPCT",
                       "type": "leaguewinpercent",
-                      "value": 0.07692308,
-                      "displayValue": "0.077"
+                      "value": 0.071428575,
+                      "displayValue": "0.071"
                     },
                     {
                       "name": "losses",
@@ -25776,8 +25776,8 @@
                       "description": "Losses",
                       "abbreviation": "L",
                       "type": "losses",
-                      "value": 14,
-                      "displayValue": "14"
+                      "value": 15,
+                      "displayValue": "15"
                     },
                     {
                       "name": "playoffSeed",
@@ -25796,8 +25796,8 @@
                       "description": "Point Differential",
                       "abbreviation": "DIFF",
                       "type": "pointdifferential",
-                      "value": -197,
-                      "displayValue": "-197"
+                      "value": -213,
+                      "displayValue": "-213"
                     },
                     {
                       "name": "points",
@@ -25806,8 +25806,8 @@
                       "description": "Total Points",
                       "abbreviation": "PTS",
                       "type": "points",
-                      "value": -6,
-                      "displayValue": "-6.0"
+                      "value": -6.5,
+                      "displayValue": "-6.5"
                     },
                     {
                       "name": "pointsAgainst",
@@ -25816,8 +25816,8 @@
                       "description": "Total Points Against",
                       "abbreviation": "PA",
                       "type": "pointsagainst",
-                      "value": 1906,
-                      "displayValue": "1906"
+                      "value": 2029,
+                      "displayValue": "2029"
                     },
                     {
                       "name": "pointsFor",
@@ -25826,8 +25826,8 @@
                       "description": "Total Points For",
                       "abbreviation": "PF",
                       "type": "pointsfor",
-                      "value": 1709,
-                      "displayValue": "1709"
+                      "value": 1816,
+                      "displayValue": "1816"
                     },
                     {
                       "name": "streak",
@@ -25836,8 +25836,8 @@
                       "description": "Current Streak",
                       "abbreviation": "STRK",
                       "type": "streak",
-                      "value": 1,
-                      "displayValue": "W1"
+                      "value": -1,
+                      "displayValue": "L1"
                     },
                     {
                       "name": "winPercent",
@@ -25846,8 +25846,8 @@
                       "description": "Winning Percentage",
                       "abbreviation": "PCT",
                       "type": "winpercent",
-                      "value": 0.125,
-                      "displayValue": ".125"
+                      "value": 0.11764706,
+                      "displayValue": ".118"
                     },
                     {
                       "name": "wins",
@@ -25877,8 +25877,8 @@
                       "shortDisplayName": "OVER",
                       "description": "Overall Record",
                       "type": "total",
-                      "summary": "2-14",
-                      "displayValue": "2-14"
+                      "summary": "2-15",
+                      "displayValue": "2-15"
                     },
                     {
                       "id": "33",
@@ -25887,8 +25887,8 @@
                       "shortDisplayName": "HOME",
                       "description": "Home Record",
                       "type": "home",
-                      "summary": "1-9",
-                      "displayValue": "1-9"
+                      "summary": "1-10",
+                      "displayValue": "1-10"
                     },
                     {
                       "id": "34",
@@ -25917,8 +25917,8 @@
                       "shortDisplayName": "CONF",
                       "description": "Conference Record",
                       "type": "vsconf",
-                      "summary": "1-12",
-                      "displayValue": "1-12"
+                      "summary": "1-13",
+                      "displayValue": "1-13"
                     },
                     {
                       "id": "901",
@@ -25928,8 +25928,8 @@
                       "shortDisplayName": "L10",
                       "description": "Record last 10 games",
                       "type": "lasttengames",
-                      "summary": "2-8",
-                      "displayValue": "2-8"
+                      "summary": "1-9",
+                      "displayValue": "1-9"
                     }
                   ]
                 },
@@ -26032,8 +26032,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 10,
-                      "displayValue": "10"
+                      "value": 10.5,
+                      "displayValue": "10.5"
                     },
                     {
                       "name": "leagueWinPercent",
@@ -26142,8 +26142,8 @@
                       "description": "Games Ahead",
                       "abbreviation": "GA",
                       "type": "gamesahead",
-                      "value": 1.5,
-                      "displayValue": "1.5"
+                      "value": 2,
+                      "displayValue": "2"
                     },
                     {
                       "id": "0",
@@ -26308,8 +26308,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 9.5,
-                      "displayValue": "9.5"
+                      "value": 10,
+                      "displayValue": "10"
                     },
                     {
                       "name": "leagueWinPercent",
@@ -26418,8 +26418,8 @@
                       "description": "Games Ahead",
                       "abbreviation": "GA",
                       "type": "gamesahead",
-                      "value": 2,
-                      "displayValue": "2"
+                      "value": 2.5,
+                      "displayValue": "2.5"
                     },
                     {
                       "id": "0",
@@ -26584,8 +26584,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 5,
-                      "displayValue": "5"
+                      "value": 5.5,
+                      "displayValue": "5.5"
                     },
                     {
                       "name": "leagueWinPercent",
@@ -26694,8 +26694,8 @@
                       "description": "Games Ahead",
                       "abbreviation": "GA",
                       "type": "gamesahead",
-                      "value": 6.5,
-                      "displayValue": "6.5"
+                      "value": 7,
+                      "displayValue": "7"
                     },
                     {
                       "id": "0",
@@ -26860,8 +26860,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 4.5,
-                      "displayValue": "4.5"
+                      "value": 5,
+                      "displayValue": "5"
                     },
                     {
                       "name": "leagueWinPercent",
@@ -26970,8 +26970,8 @@
                       "description": "Games Ahead",
                       "abbreviation": "GA",
                       "type": "gamesahead",
-                      "value": 7,
-                      "displayValue": "7"
+                      "value": 7.5,
+                      "displayValue": "7.5"
                     },
                     {
                       "id": "0",
@@ -27136,8 +27136,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 4.5,
-                      "displayValue": "4.5"
+                      "value": 5,
+                      "displayValue": "5"
                     },
                     {
                       "name": "leagueWinPercent",
@@ -27246,8 +27246,8 @@
                       "description": "Games Ahead",
                       "abbreviation": "GA",
                       "type": "gamesahead",
-                      "value": 7,
-                      "displayValue": "7"
+                      "value": 7.5,
+                      "displayValue": "7.5"
                     },
                     {
                       "id": "0",
@@ -27412,8 +27412,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 4,
-                      "displayValue": "4"
+                      "value": 4.5,
+                      "displayValue": "4.5"
                     },
                     {
                       "name": "leagueWinPercent",
@@ -27522,8 +27522,8 @@
                       "description": "Games Ahead",
                       "abbreviation": "GA",
                       "type": "gamesahead",
-                      "value": 7.5,
-                      "displayValue": "7.5"
+                      "value": 8,
+                      "displayValue": "8"
                     },
                     {
                       "id": "0",
@@ -27688,8 +27688,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 3,
-                      "displayValue": "3"
+                      "value": 3.5,
+                      "displayValue": "3.5"
                     },
                     {
                       "name": "leagueWinPercent",
@@ -27798,8 +27798,8 @@
                       "description": "Games Ahead",
                       "abbreviation": "GA",
                       "type": "gamesahead",
-                      "value": 8.5,
-                      "displayValue": "8.5"
+                      "value": 9,
+                      "displayValue": "9"
                     },
                     {
                       "id": "0",
@@ -27964,8 +27964,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 3,
-                      "displayValue": "3"
+                      "value": 3.5,
+                      "displayValue": "3.5"
                     },
                     {
                       "name": "leagueWinPercent",
@@ -28074,8 +28074,8 @@
                       "description": "Games Ahead",
                       "abbreviation": "GA",
                       "type": "gamesahead",
-                      "value": 8.5,
-                      "displayValue": "8.5"
+                      "value": 9,
+                      "displayValue": "9"
                     },
                     {
                       "id": "0",
@@ -28240,8 +28240,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 1.5,
-                      "displayValue": "1.5"
+                      "value": 2,
+                      "displayValue": "2"
                     },
                     {
                       "name": "leagueWinPercent",
@@ -28350,8 +28350,8 @@
                       "description": "Games Ahead",
                       "abbreviation": "GA",
                       "type": "gamesahead",
-                      "value": 10,
-                      "displayValue": "10"
+                      "value": 10.5,
+                      "displayValue": "10.5"
                     },
                     {
                       "id": "0",
@@ -28516,8 +28516,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 1.5,
-                      "displayValue": "1.5"
+                      "value": 2,
+                      "displayValue": "2"
                     },
                     {
                       "name": "leagueWinPercent",
@@ -28626,8 +28626,8 @@
                       "description": "Games Ahead",
                       "abbreviation": "GA",
                       "type": "gamesahead",
-                      "value": 10,
-                      "displayValue": "10"
+                      "value": 10.5,
+                      "displayValue": "10.5"
                     },
                     {
                       "id": "0",
@@ -28792,8 +28792,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 1.5,
-                      "displayValue": "1.5"
+                      "value": 2,
+                      "displayValue": "2"
                     },
                     {
                       "name": "leagueWinPercent",
@@ -28902,8 +28902,8 @@
                       "description": "Games Ahead",
                       "abbreviation": "GA",
                       "type": "gamesahead",
-                      "value": 10,
-                      "displayValue": "10"
+                      "value": 10.5,
+                      "displayValue": "10.5"
                     },
                     {
                       "id": "0",
@@ -29028,7 +29028,7 @@
                       "description": "Opponent Points Per Game",
                       "abbreviation": "OPP PPG",
                       "type": "avgpointsagainst",
-                      "value": 105.35294,
+                      "value": 105.44444,
                       "displayValue": "105.4"
                     },
                     {
@@ -29038,8 +29038,8 @@
                       "description": "Points Per Game",
                       "abbreviation": "PPG",
                       "type": "avgpointsfor",
-                      "value": 117.29412,
-                      "displayValue": "117.3"
+                      "value": 117.611115,
+                      "displayValue": "117.6"
                     },
                     {
                       "name": "differential",
@@ -29048,8 +29048,8 @@
                       "description": "Average Point Differential",
                       "abbreviation": "DIFF",
                       "type": "differential",
-                      "value": 11.899999999999991,
-                      "displayValue": "+11.9"
+                      "value": 12.199999999999989,
+                      "displayValue": "+12.2"
                     },
                     {
                       "name": "divisionWinPercent",
@@ -29078,8 +29078,8 @@
                       "description": "League Winning Percentage",
                       "abbreviation": "LPCT",
                       "type": "leaguewinpercent",
-                      "value": 0.8666667,
-                      "displayValue": "0.867"
+                      "value": 0.875,
+                      "displayValue": "0.875"
                     },
                     {
                       "name": "losses",
@@ -29108,8 +29108,8 @@
                       "description": "Point Differential",
                       "abbreviation": "DIFF",
                       "type": "pointdifferential",
-                      "value": 203,
-                      "displayValue": "+203"
+                      "value": 219,
+                      "displayValue": "+219"
                     },
                     {
                       "name": "points",
@@ -29118,8 +29118,8 @@
                       "description": "Total Points",
                       "abbreviation": "PTS",
                       "type": "points",
-                      "value": 5.5,
-                      "displayValue": "5.5"
+                      "value": 6,
+                      "displayValue": "6.0"
                     },
                     {
                       "name": "pointsAgainst",
@@ -29128,8 +29128,8 @@
                       "description": "Total Points Against",
                       "abbreviation": "PA",
                       "type": "pointsagainst",
-                      "value": 1791,
-                      "displayValue": "1791"
+                      "value": 1898,
+                      "displayValue": "1898"
                     },
                     {
                       "name": "pointsFor",
@@ -29138,8 +29138,8 @@
                       "description": "Total Points For",
                       "abbreviation": "PF",
                       "type": "pointsfor",
-                      "value": 1994,
-                      "displayValue": "1994"
+                      "value": 2117,
+                      "displayValue": "2117"
                     },
                     {
                       "name": "streak",
@@ -29148,8 +29148,8 @@
                       "description": "Current Streak",
                       "abbreviation": "STRK",
                       "type": "streak",
-                      "value": 2,
-                      "displayValue": "W2"
+                      "value": 3,
+                      "displayValue": "W3"
                     },
                     {
                       "name": "winPercent",
@@ -29158,8 +29158,8 @@
                       "description": "Winning Percentage",
                       "abbreviation": "PCT",
                       "type": "winpercent",
-                      "value": 0.8235294,
-                      "displayValue": ".824"
+                      "value": 0.8333333,
+                      "displayValue": ".833"
                     },
                     {
                       "name": "wins",
@@ -29168,8 +29168,8 @@
                       "description": "Wins",
                       "abbreviation": "W",
                       "type": "wins",
-                      "value": 14,
-                      "displayValue": "14"
+                      "value": 15,
+                      "displayValue": "15"
                     },
                     {
                       "name": "gamesAhead",
@@ -29178,8 +29178,8 @@
                       "description": "Games Ahead",
                       "abbreviation": "GA",
                       "type": "gamesahead",
-                      "value": 11.5,
-                      "displayValue": "11.5"
+                      "value": 12.5,
+                      "displayValue": "12.5"
                     },
                     {
                       "id": "0",
@@ -29189,8 +29189,8 @@
                       "shortDisplayName": "OVER",
                       "description": "Overall Record",
                       "type": "total",
-                      "summary": "14-3",
-                      "displayValue": "14-3"
+                      "summary": "15-3",
+                      "displayValue": "15-3"
                     },
                     {
                       "id": "33",
@@ -29209,8 +29209,8 @@
                       "shortDisplayName": "AWAY",
                       "description": "Away Record",
                       "type": "road",
-                      "summary": "7-0",
-                      "displayValue": "7-0"
+                      "summary": "8-0",
+                      "displayValue": "8-0"
                     },
                     {
                       "id": "60",
@@ -29229,8 +29229,8 @@
                       "shortDisplayName": "CONF",
                       "description": "Conference Record",
                       "type": "vsconf",
-                      "summary": "13-2",
-                      "displayValue": "13-2"
+                      "summary": "14-2",
+                      "displayValue": "14-2"
                     },
                     {
                       "id": "901",
@@ -29304,8 +29304,8 @@
                       "description": "Opponent Points Per Game",
                       "abbreviation": "OPP PPG",
                       "type": "avgpointsagainst",
-                      "value": 113.82353,
-                      "displayValue": "113.8"
+                      "value": 112.72222,
+                      "displayValue": "112.7"
                     },
                     {
                       "name": "avgPointsFor",
@@ -29314,8 +29314,8 @@
                       "description": "Points Per Game",
                       "abbreviation": "PPG",
                       "type": "avgpointsfor",
-                      "value": 120,
-                      "displayValue": "120.0"
+                      "value": 119.388885,
+                      "displayValue": "119.4"
                     },
                     {
                       "name": "differential",
@@ -29324,8 +29324,8 @@
                       "description": "Average Point Differential",
                       "abbreviation": "DIFF",
                       "type": "differential",
-                      "value": 6.200000000000003,
-                      "displayValue": "+6.2"
+                      "value": 6.700000000000003,
+                      "displayValue": "+6.7"
                     },
                     {
                       "name": "divisionWinPercent",
@@ -29354,8 +29354,8 @@
                       "description": "League Winning Percentage",
                       "abbreviation": "LPCT",
                       "type": "leaguewinpercent",
-                      "value": 0.72727275,
-                      "displayValue": "0.727"
+                      "value": 0.75,
+                      "displayValue": "0.750"
                     },
                     {
                       "name": "losses",
@@ -29384,8 +29384,8 @@
                       "description": "Point Differential",
                       "abbreviation": "DIFF",
                       "type": "pointdifferential",
-                      "value": 105,
-                      "displayValue": "+105"
+                      "value": 120,
+                      "displayValue": "+120"
                     },
                     {
                       "name": "points",
@@ -29394,8 +29394,8 @@
                       "description": "Total Points",
                       "abbreviation": "PTS",
                       "type": "points",
-                      "value": 5.5,
-                      "displayValue": "5.5"
+                      "value": 6,
+                      "displayValue": "6.0"
                     },
                     {
                       "name": "pointsAgainst",
@@ -29404,8 +29404,8 @@
                       "description": "Total Points Against",
                       "abbreviation": "PA",
                       "type": "pointsagainst",
-                      "value": 1935,
-                      "displayValue": "1935"
+                      "value": 2029,
+                      "displayValue": "2029"
                     },
                     {
                       "name": "pointsFor",
@@ -29414,8 +29414,8 @@
                       "description": "Total Points For",
                       "abbreviation": "PF",
                       "type": "pointsfor",
-                      "value": 2040,
-                      "displayValue": "2040"
+                      "value": 2149,
+                      "displayValue": "2149"
                     },
                     {
                       "name": "streak",
@@ -29424,8 +29424,8 @@
                       "description": "Current Streak",
                       "abbreviation": "STRK",
                       "type": "streak",
-                      "value": 1,
-                      "displayValue": "W1"
+                      "value": 2,
+                      "displayValue": "W2"
                     },
                     {
                       "name": "winPercent",
@@ -29434,8 +29434,8 @@
                       "description": "Winning Percentage",
                       "abbreviation": "PCT",
                       "type": "winpercent",
-                      "value": 0.8235294,
-                      "displayValue": ".824"
+                      "value": 0.8333333,
+                      "displayValue": ".833"
                     },
                     {
                       "name": "wins",
@@ -29444,8 +29444,8 @@
                       "description": "Wins",
                       "abbreviation": "W",
                       "type": "wins",
-                      "value": 14,
-                      "displayValue": "14"
+                      "value": 15,
+                      "displayValue": "15"
                     },
                     {
                       "name": "gamesAhead",
@@ -29454,8 +29454,8 @@
                       "description": "Games Ahead",
                       "abbreviation": "GA",
                       "type": "gamesahead",
-                      "value": 11.5,
-                      "displayValue": "11.5"
+                      "value": 12.5,
+                      "displayValue": "12.5"
                     },
                     {
                       "id": "0",
@@ -29465,8 +29465,8 @@
                       "shortDisplayName": "OVER",
                       "description": "Overall Record",
                       "type": "total",
-                      "summary": "14-3",
-                      "displayValue": "14-3"
+                      "summary": "15-3",
+                      "displayValue": "15-3"
                     },
                     {
                       "id": "33",
@@ -29475,8 +29475,8 @@
                       "shortDisplayName": "HOME",
                       "description": "Home Record",
                       "type": "home",
-                      "summary": "7-2",
-                      "displayValue": "7-2"
+                      "summary": "8-2",
+                      "displayValue": "8-2"
                     },
                     {
                       "id": "34",
@@ -29505,8 +29505,8 @@
                       "shortDisplayName": "CONF",
                       "description": "Conference Record",
                       "type": "vsconf",
-                      "summary": "8-3",
-                      "displayValue": "8-3"
+                      "summary": "9-3",
+                      "displayValue": "9-3"
                     },
                     {
                       "id": "901",
