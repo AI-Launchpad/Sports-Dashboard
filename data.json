@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-25T03:52:17.224Z",
+  "lastUpdated": "2026-11-25T18:54:07.332Z",
   "teams": {
     "sharks": {
       "key": "sharks",
@@ -11660,9 +11660,9 @@
       "record": "5-6",
       "standingSummary": "2nd in NFC East",
       "nextGame": {
-        "name": "Tennessee Titans at Dallas Cowboys",
-        "date": "2026-11-22T18:00Z",
-        "shortName": "TEN @ DAL"
+        "name": "Philadelphia Eagles at Dallas Cowboys",
+        "date": "2026-11-26T21:30Z",
+        "shortName": "PHI @ DAL"
       },
       "recentForm": [],
       "standings": {
@@ -27315,282 +27315,6 @@
                 },
                 {
                   "team": {
-                    "id": "6",
-                    "uid": "s:40~l:46~t:6",
-                    "location": "Dallas",
-                    "name": "Mavericks",
-                    "abbreviation": "DAL",
-                    "displayName": "Dallas Mavericks",
-                    "shortDisplayName": "Mavericks",
-                    "isActive": true,
-                    "logos": [
-                      {
-                        "href": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
-                        "width": 500,
-                        "height": 500,
-                        "alt": "",
-                        "rel": [
-                          "full",
-                          "default"
-                        ],
-                        "lastUpdated": "2024-06-25T21:17Z"
-                      },
-                      {
-                        "href": "https://a.espncdn.com/i/teamlogos/nba/500-dark/scoreboard/dal.png",
-                        "width": 500,
-                        "height": 500,
-                        "alt": "",
-                        "rel": [
-                          "full",
-                          "scoreboard",
-                          "dark"
-                        ],
-                        "lastUpdated": "2024-06-25T21:14Z"
-                      }
-                    ],
-                    "links": [
-                      {
-                        "language": "en-US",
-                        "rel": [
-                          "clubhouse",
-                          "desktop",
-                          "team"
-                        ],
-                        "href": "https://www.espn.com/nba/team/_/name/dal/dallas-mavericks",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false
-                      }
-                    ]
-                  },
-                  "stats": [
-                    {
-                      "name": "avgPointsAgainst",
-                      "displayName": "Opponent Points Per Game",
-                      "shortDisplayName": "OPP PPG",
-                      "description": "Opponent Points Per Game",
-                      "abbreviation": "OPP PPG",
-                      "type": "avgpointsagainst",
-                      "value": 112.47059,
-                      "displayValue": "112.5"
-                    },
-                    {
-                      "name": "avgPointsFor",
-                      "displayName": "Points Per Game",
-                      "shortDisplayName": "PPG",
-                      "description": "Points Per Game",
-                      "abbreviation": "PPG",
-                      "type": "avgpointsfor",
-                      "value": 112.411766,
-                      "displayValue": "112.4"
-                    },
-                    {
-                      "name": "differential",
-                      "displayName": "Average Point Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Average Point Differential",
-                      "abbreviation": "DIFF",
-                      "type": "differential",
-                      "value": -0.09999999999999432,
-                      "displayValue": "-0.1"
-                    },
-                    {
-                      "name": "divisionWinPercent",
-                      "displayName": "Division Win Percentage",
-                      "shortDisplayName": "DPCT",
-                      "description": "Division Winning Percentage",
-                      "abbreviation": "DPCT",
-                      "type": "divisionwinpercent",
-                      "value": 0.25,
-                      "displayValue": "0.250"
-                    },
-                    {
-                      "name": "gamesBehind",
-                      "displayName": "Games Back",
-                      "shortDisplayName": "GB",
-                      "description": "Games Back",
-                      "abbreviation": "GB",
-                      "type": "gamesbehind",
-                      "value": 4.5,
-                      "displayValue": "4.5"
-                    },
-                    {
-                      "name": "leagueWinPercent",
-                      "displayName": "League Win Percentage",
-                      "shortDisplayName": "LPCT",
-                      "description": "League Winning Percentage",
-                      "abbreviation": "LPCT",
-                      "type": "leaguewinpercent",
-                      "value": 0.54545456,
-                      "displayValue": "0.545"
-                    },
-                    {
-                      "name": "losses",
-                      "displayName": "Losses",
-                      "shortDisplayName": "L",
-                      "description": "Losses",
-                      "abbreviation": "L",
-                      "type": "losses",
-                      "value": 7,
-                      "displayValue": "7"
-                    },
-                    {
-                      "name": "playoffSeed",
-                      "displayName": "Position",
-                      "shortDisplayName": "POS",
-                      "description": "Projected seed in the NBA Playoffs, according to BPI",
-                      "abbreviation": "SEED",
-                      "type": "playoffseed",
-                      "value": 8,
-                      "displayValue": "8"
-                    },
-                    {
-                      "name": "pointDifferential",
-                      "displayName": "Point Differential",
-                      "shortDisplayName": "DIFF",
-                      "description": "Point Differential",
-                      "abbreviation": "DIFF",
-                      "type": "pointdifferential",
-                      "value": -1,
-                      "displayValue": "-1"
-                    },
-                    {
-                      "name": "points",
-                      "displayName": "Points",
-                      "shortDisplayName": "PTS",
-                      "description": "Total Points",
-                      "abbreviation": "PTS",
-                      "type": "points",
-                      "value": 1.5,
-                      "displayValue": "1.5"
-                    },
-                    {
-                      "name": "pointsAgainst",
-                      "displayName": "Points Against",
-                      "shortDisplayName": "PA",
-                      "description": "Total Points Against",
-                      "abbreviation": "PA",
-                      "type": "pointsagainst",
-                      "value": 1912,
-                      "displayValue": "1912"
-                    },
-                    {
-                      "name": "pointsFor",
-                      "displayName": "Points For",
-                      "shortDisplayName": "PF",
-                      "description": "Total Points For",
-                      "abbreviation": "PF",
-                      "type": "pointsfor",
-                      "value": 1911,
-                      "displayValue": "1911"
-                    },
-                    {
-                      "name": "streak",
-                      "displayName": "Streak",
-                      "shortDisplayName": "STRK",
-                      "description": "Current Streak",
-                      "abbreviation": "STRK",
-                      "type": "streak",
-                      "value": 3,
-                      "displayValue": "W3"
-                    },
-                    {
-                      "name": "winPercent",
-                      "displayName": "Win Percentage",
-                      "shortDisplayName": "PCT",
-                      "description": "Winning Percentage",
-                      "abbreviation": "PCT",
-                      "type": "winpercent",
-                      "value": 0.5882353,
-                      "displayValue": ".588"
-                    },
-                    {
-                      "name": "wins",
-                      "displayName": "Wins",
-                      "shortDisplayName": "W",
-                      "description": "Wins",
-                      "abbreviation": "W",
-                      "type": "wins",
-                      "value": 10,
-                      "displayValue": "10"
-                    },
-                    {
-                      "name": "gamesAhead",
-                      "displayName": "Games Ahead",
-                      "shortDisplayName": "GA",
-                      "description": "Games Ahead",
-                      "abbreviation": "GA",
-                      "type": "gamesahead",
-                      "value": 8,
-                      "displayValue": "8"
-                    },
-                    {
-                      "id": "0",
-                      "name": "overall",
-                      "abbreviation": "Total",
-                      "displayName": "Overall",
-                      "shortDisplayName": "OVER",
-                      "description": "Overall Record",
-                      "type": "total",
-                      "summary": "10-7",
-                      "displayValue": "10-7"
-                    },
-                    {
-                      "id": "33",
-                      "name": "Home",
-                      "displayName": "Home",
-                      "shortDisplayName": "HOME",
-                      "description": "Home Record",
-                      "type": "home",
-                      "summary": "7-2",
-                      "displayValue": "7-2"
-                    },
-                    {
-                      "id": "34",
-                      "name": "Road",
-                      "displayName": "Road",
-                      "shortDisplayName": "AWAY",
-                      "description": "Away Record",
-                      "type": "road",
-                      "summary": "3-5",
-                      "displayValue": "3-5"
-                    },
-                    {
-                      "id": "60",
-                      "name": "vs. Div.",
-                      "displayName": "DIV",
-                      "shortDisplayName": "DIV",
-                      "description": "Division Record",
-                      "type": "vsdiv",
-                      "summary": "1-3",
-                      "displayValue": "1-3"
-                    },
-                    {
-                      "id": "61",
-                      "name": "vs. Conf.",
-                      "displayName": "CONF",
-                      "shortDisplayName": "CONF",
-                      "description": "Conference Record",
-                      "type": "vsconf",
-                      "summary": "6-5",
-                      "displayValue": "6-5"
-                    },
-                    {
-                      "id": "901",
-                      "name": "Last Ten Games",
-                      "abbreviation": "L10",
-                      "displayName": "Last Ten Games",
-                      "shortDisplayName": "L10",
-                      "description": "Record last 10 games",
-                      "type": "lasttengames",
-                      "summary": "6-4",
-                      "displayValue": "6-4"
-                    }
-                  ]
-                },
-                {
-                  "team": {
                     "id": "7",
                     "uid": "s:40~l:46~t:7",
                     "location": "Denver",
@@ -27648,8 +27372,8 @@
                       "description": "Opponent Points Per Game",
                       "abbreviation": "OPP PPG",
                       "type": "avgpointsagainst",
-                      "value": 115.2,
-                      "displayValue": "115.2"
+                      "value": 115.5,
+                      "displayValue": "115.5"
                     },
                     {
                       "name": "avgPointsFor",
@@ -27658,8 +27382,8 @@
                       "description": "Points Per Game",
                       "abbreviation": "PPG",
                       "type": "avgpointsfor",
-                      "value": 117,
-                      "displayValue": "117.0"
+                      "value": 116,
+                      "displayValue": "116.0"
                     },
                     {
                       "name": "differential",
@@ -27668,8 +27392,8 @@
                       "description": "Average Point Differential",
                       "abbreviation": "DIFF",
                       "type": "differential",
-                      "value": 1.7999999999999972,
-                      "displayValue": "+1.8"
+                      "value": 0.5,
+                      "displayValue": "+0.5"
                     },
                     {
                       "name": "divisionWinPercent",
@@ -27688,8 +27412,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 3.5,
-                      "displayValue": "3.5"
+                      "value": 4,
+                      "displayValue": "4"
                     },
                     {
                       "name": "leagueWinPercent",
@@ -27698,8 +27422,8 @@
                       "description": "League Winning Percentage",
                       "abbreviation": "LPCT",
                       "type": "leaguewinpercent",
-                      "value": 0.54545456,
-                      "displayValue": "0.545"
+                      "value": 0.5,
+                      "displayValue": "0.500"
                     },
                     {
                       "name": "losses",
@@ -27708,8 +27432,8 @@
                       "description": "Losses",
                       "abbreviation": "L",
                       "type": "losses",
-                      "value": 5,
-                      "displayValue": "5"
+                      "value": 6,
+                      "displayValue": "6"
                     },
                     {
                       "name": "playoffSeed",
@@ -27718,8 +27442,8 @@
                       "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
-                      "value": 6,
-                      "displayValue": "6"
+                      "value": 7,
+                      "displayValue": "7"
                     },
                     {
                       "name": "pointDifferential",
@@ -27728,8 +27452,8 @@
                       "description": "Point Differential",
                       "abbreviation": "DIFF",
                       "type": "pointdifferential",
-                      "value": 27,
-                      "displayValue": "+27"
+                      "value": 8,
+                      "displayValue": "+8"
                     },
                     {
                       "name": "points",
@@ -27738,8 +27462,8 @@
                       "description": "Total Points",
                       "abbreviation": "PTS",
                       "type": "points",
-                      "value": 2.5,
-                      "displayValue": "2.5"
+                      "value": 2,
+                      "displayValue": "2.0"
                     },
                     {
                       "name": "pointsAgainst",
@@ -27748,8 +27472,8 @@
                       "description": "Total Points Against",
                       "abbreviation": "PA",
                       "type": "pointsagainst",
-                      "value": 1728,
-                      "displayValue": "1728"
+                      "value": 1848,
+                      "displayValue": "1848"
                     },
                     {
                       "name": "pointsFor",
@@ -27758,8 +27482,8 @@
                       "description": "Total Points For",
                       "abbreviation": "PF",
                       "type": "pointsfor",
-                      "value": 1755,
-                      "displayValue": "1755"
+                      "value": 1856,
+                      "displayValue": "1856"
                     },
                     {
                       "name": "streak",
@@ -27768,8 +27492,8 @@
                       "description": "Current Streak",
                       "abbreviation": "STRK",
                       "type": "streak",
-                      "value": 3,
-                      "displayValue": "W3"
+                      "value": -1,
+                      "displayValue": "L1"
                     },
                     {
                       "name": "winPercent",
@@ -27778,8 +27502,8 @@
                       "description": "Winning Percentage",
                       "abbreviation": "PCT",
                       "type": "winpercent",
-                      "value": 0.6666667,
-                      "displayValue": ".667"
+                      "value": 0.625,
+                      "displayValue": ".625"
                     },
                     {
                       "name": "wins",
@@ -27798,8 +27522,8 @@
                       "description": "Games Ahead",
                       "abbreviation": "GA",
                       "type": "gamesahead",
-                      "value": 9,
-                      "displayValue": "9"
+                      "value": 8.5,
+                      "displayValue": "8.5"
                     },
                     {
                       "id": "0",
@@ -27809,8 +27533,8 @@
                       "shortDisplayName": "OVER",
                       "description": "Overall Record",
                       "type": "total",
-                      "summary": "10-5",
-                      "displayValue": "10-5"
+                      "summary": "10-6",
+                      "displayValue": "10-6"
                     },
                     {
                       "id": "33",
@@ -27819,8 +27543,8 @@
                       "shortDisplayName": "HOME",
                       "description": "Home Record",
                       "type": "home",
-                      "summary": "4-3",
-                      "displayValue": "4-3"
+                      "summary": "4-4",
+                      "displayValue": "4-4"
                     },
                     {
                       "id": "34",
@@ -27849,8 +27573,284 @@
                       "shortDisplayName": "CONF",
                       "description": "Conference Record",
                       "type": "vsconf",
-                      "summary": "6-5",
-                      "displayValue": "6-5"
+                      "summary": "6-6",
+                      "displayValue": "6-6"
+                    },
+                    {
+                      "id": "901",
+                      "name": "Last Ten Games",
+                      "abbreviation": "L10",
+                      "displayName": "Last Ten Games",
+                      "shortDisplayName": "L10",
+                      "description": "Record last 10 games",
+                      "type": "lasttengames",
+                      "summary": "7-3",
+                      "displayValue": "7-3"
+                    }
+                  ]
+                },
+                {
+                  "team": {
+                    "id": "6",
+                    "uid": "s:40~l:46~t:6",
+                    "location": "Dallas",
+                    "name": "Mavericks",
+                    "abbreviation": "DAL",
+                    "displayName": "Dallas Mavericks",
+                    "shortDisplayName": "Mavericks",
+                    "isActive": true,
+                    "logos": [
+                      {
+                        "href": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
+                        "width": 500,
+                        "height": 500,
+                        "alt": "",
+                        "rel": [
+                          "full",
+                          "default"
+                        ],
+                        "lastUpdated": "2024-06-25T21:17Z"
+                      },
+                      {
+                        "href": "https://a.espncdn.com/i/teamlogos/nba/500-dark/scoreboard/dal.png",
+                        "width": 500,
+                        "height": 500,
+                        "alt": "",
+                        "rel": [
+                          "full",
+                          "scoreboard",
+                          "dark"
+                        ],
+                        "lastUpdated": "2024-06-25T21:14Z"
+                      }
+                    ],
+                    "links": [
+                      {
+                        "language": "en-US",
+                        "rel": [
+                          "clubhouse",
+                          "desktop",
+                          "team"
+                        ],
+                        "href": "https://www.espn.com/nba/team/_/name/dal/dallas-mavericks",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false
+                      }
+                    ]
+                  },
+                  "stats": [
+                    {
+                      "name": "avgPointsAgainst",
+                      "displayName": "Opponent Points Per Game",
+                      "shortDisplayName": "OPP PPG",
+                      "description": "Opponent Points Per Game",
+                      "abbreviation": "OPP PPG",
+                      "type": "avgpointsagainst",
+                      "value": 111.833336,
+                      "displayValue": "111.8"
+                    },
+                    {
+                      "name": "avgPointsFor",
+                      "displayName": "Points Per Game",
+                      "shortDisplayName": "PPG",
+                      "description": "Points Per Game",
+                      "abbreviation": "PPG",
+                      "type": "avgpointsfor",
+                      "value": 112.833336,
+                      "displayValue": "112.8"
+                    },
+                    {
+                      "name": "differential",
+                      "displayName": "Average Point Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Average Point Differential",
+                      "abbreviation": "DIFF",
+                      "type": "differential",
+                      "value": 1,
+                      "displayValue": "+1.0"
+                    },
+                    {
+                      "name": "divisionWinPercent",
+                      "displayName": "Division Win Percentage",
+                      "shortDisplayName": "DPCT",
+                      "description": "Division Winning Percentage",
+                      "abbreviation": "DPCT",
+                      "type": "divisionwinpercent",
+                      "value": 0.25,
+                      "displayValue": "0.250"
+                    },
+                    {
+                      "name": "gamesBehind",
+                      "displayName": "Games Back",
+                      "shortDisplayName": "GB",
+                      "description": "Games Back",
+                      "abbreviation": "GB",
+                      "type": "gamesbehind",
+                      "value": 4,
+                      "displayValue": "4"
+                    },
+                    {
+                      "name": "leagueWinPercent",
+                      "displayName": "League Win Percentage",
+                      "shortDisplayName": "LPCT",
+                      "description": "League Winning Percentage",
+                      "abbreviation": "LPCT",
+                      "type": "leaguewinpercent",
+                      "value": 0.5833333,
+                      "displayValue": "0.583"
+                    },
+                    {
+                      "name": "losses",
+                      "displayName": "Losses",
+                      "shortDisplayName": "L",
+                      "description": "Losses",
+                      "abbreviation": "L",
+                      "type": "losses",
+                      "value": 7,
+                      "displayValue": "7"
+                    },
+                    {
+                      "name": "playoffSeed",
+                      "displayName": "Position",
+                      "shortDisplayName": "POS",
+                      "description": "Projected seed in the NBA Playoffs, according to BPI",
+                      "abbreviation": "SEED",
+                      "type": "playoffseed",
+                      "value": 8,
+                      "displayValue": "8"
+                    },
+                    {
+                      "name": "pointDifferential",
+                      "displayName": "Point Differential",
+                      "shortDisplayName": "DIFF",
+                      "description": "Point Differential",
+                      "abbreviation": "DIFF",
+                      "type": "pointdifferential",
+                      "value": 18,
+                      "displayValue": "+18"
+                    },
+                    {
+                      "name": "points",
+                      "displayName": "Points",
+                      "shortDisplayName": "PTS",
+                      "description": "Total Points",
+                      "abbreviation": "PTS",
+                      "type": "points",
+                      "value": 2,
+                      "displayValue": "2.0"
+                    },
+                    {
+                      "name": "pointsAgainst",
+                      "displayName": "Points Against",
+                      "shortDisplayName": "PA",
+                      "description": "Total Points Against",
+                      "abbreviation": "PA",
+                      "type": "pointsagainst",
+                      "value": 2013,
+                      "displayValue": "2013"
+                    },
+                    {
+                      "name": "pointsFor",
+                      "displayName": "Points For",
+                      "shortDisplayName": "PF",
+                      "description": "Total Points For",
+                      "abbreviation": "PF",
+                      "type": "pointsfor",
+                      "value": 2031,
+                      "displayValue": "2031"
+                    },
+                    {
+                      "name": "streak",
+                      "displayName": "Streak",
+                      "shortDisplayName": "STRK",
+                      "description": "Current Streak",
+                      "abbreviation": "STRK",
+                      "type": "streak",
+                      "value": 4,
+                      "displayValue": "W4"
+                    },
+                    {
+                      "name": "winPercent",
+                      "displayName": "Win Percentage",
+                      "shortDisplayName": "PCT",
+                      "description": "Winning Percentage",
+                      "abbreviation": "PCT",
+                      "type": "winpercent",
+                      "value": 0.6111111,
+                      "displayValue": ".611"
+                    },
+                    {
+                      "name": "wins",
+                      "displayName": "Wins",
+                      "shortDisplayName": "W",
+                      "description": "Wins",
+                      "abbreviation": "W",
+                      "type": "wins",
+                      "value": 11,
+                      "displayValue": "11"
+                    },
+                    {
+                      "name": "gamesAhead",
+                      "displayName": "Games Ahead",
+                      "shortDisplayName": "GA",
+                      "description": "Games Ahead",
+                      "abbreviation": "GA",
+                      "type": "gamesahead",
+                      "value": 8.5,
+                      "displayValue": "8.5"
+                    },
+                    {
+                      "id": "0",
+                      "name": "overall",
+                      "abbreviation": "Total",
+                      "displayName": "Overall",
+                      "shortDisplayName": "OVER",
+                      "description": "Overall Record",
+                      "type": "total",
+                      "summary": "11-7",
+                      "displayValue": "11-7"
+                    },
+                    {
+                      "id": "33",
+                      "name": "Home",
+                      "displayName": "Home",
+                      "shortDisplayName": "HOME",
+                      "description": "Home Record",
+                      "type": "home",
+                      "summary": "7-2",
+                      "displayValue": "7-2"
+                    },
+                    {
+                      "id": "34",
+                      "name": "Road",
+                      "displayName": "Road",
+                      "shortDisplayName": "AWAY",
+                      "description": "Away Record",
+                      "type": "road",
+                      "summary": "4-5",
+                      "displayValue": "4-5"
+                    },
+                    {
+                      "id": "60",
+                      "name": "vs. Div.",
+                      "displayName": "DIV",
+                      "shortDisplayName": "DIV",
+                      "description": "Division Record",
+                      "type": "vsdiv",
+                      "summary": "1-3",
+                      "displayValue": "1-3"
+                    },
+                    {
+                      "id": "61",
+                      "name": "vs. Conf.",
+                      "displayName": "CONF",
+                      "shortDisplayName": "CONF",
+                      "description": "Conference Record",
+                      "type": "vsconf",
+                      "summary": "7-5",
+                      "displayValue": "7-5"
                     },
                     {
                       "id": "901",
@@ -27994,8 +27994,8 @@
                       "description": "Projected seed in the NBA Playoffs, according to BPI",
                       "abbreviation": "SEED",
                       "type": "playoffseed",
-                      "value": 7,
-                      "displayValue": "7"
+                      "value": 6,
+                      "displayValue": "6"
                     },
                     {
                       "name": "pointDifferential",
