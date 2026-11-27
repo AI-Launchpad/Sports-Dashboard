@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-27T03:22:31.292Z",
+  "lastUpdated": "2026-11-27T18:34:47.482Z",
   "teams": {
     "sharks": {
       "key": "sharks",
@@ -11759,8 +11759,8 @@
                       "description": "Point Differential",
                       "abbreviation": "DIFF",
                       "type": "differential",
-                      "value": 105,
-                      "displayValue": "+105"
+                      "value": 108,
+                      "displayValue": "+108"
                     },
                     {
                       "name": "gamesBehind",
@@ -11799,8 +11799,8 @@
                       "description": "Point Differential",
                       "abbreviation": "DIFF",
                       "type": "pointdifferential",
-                      "value": 105,
-                      "displayValue": "+105"
+                      "value": 108,
+                      "displayValue": "+108"
                     },
                     {
                       "name": "pointsAgainst",
@@ -11809,8 +11809,8 @@
                       "description": "Total Points Against",
                       "abbreviation": "PA",
                       "type": "pointsagainst",
-                      "value": 208,
-                      "displayValue": "208"
+                      "value": 218,
+                      "displayValue": "218"
                     },
                     {
                       "name": "pointsFor",
@@ -11819,8 +11819,8 @@
                       "description": "Total Points For",
                       "abbreviation": "PF",
                       "type": "pointsfor",
-                      "value": 313,
-                      "displayValue": "313"
+                      "value": 326,
+                      "displayValue": "326"
                     },
                     {
                       "name": "streak",
@@ -11829,8 +11829,8 @@
                       "description": "Current Streak",
                       "abbreviation": "STRK",
                       "type": "streak",
-                      "value": 6,
-                      "displayValue": "W6"
+                      "value": 7,
+                      "displayValue": "W7"
                     },
                     {
                       "name": "ties",
@@ -11849,8 +11849,8 @@
                       "description": "Winning Percentage",
                       "abbreviation": "PCT",
                       "type": "winpercent",
-                      "value": 0.9,
-                      "displayValue": ".900"
+                      "value": 0.90909094,
+                      "displayValue": ".909"
                     },
                     {
                       "name": "wins",
@@ -11859,8 +11859,8 @@
                       "description": "Wins",
                       "abbreviation": "W",
                       "type": "wins",
-                      "value": 9,
-                      "displayValue": "9"
+                      "value": 10,
+                      "displayValue": "10"
                     },
                     {
                       "name": "divisionLosses",
@@ -11917,8 +11917,8 @@
                       "name": "overall",
                       "abbreviation": "Any",
                       "type": "total",
-                      "summary": "9-1",
-                      "displayValue": "9-1"
+                      "summary": "10-1",
+                      "displayValue": "10-1"
                     },
                     {
                       "id": "13",
@@ -11927,8 +11927,8 @@
                       "shortDisplayName": "HOME",
                       "description": "Home Record",
                       "type": "home",
-                      "summary": "4-1",
-                      "displayValue": "4-1"
+                      "summary": "5-1",
+                      "displayValue": "5-1"
                     },
                     {
                       "id": "14",
@@ -11957,8 +11957,8 @@
                       "shortDisplayName": "CONF",
                       "description": "Conference Record",
                       "type": "vsconf",
-                      "summary": "6-1",
-                      "displayValue": "6-1"
+                      "summary": "7-1",
+                      "displayValue": "7-1"
                     }
                   ]
                 },
@@ -12031,8 +12031,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 1,
-                      "displayValue": "1"
+                      "value": 1.5,
+                      "displayValue": "1.5"
                     },
                     {
                       "name": "losses",
@@ -12283,8 +12283,8 @@
                       "description": "Point Differential",
                       "abbreviation": "DIFF",
                       "type": "differential",
-                      "value": 108,
-                      "displayValue": "+108"
+                      "value": 105,
+                      "displayValue": "+105"
                     },
                     {
                       "name": "gamesBehind",
@@ -12293,8 +12293,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 1,
-                      "displayValue": "1"
+                      "value": 2,
+                      "displayValue": "2"
                     },
                     {
                       "name": "losses",
@@ -12303,8 +12303,8 @@
                       "description": "Losses",
                       "abbreviation": "L",
                       "type": "losses",
-                      "value": 2,
-                      "displayValue": "2"
+                      "value": 3,
+                      "displayValue": "3"
                     },
                     {
                       "name": "playoffSeed",
@@ -12323,8 +12323,8 @@
                       "description": "Point Differential",
                       "abbreviation": "DIFF",
                       "type": "pointdifferential",
-                      "value": 108,
-                      "displayValue": "+108"
+                      "value": 105,
+                      "displayValue": "+105"
                     },
                     {
                       "name": "pointsAgainst",
@@ -12333,8 +12333,8 @@
                       "description": "Total Points Against",
                       "abbreviation": "PA",
                       "type": "pointsagainst",
-                      "value": 163,
-                      "displayValue": "163"
+                      "value": 176,
+                      "displayValue": "176"
                     },
                     {
                       "name": "pointsFor",
@@ -12343,8 +12343,8 @@
                       "description": "Total Points For",
                       "abbreviation": "PF",
                       "type": "pointsfor",
-                      "value": 271,
-                      "displayValue": "271"
+                      "value": 281,
+                      "displayValue": "281"
                     },
                     {
                       "name": "streak",
@@ -12353,8 +12353,8 @@
                       "description": "Current Streak",
                       "abbreviation": "STRK",
                       "type": "streak",
-                      "value": 3,
-                      "displayValue": "W3"
+                      "value": -1,
+                      "displayValue": "L1"
                     },
                     {
                       "name": "ties",
@@ -12373,8 +12373,8 @@
                       "description": "Winning Percentage",
                       "abbreviation": "PCT",
                       "type": "winpercent",
-                      "value": 0.8,
-                      "displayValue": ".800"
+                      "value": 0.72727275,
+                      "displayValue": ".727"
                     },
                     {
                       "name": "wins",
@@ -12441,8 +12441,8 @@
                       "name": "overall",
                       "abbreviation": "Any",
                       "type": "total",
-                      "summary": "8-2",
-                      "displayValue": "8-2"
+                      "summary": "8-3",
+                      "displayValue": "8-3"
                     },
                     {
                       "id": "13",
@@ -12461,8 +12461,8 @@
                       "shortDisplayName": "AWAY",
                       "description": "Away Record",
                       "type": "road",
-                      "summary": "3-2",
-                      "displayValue": "3-2"
+                      "summary": "3-3",
+                      "displayValue": "3-3"
                     },
                     {
                       "id": "17",
@@ -12481,8 +12481,8 @@
                       "shortDisplayName": "CONF",
                       "description": "Conference Record",
                       "type": "vsconf",
-                      "summary": "6-1",
-                      "displayValue": "6-1"
+                      "summary": "6-2",
+                      "displayValue": "6-2"
                     }
                   ]
                 },
@@ -12555,8 +12555,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 2,
-                      "displayValue": "2"
+                      "value": 2.5,
+                      "displayValue": "2.5"
                     },
                     {
                       "name": "losses",
@@ -12817,8 +12817,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 2,
-                      "displayValue": "2"
+                      "value": 2.5,
+                      "displayValue": "2.5"
                     },
                     {
                       "name": "losses",
@@ -13079,8 +13079,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 3,
-                      "displayValue": "3"
+                      "value": 3.5,
+                      "displayValue": "3.5"
                     },
                     {
                       "name": "losses",
@@ -13341,8 +13341,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 3,
-                      "displayValue": "3"
+                      "value": 3.5,
+                      "displayValue": "3.5"
                     },
                     {
                       "name": "losses",
@@ -13603,8 +13603,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 4,
-                      "displayValue": "4"
+                      "value": 4.5,
+                      "displayValue": "4.5"
                     },
                     {
                       "name": "losses",
@@ -13865,8 +13865,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 5,
-                      "displayValue": "5"
+                      "value": 5.5,
+                      "displayValue": "5.5"
                     },
                     {
                       "name": "losses",
@@ -14078,7 +14078,7 @@
                           "full",
                           "default"
                         ],
-                        "lastUpdated": "2020-02-25T17:01Z"
+                        "lastUpdated": "2024-09-22T22:51Z"
                       },
                       {
                         "href": "https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/lv.png",
@@ -14127,8 +14127,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 5.5,
-                      "displayValue": "5.5"
+                      "value": 6,
+                      "displayValue": "6"
                     },
                     {
                       "name": "losses",
@@ -14389,8 +14389,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 5.5,
-                      "displayValue": "5.5"
+                      "value": 6,
+                      "displayValue": "6"
                     },
                     {
                       "name": "losses",
@@ -14651,8 +14651,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 6.5,
-                      "displayValue": "6.5"
+                      "value": 7,
+                      "displayValue": "7"
                     },
                     {
                       "name": "losses",
@@ -14913,8 +14913,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 6.5,
-                      "displayValue": "6.5"
+                      "value": 7,
+                      "displayValue": "7"
                     },
                     {
                       "name": "losses",
@@ -15175,8 +15175,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 8,
-                      "displayValue": "8"
+                      "value": 8.5,
+                      "displayValue": "8.5"
                     },
                     {
                       "name": "losses",
@@ -15437,8 +15437,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 8,
-                      "displayValue": "8"
+                      "value": 8.5,
+                      "displayValue": "8.5"
                     },
                     {
                       "name": "losses",
@@ -15699,8 +15699,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "gamesbehind",
-                      "value": 8,
-                      "displayValue": "8"
+                      "value": 8.5,
+                      "displayValue": "8.5"
                     },
                     {
                       "name": "losses",
